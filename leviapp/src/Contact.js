@@ -8,12 +8,12 @@ class Contact extends Component {
     render() {
         return(
 
-        <nav>
+        <div>
             <div>
             <h1> Contact </h1>
             </div>
 
-        </nav>
+        </div>
 
 
         )

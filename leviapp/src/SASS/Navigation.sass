@@ -1,30 +1,116 @@
-nav
-    display: flex
-    width: 90%
-    self
-    justify-content: space-around
-    margin-top: 50px
-    div
-        display: flex
-        justify-content: center
-        align-items: center
-    a
-        color: white
-        font-size: 4rem
-        text-decoration: none
-    a::before
-        content: "<"
-        color: #1E1E1E
-    a::after
-        margin-left: 30px
-        content: "/>"
-        color: #1E1E1E
-    .active
-        color: #4EC9B0
-        margin: 0
-    .active::before
-        color: #808080
-    .active::after
-        color: #808080
+@import 'variables.sass'
 
+nav
+    z-index: 2
+    position: fixed
+    top: -5px
+    display: grid
+    margin: 0
+    grid-template-columns: repeat(5, 1fr)
+    width: 100%
+    justify-content: space-between
+    align-items: center
+
+
+
+
+    .links
+        display: grid
+        grid-template-columns: repeat(30, 1fr)
+        grid-column: 2/6
+        grid-row: 1
+        margin-bottom: 75px
+        align-items: center
+        text-align: center
+        z-index: 0
+        .dev-nav
+            grid-column: 1/11
+
+        .art-nav
+            grid-column: 12/22
+
+        .contact-nav
+            grid-column: 23/30
+        a
+            
+            color: white
+            font-size: 2.5rem
+            text-decoration: none
+            width: 100%
+            margin: 0
+
+        a::before
+            content: "<"
+            color: $background
+        a::after
+            margin-left: 30px
+            content: "/>"
+            color: $background
+        
+        .active
+            color: #4EC9B0
+            margin: 0
+        .active::before
+            color: $gray
+        .active::after
+            color: $gray
+
+    
+
+.logo
+    display: flex
+    z-index: 1
+    justify-items: center
+    align-items: center
+    grid-column: 1
+    grid-row: 1
+
+    justify-content: center
+    svg
+        fill: none
+        width: 80%
+
+        #Levi
+            fill: $green
+        #App
+            fill: $green
+        #top_outer_bracket
+            stroke-width: 3px
+            stroke: $blue
+
+        #bottom_outer_bracket
+            stroke-width: 3px
+            stroke: $blue
+
+        #left_inner_bracket
+            stroke-width: 3px
+            stroke: $blue
+
+        #right_inner_bracket
+            stroke-width: 3px
+            stroke: $blue
+
+        #left_L
+            fill: $gray
+
+        #right_L
+            fill: $gray
+        #Slash
+            fill: $gray
+
+
+.logo:hover
+    transform: rotateY(360deg)	
+    transition: transform 1s
+
+
+.background-nav
+    grid-column: 1/6
+    grid-row: 1
+    left: 1000px
+    fill: $background
+    stroke-width: 2px
+    stroke-dasharray: 925 3000
+    stroke-dashoffset: -4967
+    stroke: $gray
     

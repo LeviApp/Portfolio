@@ -1,8 +1,12 @@
 import React, { Component } from 'react';
 import './SASS/Navigation.sass';
 import { Link, NavLink, withRouter } from 'react-router-dom';
-let left = '<';
-let right = '/>';
+import { scroller } from 'react-scroll'
+
+
+import LApp from './LAppLogo.js'
+import Nav from './Nav.js'
+
 
 class Navigation extends Component {
 
@@ -10,40 +14,33 @@ class Navigation extends Component {
         activated: "Dev Portfolio"
     }
 
-    clicked = (event) => {
-        event.preventDefault()
-        let value= event.target.id
-        let all = document.getElementsByClassName("arrow")
-        let selected = document.getElementsByClassName(value)
-        let category = document.getElementById(value)
-        let categories = document.getElementsByClassName("active")
-
-        for (let i = 0; i < all.length; i++) {
-            all[i].classList.remove("select");
-          }
-        for (let i = 0; i < selected.length; i++) {
-        selected[i].classList.add("select");
-        }
-        for (let i = 0; i < categories.length; i++) {
-            categories[i].classList.remove("active");
-          }
-        category.classList.add("active")
-
-        this.setState({activated: value})
-    }
+    scrollTo(element, offset) {
+        scroller.scrollTo(element, {
+          duration: 800,
+          delay: 0,
+          smooth: 'easeInOutQuart',
+          offset: offset
+        })
+      }
     render() {
         return(
 
-        <nav>
-                <NavLink activeClassName="active" to="/dev">
+        <nav>   
+                <LApp />
+                <div className='links'>
+                <NavLink className="dev-nav" activeClassName="active" to="/dev">
                  Dev Portfolio
                 </NavLink>
-                <NavLink activeClassName="active" to="/art">
+                <NavLink className="art-nav"activeClassName="active" to="/art">
                 Art Portfolio
                 </NavLink>
-                <NavLink activeClassName="active" to="/contact">
+                <NavLink className="contact-nav" activeClassName="active" to="/contact">
                 Contact
                 </NavLink>
+                <a onClick={() => {this.scrollTo('notes', -225)}} to="notes">help</a>
+                </div>
+                
+                <Nav />
         </nav>
 
 

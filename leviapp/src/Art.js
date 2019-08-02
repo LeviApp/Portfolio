@@ -8,12 +8,12 @@ class Art extends Component {
     render() {
         return(
 
-        <nav>
+        <div>
             <div>
             <h1> Art Portfolio </h1>
             </div>
 
-        </nav>
+        </div>
 
 
         )
