@@ -17,7 +17,7 @@
         font-size: 1.25rem
         align-self: flex-end
         position: fixed
-        top: 145px
+        top: 160px
         z-index: 10
         right: 50px
         width: 50%
@@ -51,35 +51,54 @@
             -webkit-background-clip: text
             -webkit-text-fill-color: transparent;
     section
-        padding-left: 5%
+        padding-left: 2%
 
         h1
             z-index: 1
             position: sticky
-            padding-left: 15%
+            padding-left: 18%
+            padding-top: 10px
+            padding-bottom: 10px
+
             margin: 0
-            top: 115px
+            top: 120px
+            left: 500px
             background-color: $background
             width: 100%
             font-size: 4rem
             color: #FFBF00
             font-style: italic
 
-
 .t-logos
     display: flex
     flex-direction: row
     margin-top: 75px
-    img:hover
-        transform: rotateY(360deg)	
-        transition: transform 1s
+
+
+.t-logos-drafts
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    width: 85%
+    margin-top: 25px
+    div
+        img
+            margin: 10px
+            width: 10%
+        
+        .final-traction-logo:hover
+            transform: rotateY(360deg)	
+            transition: transform 1s
 
 .all_sections:hover
     cursor: pointer
 
-    
+h2
+    color: #FFBF00
+
+.start-section
+    margin-top: 100px
 
 
-    
-
-
+.calendar
+    width: 75%

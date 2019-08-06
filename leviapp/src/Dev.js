@@ -3,6 +3,18 @@ import './SASS/App.sass';
 import './SASS/Dev.sass';
 import { Link, DirectLink, Element , Events, animateScroll, scrollSpy, scroller } from 'react-scroll'
 
+import TractionDraft0 from './svg/traction-stage0.svg'
+import TractionDraft00 from './svg/traction-stage00.svg'
+
+import TractionDraft1 from './svg/traction-stage1.svg'
+import TractionDraft2 from './svg/traction-stage2.svg'
+import TractionDraft3 from './svg/traction-stage3.svg'
+import TractionDraft4 from './svg/traction-stage4.svg'
+import TractionDraft5 from './svg/traction-stage5.svg'
+import TractionDraft6 from './svg/traction-stage6.svg'
+import Calendar from './img/calendar.png'
+
+
 import Traction from './svg/traction.svg'
 import TractionPremium from './svg/traction-premium.svg'
 
@@ -82,16 +94,16 @@ class Dev extends Component {
         return(
         <div className="Dev" onScroll={this.scrolled()}>
             <div className='contents'>
-            <h2 onClick={() => {this.scrollTo('traction', -200)}}className='all_sections on_topic'>
+            <h2 onClick={() => {this.scrollTo('traction', -235)}}className='all_sections on_topic'>
             Traction
             </h2>
             <h3 className='arrows_1'>>>>>></h3>
 
-            <h2 onClick={() => {this.scrollTo('notes', -200)}} className='all_sections second'>
+            <h2 onClick={() => {this.scrollTo('notes', -235)}} className='all_sections second'>
             Notes
             </h2>
             <h3 className='arrows_2'>>>>>></h3>
-            <h2 onClick={() => {this.scrollTo('arch', -200)}} className='all_sections third'>
+            <h2 onClick={() => {this.scrollTo('arch', -235)}} className='all_sections third'>
             Smith & Jones Architects
             </h2>
             <h3 className='arrows_3'>>>>>></h3>
@@ -99,21 +111,44 @@ class Dev extends Component {
             </div>
             <section>
             <h1 className="TRACTION"> Traction </h1>
-            <Element name="traction" >
-            <div className="t-logos">
-            <img className='traction-logo' src={Traction} alt="traction-logo" />
-            <img className='traction-premium-logo' src={TractionPremium} alt="traction-logo-premium" />
-            </div>
+            <Element className='start-section' name="traction" >
+            <h2>>>>>> Implemented website using Redux and React</h2>
             </Element>
+            <h2>>>>>> Designed the Traction logo</h2>
+            <h2> >>>>> Changed color scheme from blue to red/orange/blue after studying workout company color palettes </h2>
+            <div className="t-logos-drafts">
+                <div>
+                <img className='traction-logo-draft0' src={TractionDraft0} alt="traction-logo-draft0" />
+                <img className='traction-logo-draft00' src={TractionDraft00} alt="traction-logo-draft00" />
+                </div>
 
-            <h2> Regular </h2>
-            <h2> Regular </h2>
-            <h2> Regular </h2>
-            <h2> Regular </h2>
-            <h2> Regular </h2>
-            <h2> Regular </h2>
-            <h2> Regular </h2>
-            <h2> Regular </h2>
+                <div>
+                <img className='traction-logo-draft1' src={TractionDraft1} alt="traction-logo-draft1" />
+                <img className='traction-logo-draft2' src={TractionDraft2} alt="traction-logo-draft2" />
+                </div>
+
+                <div>
+                <img className='traction-logo-draft3' src={TractionDraft3} alt="traction-logo-draft3" />
+                <img className='traction-logo-draft4' src={TractionDraft4} alt="traction-logo-draft4" />          
+                </div>    
+
+                <div>
+                <img className='traction-logo-draft5' src={TractionDraft5} alt="traction-logo-draft5" />
+                <img className='traction-logo-draft6' src={TractionDraft6} alt="traction-logo-draft6" />
+                </div>       
+
+                <div>
+                <img className='final-traction-logo' src={Traction} alt="traction-logo" />
+                <img className='final-traction-logo' src={TractionPremium} alt="traction-logo-premium" />
+                </div>
+            </div>
+            <h2> >>>>> Built dark UI design of the website using SASS to stand out from the standard light mode </h2>
+            <h2> >>>>> Implemented the calendar using the FullCalendar api </h2>
+            <h2> >>>>> Built calendar functionality using the JQuery version in the beginning, then changed to React version</h2>
+            <img className='calendar' src={Calendar} alt="traction-logo-draft1" />
+            <h2> >>>>> Created a hexagonal checkmark box with functionality </h2>
+            <h2> >>>>> Used several map implementations which involved dates, body groups, and exercises</h2>
+            <h2> >>>>> Organized tasks using Trello </h2>
             <h2> Regular </h2>
             <h2> Regular </h2>
             <h2> Regular </h2>
@@ -136,7 +171,7 @@ class Dev extends Component {
             </section>
             <section>
             <h1 className="NOTES"> Notes </h1>
-            <Element name="notes" >
+            <Element className='start-section' name="notes" >
             <h2> Regular </h2>
             </Element>
             <h2> Regular </h2>
@@ -171,7 +206,7 @@ class Dev extends Component {
 
             <section>
             <h1 className="ARCH">S. & J. A.</h1>
-            <Element name="arch" >
+            <Element className='start-section' name="arch" >
             <h2> Regular </h2>
             </Element>
             <h2> Regular </h2>
