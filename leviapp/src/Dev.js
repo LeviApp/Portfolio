@@ -164,7 +164,7 @@ class Dev extends Component {
             <img className='mapped' src={Mapped} alt="mapped event" />  
             </div>   
 
-            <h2> Regular </h2>
+            <h2> Regul </h2>
             <h2> Regular </h2>
             <h2> Regular </h2>
             <h2> Regular </h2>
