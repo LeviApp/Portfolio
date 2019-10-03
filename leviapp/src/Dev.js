@@ -58,8 +58,8 @@ class Dev extends Component {
 
 
             a.style.backgroundImage = `linear-gradient(to right, #4EC9B0, #4EC9B0 ${percent} , #D4D4D4 ${percent}, #D4D4D4 100%)`
-            a.style.fontSize = `${1.25+0.25*number}rem`
-            b.style.fontSize = `${1.25+0.25*number}rem`
+            a.style.fontSize = `${1+0.25*number}rem`
+            b.style.fontSize = `${1+0.25*number}rem`
 
 
             if (far >= 1640) {
@@ -68,8 +68,8 @@ class Dev extends Component {
                 b.style.color = `#4EC9B0`
 
                 c.style.backgroundImage = `linear-gradient(to right, #4EC9B0, #4EC9B0 ${percent2} , #D4D4D4 ${percent2}, #D4D4D4 100%)`
-                c.style.fontSize = `${1.25+0.25*number2}rem`
-                d.style.fontSize = `${1.25+0.25*number2}rem`
+                c.style.fontSize = `${1+0.25*number2}rem`
+                d.style.fontSize = `${1+0.25*number2}rem`
             }
             else {
                 b.style.color = `#D4D4D4`
@@ -82,7 +82,7 @@ class Dev extends Component {
                 d.style.color = `#4EC9B0`
 
                 e.style.backgroundImage = `linear-gradient(to right, #4EC9B0, #4EC9B0 ${percent3} , #D4D4D4 ${percent3}, #D4D4D4 100%)`
-                e.style.fontSize = `${1.25+0.25*number3}rem`
+                e.style.fontSize = `${1+0.25*number3}rem`
 
             }
             else {

@@ -37,7 +37,6 @@ class Navigation extends Component {
                 <NavLink className="contact-nav" activeClassName="active" to="/contact">
                 Contact
                 </NavLink>
-                <a onClick={() => {this.scrollTo('notes', -225)}} to="notes">help</a>
                 </div>
                 
                 <Nav />
