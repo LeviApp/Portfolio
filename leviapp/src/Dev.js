@@ -58,18 +58,13 @@ class Dev extends Component {
 
 
             a.style.backgroundImage = `linear-gradient(to right, #4EC9B0, #4EC9B0 ${percent} , #D4D4D4 ${percent}, #D4D4D4 100%)`
-            a.style.fontSize = `${1+0.25*number}rem`
-            b.style.fontSize = `${1+0.25*number}rem`
+
 
 
             if (far >= 1640) {
-                a.style.fontSize = `1.5rem`
-                b.style.fontSize = `1.5rem`
                 b.style.color = `#4EC9B0`
 
                 c.style.backgroundImage = `linear-gradient(to right, #4EC9B0, #4EC9B0 ${percent2} , #D4D4D4 ${percent2}, #D4D4D4 100%)`
-                c.style.fontSize = `${1+0.25*number2}rem`
-                d.style.fontSize = `${1+0.25*number2}rem`
             }
             else {
                 b.style.color = `#D4D4D4`
@@ -77,13 +72,9 @@ class Dev extends Component {
 
             }
             if (far >= 3225) {
-                c.style.fontSize = `1.5rem`
-                d.style.fontSize = `1.5rem`
                 d.style.color = `#4EC9B0`
 
                 e.style.backgroundImage = `linear-gradient(to right, #4EC9B0, #4EC9B0 ${percent3} , #D4D4D4 ${percent3}, #D4D4D4 100%)`
-                e.style.fontSize = `${1+0.25*number3}rem`
-
             }
             else {
                 d.style.color = `#D4D4D4`
@@ -100,17 +91,31 @@ class Dev extends Component {
             <h2 onClick={() => {this.scrollTo('traction', -235)}}className='all_sections on_topic'>
             Traction
             </h2>
-            <h3 className='arrows_1'>>>>>></h3>
+            <h3 className='arrows arrows_1'>>>>>></h3>
 
             <h2 onClick={() => {this.scrollTo('notes', -235)}} className='all_sections second'>
             Notes
             </h2>
-            <h3 className='arrows_2'>>>>>></h3>
+            <h3 className='arrows arrows_2'>>>>>></h3>
             <h2 onClick={() => {this.scrollTo('arch', -235)}} className='all_sections third'>
             Smith & Jones Architects
             </h2>
-            <h3 className='arrows_3'>>>>>></h3>
+            <h3 className='arrows arrows_3'>>>>>></h3>
 
+            <h2 onClick={() => {this.scrollTo('schatz', -235)}} className='all_sections fourth'>
+            Schatzinsel
+            </h2>
+            <h3 className='arrows arrows_4'>>>>>></h3>
+
+            <h2 onClick={() => {this.scrollTo('automata', -235)}} className='all_sections fifth'>
+            Automata
+            </h2>
+            <h3 className='arrows arrows_5'>>>>>></h3>
+
+            <h2 onClick={() => {this.scrollTo('Automata', -235)}} className='all_sections fifth'>
+            Schatzinsel
+            </h2>
+            <h3 className='arrows arrows_5'>>>>>></h3>
             </div>
             <section>
 
@@ -220,7 +225,7 @@ class Dev extends Component {
             </section>
 
             <section>
-            <h1 className="ARCH">S. & J. A.</h1>
+            <h1 className="ARCH">Smith & Jones Architects</h1>
             <Element className='start-section' name="arch" >
             <h2> Regular </h2>
             </Element>
