@@ -13,7 +13,6 @@ function App() {
      <Route path="/dev" component={Dev} />
      <Route path="/art" component={Art} />
      <Route path="/contact" component={Contact} />
-
     </div>
   );
 }
