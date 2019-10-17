@@ -39,6 +39,14 @@ import BrockLetter from './img/artportfolio/Typography/JosefBrockmannLetterhead.
 import Joyce from './img/artportfolio/Typography/MikeJoyceBusinessCard.svg'
 import JoyceWeb from './img/artportfolio/Typography/MikeJoyceWebpage.svg'
 import JoyceLetter from './img/artportfolio/Typography/MikeJoyceLetterhead.svg'
+
+import CatalogCover from './img/artportfolio/Prosthetics/CatalogCover.jpg'
+import MagPuckCover from './img/artportfolio/Prosthetics/MagPuckCover.jpg'
+import SmartPuckCover from './img/artportfolio/Prosthetics/SmartPuckCover.jpg'
+import AirPuckCover from './img/artportfolio/Prosthetics/AirPuckCover.jpg'
+import ZeroPuckCover from './img/artportfolio/Prosthetics/ZeroPuckCover.jpg'
+import FabricationCover from './img/artportfolio/Prosthetics/FabricationCover.jpg'
+
 class Art extends Component {
 
     state = {
@@ -48,6 +56,22 @@ class Art extends Component {
     contactClick = (c) => {
         const name = document.getElementsByClassName(c)[0]
         name.classList.toggle('allcol')
+    }
+
+    bookClick = (c) => {
+        const names = document.getElementsByClassName('sel')
+        const new_name = document.getElementsByClassName(c)[0]
+        console.log(names, new_name)
+        for (let name of names) {
+            if (new_name.isSameNode(name)) {
+                console.log(names, new_name)
+                name.classList.remove('pamphlet')
+            }
+
+            else {
+                name.classList.add('pamphlet') 
+            }
+        }
     }
 
     scrollTo(element, offset) {
@@ -252,57 +276,50 @@ class Art extends Component {
             </div>
 
             <div className='prosthetics'>
-            <Carousel className="slide" showStatus={false} showThumbs={false} infiniteLoop={true} useKeyboardArrows={true}>
-                    <div>
-                    <img src={s1} />
-                    </div>
+                <div className="books">
+                <img onClick={() => this.bookClick('cat')} src={CatalogCover} />
+                <img onClick={() => this.bookClick('mag')} src={MagPuckCover} /> 
+                <img onClick={() => this.bookClick('smart')} src={SmartPuckCover} /> 
+                <img onClick={() => this.bookClick('air')} src={AirPuckCover} /> 
+                <img onClick={() => this.bookClick('zero')} src={ZeroPuckCover} /> 
+                <img onClick={() => this.bookClick('fab')} src={FabricationCover} /> 
+                </div>
 
+                <Carousel className="sel pamphlet cat" showStatus={false} showThumbs={false} infiniteLoop={true} useKeyboardArrows={true}>
                     <div>
-                    <img src={s2} />          
-                    </div>
+                    <img src={CatalogCover} />
+                    </div>           
+                </Carousel>
 
+                <Carousel className="sel pamphlet mag" showStatus={false} showThumbs={false} infiniteLoop={true} useKeyboardArrows={true}>
                     <div>
-                    <img src={s3} />        
-                    </div>
+                    <img src={MagPuckCover} />
+                    </div>           
+                </Carousel>
 
+                <Carousel className="sel pamphlet smart" showStatus={false} showThumbs={false} infiniteLoop={true} useKeyboardArrows={true}>
                     <div>
-                    <img src={s4} />                               
-                    </div>
+                    <img src={SmartPuckCover} />
+                    </div>           
+                </Carousel>
 
+                <Carousel className="sel pamphlet air" showStatus={false} showThumbs={false} infiniteLoop={true} useKeyboardArrows={true}>
                     <div>
-                    <img src={s5} />                               
-                    </div>
+                    <img src={AirPuckCover} />
+                    </div>           
+                </Carousel>
 
+                <Carousel className="sel pamphlet zero" showStatus={false} showThumbs={false} infiniteLoop={true} useKeyboardArrows={true}>
                     <div>
-                    <img src={s6} />                               
-                    </div>             
-            </Carousel>
+                    <img src={ZeroPuckCover} />
+                    </div>           
+                </Carousel>
 
-            <Carousel className="slide" showStatus={false} showThumbs={false} infiniteLoop={true} useKeyboardArrows={true}>
+                <Carousel className="sel pamphlet fab" showStatus={false} showThumbs={false} infiniteLoop={true} useKeyboardArrows={true}>
                     <div>
-                    <img src={s1} />
-                    </div>
-
-                    <div>
-                    <img src={s2} />          
-                    </div>
-
-                    <div>
-                    <img src={s3} />        
-                    </div>
-
-                    <div>
-                    <img src={s4} />                               
-                    </div>
-
-                    <div>
-                    <img src={s5} />                               
-                    </div>
-
-                    <div>
-                    <img src={s6} />                               
-                    </div>             
-            </Carousel>
+                    <img src={FabricationCover} />
+                    </div>           
+                </Carousel>
             </div>
         </div>
 
