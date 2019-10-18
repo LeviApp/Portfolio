@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
-import './SASS/Art.sass';
 import { Link, DirectLink, Element , Events, animateScroll, scrollSpy, scroller } from 'react-scroll'
 
 import "react-responsive-carousel/lib/styles/carousel.min.css";
+import './SASS/Art.sass';
+
 import { Carousel } from 'react-responsive-carousel';
 
 import q1 from './img/artportfolio/Quorum-Sense/quorum1.jpg'
@@ -83,6 +84,56 @@ import Fabrication2 from './img/artportfolio/Prosthetics/Fabrication2.jpg'
 import Fabrication3 from './img/artportfolio/Prosthetics/Fabrication3.jpg'
 import Fabrication4 from './img/artportfolio/Prosthetics/Fabrication4.jpg'
 import FabricationBack from './img/artportfolio/Prosthetics/FabricationBack.jpg'
+
+import GastricSleeve from './img/artportfolio/Illustration/GastricSleeve.jpg'
+
+import C4 from './img/artportfolio/Tactile-Graphics/C4.jpeg'
+import C4T from './img/artportfolio/Tactile-Graphics/C4T.png'
+import C4K from './img/artportfolio/Tactile-Graphics/C4K.png'
+
+import C3 from './img/artportfolio/Tactile-Graphics/C3.jpeg'
+import C3T from './img/artportfolio/Tactile-Graphics/C3T.png'
+import C3K from './img/artportfolio/Tactile-Graphics/C3K.png'
+
+import C2 from './img/artportfolio/Tactile-Graphics/C2.jpeg'
+import C2T from './img/artportfolio/Tactile-Graphics/C2T.png'
+import C2K from './img/artportfolio/Tactile-Graphics/C2K.png'
+
+import C1 from './img/artportfolio/Tactile-Graphics/C1.jpeg'
+import C1T from './img/artportfolio/Tactile-Graphics/C1T.png'
+import C1K from './img/artportfolio/Tactile-Graphics/C1K.png'
+
+import R4 from './img/artportfolio/Tactile-Graphics/R4.jpeg'
+import R4T from './img/artportfolio/Tactile-Graphics/R4T.png'
+import R4K from './img/artportfolio/Tactile-Graphics/R4K.png'
+
+import R3 from './img/artportfolio/Tactile-Graphics/R3.jpeg'
+import R3T from './img/artportfolio/Tactile-Graphics/R3T.png'
+import R3K from './img/artportfolio/Tactile-Graphics/R3K.png'
+
+import R2 from './img/artportfolio/Tactile-Graphics/R2.jpeg'
+import R2T from './img/artportfolio/Tactile-Graphics/R2T.png'
+import R2K from './img/artportfolio/Tactile-Graphics/R2K.png'
+
+import R1 from './img/artportfolio/Tactile-Graphics/R1.jpeg'
+import R1T from './img/artportfolio/Tactile-Graphics/R1T.png'
+import R1K from './img/artportfolio/Tactile-Graphics/R1K.png'
+
+import D4 from './img/artportfolio/Tactile-Graphics/D4.jpeg'
+import D4T from './img/artportfolio/Tactile-Graphics/D4T.png'
+import D4K from './img/artportfolio/Tactile-Graphics/D4K.png'
+
+import D3 from './img/artportfolio/Tactile-Graphics/D3.jpeg'
+import D3T from './img/artportfolio/Tactile-Graphics/D3T.png'
+import D3K from './img/artportfolio/Tactile-Graphics/D3K.png'
+
+import D2 from './img/artportfolio/Tactile-Graphics/D2.jpeg'
+import D2T from './img/artportfolio/Tactile-Graphics/D2T.png'
+import D2K from './img/artportfolio/Tactile-Graphics/D2K.png'
+
+import D1 from './img/artportfolio/Tactile-Graphics/D1.jpeg'
+import D1T from './img/artportfolio/Tactile-Graphics/D1T.png'
+import D1K from './img/artportfolio/Tactile-Graphics/D1K.png'
 
 class Art extends Component {
 
@@ -210,7 +261,7 @@ class Art extends Component {
             <h3 className='arrows'>>>>>></h3>
             </div>
             <div className='quorum'>
-            <Carousel className="slide" showStatus={false} showThumbs={false} infiniteLoop={true} useKeyboardArrows={true}>
+            <Carousel className="slider" showStatus={false} showThumbs={false} infiniteLoop={true} useKeyboardArrows={true}>
                     <div>
                     <img src={q1} />
                     </div>
@@ -266,7 +317,7 @@ class Art extends Component {
             </div>
 
             <div className='stem'>
-            <Carousel className="slide" showStatus={false} showThumbs={false} infiniteLoop={true} useKeyboardArrows={true}>
+            <Carousel className="slider" showStatus={false} showThumbs={false} infiniteLoop={true} useKeyboardArrows={true}>
                     <div>
                     <img src={s1} />
                     </div>
@@ -494,6 +545,117 @@ class Art extends Component {
                     <img src={FabricationBack} />
                     </div>         
                 </Carousel>
+
+                <div className='gastric'>
+                <img src={GastricSleeve} />
+                </div>
+
+                <div className='gastric'>
+                <img src={GastricSleeve} />
+                </div>
+
+                <Carousel className="cardio" showStatus={false} showThumbs={false} infiniteLoop={true} useKeyboardArrows={true}>
+                    <div>
+                    <img src={C1} />
+                    </div>
+
+                    <div>
+                    <img src={C1T} />
+                    </div>
+
+                    <div>
+                    <img src={C1K} />
+                    </div>
+
+                    <div>
+                    <img src={C2} />
+                    </div>
+
+                    <div>
+                    <img src={C2T} />
+                    </div>
+
+                    <div>
+                    <img src={C2K} />
+                    </div>
+
+                    <div>
+                    <img src={C3} />
+                    </div>
+
+                    <div>
+                    <img src={C3T} />
+                    </div>
+
+                    <div>
+                    <img src={C3K} />
+                    </div>  
+
+                    <div>
+                    <img src={C4} />
+                    </div>
+
+                    <div>
+                    <img src={C4T} />
+                    </div>
+
+                    <div>
+                    <img src={C4K} />
+                    </div>   
+                </Carousel>
+
+
+                <Carousel className="cardio" showStatus={false} showThumbs={false} infiniteLoop={true} useKeyboardArrows={true}>
+
+                    <div>
+                    <img src={R1} />
+                    </div>
+
+                    <div>
+                    <img src={R1T} />
+                    </div>
+
+                    <div>
+                    <img src={R1K} />
+                    </div>
+                    
+                    <div>
+                    <img src={R2} />
+                    </div>
+
+                    <div>
+                    <img src={R2T} />
+                    </div>
+
+                    <div>
+                    <img src={R2K} />
+                    </div>
+
+                    <div>
+                    <img src={R3} />
+                    </div>
+
+                    <div>
+                    <img src={R3T} />
+                    </div>
+
+                    <div>
+                    <img src={R3K} />
+                    </div>  
+
+                    <div>
+                    <img src={R4} />
+                    </div>
+
+                    <div>
+                    <img src={R4T} />
+                    </div>
+
+                    <div>
+                    <img src={R4K} />
+                    </div>   
+                </Carousel>
+
             </div>
         </div>
 
