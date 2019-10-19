@@ -656,6 +656,57 @@ class Art extends Component {
                     </div>   
                 </Carousel>
 
+                <Carousel className="cardio" showStatus={false} showThumbs={false} infiniteLoop={true} useKeyboardArrows={true}>
+
+                    <div>
+                    <img src={D1} />
+                    </div>
+
+                    <div>
+                    <img src={D1T} />
+                    </div>
+
+                    <div>
+                    <img src={D1K} />
+                    </div>
+
+                    <div>
+                    <img src={D2} />
+                    </div>
+
+                    <div>
+                    <img src={D2T} />
+                    </div>
+
+                    <div>
+                    <img src={D2K} />
+                    </div>
+
+                    <div>
+                    <img src={D3} />
+                    </div>
+
+                    <div>
+                    <img src={D3T} />
+                    </div>
+
+                    <div>
+                    <img src={D3K} />
+                    </div>  
+
+                    <div>
+                    <img src={D4} />
+                    </div>
+
+                    <div>
+                    <img src={D4T} />
+                    </div>
+
+                    <div>
+                    <img src={D4K} />
+                    </div>   
+                    </Carousel>
+
             </div>
         </div>
 
