@@ -151,6 +151,21 @@ import U1 from './img/artportfolio/Tactile-Graphics/U1.jpeg'
 import U1T from './img/artportfolio/Tactile-Graphics/U1T.png'
 import U1K from './img/artportfolio/Tactile-Graphics/U1K.png'
 
+import N1O from './img/artportfolio/NCTI/N1O.jpg'
+import N1N from './img/artportfolio/NCTI/N1N.png'
+import N2O from './img/artportfolio/NCTI/N2O.jpg'
+import N2N from './img/artportfolio/NCTI/N2N.png'
+import N3O from './img/artportfolio/NCTI/N3O.jpg'
+import N3N from './img/artportfolio/NCTI/N3N.png'
+import N4O from './img/artportfolio/NCTI/N4O.jpg'
+import N4N from './img/artportfolio/NCTI/N4N.png'
+import N5O from './img/artportfolio/NCTI/N5O.jpg'
+import N5N from './img/artportfolio/NCTI/N5N.png'
+import N6O from './img/artportfolio/NCTI/N6O.jpg'
+import N6N from './img/artportfolio/NCTI/N6N.png'
+import N7O from './img/artportfolio/NCTI/N7O.jpg'
+import N7N from './img/artportfolio/NCTI/N7N.png'
+
 class Art extends Component {
 
     state = {
@@ -772,6 +787,65 @@ class Art extends Component {
                     <div>
                     <img src={U4K} />
                     </div>   
+                    </Carousel>
+
+                    <Carousel className="cardio" showStatus={false} showThumbs={false} infiniteLoop={true} useKeyboardArrows={true}>
+
+                    <div>
+                    <img src={N1O} />
+                    </div>
+
+                    <div>
+                    <img src={N1N} />
+                    </div>
+
+                    <div>
+                    <img src={N2O} />
+                    </div>
+
+                    <div>
+                    <img src={N2N} />
+                    </div>
+
+                    <div>
+                    <img src={N3O} />
+                    </div>
+
+                    <div>
+                    <img src={N3N} />
+                    </div>
+
+                    <div>
+                    <img src={N4O} />
+                    </div>
+
+                    <div>
+                    <img src={N4N} />
+                    </div>
+
+                    <div>
+                    <img src={N5O} />
+                    </div>  
+
+                    <div>
+                    <img src={N5N} />
+                    </div>
+
+                    <div>
+                    <img src={N6O} />
+                    </div>
+
+                    <div>
+                    <img src={N6N} />
+                    </div>
+
+                    <div>
+                    <img src={N7O} />
+                    </div>
+
+                    <div>
+                    <img src={N7N} />
+                    </div>  
                     </Carousel>
 
             </div>
