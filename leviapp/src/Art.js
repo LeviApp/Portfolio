@@ -166,6 +166,15 @@ import N6N from './img/artportfolio/NCTI/N6N.png'
 import N7O from './img/artportfolio/NCTI/N7O.jpg'
 import N7N from './img/artportfolio/NCTI/N7N.png'
 
+import T1 from './img/artportfolio/Typography/T1.png'
+import T2 from './img/artportfolio/Typography/T2.png'
+import T3 from './img/artportfolio/Typography/T3.png'
+import T4 from './img/artportfolio/Typography/T4.jpg'
+import T5 from './img/artportfolio/Typography/T5.jpg'
+import T6 from './img/artportfolio/Typography/T6.png'
+import T7 from './img/artportfolio/Typography/T7.png'
+
+
 class Art extends Component {
 
     state = {
@@ -790,7 +799,6 @@ class Art extends Component {
                     </Carousel>
 
                     <Carousel className="cardio" showStatus={false} showThumbs={false} infiniteLoop={true} useKeyboardArrows={true}>
-
                     <div>
                     <img src={N1O} />
                     </div>
@@ -846,6 +854,36 @@ class Art extends Component {
                     <div>
                     <img src={N7N} />
                     </div>  
+                    </Carousel>
+
+                    <Carousel className="cardio" showStatus={false} showThumbs={false} infiniteLoop={true} useKeyboardArrows={true}>
+                    <div>
+                    <img src={T1} />
+                    </div>
+
+                    <div>
+                    <img src={T2} />
+                    </div>
+
+                    <div>
+                    <img src={T3} />
+                    </div>
+
+                    <div>
+                    <img src={T4} />
+                    </div>
+
+                    <div>
+                    <img src={T5} />
+                    </div>
+
+                    <div>
+                    <img src={T6} />
+                    </div>
+
+                    <div>
+                    <img src={T7} />
+                    </div>
                     </Carousel>
 
             </div>
