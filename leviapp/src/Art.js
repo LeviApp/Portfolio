@@ -220,11 +220,11 @@ class Art extends Component {
         for (let name of names) {
             if (new_name.isSameNode(name)) {
                 console.log(names, new_name)
-                name.classList.toggle('pamphlet')
+                name.classList.toggle('inactive')
             }
 
             else {
-                name.classList.add('pamphlet') 
+                name.classList.add('inactive') 
             }
         }
     }
@@ -310,137 +310,28 @@ class Art extends Component {
             </h2>
             <h3 className='arrows'>>>>>></h3>
             </div>
-            <div className='quorum'>
-            <Carousel className="slider" showStatus={false} showThumbs={false} infiniteLoop={true} useKeyboardArrows={true}>
-                    <div>
-                    <img src={q1} />
-                    </div>
-
-                    <div>
-                    <img src={q2} />          
-                    </div>
-
-                    <div>
-                    <img src={q3} />        
-                    </div>
-
-                    <div>
-                    <img src={q4} />                               
-                    </div>
-
-                    <div>
-                    <img src={q5} />                               
-                    </div>
-
-                    <div>
-                    <img src={q6} />                               
-                    </div>
-
-                    <div>
-                    <img src={q7} />                               
-                    </div>
-
-                    <div>
-                    <img src={q8} />                               
-                    </div> 
-
-                    <div>
-                    <img src={q9} />                               
-                    </div>
-
-                    <div>
-                    <img src={q10} />                               
-                    </div>
-
-                    <div>
-                    <img src={q11} />                               
-                    </div>
-
-                    <div>
-                    <img src={q12} />                               
-                    </div>
-
-                    <div>
-                    <img src={q13} />                               
-                    </div>
-            </Carousel>
-            </div>
-
-            <div className='stem'>
-            <Carousel className="slider" showStatus={false} showThumbs={false} infiniteLoop={true} useKeyboardArrows={true}>
-                    <div>
-                    <img src={s1} />
-                    </div>
-
-                    <div>
-                    <img src={s2} />          
-                    </div>
-
-                    <div>
-                    <img src={s3} />        
-                    </div>
-
-                    <div>
-                    <img src={s4} />                               
-                    </div>
-
-                    <div>
-                    <img src={s5} />                               
-                    </div>
-
-                    <div>
-                    <img src={s6} />                               
-                    </div>
-
-                    <div>
-                    <img src={s7} />                               
-                    </div>
-
-                    <div>
-                    <img src={s8} />                               
-                    </div> 
-
-                    <div>
-                    <img src={s9} />                               
-                    </div>
-
-                    <div>
-                    <img src={s10} />                               
-                    </div>
-
-                    <div>
-                    <img src={s11} />                               
-                    </div>               
-            </Carousel>
-            </div>
-            <div className="card">
-                <div className='collateral'>
-                <img onClick={() => this.contactClick('brock')} className='contact' src={Brock} />
-                <div className='brock hide'>
-                    <img className='leftimg' src={BrockLetter} />
-                    <img className='rightimg' src={BrockWeb} />
-                </div>
-                </div>
-                <div className='collateral'>
-                <img onClick={() => this.contactClick('joyce')} className='contact' src={Joyce} />
-                <div className='joyce hide'>
-                    <img className='leftimg' src={JoyceLetter} />
-                    <img className='rightimg' src={JoyceWeb} />
-                </div>
-                </div>
-            </div>
-
-            <div className='prosthetics'>
-                <div className="books">
+            <div className='artbox'>
+                <div className="artcat">
                 <img className="b catb" onClick={() => this.bookClick('cat')} src={CatalogCover} />
                 <img className="b magb" onClick={() => this.bookClick('mag')} src={MagPuckCover} /> 
                 <img className="b smartb" onClick={() => this.bookClick('smart')} src={SmartPuckCover} /> 
                 <img className="b airb" onClick={() => this.bookClick('air')} src={AirPuckCover} /> 
                 <img className="b zerob" onClick={() => this.bookClick('zero')} src={ZeroPuckCover} /> 
-                <img className="b fabb" onClick={() => this.bookClick('fab')} src={FabricationCover} /> 
+                <img className="b fabb" onClick={() => this.bookClick('fab')} src={FabricationCover} />
+                <img className="b infographicsb" onClick={() => this.bookClick('infographics')} src={N1N} /> 
+                <img className="b typeb" onClick={() => this.bookClick('type')} src={T1} /> 
+                <img className="b cardiob" onClick={() => this.bookClick('cardio')} src={C1} /> 
+                <img className="b respb" onClick={() => this.bookClick('resp')} src={R1} /> 
+                <img className="b digestb" onClick={() => this.bookClick('digest')} src={D1} /> 
+                <img className="b urib" onClick={() => this.bookClick('uri')} src={U1} /> 
+                <img onClick={() => this.contactClick('brock')} className='contact' src={Brock} />
+                <img onClick={() => this.contactClick('joyce')} className='contact' src={Joyce} />
+                <img className="b quorumb" onClick={() => this.bookClick('quorum')} src={q1} /> 
+                <img className="b STEMb" onClick={() => this.bookClick('STEM')} src={s1} /> 
+                <img className="b illub" onClick={() => this.bookClick('illu')} src={I1} /> 
                 </div>
-
-                <Carousel className="sel pamphlet cat" showStatus={false} showThumbs={false} infiniteLoop={true} useKeyboardArrows={true}>
+                
+                <Carousel className="sel inactive cat" showStatus={false} showThumbs={false} infiniteLoop={true} useKeyboardArrows={true}>
                     <div>
                     <img src={CatalogCover} />
                     </div>
@@ -466,7 +357,7 @@ class Art extends Component {
                     </div>  
                 </Carousel>
 
-                <Carousel className="sel pamphlet mag" showStatus={false} showThumbs={false} infiniteLoop={true} useKeyboardArrows={true}>
+                <Carousel className="sel inactive mag" showStatus={false} showThumbs={false} infiniteLoop={true} useKeyboardArrows={true}>
                     <div>
                     <img src={MagPuckCover} />
                     </div>
@@ -492,7 +383,7 @@ class Art extends Component {
                     </div>           
                 </Carousel>
 
-                <Carousel className="sel pamphlet smart" showStatus={false} showThumbs={false} infiniteLoop={true} useKeyboardArrows={true}>
+                <Carousel className="sel inactive smart" showStatus={false} showThumbs={false} infiniteLoop={true} useKeyboardArrows={true}>
                     <div>
                     <img src={SmartPuckCover} />
                     </div>
@@ -518,7 +409,7 @@ class Art extends Component {
                     </div>         
                 </Carousel>
 
-                <Carousel className="sel pamphlet air" showStatus={false} showThumbs={false} infiniteLoop={true} useKeyboardArrows={true}>
+                <Carousel className="sel inactive air" showStatus={false} showThumbs={false} infiniteLoop={true} useKeyboardArrows={true}>
                     <div>
                     <img src={AirPuckCover} />
                     </div>
@@ -544,7 +435,7 @@ class Art extends Component {
                     </div>    
                 </Carousel>
 
-                <Carousel className="sel pamphlet zero" showStatus={false} showThumbs={false} infiniteLoop={true} useKeyboardArrows={true}>
+                <Carousel className="sel inactive zero" showStatus={false} showThumbs={false} infiniteLoop={true} useKeyboardArrows={true}>
                     <div>
                     <img src={ZeroPuckCover} />
                     </div>
@@ -570,7 +461,7 @@ class Art extends Component {
                     </div>         
                 </Carousel>
 
-                <Carousel className="sel pamphlet fab" showStatus={false} showThumbs={false} infiniteLoop={true} useKeyboardArrows={true}>
+                <Carousel className="sel inactive fab" showStatus={false} showThumbs={false} infiniteLoop={true} useKeyboardArrows={true}>
                     <div>
                     <img src={FabricationCover} />
                     </div>
@@ -596,211 +487,7 @@ class Art extends Component {
                     </div>         
                 </Carousel>
 
-                <Carousel className="cardio" showStatus={false} showThumbs={false} infiniteLoop={true} useKeyboardArrows={true}>
-                    <div>
-                    <img src={C1} />
-                    </div>
-
-                    <div>
-                    <img src={C1T} />
-                    </div>
-
-                    <div>
-                    <img src={C1K} />
-                    </div>
-
-                    <div>
-                    <img src={C2} />
-                    </div>
-
-                    <div>
-                    <img src={C2T} />
-                    </div>
-
-                    <div>
-                    <img src={C2K} />
-                    </div>
-
-                    <div>
-                    <img src={C3} />
-                    </div>
-
-                    <div>
-                    <img src={C3T} />
-                    </div>
-
-                    <div>
-                    <img src={C3K} />
-                    </div>  
-
-                    <div>
-                    <img src={C4} />
-                    </div>
-
-                    <div>
-                    <img src={C4T} />
-                    </div>
-
-                    <div>
-                    <img src={C4K} />
-                    </div>   
-                </Carousel>
-
-
-                <Carousel className="cardio" showStatus={false} showThumbs={false} infiniteLoop={true} useKeyboardArrows={true}>
-
-                    <div>
-                    <img src={R1} />
-                    </div>
-
-                    <div>
-                    <img src={R1T} />
-                    </div>
-
-                    <div>
-                    <img src={R1K} />
-                    </div>
-                    
-                    <div>
-                    <img src={R2} />
-                    </div>
-
-                    <div>
-                    <img src={R2T} />
-                    </div>
-
-                    <div>
-                    <img src={R2K} />
-                    </div>
-
-                    <div>
-                    <img src={R3} />
-                    </div>
-
-                    <div>
-                    <img src={R3T} />
-                    </div>
-
-                    <div>
-                    <img src={R3K} />
-                    </div>  
-
-                    <div>
-                    <img src={R4} />
-                    </div>
-
-                    <div>
-                    <img src={R4T} />
-                    </div>
-
-                    <div>
-                    <img src={R4K} />
-                    </div>   
-                </Carousel>
-
-                <Carousel className="cardio" showStatus={false} showThumbs={false} infiniteLoop={true} useKeyboardArrows={true}>
-
-                    <div>
-                    <img src={D1} />
-                    </div>
-
-                    <div>
-                    <img src={D1T} />
-                    </div>
-
-                    <div>
-                    <img src={D1K} />
-                    </div>
-
-                    <div>
-                    <img src={D2} />
-                    </div>
-
-                    <div>
-                    <img src={D2T} />
-                    </div>
-
-                    <div>
-                    <img src={D2K} />
-                    </div>
-
-                    <div>
-                    <img src={D3} />
-                    </div>
-
-                    <div>
-                    <img src={D3T} />
-                    </div>
-
-                    <div>
-                    <img src={D3K} />
-                    </div>  
-
-                    <div>
-                    <img src={D4} />
-                    </div>
-
-                    <div>
-                    <img src={D4T} />
-                    </div>
-
-                    <div>
-                    <img src={D4K} />
-                    </div>   
-                    </Carousel>
-
-                    <Carousel className="cardio" showStatus={false} showThumbs={false} infiniteLoop={true} useKeyboardArrows={true}>
-
-                    <div>
-                    <img src={U1} />
-                    </div>
-
-                    <div>
-                    <img src={U1T} />
-                    </div>
-
-                    <div>
-                    <img src={U1K} />
-                    </div>
-
-                    <div>
-                    <img src={U2} />
-                    </div>
-
-                    <div>
-                    <img src={U2T} />
-                    </div>
-
-                    <div>
-                    <img src={U2K} />
-                    </div>
-
-                    <div>
-                    <img src={U3} />
-                    </div>
-
-                    <div>
-                    <img src={U3T} />
-                    </div>
-
-                    <div>
-                    <img src={U3K} />
-                    </div>  
-
-                    <div>
-                    <img src={U4} />
-                    </div>
-
-                    <div>
-                    <img src={U4T} />
-                    </div>
-
-                    <div>
-                    <img src={U4K} />
-                    </div>   
-                    </Carousel>
-
-                    <Carousel className="cardio" showStatus={false} showThumbs={false} infiniteLoop={true} useKeyboardArrows={true}>
+                <Carousel className="sel inactive infographics" showStatus={false} showThumbs={false} infiniteLoop={true} useKeyboardArrows={true}>
                     <div>
                     <img src={N1O} />
                     </div>
@@ -861,8 +548,8 @@ class Art extends Component {
                     <img src={N8N} />
                     </div>  
                     </Carousel>
-
-                    <Carousel className="cardio" showStatus={false} showThumbs={false} infiniteLoop={true} useKeyboardArrows={true}>
+    
+                    <Carousel className="sel inactive type" showStatus={false} showThumbs={false} infiniteLoop={true} useKeyboardArrows={true}>
                     <div>
                     <img src={T1} />
                     </div>
@@ -892,7 +579,326 @@ class Art extends Component {
                     </div>
                     </Carousel>
 
-                    <Carousel className="cardio" showStatus={false} showThumbs={false} infiniteLoop={true} useKeyboardArrows={true}>
+                    <div className="sel inactive card">
+                        <div className='collateral'>
+                            <div className='brock hide'>
+                                <img className='leftimg' src={BrockLetter} />
+                                <img className='rightimg' src={BrockWeb} />
+                            </div>
+                            </div>
+                            <div className='collateral'>
+                            <div className='joyce hide'>
+                                <img className='leftimg' src={JoyceLetter} />
+                                <img className='rightimg' src={JoyceWeb} />
+                            </div>
+                        </div>
+                    </div>
+
+                    <Carousel className="sel inactive cardio" showStatus={false} showThumbs={false} infiniteLoop={true} useKeyboardArrows={true}>
+                    <div>
+                    <img src={C1} />
+                    </div>
+
+                    <div>
+                    <img src={C1T} />
+                    </div>
+
+                    <div>
+                    <img src={C1K} />
+                    </div>
+
+                    <div>
+                    <img src={C2} />
+                    </div>
+
+                    <div>
+                    <img src={C2T} />
+                    </div>
+
+                    <div>
+                    <img src={C2K} />
+                    </div>
+
+                    <div>
+                    <img src={C3} />
+                    </div>
+
+                    <div>
+                    <img src={C3T} />
+                    </div>
+
+                    <div>
+                    <img src={C3K} />
+                    </div>  
+
+                    <div>
+                    <img src={C4} />
+                    </div>
+
+                    <div>
+                    <img src={C4T} />
+                    </div>
+
+                    <div>
+                    <img src={C4K} />
+                    </div>   
+                </Carousel>
+
+
+                <Carousel className="sel inactive resp" showStatus={false} showThumbs={false} infiniteLoop={true} useKeyboardArrows={true}>
+
+                    <div>
+                    <img src={R1} />
+                    </div>
+
+                    <div>
+                    <img src={R1T} />
+                    </div>
+
+                    <div>
+                    <img src={R1K} />
+                    </div>
+                    
+                    <div>
+                    <img src={R2} />
+                    </div>
+
+                    <div>
+                    <img src={R2T} />
+                    </div>
+
+                    <div>
+                    <img src={R2K} />
+                    </div>
+
+                    <div>
+                    <img src={R3} />
+                    </div>
+
+                    <div>
+                    <img src={R3T} />
+                    </div>
+
+                    <div>
+                    <img src={R3K} />
+                    </div>  
+
+                    <div>
+                    <img src={R4} />
+                    </div>
+
+                    <div>
+                    <img src={R4T} />
+                    </div>
+
+                    <div>
+                    <img src={R4K} />
+                    </div>   
+                </Carousel>
+
+                <Carousel className="sel inactive digest" showStatus={false} showThumbs={false} infiniteLoop={true} useKeyboardArrows={true}>
+
+                    <div>
+                    <img src={D1} />
+                    </div>
+
+                    <div>
+                    <img src={D1T} />
+                    </div>
+
+                    <div>
+                    <img src={D1K} />
+                    </div>
+
+                    <div>
+                    <img src={D2} />
+                    </div>
+
+                    <div>
+                    <img src={D2T} />
+                    </div>
+
+                    <div>
+                    <img src={D2K} />
+                    </div>
+
+                    <div>
+                    <img src={D3} />
+                    </div>
+
+                    <div>
+                    <img src={D3T} />
+                    </div>
+
+                    <div>
+                    <img src={D3K} />
+                    </div>  
+
+                    <div>
+                    <img src={D4} />
+                    </div>
+
+                    <div>
+                    <img src={D4T} />
+                    </div>
+
+                    <div>
+                    <img src={D4K} />
+                    </div>   
+                    </Carousel>
+
+                    <Carousel className="sel inactive uri" showStatus={false} showThumbs={false} infiniteLoop={true} useKeyboardArrows={true}>
+
+                    <div>
+                    <img src={U1} />
+                    </div>
+
+                    <div>
+                    <img src={U1T} />
+                    </div>
+
+                    <div>
+                    <img src={U1K} />
+                    </div>
+
+                    <div>
+                    <img src={U2} />
+                    </div>
+
+                    <div>
+                    <img src={U2T} />
+                    </div>
+
+                    <div>
+                    <img src={U2K} />
+                    </div>
+
+                    <div>
+                    <img src={U3} />
+                    </div>
+
+                    <div>
+                    <img src={U3T} />
+                    </div>
+
+                    <div>
+                    <img src={U3K} />
+                    </div>  
+
+                    <div>
+                    <img src={U4} />
+                    </div>
+
+                    <div>
+                    <img src={U4T} />
+                    </div>
+
+                    <div>
+                    <img src={U4K} />
+                    </div>   
+                    </Carousel>
+
+                    <Carousel className="sel inactive quorum" showStatus={false} showThumbs={false} infiniteLoop={true} useKeyboardArrows={true}>
+                    <div>
+                    <img src={q1} />
+                    </div>
+
+                    <div>
+                    <img src={q2} />          
+                    </div>
+
+                    <div>
+                    <img src={q3} />        
+                    </div>
+
+                    <div>
+                    <img src={q4} />                               
+                    </div>
+
+                    <div>
+                    <img src={q5} />                               
+                    </div>
+
+                    <div>
+                    <img src={q6} />                               
+                    </div>
+
+                    <div>
+                    <img src={q7} />                               
+                    </div>
+
+                    <div>
+                    <img src={q8} />                               
+                    </div> 
+
+                    <div>
+                    <img src={q9} />                               
+                    </div>
+
+                    <div>
+                    <img src={q10} />                               
+                    </div>
+
+                    <div>
+                    <img src={q11} />                               
+                    </div>
+
+                    <div>
+                    <img src={q12} />                               
+                    </div>
+
+                    <div>
+                    <img src={q13} />                               
+                    </div>
+            </Carousel>
+
+                    <Carousel className="sel inactive STEM" showStatus={false} showThumbs={false} infiniteLoop={true} useKeyboardArrows={true}>
+                    <div>
+                    <img src={s1} />
+                    </div>
+
+                    <div>
+                    <img src={s2} />          
+                    </div>
+
+                    <div>
+                    <img src={s3} />        
+                    </div>
+
+                    <div>
+                    <img src={s4} />                               
+                    </div>
+
+                    <div>
+                    <img src={s5} />                               
+                    </div>
+
+                    <div>
+                    <img src={s6} />                               
+                    </div>
+
+                    <div>
+                    <img src={s7} />                               
+                    </div>
+
+                    <div>
+                    <img src={s8} />                               
+                    </div> 
+
+                    <div>
+                    <img src={s9} />                               
+                    </div>
+
+                    <div>
+                    <img src={s10} />                               
+                    </div>
+
+                    <div>
+                    <img src={s11} />                               
+                    </div>               
+            </Carousel>
+
+                    <Carousel className="sel inactive illu" showStatus={false} showThumbs={false} infiniteLoop={true} useKeyboardArrows={true}>
                     <div>
                     <img src={I1} />
                     </div>

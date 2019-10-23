@@ -106,28 +106,33 @@
                     grid-row: 1
                     border: 1px solid black
                     outline: 1px solid white
-.prosthetics
+.artbox
     display: flex
     margin-top: 100px
     width: 80%
-    flex-direction: column
+    flex-direction: row
     align-items: center
 
-    .books
+    .artcat
         display: flex
         justify-content: space-between
+        flex-direction: column
+
+        width: 100%
         img
             width: 10%
 
-    .pamphlet
+    .inactive
         display: none
 
     .sel
+        position: fixed
+        right: 100px
+        top: 150px
+        width: 27%
         margin-top: 20px
-        width: 24%
-
 .activeb
-    border: 2px solid white
+    border: 2px solid $green
 
 .gastric
     img
@@ -140,7 +145,6 @@
         display: flex
         div
             width: 100%
-
 
 .carousel .slide
     background: white
