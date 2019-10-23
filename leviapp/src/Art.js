@@ -331,7 +331,7 @@ class Art extends Component {
                 <img className="b illub" onClick={() => this.bookClick('illu')} src={I1} /> 
                 </div>
                 
-                <Carousel className="sel inactive cat" showStatus={false} showThumbs={false} infiniteLoop={true} useKeyboardArrows={true}>
+                <Carousel className="sel inactive cat pamphlet" showStatus={false} showThumbs={false} infiniteLoop={true} useKeyboardArrows={true}>
                     <div>
                     <img src={CatalogCover} />
                     </div>
@@ -357,7 +357,7 @@ class Art extends Component {
                     </div>  
                 </Carousel>
 
-                <Carousel className="sel inactive mag" showStatus={false} showThumbs={false} infiniteLoop={true} useKeyboardArrows={true}>
+                <Carousel className="sel inactive mag pamphlet" showStatus={false} showThumbs={false} infiniteLoop={true} useKeyboardArrows={true}>
                     <div>
                     <img src={MagPuckCover} />
                     </div>
@@ -383,7 +383,7 @@ class Art extends Component {
                     </div>           
                 </Carousel>
 
-                <Carousel className="sel inactive smart" showStatus={false} showThumbs={false} infiniteLoop={true} useKeyboardArrows={true}>
+                <Carousel className="sel inactive smart pamphlet" showStatus={false} showThumbs={false} infiniteLoop={true} useKeyboardArrows={true}>
                     <div>
                     <img src={SmartPuckCover} />
                     </div>
@@ -409,7 +409,7 @@ class Art extends Component {
                     </div>         
                 </Carousel>
 
-                <Carousel className="sel inactive air" showStatus={false} showThumbs={false} infiniteLoop={true} useKeyboardArrows={true}>
+                <Carousel className="sel inactive air pamphlet" showStatus={false} showThumbs={false} infiniteLoop={true} useKeyboardArrows={true}>
                     <div>
                     <img src={AirPuckCover} />
                     </div>
@@ -435,7 +435,7 @@ class Art extends Component {
                     </div>    
                 </Carousel>
 
-                <Carousel className="sel inactive zero" showStatus={false} showThumbs={false} infiniteLoop={true} useKeyboardArrows={true}>
+                <Carousel className="sel inactive zero pamphlet" showStatus={false} showThumbs={false} infiniteLoop={true} useKeyboardArrows={true}>
                     <div>
                     <img src={ZeroPuckCover} />
                     </div>
@@ -461,7 +461,7 @@ class Art extends Component {
                     </div>         
                 </Carousel>
 
-                <Carousel className="sel inactive fab" showStatus={false} showThumbs={false} infiniteLoop={true} useKeyboardArrows={true}>
+                <Carousel className="sel inactive fab pamphlet" showStatus={false} showThumbs={false} infiniteLoop={true} useKeyboardArrows={true}>
                     <div>
                     <img src={FabricationCover} />
                     </div>
@@ -487,7 +487,7 @@ class Art extends Component {
                     </div>         
                 </Carousel>
 
-                <Carousel className="sel inactive infographics" showStatus={false} showThumbs={false} infiniteLoop={true} useKeyboardArrows={true}>
+                <Carousel className="sel inactive infographics double" showStatus={false} showThumbs={false} infiniteLoop={true} useKeyboardArrows={true}>
                     <div>
                     <img src={N1O} />
                     </div>
@@ -549,7 +549,7 @@ class Art extends Component {
                     </div>  
                     </Carousel>
     
-                    <Carousel className="sel inactive type" showStatus={false} showThumbs={false} infiniteLoop={true} useKeyboardArrows={true}>
+                    <Carousel className="sel inactive type double" showStatus={false} showThumbs={false} infiniteLoop={true} useKeyboardArrows={true}>
                     <div>
                     <img src={T1} />
                     </div>
@@ -579,7 +579,7 @@ class Art extends Component {
                     </div>
                     </Carousel>
 
-                    <div className="sel inactive card">
+                    <div className="sel inactive card rest">
                         <div className='collateral'>
                             <div className='brock hide'>
                                 <img className='leftimg' src={BrockLetter} />
@@ -594,7 +594,7 @@ class Art extends Component {
                         </div>
                     </div>
 
-                    <Carousel className="sel inactive cardio" showStatus={false} showThumbs={false} infiniteLoop={true} useKeyboardArrows={true}>
+                    <Carousel className="sel inactive cardio rest" showStatus={false} showThumbs={false} infiniteLoop={true} useKeyboardArrows={true}>
                     <div>
                     <img src={C1} />
                     </div>
@@ -645,7 +645,7 @@ class Art extends Component {
                 </Carousel>
 
 
-                <Carousel className="sel inactive resp" showStatus={false} showThumbs={false} infiniteLoop={true} useKeyboardArrows={true}>
+                <Carousel className="sel inactive resp rest" showStatus={false} showThumbs={false} infiniteLoop={true} useKeyboardArrows={true}>
 
                     <div>
                     <img src={R1} />
@@ -696,7 +696,7 @@ class Art extends Component {
                     </div>   
                 </Carousel>
 
-                <Carousel className="sel inactive digest" showStatus={false} showThumbs={false} infiniteLoop={true} useKeyboardArrows={true}>
+                <Carousel className="sel inactive digest rest" showStatus={false} showThumbs={false} infiniteLoop={true} useKeyboardArrows={true}>
 
                     <div>
                     <img src={D1} />
@@ -747,7 +747,7 @@ class Art extends Component {
                     </div>   
                     </Carousel>
 
-                    <Carousel className="sel inactive uri" showStatus={false} showThumbs={false} infiniteLoop={true} useKeyboardArrows={true}>
+                    <Carousel className="sel inactive uri rest" showStatus={false} showThumbs={false} infiniteLoop={true} useKeyboardArrows={true}>
 
                     <div>
                     <img src={U1} />
@@ -798,7 +798,7 @@ class Art extends Component {
                     </div>   
                     </Carousel>
 
-                    <Carousel className="sel inactive quorum" showStatus={false} showThumbs={false} infiniteLoop={true} useKeyboardArrows={true}>
+                    <Carousel className="sel inactive quorum biggest" showStatus={false} showThumbs={false} infiniteLoop={true} useKeyboardArrows={true}>
                     <div>
                     <img src={q1} />
                     </div>
@@ -852,7 +852,7 @@ class Art extends Component {
                     </div>
             </Carousel>
 
-                    <Carousel className="sel inactive STEM" showStatus={false} showThumbs={false} infiniteLoop={true} useKeyboardArrows={true}>
+                    <Carousel className="sel inactive STEM rest" showStatus={false} showThumbs={false} infiniteLoop={true} useKeyboardArrows={true}>
                     <div>
                     <img src={s1} />
                     </div>
@@ -898,7 +898,7 @@ class Art extends Component {
                     </div>               
             </Carousel>
 
-                    <Carousel className="sel inactive illu" showStatus={false} showThumbs={false} infiniteLoop={true} useKeyboardArrows={true}>
+                    <Carousel className="sel inactive illu other" showStatus={false} showThumbs={false} infiniteLoop={true} useKeyboardArrows={true}>
                     <div>
                     <img src={I1} />
                     </div>
