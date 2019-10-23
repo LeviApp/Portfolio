@@ -85,7 +85,6 @@ import Fabrication3 from './img/artportfolio/Prosthetics/Fabrication3.jpg'
 import Fabrication4 from './img/artportfolio/Prosthetics/Fabrication4.jpg'
 import FabricationBack from './img/artportfolio/Prosthetics/FabricationBack.jpg'
 
-import GastricSleeve from './img/artportfolio/Illustration/GastricSleeve.jpg'
 
 import C4 from './img/artportfolio/Tactile-Graphics/C4.jpeg'
 import C4T from './img/artportfolio/Tactile-Graphics/C4T.png'
@@ -165,6 +164,7 @@ import N6O from './img/artportfolio/NCTI/N6O.jpg'
 import N6N from './img/artportfolio/NCTI/N6N.png'
 import N7O from './img/artportfolio/NCTI/N7O.jpg'
 import N7N from './img/artportfolio/NCTI/N7N.png'
+import N8N from './img/artportfolio/NCTI/N8N.jpg'
 
 import T1 from './img/artportfolio/Typography/T1.png'
 import T2 from './img/artportfolio/Typography/T2.png'
@@ -173,6 +173,16 @@ import T4 from './img/artportfolio/Typography/T4.jpg'
 import T5 from './img/artportfolio/Typography/T5.jpg'
 import T6 from './img/artportfolio/Typography/T6.png'
 import T7 from './img/artportfolio/Typography/T7.png'
+
+
+import I1 from './img/artportfolio/Illustration/I1.png'
+import I2 from './img/artportfolio/Illustration/I2.jpg'
+import I3 from './img/artportfolio/Illustration/I3.jpg'
+import I4 from './img/artportfolio/Illustration/I4.jpg'
+import I5 from './img/artportfolio/Illustration/I5.jpg'
+import I6 from './img/artportfolio/Illustration/I6.jpg'
+import I7 from './img/artportfolio/Illustration/I7.jpg'
+import I8 from './img/artportfolio/Illustration/I8.jpg'
 
 
 class Art extends Component {
@@ -586,14 +596,6 @@ class Art extends Component {
                     </div>         
                 </Carousel>
 
-                <div className='gastric'>
-                <img src={GastricSleeve} />
-                </div>
-
-                <div className='gastric'>
-                <img src={GastricSleeve} />
-                </div>
-
                 <Carousel className="cardio" showStatus={false} showThumbs={false} infiniteLoop={true} useKeyboardArrows={true}>
                     <div>
                     <img src={C1} />
@@ -853,6 +855,10 @@ class Art extends Component {
 
                     <div>
                     <img src={N7N} />
+                    </div> 
+
+                    <div>
+                    <img src={N8N} />
                     </div>  
                     </Carousel>
 
@@ -886,6 +892,39 @@ class Art extends Component {
                     </div>
                     </Carousel>
 
+                    <Carousel className="cardio" showStatus={false} showThumbs={false} infiniteLoop={true} useKeyboardArrows={true}>
+                    <div>
+                    <img src={I1} />
+                    </div>
+
+                    <div>
+                    <img src={I2} />
+                    </div>
+
+                    <div>
+                    <img src={I3} />
+                    </div>
+
+                    <div>
+                    <img src={I4} />
+                    </div>
+
+                    <div>
+                    <img src={I5} />
+                    </div>
+
+                    <div>
+                    <img src={I6} />
+                    </div>
+
+                    <div>
+                    <img src={I7} />
+                    </div>
+
+                    <div>
+                    <img src={I8} />
+                    </div>
+                    </Carousel>
             </div>
         </div>
 
