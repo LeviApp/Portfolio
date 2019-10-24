@@ -109,31 +109,50 @@
 .artbox
     display: flex
     margin-top: 100px
-    width: 80%
+    width: 95%
     flex-direction: row
     align-items: center
+    justify-content: space-between
 
     .artcat
         display: flex
-        justify-content: space-between
-        flex-direction: column
+        flex-direction: row
+        width: 45%
+        flex-wrap: wrap
 
-        width: 100%
-        img
-            width: 10%
+        .bContainer
+            display: flex
+            justify-content: center
+            height: 30vh
+            width: 40%
+            margin: 10px
+
+            img
+                width: 100%
+                object-fit: scale-down
+
+            img:hover
+                border: 8px solid black
+                outline: 4px solid $green
+
 
     .inactive
         display: none
 
     .sel
         position: fixed
-        right: 100px
+        right: 50px
         top: 150px
         margin-top: 20px
+        div
+            img
+                border-left: 5px solid $background
+                border-right: 5px solid $background
+
 
     .pamphlet
         width: 27%
-
+        right: 250px
 
     .rest
         width: 54%
@@ -146,8 +165,17 @@
 
     .double
         width: 47%
+    
+    .type
+        right: 100px
+
+    .illu
+        right: 135px
+  
+
 .activeb
-    border: 2px solid $green
+    border: 8px solid black
+    outline: 4px solid $blue
 
 .gastric
     img
@@ -155,12 +183,26 @@
 
 .cardio
     width: 70%
-    background-color: green
     .entire
         display: flex
         div
             width: 100%
 
 .carousel .slide
-    background: white
+    background: $background
+    width: 99%
 
+.description
+    width: 100%
+    height: 100%
+    padding-top: 10px
+    z-index: 2
+    background-color: $background
+    p
+        color: white
+        font-size: 1.5rem
+        text-align: left
+
+h1
+    font-size: 1.5rem
+    color: $green
