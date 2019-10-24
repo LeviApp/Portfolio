@@ -203,7 +203,7 @@ class Art extends Component {
         const new_name = document.getElementsByClassName(c)[0]
         const knopf = document.getElementsByClassName(`${c}b`)[0]
 
-        console.log(names, new_name, knopf)
+        console.log('knopf', knopf, new_name)
 
         if (buttons.length !== 0) {
             for (let b of buttons) {
@@ -362,11 +362,11 @@ class Art extends Component {
                 </div>
 
                 <div className='bContainer'>
-                <img onClick={() => this.contactClick('brock')} className='contact' src={Brock} />
+                <img className="b brockb" onClick={() => this.bookClick('brock')} src={Brock} />
                 </div>
 
                 <div className='bContainer'>
-                <img onClick={() => this.contactClick('joyce')} className='contact' src={Joyce} />
+                <img className="b joyceb" onClick={() => this.bookClick('joyce')} src={Joyce} />
                 </div>
 
                 <div className='bContainer'>
@@ -631,20 +631,32 @@ class Art extends Component {
                     </div>
                     </Carousel>
 
-                    <div className="sel inactive card rest">
+
+                    <div className='sel inactive card brock rest'>
+                        <img className='top' src={Brock} />
+                        <img className='leftimg' src={BrockLetter} />
+                        <img className='rightimg' src={BrockWeb} />
+                    </div>
+
+                    <div className='sel inactive card joyce rest'>
+                        <img className='top' src={Joyce} />
+                        <img className='leftimg' src={JoyceLetter} />
+                        <img className='rightimg' src={JoyceWeb} />
+                    </div>
+                    {/* <div className="sel inactive card rest">
                         <div className='collateral'>
                             <div className='brock hide'>
                                 <img className='leftimg' src={BrockLetter} />
                                 <img className='rightimg' src={BrockWeb} />
                             </div>
-                            </div>
-                            <div className='collateral'>
+                        </div>
+                        <div className='collateral'>
                             <div className='joyce hide'>
                                 <img className='leftimg' src={JoyceLetter} />
                                 <img className='rightimg' src={JoyceWeb} />
                             </div>
                         </div>
-                    </div>
+                    </div> */}
 
                     <Carousel className="sel inactive cardio rest" showStatus={false} showThumbs={false} infiniteLoop={true} useKeyboardArrows={true}>
                     <div>
