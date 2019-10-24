@@ -166,6 +166,7 @@ import N7O from './img/artportfolio/NCTI/N7O.jpg'
 import N7N from './img/artportfolio/NCTI/N7N.png'
 import N8N from './img/artportfolio/NCTI/N8N.jpg'
 
+import TB from './img/artportfolio/Typography/TB.png'
 import T1 from './img/artportfolio/Typography/T1.png'
 import T2 from './img/artportfolio/Typography/T2.png'
 import T3 from './img/artportfolio/Typography/T3.png'
@@ -312,23 +313,73 @@ class Art extends Component {
             </div>
             <div className='artbox'>
                 <div className="artcat">
+                <div className='bContainer'>
                 <img className="b catb" onClick={() => this.bookClick('cat')} src={CatalogCover} />
+                </div>
+
+                <div className='bContainer'>
                 <img className="b magb" onClick={() => this.bookClick('mag')} src={MagPuckCover} /> 
-                <img className="b smartb" onClick={() => this.bookClick('smart')} src={SmartPuckCover} /> 
-                <img className="b airb" onClick={() => this.bookClick('air')} src={AirPuckCover} /> 
-                <img className="b zerob" onClick={() => this.bookClick('zero')} src={ZeroPuckCover} /> 
+                </div>
+
+                <div className='bContainer'>
+                <img className="b smartb" onClick={() => this.bookClick('smart')} src={SmartPuckCover} />
+                </div>
+
+                <div className='bContainer'>
+                <img className="b airb" onClick={() => this.bookClick('air')} src={AirPuckCover} />
+                </div>
+
+                <div className='bContainer'>
+                <img className="b zerob" onClick={() => this.bookClick('zero')} src={ZeroPuckCover} />
+                </div>
+
+                <div className='bContainer'>
                 <img className="b fabb" onClick={() => this.bookClick('fab')} src={FabricationCover} />
+                </div>
+
+                <div className='bContainer'>
                 <img className="b infographicsb" onClick={() => this.bookClick('infographics')} src={N1N} /> 
-                <img className="b typeb" onClick={() => this.bookClick('type')} src={T1} /> 
+                </div>
+
+                <div className='bContainer'>
+                <img className="b typeb" onClick={() => this.bookClick('type')} src={TB} />
+                </div>
+
+                <div className='bContainer'>
                 <img className="b cardiob" onClick={() => this.bookClick('cardio')} src={C1} /> 
-                <img className="b respb" onClick={() => this.bookClick('resp')} src={R1} /> 
+                </div>
+
+                <div className='bContainer'>
+                <img className="b respb" onClick={() => this.bookClick('resp')} src={R1} />
+                </div>
+
+                <div className='bContainer'>
                 <img className="b digestb" onClick={() => this.bookClick('digest')} src={D1} /> 
-                <img className="b urib" onClick={() => this.bookClick('uri')} src={U1} /> 
+                </div>
+
+                <div className='bContainer'>
+                <img className="b urib" onClick={() => this.bookClick('uri')} src={U1} />
+                </div>
+
+                <div className='bContainer'>
                 <img onClick={() => this.contactClick('brock')} className='contact' src={Brock} />
+                </div>
+
+                <div className='bContainer'>
                 <img onClick={() => this.contactClick('joyce')} className='contact' src={Joyce} />
-                <img className="b quorumb" onClick={() => this.bookClick('quorum')} src={q1} /> 
-                <img className="b STEMb" onClick={() => this.bookClick('STEM')} src={s1} /> 
+                </div>
+
+                <div className='bContainer'>
+                <img className="b quorumb" onClick={() => this.bookClick('quorum')} src={q1} />
+                </div>
+
+                <div className='bContainer'>
+                <img className="b STEMb" onClick={() => this.bookClick('STEM')} src={s1} />
+                </div>
+
+                <div className='bContainer'>
                 <img className="b illub" onClick={() => this.bookClick('illu')} src={I1} /> 
+                </div>
                 </div>
                 
                 <Carousel className="sel inactive cat pamphlet" showStatus={false} showThumbs={false} infiniteLoop={true} useKeyboardArrows={true}>
@@ -468,6 +519,7 @@ class Art extends Component {
 
                     <div>
                     <img src={Fabrication1} />
+                    <h1>Design Building</h1>
                     </div>
 
                     <div>
@@ -544,9 +596,9 @@ class Art extends Component {
                     <img src={N7N} />
                     </div> 
 
-                    <div>
+                    {/* <div>
                     <img src={N8N} />
-                    </div>  
+                    </div>   */}
                     </Carousel>
     
                     <Carousel className="sel inactive type double" showStatus={false} showThumbs={false} infiniteLoop={true} useKeyboardArrows={true}>
@@ -853,8 +905,15 @@ class Art extends Component {
             </Carousel>
 
                     <Carousel className="sel inactive STEM rest" showStatus={false} showThumbs={false} infiniteLoop={true} useKeyboardArrows={true}>
+
+                    <div className='description'>
+                    <p>
+                        A biology teacher at Metropolitan State University of Denver asked me to create a coloring book for the upcoming summer Science STEM program hosted at the university. Coloring sheet topics range from chemistry to weather.
+                    </p>
+                    </div>
                     <div>
                     <img src={s1} />
+                    <h1>Design Building</h1>
                     </div>
 
                     <div>
