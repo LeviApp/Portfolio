@@ -383,6 +383,19 @@ class Art extends Component {
                 </div>
                 
                 <Carousel className="sel inactive cat pamphlet" showStatus={false} showThumbs={false} infiniteLoop={true} useKeyboardArrows={true}>
+                    <div className='description'>
+                        <h2>
+                        Socket Technology Catalog
+                        </h2>
+
+                        <p>
+                        At Adaptec Prosthetics, I worked as a contractor redesigning several educational booklets.
+                        </p>
+    
+                        <p>
+                        This is the catalog that gives clients an overview of all of Adaptec Prosthetics's products. VaporPuck is a product that Adaptec Prosthetics used to sell.
+                        </p>
+                    </div>
                     <div>
                     <img src={CatalogCover} />
                     </div>
@@ -409,6 +422,25 @@ class Art extends Component {
                 </Carousel>
 
                 <Carousel className="sel inactive mag pamphlet" showStatus={false} showThumbs={false} infiniteLoop={true} useKeyboardArrows={true}>
+
+                    <div className='description'>
+
+                        <h2>
+                        MagPuck Technical Guide
+                        </h2>
+                        <p>
+                        At Adaptec Prosthetics, I worked as a contractor redesigning several educational booklets.
+                        </p>
+
+                        <p>
+                        "The MagPuck is a modular socket computer system that utilizes an
+                        electronic vacuum pump to create negative pressure inside the prosthetic
+                        socket. The MagPuck improves the linkage between the residual limb and
+                        the prosthesis. The MagPuck is equipped with an easy to use magnetic
+                        switch, allowing the user to quickly and easily set and adjust vacuum levels
+                        of their prosthesis."
+                        </p>
+                    </div>
                     <div>
                     <img src={MagPuckCover} />
                     </div>
@@ -435,6 +467,25 @@ class Art extends Component {
                 </Carousel>
 
                 <Carousel className="sel inactive smart pamphlet" showStatus={false} showThumbs={false} infiniteLoop={true} useKeyboardArrows={true}>
+
+                    <div className='description'>
+                        <h2>
+                        SmartPuck Technical Guide
+                        </h2>
+
+                        <p>
+                        At Adaptec Prosthetics, I worked as a contractor redesigning several educational booklets.
+                        </p>
+    
+                        <p>
+                        "The SmartPuck is a modular socket computer system that utilizes an
+                        electronic vacuum pump to create negative pressure inside the prosthetic
+                        socket. The SmartPuck improves the linkage between the residual limb and
+                        the prosthesis. The SmartPuck is equipped with an easy to use iDevice and
+                        application interface, allowing the user to quickly and easily set and adjust
+                        vacuum pressure settings of their prosthesis."                        
+                        </p>
+                    </div>
                     <div>
                     <img src={SmartPuckCover} />
                     </div>
@@ -461,6 +512,20 @@ class Art extends Component {
                 </Carousel>
 
                 <Carousel className="sel inactive air pamphlet" showStatus={false} showThumbs={false} infiniteLoop={true} useKeyboardArrows={true}>
+
+                    <div className='description'>
+                        <h2>
+                        AirPuck Technical Guide
+                        </h2>
+
+                        <p>
+                        At Adaptec Prosthetics, I worked as a contractor redesigning several educational booklets.
+                        </p>
+
+                        <p>
+                        The AirPuck is the base product Adaptec Prosthetics offers. It uses a simple air system.
+                        </p>
+                    </div>
                     <div>
                     <img src={AirPuckCover} />
                     </div>
@@ -487,39 +552,72 @@ class Art extends Component {
                 </Carousel>
 
                 <Carousel className="sel inactive zero pamphlet" showStatus={false} showThumbs={false} infiniteLoop={true} useKeyboardArrows={true}>
+
+                    <div className='description'>
+                        <h2>
+                        ZeroPuck Technical Guide
+                        </h2>
+
+                        <p>
+                        At Adaptec Prosthetics, I worked as a contractor redesigning several educational booklets.
+                        </p>
+
+                        <p>
+                        "The ZeroPuck is a modular socket computer system that utilizes an
+                        electronic vacuum pump to create negative pressure inside the prosthetic
+                        socket. The ZeroPuck improves the linkage between the residual limb and
+                        the prosthesis. The ZeroPuck is equipped with an easy to use iDevice and
+                        application interface, allowing the user to quickly and easily set and adjust
+                        vacuum pressure settings of their prosthesis."                     
+                        </p>
+                    </div>
                     <div>
-                    <img src={ZeroPuckCover} />
+                        <img src={ZeroPuckCover} />
                     </div>
 
                     <div>
-                    <img src={ZeroPuck1} />
+                        <img src={ZeroPuck1} />
                     </div>
 
                     <div>
-                    <img src={ZeroPuck2} />
+                        <img src={ZeroPuck2} />
                     </div>
 
                     <div>
-                    <img src={ZeroPuck3} />
+                        <img src={ZeroPuck3} />
                     </div>
 
                     <div>
-                    <img src={ZeroPuck4} />
+                        <img src={ZeroPuck4} />
                     </div>
 
                     <div>
-                    <img src={ZeroPuckBack} />
+                        <img src={ZeroPuckBack} />
                     </div>         
                 </Carousel>
 
                 <Carousel className="sel inactive fab pamphlet" showStatus={false} showThumbs={false} infiniteLoop={true} useKeyboardArrows={true}>
+
+                    <div className='description'>
+                        <h2>
+                        Puck Fabrication Guide
+                        </h2>
+
+                        <p>
+                        At Adaptec Prosthetics, I worked as a contractor redesigning several educational booklets.
+                        </p>
+
+                        <p>
+                        The Puck Fabrication Guide focuses on the preparation of prosthetic sockets.                       
+                        </p>
+                    </div>
+
                     <div>
                     <img src={FabricationCover} />
                     </div>
 
                     <div>
                     <img src={Fabrication1} />
-                    <h1>Design Building</h1>
                     </div>
 
                     <div>
@@ -643,22 +741,13 @@ class Art extends Component {
                         <img className='leftimg' src={JoyceLetter} />
                         <img className='rightimg' src={JoyceWeb} />
                     </div>
-                    {/* <div className="sel inactive card rest">
-                        <div className='collateral'>
-                            <div className='brock hide'>
-                                <img className='leftimg' src={BrockLetter} />
-                                <img className='rightimg' src={BrockWeb} />
-                            </div>
-                        </div>
-                        <div className='collateral'>
-                            <div className='joyce hide'>
-                                <img className='leftimg' src={JoyceLetter} />
-                                <img className='rightimg' src={JoyceWeb} />
-                            </div>
-                        </div>
-                    </div> */}
-
                     <Carousel className="sel inactive cardio rest" showStatus={false} showThumbs={false} infiniteLoop={true} useKeyboardArrows={true}>
+                    <div className='description'>
+                    <h2>Circulatory System</h2>        
+                    <p>
+                    I did some contract work at MSU Denver creating Tactile Graphics. My employer would send me PowerPoints with images. I simplified the images, creating different patterns for different labels. The patterns are printed as raised graphics on swell paper. The blind students can feel them and understand the illustration using a key.
+                    </p>
+                    </div>
                     <div>
                     <img src={C1} />
                     </div>
@@ -710,7 +799,12 @@ class Art extends Component {
 
 
                 <Carousel className="sel inactive resp rest" showStatus={false} showThumbs={false} infiniteLoop={true} useKeyboardArrows={true}>
-
+                    <div className='description'>
+                    <h2>Respiratory System</h2>        
+                    <p>
+                    I did some contract work at MSU Denver creating Tactile Graphics. My employer would send me PowerPoints with images. I simplified the images, creating different patterns for different labels. The patterns are printed as raised graphics on swell paper. The blind students can feel them and understand the illustration using a key.
+                    </p>
+                    </div>
                     <div>
                     <img src={R1} />
                     </div>
@@ -761,7 +855,12 @@ class Art extends Component {
                 </Carousel>
 
                 <Carousel className="sel inactive digest rest" showStatus={false} showThumbs={false} infiniteLoop={true} useKeyboardArrows={true}>
-
+                    <div className='description'>
+                    <h2>Digestive System</h2>        
+                    <p>
+                    I did some contract work at MSU Denver creating Tactile Graphics. My employer would send me PowerPoints with images. I simplified the images, creating different patterns for different labels. The patterns are printed as raised graphics on swell paper. The blind students can feel them and understand the illustration using a key.
+                    </p>
+                    </div>
                     <div>
                     <img src={D1} />
                     </div>
@@ -812,6 +911,12 @@ class Art extends Component {
                     </Carousel>
 
                     <Carousel className="sel inactive uri rest" showStatus={false} showThumbs={false} infiniteLoop={true} useKeyboardArrows={true}>
+                    <div className='description'>
+                    <h2>Urinary System</h2>        
+                    <p>
+                    I did some contract work at MSU Denver creating Tactile Graphics. My employer would send me PowerPoints with images. I simplified the images, creating different patterns for different labels. The patterns are printed as raised graphics on swell paper. The blind students can feel them and understand the illustration using a key.
+                    </p>
+                    </div>
 
                     <div>
                     <img src={U1} />
@@ -863,6 +968,12 @@ class Art extends Component {
                     </Carousel>
 
                     <Carousel className="sel inactive quorum biggest" showStatus={false} showThumbs={false} infiniteLoop={true} useKeyboardArrows={true}>
+                    <div className='description'>
+                    <h2>Operation: Quorum Sense</h2>        
+                    <p>
+                    In my 2D Design class, the teacher asked the students to incorporate post-contemporary design principles. I was in a microbiology class at the same time. I was interested in making a complicated biology topic, quorum sensing, simpler.
+                    </p>
+                    </div>
                     <div>
                     <img src={q1} />
                     </div>
@@ -919,53 +1030,64 @@ class Art extends Component {
                     <Carousel className="sel inactive STEM rest" showStatus={false} showThumbs={false} infiniteLoop={true} useKeyboardArrows={true}>
 
                     <div className='description'>
+                    <h2>STEM Coloring Book</h2>        
                     <p>
-                        A biology teacher at Metropolitan State University of Denver asked me to create a coloring book for the upcoming summer Science STEM program hosted at the university. Coloring sheet topics range from chemistry to weather.
+                        A biology teacher at Metropolitan State University of Denver asked me to create a coloring book for the upcoming summer Science STEM program hosted at the university. Coloring sheet topics range from chemistry to meteorology.
                     </p>
                     </div>
                     <div>
                     <img src={s1} />
-                    <h1>Design Building</h1>
+                    <h2>Design Building</h2>
                     </div>
 
                     <div>
-                    <img src={s2} />          
+                    <img src={s2} />  
+                    <h2>Genetics</h2>        
                     </div>
 
                     <div>
-                    <img src={s3} />        
+                    <img src={s3} />
+                    <h2>Chemistry</h2>      
                     </div>
 
                     <div>
-                    <img src={s4} />                               
+                    <img src={s4} />
+                    <h2>Computer Science</h2>                             
                     </div>
 
                     <div>
-                    <img src={s5} />                               
+                    <img src={s5} />
+                    <h2>3D Printing</h2>                                                          
                     </div>
 
                     <div>
-                    <img src={s6} />                               
+                    <img src={s6} />
+                    <h2>Math</h2>                                                                                    
                     </div>
 
                     <div>
-                    <img src={s7} />                               
+                    <img src={s7} /> 
+                    <h2>Meteorology</h2>                            
                     </div>
 
                     <div>
-                    <img src={s8} />                               
+                    <img src={s8} />
+                    <h2>Microbiology</h2>                                                                                        
                     </div> 
 
                     <div>
-                    <img src={s9} />                               
+                    <img src={s9} />
+                    <h2>Water Environments</h2>                                                                                                                 
                     </div>
 
                     <div>
-                    <img src={s10} />                               
+                    <img src={s10} />
+                    <h2>Physics</h2>                                                                                                                       
                     </div>
 
                     <div>
-                    <img src={s11} />                               
+                    <img src={s11} />
+                    <h2>Rocket Science</h2>                                                          
                     </div>               
             </Carousel>
 
