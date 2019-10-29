@@ -7,18 +7,34 @@
     display: flex
     flex-direction: column
     justify-content: flex-end
-    a
-        color: $green
+
+    .web-group
+        display: flex
+        flex-direction: column-reverse
         align-self: center
-        font-size: 2.5rem
-        border: 3px solid $blue
-        padding: 10px
-        margin-top: 20px
-        border: 10px solid black
-        box-shadow: -33px 33px 0 -30px $blue, 33px -33px 0 -30px $blue
-        text-decoration: none
-    a:hover
+        width: 10%
+        .web-link
+            margin-top: 20px
+            font-size: 1rem
+            color: $gray
+            align-self: center
+        .web-arrow
+            color: $green
+            align-self: center
+            font-size: 2.5rem
+            border: 3px solid $blue
+            padding: 10px
+            margin-top: 20px
+            border: 10px solid black
+            box-shadow: -33px 33px 0 -30px $blue, 33px -33px 0 -30px $blue
+            text-decoration: none
+    .web-group:hover > .web-link
+        color: $green
+    .web-group:hover > .web-arrow
         animation: snake-around 1s ease-in-out 0s infinite
+    .web-group:hover
+        cursor: pointer
+
 
     @keyframes snake-around
         0%

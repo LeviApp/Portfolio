@@ -188,7 +188,10 @@ class Dev extends Component {
               <img className='postgres' src={PostgresLogo} />
               </div>
             </div>
-            <a href='https://traction-app.netlify.com/'>Traction</a>
+            <div className='web-group'>
+              <a className='web-link' href='https://traction-app.netlify.com/'>To Website</a>
+              <a className='web-arrow' href='https://traction-app.netlify.com/'>⟶</a>
+            </div>
             <div className='logo-group'>
             <div>
             <Element className='start-section' name="traction" >
