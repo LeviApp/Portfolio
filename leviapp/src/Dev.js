@@ -13,6 +13,20 @@ import TractionDraft4 from './svg/traction-stage4.svg'
 import TractionDraft5 from './svg/traction-stage5.svg'
 import TractionDraft6 from './svg/traction-stage6.svg'
 import Calendar from './img/calendar.png'
+import ReactLogo from './img/ReactLogo.png'
+import SassLogo from './img/SassLogo.png'
+import PostgresLogo from './img/PostgresLogo.png'
+import JavaScriptLogo from './img/JavaScriptLogo.png'
+import ReduxLogo from './img/ReduxLogo.png'
+import Auth0Logo from './img/Auth0Logo.png'
+import MarkDownLogo from './img/MarkDownLogo.png'
+import HTMLLogo from './img/HTMLLogo.png'
+import CSSLogo from './img/CSSLogo.png'
+import FullCalendarLogo from './img/FullCalendarLogo.png'
+import MomentLogo from './img/MomentLogo.png'
+import p5Logo from './img/p5Logo.png'
+import PythonLogo from './img/PythonLogo.png'
+import PygameLogo from './img/PygameLogo.png'
 
 
 import Traction from './svg/traction.svg'
@@ -133,11 +147,54 @@ class Dev extends Component {
 
             <h1 className="TRACTION"> Traction </h1>
             <div className='logo-sect'>
+            <div className='tech-used'>
+              <div className='single-tech'>
+              <img src={ReactLogo} />
+              </div>
+
+              <div className='single-tech'>
+              <img src={SassLogo} />
+              </div>
+
+              <div className='single-tech'>
+              <img className='fullcalendar' src={FullCalendarLogo} />
+              </div>
+
+              <div className='single-tech'>
+              <img className='moment' src={MomentLogo} />
+              </div>
+
+              <div className='single-tech'>
+              <img src={ReduxLogo} />
+              </div>
+
+              <div className='single-tech'>
+              <img className='javascript' src={JavaScriptLogo} />
+              </div>
+
+              <div className='single-tech'>
+              <img src={HTMLLogo} />
+              </div>
+
+              <div className='single-tech'>
+              <img src={MarkDownLogo} />
+              </div>
+
+              <div className='single-tech'>
+              <img src={Auth0Logo} />
+              </div>
+
+              <div className='single-tech'>
+              <img className='postgres' src={PostgresLogo} />
+              </div>
+            </div>
+            <a href='https://traction-app.netlify.com/'>Traction</a>
+            <div className='logo-group'>
             <div>
             <Element className='start-section' name="traction" >
-            <h2>>>>>> Implemented website using Redux and React</h2>
-            </Element>
             <h2>>>>>> Designed the Traction logo</h2>
+            </Element>
+
             <h2> >>>>> Changed color scheme from blue to red/orange/blue after studying workout company color palettes </h2>
             </div>
             <div className="t-logos-drafts">
@@ -161,6 +218,7 @@ class Dev extends Component {
                 </div>
             </div>
             </div>
+            </div>
             <div className='UI'>
             <img className='calendar' src={Calendar} alt="traction-logo-draft1" />
             <div>
@@ -173,9 +231,12 @@ class Dev extends Component {
             <div>
             <div className='check'>
             <h2> >>>>> Created a hexagonal checkmark box with functionality </h2>
+            <div className='check-group'>
             <Checkbox />
+            <h6>Click Me</h6>
             </div>
-            <h2> >>>>> Used several map implementations which involved dates, body groups, and exercises</h2>
+            </div>
+            <h2> >>>>> Used several JavaScript map implementations which involved dates, body groups, and exercises</h2>
             <h2> >>>>> Organized tasks using Trello </h2>
             </div>
             <img className='mapped' src={Mapped} alt="mapped event" />  
@@ -203,8 +264,25 @@ class Dev extends Component {
             </section>
             <section>
             <h1 className="NOTES"> Notes </h1>
+            <div className='tech-used'>
+              <div className='single-tech'>
+              <img src={ReactLogo} />
+              </div>
+
+              <div className='single-tech'>
+              <img src={CSSLogo} />
+              </div>
+
+              <div className='single-tech'>
+              <img src={HTMLLogo} />
+              </div>
+
+              <div className='single-tech'>
+              <img className='javascript' src={JavaScriptLogo} />
+              </div>
+            </div>
             <Element className='start-section' name="notes" >
-            <h2> Regular </h2>
+            <h2>Regular</h2>
             </Element>
             <h2> Regular </h2>
             <h2> Regular </h2>
@@ -237,8 +315,16 @@ class Dev extends Component {
             </section>
 
             <section>
-            <h1 className="ARCH">            Smith & Jones Architects
-</h1>
+            <h1 className="ARCH">Smith & Jones Architects</h1>
+            <div className='tech-used'>
+              <div className='single-tech'>
+              <img src={CSSLogo} />
+              </div>
+
+              <div className='single-tech'>
+              <img src={HTMLLogo} />
+              </div>
+            </div>
             <Element className='start-section' name="arch" >
             <h2> Regular </h2>
             </Element>
@@ -272,8 +358,153 @@ class Dev extends Component {
             <h2> Regular </h2>
             </section>
 
+            <section>
+            <h1 className="schatz">Schatzinsel</h1>
+            <div className='tech-used'>
+              <div className='single-tech'>
+              <img src={ReactLogo} />
+              </div>
 
+              <div className='single-tech'>
+              <img src={p5Logo} />
+              </div>
 
+              <div className='single-tech'>
+              <img src={JavaScriptLogo} />
+              </div>
+
+              <div className='single-tech'>
+              <img src={HTMLLogo} />
+              </div>
+
+              <div className='single-tech'>
+              <img src={SassLogo} />
+              </div>
+
+              <div className='single-tech'>
+              <img src={PostgresLogo} />
+              </div>
+            </div>
+            <Element className='start-section' name="arch" >
+            <h2> Regular </h2>
+            </Element>
+            <h2> Regular </h2>
+            <h2> Regular </h2>
+            <h2> Regular </h2>
+            <h2> Regular </h2>
+            <h2> Regular </h2>
+            <h2> Regular </h2>
+            <h2> Regular </h2>
+            <h2> Regular </h2>
+            <h2> Regular </h2>
+            <h2> Regular </h2>
+            <h2> Regular </h2>
+            <h2> Regular </h2>
+            <h2> Regular </h2>
+            <h2> Regular </h2>
+            <h2> Regular </h2>
+            <h2> Regular </h2>
+            <h2> Regular </h2>
+            <h2> Regular </h2>
+            <h2> Regular </h2>
+            <h2> Regular </h2>
+            <h2> Regular </h2>
+            <h2> Regular </h2>
+            <h2> Regular </h2>
+            <h2> Regular </h2>
+            <h2> Regular </h2>
+            <h2> Regular </h2>
+            <h2> Regular </h2>
+            <h2> Regular </h2>
+            </section>
+
+            <section>
+            <h1 className="automata">Cellular Automata</h1>
+            <div className='tech-used'>
+              <div className='single-tech'>
+              <img src={PythonLogo} />
+              </div>
+
+              <div className='single-tech'>
+              <img src={PygameLogo} />
+              </div>
+            </div>
+            <Element className='start-section' name="arch" >
+            <h2> Regular </h2>
+            </Element>
+            <h2> Regular </h2>
+            <h2> Regular </h2>
+            <h2> Regular </h2>
+            <h2> Regular </h2>
+            <h2> Regular </h2>
+            <h2> Regular </h2>
+            <h2> Regular </h2>
+            <h2> Regular </h2>
+            <h2> Regular </h2>
+            <h2> Regular </h2>
+            <h2> Regular </h2>
+            <h2> Regular </h2>
+            <h2> Regular </h2>
+            <h2> Regular </h2>
+            <h2> Regular </h2>
+            <h2> Regular </h2>
+            <h2> Regular </h2>
+            <h2> Regular </h2>
+            <h2> Regular </h2>
+            <h2> Regular </h2>
+            <h2> Regular </h2>
+            <h2> Regular </h2>
+            <h2> Regular </h2>
+            <h2> Regular </h2>
+            <h2> Regular </h2>
+            <h2> Regular </h2>
+            <h2> Regular </h2>
+            <h2> Regular </h2>
+            </section>
+
+            <section>
+            <h1 className="automata">Cellular Automata</h1>
+            <div className='tech-used'>
+              <div className='single-tech'>
+              <img src={PythonLogo} />
+              </div>
+
+              <div className='single-tech'>
+              <img src={PygameLogo} />
+              </div>
+            </div>
+            <Element className='start-section' name="arch" >
+            <h2> Regular </h2>
+            </Element>
+            <h2> Regular </h2>
+            <h2> Regular </h2>
+            <h2> Regular </h2>
+            <h2> Regular </h2>
+            <h2> Regular </h2>
+            <h2> Regular </h2>
+            <h2> Regular </h2>
+            <h2> Regular </h2>
+            <h2> Regular </h2>
+            <h2> Regular </h2>
+            <h2> Regular </h2>
+            <h2> Regular </h2>
+            <h2> Regular </h2>
+            <h2> Regular </h2>
+            <h2> Regular </h2>
+            <h2> Regular </h2>
+            <h2> Regular </h2>
+            <h2> Regular </h2>
+            <h2> Regular </h2>
+            <h2> Regular </h2>
+            <h2> Regular </h2>
+            <h2> Regular </h2>
+            <h2> Regular </h2>
+            <h2> Regular </h2>
+            <h2> Regular </h2>
+            <h2> Regular </h2>
+            <h2> Regular </h2>
+            <h2> Regular </h2>
+            </section>
         </div>
 
 

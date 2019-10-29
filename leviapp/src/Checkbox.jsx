@@ -56,7 +56,6 @@ class Checkbox extends Component {
                           </g>
                       </g>
                   </svg>
-                    <p className="check-text"> {this.props.name}</p>
                 </div>
 
             );

@@ -7,6 +7,28 @@
     display: flex
     flex-direction: column
     justify-content: flex-end
+    a
+        color: $green
+        align-self: center
+        font-size: 2.5rem
+        border: 3px solid $blue
+        padding: 10px
+        margin-top: 20px
+        border: 10px solid black
+        box-shadow: -33px 33px 0 -30px $blue, 33px -33px 0 -30px $blue
+        text-decoration: none
+    a:hover
+        animation: snake-around 1s ease-in-out 0s infinite
+
+    @keyframes snake-around
+        0%
+            box-shadow: -33px 33px 0 -30px $blue, 33px -33px 0 -30px $blue
+        50%
+            box-shadow: 33px 33px 0 -30px $blue, -33px -33px 0 -30px $blue
+        100%
+            box-shadow: 33px -33px 0 -30px $blue, -33px 33px 0 -30px $blue
+  
+
     .contents
         display: flex
         flex-direction: row
@@ -50,8 +72,12 @@
             background-color: $background
             width: 100%
             font-size: 3rem
-            color: #FFBF00
+            color: $green
             font-style: italic
+        
+        h2
+            color: white
+            font-size: 1.25rem
 
 .t-logos
     display: flex
@@ -93,7 +119,7 @@ h2
 
 .logo-sect
     display: flex
-    flex-direction: row
+    flex-direction: column
 
 .UI
     display: flex
@@ -117,10 +143,60 @@ h2
         width: 100%
         justify-content: space-between
         .checkedGroup
-            width: 7%
+            width: 50%
 
     img
         width: 35%
         margin-bottom: 75px
         margin-left: 5%
         margin-right: 5%
+
+
+.tech-used
+    display: flex
+    margin-top: 30px
+    align-self: center
+    flex-wrap: wrap
+    width: 70%
+    align-items: center
+    justify-content: space-between
+
+    .single-tech
+        display: flex
+        align-items: center
+        flex-direction: column
+        margin: 20px
+        background-color: white
+        padding: 10px
+        box-shadow: -33px 33px 0 -30px $blue, 33px -33px 0 -30px $blue
+        border: 10px solid black
+
+        img
+            width: 75px
+            margin-bottom: 5px
+        .postgres
+            max-width: 100px
+        .javascript
+            max-width: 150px
+        .fullcalendar
+            max-width: 100px
+        .moment
+            max-width: 100px
+        h3
+            margin: 0
+            color: $background
+            font-size: 1rem
+
+
+.logo-group
+    display: flex
+
+.check-group
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    width: 10%
+    h6
+        margin-top: 5px
+        color: $green
