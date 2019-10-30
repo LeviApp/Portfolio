@@ -146,59 +146,59 @@ class Dev extends Component {
             <section>
 
             <h1 className="TRACTION"> Traction </h1>
-            <div className='logo-sect'>
-            <div className='tech-used'>
-              <div className='single-tech'>
-              <img src={ReactLogo} />
-              </div>
+              <div className='tech-used'>
+                  <div className='single-tech'>
+                  <img src={ReactLogo} />
+                  </div>
 
-              <div className='single-tech'>
-              <img src={SassLogo} />
-              </div>
+                  <div className='single-tech'>
+                  <img src={SassLogo} />
+                  </div>
 
-              <div className='single-tech'>
-              <img className='fullcalendar' src={FullCalendarLogo} />
-              </div>
+                  <div className='single-tech'>
+                  <img className='fullcalendar' src={FullCalendarLogo} />
+                  </div>
 
-              <div className='single-tech'>
-              <img className='moment' src={MomentLogo} />
-              </div>
+                  <div className='single-tech'>
+                  <img className='moment' src={MomentLogo} />
+                  </div>
 
-              <div className='single-tech'>
-              <img src={ReduxLogo} />
-              </div>
+                  <div className='single-tech'>
+                  <img src={ReduxLogo} />
+                  </div>
 
-              <div className='single-tech'>
-              <img className='javascript' src={JavaScriptLogo} />
-              </div>
+                  <div className='single-tech'>
+                  <img className='javascript' src={JavaScriptLogo} />
+                  </div>
 
-              <div className='single-tech'>
-              <img src={HTMLLogo} />
-              </div>
+                  <div className='single-tech'>
+                  <img src={HTMLLogo} />
+                  </div>
 
-              <div className='single-tech'>
-              <img src={MarkDownLogo} />
-              </div>
+                  <div className='single-tech'>
+                  <img src={MarkDownLogo} />
+                  </div>
 
-              <div className='single-tech'>
-              <img src={Auth0Logo} />
-              </div>
+                  <div className='single-tech'>
+                  <img src={Auth0Logo} />
+                  </div>
 
-              <div className='single-tech'>
-              <img className='postgres' src={PostgresLogo} />
+                  <div className='single-tech'>
+                  <img className='postgres' src={PostgresLogo} />
+                  </div>
               </div>
-            </div>
             <div className='web-group'>
               <a className='web-link' href='https://traction-app.netlify.com/'>To Website</a>
               <a className='web-arrow' href='https://traction-app.netlify.com/'>⟶</a>
             </div>
             <div className='logo-group'>
+            <div className='logo-sect'>
             <div>
             <Element className='start-section' name="traction" >
-            <h2>>>>>> Designed the Traction logo</h2>
+            <h2>> Designed the Traction logo</h2>
             </Element>
 
-            <h2> >>>>> Changed color scheme from blue to red/orange/blue after studying workout company color palettes </h2>
+            <h2> > Changed color scheme from blue to red/orange/blue after studying workout company color palettes </h2>
             </div>
             <div className="t-logos-drafts">
                 <div>
@@ -225,22 +225,22 @@ class Dev extends Component {
             <div className='UI'>
             <img className='calendar' src={Calendar} alt="traction-logo-draft1" />
             <div>
-            <h2> >>>>> Built dark UI design of the website using SASS to stand out from the standard light mode </h2>
-            <h2> >>>>> Implemented the calendar using the FullCalendar api </h2>
-            <h2> >>>>> Built calendar functionality using the JQuery version in the beginning, then changed to React version</h2>
+            <h2> > Built dark UI design of the website using SASS to stand out from the standard light mode </h2>
+            <h2> > Implemented the calendar using the FullCalendar api </h2>
+            <h2> > Built calendar functionality using the JQuery version first, then changed to React version</h2>
             </div>
             </div>
             <div className='mapped'>
             <div>
             <div className='check'>
-            <h2> >>>>> Created a hexagonal checkmark box with functionality </h2>
+            <h2> > Created a hexagonal checkmark box with functionality </h2>
             <div className='check-group'>
             <Checkbox />
             <h6>Click Me</h6>
             </div>
             </div>
-            <h2> >>>>> Used several JavaScript map implementations which involved dates, body groups, and exercises</h2>
-            <h2> >>>>> Organized tasks using Trello </h2>
+            <h2> > Used several JavaScript map implementations which involved dates, body groups, and exercises</h2>
+            <h2> > Organized tasks using Trello </h2>
             </div>
             <img className='mapped' src={Mapped} alt="mapped event" />  
             </div>   
