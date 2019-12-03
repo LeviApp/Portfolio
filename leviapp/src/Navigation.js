@@ -28,6 +28,9 @@ class Navigation extends Component {
         <nav>   
                 <LApp />
                 <div className='links'>
+                <NavLink className="about-nav" activeClassName="active" to="/about">
+                 About
+                </NavLink>
                 <NavLink className="dev-nav" activeClassName="active" to="/dev">
                  Dev Portfolio
                 </NavLink>

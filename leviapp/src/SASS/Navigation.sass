@@ -16,25 +16,27 @@ nav
 
     .links
         display: grid
-        grid-template-columns: repeat(30, 1fr)
+        grid-template-columns: repeat(50, 1fr)
         grid-column: 2/6
         grid-row: 1
         margin-bottom: 50px
         align-items: center
         text-align: center
         z-index: 0
+        .about-nav
+            grid-column: 2/11
         .dev-nav
-            grid-column: 1/11
+            grid-column: 12/24
 
         .art-nav
-            grid-column: 12/22
+            grid-column: 25/38
 
         .contact-nav
-            grid-column: 23/30
+            grid-column: 40/45
         a
             
             color: white
-            font-size: 2rem
+            font-size: 1.5rem
             text-decoration: none
             width: 100%
             margin: 0
