@@ -29,7 +29,7 @@ class Navigation extends Component {
                 <LApp />
                 <div className='links'>
                 <NavLink className="about-nav" activeClassName="active" to="/about">
-                 About Me
+                 About
                 </NavLink>
                 <NavLink className="dev-nav" activeClassName="active" to="/dev">
                  Dev Portfolio

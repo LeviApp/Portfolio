@@ -137,11 +137,6 @@ class Dev extends Component {
             Automata
             </h2>
             <h3 className='arrows arrows_5'>>>>>></h3>
-
-            <h2 onClick={() => {this.scrollTo('Automata', -235)}} className='all_sections fifth'>
-            Schatzinsel
-            </h2>
-            <h3 className='arrows arrows_5'>>>>>></h3>
             </div>
             <section>
 
@@ -195,10 +190,10 @@ class Dev extends Component {
             <div className='logo-sect'>
             <div>
             <Element className='start-section' name="traction" >
-            <h2>> Designed the Traction logo</h2>
+            <h2>❮❯ Designed the Traction logo</h2>
             </Element>
 
-            <h2> > Changed color scheme from blue to red/orange/blue after studying workout company color palettes </h2>
+            <h2> ❮❯ Changed color scheme from blue to red/orange/blue after studying workout company color palettes </h2>
             </div>
             <div className="t-logos-drafts">
                 <div>
@@ -225,22 +220,22 @@ class Dev extends Component {
             <div className='UI'>
             <img className='calendar' src={Calendar} alt="traction-logo-draft1" />
             <div>
-            <h2> > Built dark UI design of the website using SASS to stand out from the standard light mode </h2>
-            <h2> > Implemented the calendar using the FullCalendar api </h2>
-            <h2> > Built calendar functionality using the JQuery version first, then changed to React version</h2>
+            <h2> ❮❯ Built dark UI design of the website using SASS to stand out from the standard light mode </h2>
+            <h2> ❮❯ Implemented the calendar using the FullCalendar api </h2>
+            <h2> ❮❯ Built calendar functionality using the JQuery version first, then changed to React version</h2>
             </div>
             </div>
             <div className='mapped'>
             <div>
             <div className='check'>
-            <h2> > Created a hexagonal checkmark box with functionality </h2>
+            <h2> ❮❯ Created a hexagonal checkmark box with functionality </h2>
             <div className='check-group'>
             <Checkbox />
             <h6>Click Me</h6>
             </div>
             </div>
-            <h2> > Used several JavaScript map implementations which involved dates, body groups, and exercises</h2>
-            <h2> > Organized tasks using Trello </h2>
+            <h2> ❮❯ Used several JavaScript map implementations which involved dates, body groups, and exercises</h2>
+            <h2> ❮❯ Organized tasks using Trello </h2>
             </div>
             <img className='mapped' src={Mapped} alt="mapped event" />  
             </div>   
@@ -283,6 +278,10 @@ class Dev extends Component {
               <div className='single-tech'>
               <img className='javascript' src={JavaScriptLogo} />
               </div>
+            </div>
+            <div className='web-group'>
+              <a className='web-link' href='https://traction-app.netlify.com/'>To Website</a>
+              <a className='web-arrow' href='https://traction-app.netlify.com/'>⟶</a>
             </div>
             <Element className='start-section' name="notes" >
             <h2>Regular</h2>
@@ -328,6 +327,12 @@ class Dev extends Component {
               <img src={HTMLLogo} />
               </div>
             </div>
+
+            <div className='web-group'>
+              <a className='web-link' href='https://traction-app.netlify.com/'>To Website</a>
+              <a className='web-arrow' href='https://traction-app.netlify.com/'>⟶</a>
+            </div>
+
             <Element className='start-section' name="arch" >
             <h2> Regular </h2>
             </Element>
@@ -388,6 +393,63 @@ class Dev extends Component {
               <img src={PostgresLogo} />
               </div>
             </div>
+
+            <div className='web-group'>
+              <a className='web-link' href='https://schatzinsel.netlify.com/'>To Website</a>
+              <a className='web-arrow' href='https://schatzinsel.netlify.com/'>⟶</a>
+            </div>
+
+            <Element className='start-section' name="arch" >
+            <h2> Regular </h2>
+            </Element>
+
+            <h2> Regular </h2>
+            <h2> Regular </h2>
+            <h2> Regular </h2>
+            <h2> Regular </h2>
+            <h2> Regular </h2>
+            <h2> Regular </h2>
+            <h2> Regular </h2>
+            <h2> Regular </h2>
+            <h2> Regular </h2>
+            <h2> Regular </h2>
+            <h2> Regular </h2>
+            <h2> Regular </h2>
+            <h2> Regular </h2>
+            <h2> Regular </h2>
+            <h2> Regular </h2>
+            <h2> Regular </h2>
+            <h2> Regular </h2>
+            <h2> Regular </h2>
+            <h2> Regular </h2>
+            <h2> Regular </h2>
+            <h2> Regular </h2>
+            <h2> Regular </h2>
+            <h2> Regular </h2>
+            <h2> Regular </h2>
+            <h2> Regular </h2>
+            <h2> Regular </h2>
+            <h2> Regular </h2>
+            <h2> Regular </h2>
+            </section>
+
+            <section>
+            <h1 className="automata">Cellular Automata</h1>
+            <div className='tech-used'>
+              <div className='single-tech'>
+              <img src={PythonLogo} />
+              </div>
+
+              <div className='single-tech'>
+              <img src={PygameLogo} />
+              </div>
+            </div>
+
+            <div className='web-group'>
+              <a className='web-link' href='https://traction-app.netlify.com/'>To Website</a>
+              <a className='web-arrow' href='https://traction-app.netlify.com/'>⟶</a>
+            </div>
+
             <Element className='start-section' name="arch" >
             <h2> Regular </h2>
             </Element>
@@ -432,50 +494,12 @@ class Dev extends Component {
               <img src={PygameLogo} />
               </div>
             </div>
-            <Element className='start-section' name="arch" >
-            <h2> Regular </h2>
-            </Element>
-            <h2> Regular </h2>
-            <h2> Regular </h2>
-            <h2> Regular </h2>
-            <h2> Regular </h2>
-            <h2> Regular </h2>
-            <h2> Regular </h2>
-            <h2> Regular </h2>
-            <h2> Regular </h2>
-            <h2> Regular </h2>
-            <h2> Regular </h2>
-            <h2> Regular </h2>
-            <h2> Regular </h2>
-            <h2> Regular </h2>
-            <h2> Regular </h2>
-            <h2> Regular </h2>
-            <h2> Regular </h2>
-            <h2> Regular </h2>
-            <h2> Regular </h2>
-            <h2> Regular </h2>
-            <h2> Regular </h2>
-            <h2> Regular </h2>
-            <h2> Regular </h2>
-            <h2> Regular </h2>
-            <h2> Regular </h2>
-            <h2> Regular </h2>
-            <h2> Regular </h2>
-            <h2> Regular </h2>
-            <h2> Regular </h2>
-            </section>
 
-            <section>
-            <h1 className="automata">Cellular Automata</h1>
-            <div className='tech-used'>
-              <div className='single-tech'>
-              <img src={PythonLogo} />
-              </div>
-
-              <div className='single-tech'>
-              <img src={PygameLogo} />
-              </div>
+            <div className='web-group'>
+              <a className='web-link' href='https://traction-app.netlify.com/'>To Website</a>
+              <a className='web-arrow' href='https://traction-app.netlify.com/'>⟶</a>
             </div>
+
             <Element className='start-section' name="arch" >
             <h2> Regular </h2>
             </Element>
