@@ -13,12 +13,21 @@ class About extends Component {
 
     render() {
         return(
+            <div className='about'>
+                <div> 
+                    <h1>Levi Appenfelder</h1>
 
-        <div>
-            <div>
-            <img className='Levi' src={Photo} />
+                    <p className='first_p'>
+                    I am a software engineer and graphic designer
+                    passionate about developing people, just as much as I am about building websites.
+                    Years of graphic design experience allows me to create sleek user
+                    interfaces to complement user-friendly functionality.
+                    </p>
+
+                </div>
+
+                <img className='Levi' src={Photo} />
             </div>
-        </div>
 
 
         )
