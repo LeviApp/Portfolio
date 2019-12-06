@@ -15,7 +15,7 @@ class Contact extends Component {
         <div className='contact'>
             <h1>Send Me a Message</h1>
             <h2>levij.app@gmail.com</h2>
-            <form method='POST' data-netlify='true'>
+            <form method='POST' name='Contact' netlify>
                 <h4>Name</h4>
                 <input type='text' name='name' />
                 <h4>Email</h4>
@@ -24,7 +24,7 @@ class Contact extends Component {
                 <input type='text' name='subject' />
                 <h4>Message</h4>
                 <textarea name='message'></textarea>
-                <button>Submit</button>
+                <button type='submit'>Submit</button>
             </form>
         </div>
 
