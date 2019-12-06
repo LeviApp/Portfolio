@@ -3,27 +3,49 @@ import React, { Component } from 'react';
 import CatalogCover from './img/artportfolio/Prosthetics/CatalogCover.jpg'
 
 import './SASS/Contact.sass';
+const encode = (data) => {
+    return Object.keys(data)
+        .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
+        .join("&");
+  }
 
 class Contact extends Component {
 
-    state = {
-    }
+    constructor(props) {
+        super(props);
+        this.state = { name: "", email: "", subject: "", message: "" };
+      }
+  
+      handleSubmit = e => {
+        fetch("/", {
+          method: "POST",
+          headers: { "Content-Type": "application/x-www-form-urlencoded" },
+          body: encode({ "form-name": "contact", ...this.state })
+        })
+          .then(() => alert("Success!"))
+          .catch(error => alert(error));
+  
+        e.preventDefault();
+      };
+  
+      handleChange = e => this.setState({ [e.target.name]: e.target.value });
 
     render() {
+        console.log(this.state)
         return(
 
         <div className='contact'>
             <h1>Send Me a Message</h1>
             <h2>levij.app@gmail.com</h2>
-            <form method="post" name="contact-form" data-netlify="true">
+            <form onSubmit={this.handleSubmit}>
                 <h4>Name</h4>
-                <input type="text" name="name" />
+                <input type="text" name="name" value={this.state.name} onChange={this.handleChange}/>
                 <h4>Email</h4>
-                <input type="email" name="email" />
+                <input type="email" name="email" value={this.state.email} onChange={this.handleChange} />
                 <h4>Subject</h4>
-                <input type="text" name="subject" />
+                <input type="text" name="subject" value={this.state.subject} onChange={this.handleChange} />
                 <h4>Message</h4>
-                <textarea name="message"></textarea>
+                <textarea name="message" value={this.state.message} onChange={this.handleChange}></textarea>
                 <button type="submit">Submit</button>
             </form>
         </div>
