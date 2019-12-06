@@ -20,8 +20,6 @@ class Contact extends Component {
                 <input type='text' name='name' />
                 <h4>Email</h4>
                 <input type='text' name='email' />
-                <h4>Subject</h4>
-                <input type='text' name='subject' />
                 <h4>Message</h4>
                 <textarea name='message'></textarea>
                 <button type='submit'>Submit</button>
