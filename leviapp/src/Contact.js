@@ -3,6 +3,11 @@ import React, { Component } from 'react';
 import CatalogCover from './img/artportfolio/Prosthetics/CatalogCover.jpg'
 
 import './SASS/Contact.sass';
+const encode = (data) => {
+    return Object.keys(data)
+        .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
+        .join("&");
+  }
 
 class Contact extends Component {
 
@@ -15,7 +20,7 @@ class Contact extends Component {
         fetch("/", {
           method: "POST",
           headers: { "Content-Type": "application/x-www-form-urlencoded" },
-          body: { "form-name": "contact", ...this.state }
+          body: encode({ "form-name": "contact", ...this.state })
         })
           .then(() => alert("Success!"))
           .catch(error => alert(error));
@@ -32,7 +37,7 @@ class Contact extends Component {
         <div className='contact'>
             <h1>Send Me a Message</h1>
             <h2>levij.app@gmail.com</h2>
-            <form name="contact-form" method="post" data-netlify="true" onSubmit={this.handleSubmit}>
+            <form onSubmit={this.handleSubmit} name="contact" netlify="true" netlify-honeypot="bot-field">
                 <h4>Name</h4>
                 <input type="text" name="name" value={this.state.name} onChange={this.handleChange}/>
                 <h4>Email</h4>
@@ -40,7 +45,7 @@ class Contact extends Component {
                 <h4>Subject</h4>
                 <input type="text" name="subject" value={this.state.subject} onChange={this.handleChange} />
                 <h4>Message</h4>
-                <textarea name="message" value={this.state.message} onChange={this.handleChange}></textarea>
+                <textarea name="message" value={this.state.message}></textarea>
                 <button type="submit">Submit</button>
             </form>
         </div>
