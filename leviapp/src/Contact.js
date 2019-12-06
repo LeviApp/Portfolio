@@ -32,7 +32,7 @@ class Contact extends Component {
         <div className='contact'>
             <h1>Send Me a Message</h1>
             <h2>levij.app@gmail.com</h2>
-            <form onSubmit={this.handleSubmit}>
+            <form name="contact-form" method="post" data-netlify="true" onSubmit={this.handleSubmit}>
                 <h4>Name</h4>
                 <input type="text" name="name" value={this.state.name} onChange={this.handleChange}/>
                 <h4>Email</h4>
