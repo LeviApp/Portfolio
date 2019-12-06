@@ -23,7 +23,7 @@ class Contact extends Component {
                 <h4>Subject</h4>
                 <input type='text' name='subject' />
                 <h4>Message</h4>
-                <textarea type='text' name='message'></textarea>
+                <textarea name='message'></textarea>
                 <button>Submit</button>
             </form>
         </div>
