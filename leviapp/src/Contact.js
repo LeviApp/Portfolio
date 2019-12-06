@@ -19,7 +19,7 @@ class Contact extends Component {
                 <h4>Name</h4>
                 <input type="text" name="name" />
                 <h4>Email</h4>
-                <input type="text" name="email" />
+                <input type="email" name="email" />
                 <h4>Subject</h4>
                 <input type="text" name="subject" />
                 <h4>Message</h4>
