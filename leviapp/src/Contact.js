@@ -12,10 +12,20 @@ class Contact extends Component {
     render() {
         return(
 
-        <div>
-            <div>
-            <h1> Contact </h1>
-            </div>
+        <div className='contact'>
+            <h1>Send Me a Message</h1>
+            <h2>levij.app@gmail.com</h2>
+            <form>
+            <h4>Name</h4>
+            <input></input>
+            <h4>Email</h4>
+            <input></input>
+            <h4>Subject</h4>
+            <input></input>
+            <h4>Message</h4>
+            <textarea></textarea>
+            <button>Submit</button>
+            </form>
         </div>
 
 
