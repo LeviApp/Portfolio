@@ -15,16 +15,16 @@ class Contact extends Component {
         <div className='contact'>
             <h1>Send Me a Message</h1>
             <h2>levij.app@gmail.com</h2>
-            <form method='POST' name='Contact' data-netlify="true" action="/contact">
+            <form method="post" name="contact-form" netlify>
                 <h4>Name</h4>
-                <input type='text' name='name' />
+                <input type="text" name="name" />
                 <h4>Email</h4>
-                <input type='text' name='email' />
+                <input type="text" name="email" />
                 <h4>Subject</h4>
-                <input type='text' name='subject' />
+                <input type="text" name="subject" />
                 <h4>Message</h4>
-                <textarea name='message'></textarea>
-                <button type='submit'>Submit</button>
+                <textarea name="message"></textarea>
+                <button type="submit">Submit</button>
             </form>
         </div>
 
