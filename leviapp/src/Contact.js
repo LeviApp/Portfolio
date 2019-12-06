@@ -3,11 +3,6 @@ import React, { Component } from 'react';
 import CatalogCover from './img/artportfolio/Prosthetics/CatalogCover.jpg'
 
 import './SASS/Contact.sass';
-const encode = (data) => {
-    return Object.keys(data)
-        .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
-        .join("&");
-  }
 
 class Contact extends Component {
 
@@ -20,7 +15,7 @@ class Contact extends Component {
         fetch("/", {
           method: "POST",
           headers: { "Content-Type": "application/x-www-form-urlencoded" },
-          body: encode({ "form-name": "contact", ...this.state })
+          body: { "form-name": "contact", ...this.state }
         })
           .then(() => alert("Success!"))
           .catch(error => alert(error));
