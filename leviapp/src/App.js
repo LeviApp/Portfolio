@@ -13,10 +13,7 @@ import { Redirect } from 'react-router'
 function App() {
   return (
     <div className="App">
-     <Navigation />
-      <Route exact path="/">
-      {<Redirect to="/about" />}
-      </Route>     
+     <Navigation />    
     <Route path="/about" component={About} />
      <Route path="/dev" component={Dev} />
      <Route path="/art" component={Art} />
