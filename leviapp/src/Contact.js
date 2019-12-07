@@ -24,7 +24,7 @@ class Contact extends Component {
 	this.sendFeedback(templateId, {message_html: this.state.message, from_name: this.state.name, reply_to: this.state.subject, from_email: this.state.email})
   }
 
-  sendFeedback (templateId, variables) {
+  sendFeedback = (templateId, variables) => {
 	window.emailjs.send(
   	'gmail', templateId,
   	variables
