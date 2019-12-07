@@ -11,18 +11,6 @@ class Contact extends Component {
         this.state = { name: "", email: "", subject: "", message: "" };
       }
   
-      handleSubmit = e => {
-        fetch("/", {
-          method: "POST",
-          headers: { "Content-Type": "application/x-www-form-urlencoded" },
-          body: { "form-name": "contact", ...this.state }
-        })
-          .then(() => alert("Success!"))
-          .catch(error => alert(error));
-  
-        e.preventDefault();
-      };
-  
       handleChange = e => this.setState({ [e.target.name]: e.target.value });
 
     render() {
@@ -32,15 +20,17 @@ class Contact extends Component {
         <div className='contact'>
             <h1>Send Me a Message</h1>
             <h2>levij.app@gmail.com</h2>
-            <form name="contact-form" method="post" data-netlify="true" onSubmit={this.handleSubmit}>
+            <form name="contact-form" method="post" data-netlify="true">
+                <input type="hidden" name="bot-field" />
+                <input type="hidden" name="form-name" value="contact-form" />
                 <h4>Name</h4>
-                <input type="text" name="name" value={this.state.name} onChange={this.handleChange}/>
+                <input type="text" name="name" />
                 <h4>Email</h4>
-                <input type="email" name="email" value={this.state.email} onChange={this.handleChange} />
+                <input type="email" name="email" />
                 <h4>Subject</h4>
-                <input type="text" name="subject" value={this.state.subject} onChange={this.handleChange} />
+                <input type="text" name="subject" />
                 <h4>Message</h4>
-                <textarea name="message" value={this.state.message} onChange={this.handleChange}></textarea>
+                <textarea name="message"></textarea>
                 <button type="submit">Submit</button>
             </form>
         </div>
