@@ -53,7 +53,7 @@ class Contact extends Component {
                 <input type="text" name="subject" value={this.state.subject} onChange={this.handleChange} />
                 <h4>Message</h4>
                 <textarea name="message" value={this.state.message} onChange={this.handleChange}></textarea>
-                <button type="submit" onClick={this.handleSubmit}>Submit</button>
+                <button type="submit">Submit</button>
             </form>
         </div>
 
