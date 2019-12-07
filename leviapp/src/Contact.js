@@ -6,8 +6,12 @@ import './SASS/Contact.sass';
 
 class Contact extends Component {
 
-    state = {
-    }
+    constructor(props) {
+        super(props);
+        this.state = { name: "", email: "", subject: "", message: "" };
+      }
+  
+      handleChange = e => this.setState({ [e.target.name]: e.target.value });
 
     render() {
         return(
@@ -15,16 +19,18 @@ class Contact extends Component {
         <div className='contact'>
             <h1>Send Me a Message</h1>
             <h2>levij.app@gmail.com</h2>
-            <form>
-            <h4>Name</h4>
-            <input></input>
-            <h4>Email</h4>
-            <input></input>
-            <h4>Subject</h4>
-            <input></input>
-            <h4>Message</h4>
-            <textarea></textarea>
-            <button></button>
+            <form name="contact-form" method="post" data-netlify="true">
+                <input type="hidden" name="bot-field" />
+                <input type="hidden" name="form-name" value="contact-form" />
+                <h4>Name</h4>
+                <input type="text" name="name" />
+                <h4>Email</h4>
+                <input type="email" name="email" />
+                <h4>Subject</h4>
+                <input type="text" name="subject" />
+                <h4>Message</h4>
+                <textarea name="message"></textarea>
+                <button type="submit">Submit</button>
             </form>
         </div>
 
