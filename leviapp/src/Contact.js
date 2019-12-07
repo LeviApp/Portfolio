@@ -14,21 +14,28 @@ class Contact extends Component {
     constructor(props) {
         super(props);
         this.state = { name: "", email: "", subject: "", message: "" };
+        this.handleChange = this.handleChange.bind(this);
+        this.handleSubmit = this.handleSubmit.bind(this);
       }
   
-      handleSubmit = e => {
-        fetch("/", {
-          method: "POST",
-          headers: { "Content-Type": "application/x-www-form-urlencoded" },
-          body: encode({ "form-name": "contact", ...this.state })
-        })
-          .then(() => alert("Success!"))
-          .catch(error => alert(error));
+  handleSubmit = (event) => {
+	const templateId = 'template_7sL0hWXJ';
+
+	this.sendFeedback(templateId, {message_html: this.state.message, from_name: this.state.name, reply_to: this.state.subject, from_email: this.state.email})
+  }
+
+  sendFeedback (templateId, variables) {
+	window.emailjs.send(
+  	'gmail', templateId,
+  	variables
+  	).then(res => {
+    	console.log('Email successfully sent!')
+  	})
+  	// Handle errors here however you like, or use a React error boundary
+  	.catch(err => console.error('Oh well, you failed. Here some thoughts on the error that occured:', err))
+  }
   
-        e.preventDefault();
-      };
-  
-      handleChange = e => this.setState({ [e.target.name]: e.target.value });
+    handleChange = e => this.setState({ [e.target.name]: e.target.value });
 
     render() {
         console.log(this.state)
@@ -45,8 +52,8 @@ class Contact extends Component {
                 <h4>Subject</h4>
                 <input type="text" name="subject" value={this.state.subject} onChange={this.handleChange} />
                 <h4>Message</h4>
-                <textarea name="message" value={this.state.message}></textarea>
-                <button type="submit">Submit</button>
+                <textarea name="message" value={this.state.message} onChange={this.handleChange}></textarea>
+                <button type="submit" onClick={this.handleSubmit}>Submit</button>
             </form>
         </div>
 
