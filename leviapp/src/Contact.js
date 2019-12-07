@@ -44,15 +44,15 @@ class Contact extends Component {
         <div className='contact'>
             <h1>Send Me a Message</h1>
             <h2>levij.app@gmail.com</h2>
-            <form onSubmit={this.handleSubmit}>
+            <form onSubmit={this.handleSubmit} name="contact">
                 <h4>Name</h4>
-                <input type="text" value={this.state.name} onChange={this.handleChange}/>
+                <input type="text" name="name" value={this.state.name} onChange={this.handleChange}/>
                 <h4>Email</h4>
-                <input type="email" value={this.state.email} onChange={this.handleChange} />
+                <input type="email" name="email" value={this.state.email} onChange={this.handleChange} />
                 <h4>Subject</h4>
-                <input type="text" value={this.state.subject} onChange={this.handleChange} />
+                <input type="text" name="subject" value={this.state.subject} onChange={this.handleChange} />
                 <h4>Message</h4>
-                <textarea value={this.state.message} onChange={this.handleChange}></textarea>
+                <textarea name="message" value={this.state.message} onChange={this.handleChange}></textarea>
                 <button type="submit" onClick={this.handleSubmit}>Submit</button>
             </form>
         </div>
