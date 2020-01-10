@@ -27,6 +27,7 @@ import MomentLogo from './img/MomentLogo.png'
 import p5Logo from './img/p5Logo.png'
 import PythonLogo from './img/PythonLogo.png'
 import PygameLogo from './img/PygameLogo.png'
+import LESSLogo from './img/LESSLogo.png'
 
 
 import Traction from './svg/traction.svg'
@@ -120,11 +121,11 @@ class Dev extends Component {
             <h3 className='arrows arrows_1'>>>>>></h3>
 
             <h2 onClick={() => {this.scrollTo('notes', -235)}} className='all_sections second'>
-            Notes
+            Quotes
             </h2>
             <h3 className='arrows arrows_2'>>>>>></h3>
             <h2 onClick={() => {this.scrollTo('arch', -235)}} className='all_sections third'>
-            Smith & Jones Architects
+            Reform In Dust Storms
             </h2>
             <h3 className='arrows arrows_3'>>>>>></h3>
 
@@ -239,29 +240,9 @@ class Dev extends Component {
             </div>
             <img className='mapped' src={Mapped} alt="mapped event" />  
             </div>   
-
-            <h2> Regul </h2>
-            <h2> Regular </h2>
-            <h2> Regular </h2>
-            <h2> Regular </h2>
-            <h2> Regular </h2>
-            <h2> Regular </h2>
-            <h2> Regular </h2>
-            <h2> Regular </h2>
-            <h2> Regular </h2>
-            <h2> Regular </h2>
-            <h2> Regular </h2>
-            <h2> Regular </h2>
-            <h2> Regular </h2>
-            <h2> Regular </h2>
-            <h2> Regular </h2>
-            <h2> Regular </h2>
-            <h2> Regular </h2>
-            <h2> Regular </h2>
-            <h2> Regular </h2>
             </section>
             <section>
-            <h1 className="NOTES"> Notes </h1>
+            <h1 className="NOTES"> Quotes </h1>
             <div className='tech-used'>
               <div className='single-tech'>
               <img src={ReactLogo} />
@@ -286,84 +267,36 @@ class Dev extends Component {
             <Element className='start-section' name="notes" >
             <h2>Regular</h2>
             </Element>
-            <h2> Regular </h2>
-            <h2> Regular </h2>
-            <h2> Regular </h2>
-            <h2> Regular </h2>
-            <h2> Regular </h2>
-            <h2> Regular </h2>
-            <h2> Regular </h2>
-            <h2> Regular </h2>
-            <h2> Regular </h2>
-            <h2> Regular </h2>
-            <h2> Regular </h2>
-            <h2> Regular </h2>
-            <h2> Regular </h2>
-            <h2> Regular </h2>
-            <h2> Regular </h2>
-            <h2> Regular </h2>
-            <h2> Regular </h2>
-            <h2> Regular </h2>
-            <h2> Regular </h2>
-            <h2> Regular </h2>
-            <h2> Regular </h2>
-            <h2> Regular </h2>
-            <h2> Regular </h2>
-            <h2> Regular </h2>
-            <h2> Regular </h2>
-            <h2> Regular </h2>
-            <h2> Regular </h2>
-            <h2> Regular </h2>
             </section>
 
             <section>
-            <h1 className="ARCH">Smith & Jones Architects</h1>
+            <h1 className="ARCH">Reform in Dust Storms</h1>
             <div className='tech-used'>
+              <div className='single-tech'>
+              <img src={HTMLLogo} />
+              </div>
+
+              <div className='single-tech'>
+              <img src={JavaScriptLogo} />
+              </div>
+
               <div className='single-tech'>
               <img src={CSSLogo} />
               </div>
 
               <div className='single-tech'>
-              <img src={HTMLLogo} />
+              <img src={LESSLogo} />
               </div>
             </div>
 
             <div className='web-group'>
-              <a className='web-link' href='https://traction-app.netlify.com/'>To Website</a>
-              <a className='web-arrow' href='https://traction-app.netlify.com/'>⟶</a>
+              <a className='web-link' href='https://rids-instructions.netlify.com/'>To Website</a>
+              <a className='web-arrow' href='https://rids-instructions.netlify.com/'>⟶</a>
             </div>
 
             <Element className='start-section' name="arch" >
             <h2> Regular </h2>
             </Element>
-            <h2> Regular </h2>
-            <h2> Regular </h2>
-            <h2> Regular </h2>
-            <h2> Regular </h2>
-            <h2> Regular </h2>
-            <h2> Regular </h2>
-            <h2> Regular </h2>
-            <h2> Regular </h2>
-            <h2> Regular </h2>
-            <h2> Regular </h2>
-            <h2> Regular </h2>
-            <h2> Regular </h2>
-            <h2> Regular </h2>
-            <h2> Regular </h2>
-            <h2> Regular </h2>
-            <h2> Regular </h2>
-            <h2> Regular </h2>
-            <h2> Regular </h2>
-            <h2> Regular </h2>
-            <h2> Regular </h2>
-            <h2> Regular </h2>
-            <h2> Regular </h2>
-            <h2> Regular </h2>
-            <h2> Regular </h2>
-            <h2> Regular </h2>
-            <h2> Regular </h2>
-            <h2> Regular </h2>
-            <h2> Regular </h2>
             </section>
 
             <section>
@@ -402,35 +335,6 @@ class Dev extends Component {
             <Element className='start-section' name="arch" >
             <h2> Regular </h2>
             </Element>
-
-            <h2> Regular </h2>
-            <h2> Regular </h2>
-            <h2> Regular </h2>
-            <h2> Regular </h2>
-            <h2> Regular </h2>
-            <h2> Regular </h2>
-            <h2> Regular </h2>
-            <h2> Regular </h2>
-            <h2> Regular </h2>
-            <h2> Regular </h2>
-            <h2> Regular </h2>
-            <h2> Regular </h2>
-            <h2> Regular </h2>
-            <h2> Regular </h2>
-            <h2> Regular </h2>
-            <h2> Regular </h2>
-            <h2> Regular </h2>
-            <h2> Regular </h2>
-            <h2> Regular </h2>
-            <h2> Regular </h2>
-            <h2> Regular </h2>
-            <h2> Regular </h2>
-            <h2> Regular </h2>
-            <h2> Regular </h2>
-            <h2> Regular </h2>
-            <h2> Regular </h2>
-            <h2> Regular </h2>
-            <h2> Regular </h2>
             </section>
 
             <section>
@@ -453,84 +357,6 @@ class Dev extends Component {
             <Element className='start-section' name="arch" >
             <h2> Regular </h2>
             </Element>
-            <h2> Regular </h2>
-            <h2> Regular </h2>
-            <h2> Regular </h2>
-            <h2> Regular </h2>
-            <h2> Regular </h2>
-            <h2> Regular </h2>
-            <h2> Regular </h2>
-            <h2> Regular </h2>
-            <h2> Regular </h2>
-            <h2> Regular </h2>
-            <h2> Regular </h2>
-            <h2> Regular </h2>
-            <h2> Regular </h2>
-            <h2> Regular </h2>
-            <h2> Regular </h2>
-            <h2> Regular </h2>
-            <h2> Regular </h2>
-            <h2> Regular </h2>
-            <h2> Regular </h2>
-            <h2> Regular </h2>
-            <h2> Regular </h2>
-            <h2> Regular </h2>
-            <h2> Regular </h2>
-            <h2> Regular </h2>
-            <h2> Regular </h2>
-            <h2> Regular </h2>
-            <h2> Regular </h2>
-            <h2> Regular </h2>
-            </section>
-
-            <section>
-            <h1 className="automata">Cellular Automata</h1>
-            <div className='tech-used'>
-              <div className='single-tech'>
-              <img src={PythonLogo} />
-              </div>
-
-              <div className='single-tech'>
-              <img src={PygameLogo} />
-              </div>
-            </div>
-
-            <div className='web-group'>
-              <a className='web-link' href='https://traction-app.netlify.com/'>To Website</a>
-              <a className='web-arrow' href='https://traction-app.netlify.com/'>⟶</a>
-            </div>
-
-            <Element className='start-section' name="arch" >
-            <h2> Regular </h2>
-            </Element>
-            <h2> Regular </h2>
-            <h2> Regular </h2>
-            <h2> Regular </h2>
-            <h2> Regular </h2>
-            <h2> Regular </h2>
-            <h2> Regular </h2>
-            <h2> Regular </h2>
-            <h2> Regular </h2>
-            <h2> Regular </h2>
-            <h2> Regular </h2>
-            <h2> Regular </h2>
-            <h2> Regular </h2>
-            <h2> Regular </h2>
-            <h2> Regular </h2>
-            <h2> Regular </h2>
-            <h2> Regular </h2>
-            <h2> Regular </h2>
-            <h2> Regular </h2>
-            <h2> Regular </h2>
-            <h2> Regular </h2>
-            <h2> Regular </h2>
-            <h2> Regular </h2>
-            <h2> Regular </h2>
-            <h2> Regular </h2>
-            <h2> Regular </h2>
-            <h2> Regular </h2>
-            <h2> Regular </h2>
-            <h2> Regular </h2>
             </section>
         </div>
 
