@@ -121,7 +121,7 @@ class Dev extends Component {
             <h3 className='arrows arrows_1'>>>>>></h3>
 
             <h2 onClick={() => {this.scrollTo('notes', -235)}} className='all_sections second'>
-            Quotes
+            Quotes 4 Life
             </h2>
             <h3 className='arrows arrows_2'>>>>>></h3>
             <h2 onClick={() => {this.scrollTo('arch', -235)}} className='all_sections third'>
@@ -130,12 +130,12 @@ class Dev extends Component {
             <h3 className='arrows arrows_3'>>>>>></h3>
 
             <h2 onClick={() => {this.scrollTo('schatz', -235)}} className='all_sections fourth'>
-            Schatzinsel
+            Automaton
             </h2>
             <h3 className='arrows arrows_4'>>>>>></h3>
 
             <h2 onClick={() => {this.scrollTo('automata', -235)}} className='all_sections fifth'>
-            Automata
+            Schatzinsel
             </h2>
             <h3 className='arrows arrows_5'>>>>>></h3>
             </div>
@@ -183,10 +183,19 @@ class Dev extends Component {
                   <img className='postgres' src={PostgresLogo} />
                   </div>
               </div>
-            <div className='web-group'>
-              <a className='web-link' href='https://traction-app.netlify.com/'>To Website</a>
-              <a className='web-arrow' href='https://traction-app.netlify.com/'>⟶</a>
-            </div>
+
+              <div className='web-sec'>
+              <div className='web-group'>
+                <a className='web-link' href='https://traction-app.netlify.com/'>To Website</a>
+                <a className='web-arrow' href='https://traction-app.netlify.com/'>⟶</a>
+              </div>
+
+              <div className='web-group'>
+              <a className='web-link' href='https://github.com/LeviApp/labspt2-workout-tracker'>To Project Repo</a>
+              <a className='web-arrow' href='https://github.com/LeviApp/labspt2-workout-tracker'>⟶</a>
+              </div>
+              </div>
+
             <div className='logo-group'>
             <div className='logo-sect'>
             <div>
@@ -242,7 +251,7 @@ class Dev extends Component {
             </div>   
             </section>
             <section>
-            <h1 className="NOTES"> Quotes </h1>
+            <h1 className="NOTES"> Quotes 4 Life </h1>
             <div className='tech-used'>
               <div className='single-tech'>
               <img src={ReactLogo} />
@@ -260,10 +269,24 @@ class Dev extends Component {
               <img className='javascript' src={JavaScriptLogo} />
               </div>
             </div>
+
+            <div className='web-sec'>
             <div className='web-group'>
-              <a className='web-link' href='https://traction-app.netlify.com/'>To Website</a>
-              <a className='web-arrow' href='https://traction-app.netlify.com/'>⟶</a>
+              <a className='web-link' href='https://quotes-4-life.netlify.com/home'>To Website</a>
+              <a className='web-arrow' href='https://quotes-4-life.netlify.com/home'>⟶</a>
             </div>
+
+            <div className='web-group'>
+              <a className='web-link' href='https://github.com/LeviApp/front-end-project-week'>To FrontEnd Repo</a>
+              <a className='web-arrow' href='https://github.com/LeviApp/front-end-project-week'>⟶</a>
+            </div>
+
+            <div className='web-group'>
+              <a className='web-link' href='https://github.com/LeviApp/back-end-project-week'>To BackEnd Repo</a>
+              <a className='web-arrow' href='https://github.com/LeviApp/back-end-project-week'>⟶</a>
+            </div>
+            </div>
+
             <Element className='start-section' name="notes" >
             <h2>Regular</h2>
             </Element>
@@ -289,11 +312,45 @@ class Dev extends Component {
               </div>
             </div>
 
+            <div className='web-sec'>
             <div className='web-group'>
               <a className='web-link' href='https://rids-instructions.netlify.com/'>To Website</a>
               <a className='web-arrow' href='https://rids-instructions.netlify.com/'>⟶</a>
             </div>
 
+            <div className='web-group'>
+              <a className='web-link' href='https://github.com/LeviApp/User-Interface-Project-Week'>To Project Repo</a>
+              <a className='web-arrow' href='https://github.com/LeviApp/User-Interface-Project-Week'>⟶</a>
+            </div>
+            </div>
+
+            <Element className='start-section' name="arch" >
+            <h2> Regular </h2>
+            </Element>
+            </section>
+
+            <section>
+            <h1 className="automata">Automaton</h1>
+            <div className='tech-used'>
+              <div className='single-tech'>
+              <img src={PythonLogo} />
+              </div>
+
+              <div className='single-tech'>
+              <img src={PygameLogo} />
+              </div>
+            </div>
+
+            <div className='web-sec'>
+            <div className='web-group'>
+              <a className='web-link' href='https://github.com/LeviApp/Cellular-Automata'>To Project Repo</a>
+              <a className='web-arrow' href='https://github.com/LeviApp/Cellular-Automata'>⟶</a>
+            </div>
+            </div>
+
+            <div className='video'>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/fGX7U9Sx8S0" frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture; fullscreen"></iframe>
+            </div>
             <Element className='start-section' name="arch" >
             <h2> Regular </h2>
             </Element>
@@ -327,31 +384,21 @@ class Dev extends Component {
               </div>
             </div>
 
+            <div className='web-sec'>
             <div className='web-group'>
               <a className='web-link' href='https://schatzinsel.netlify.com/'>To Website</a>
               <a className='web-arrow' href='https://schatzinsel.netlify.com/'>⟶</a>
             </div>
 
-            <Element className='start-section' name="arch" >
-            <h2> Regular </h2>
-            </Element>
-            </section>
-
-            <section>
-            <h1 className="automata">Cellular Automata</h1>
-            <div className='tech-used'>
-              <div className='single-tech'>
-              <img src={PythonLogo} />
-              </div>
-
-              <div className='single-tech'>
-              <img src={PygameLogo} />
-              </div>
+            <div className='web-group'>
+              <a className='web-link' href='https://github.com/LeviApp/CS-Build-Week-2'>To FrontEnd Repo</a>
+              <a className='web-arrow' href='https://github.com/LeviApp/CS-Build-Week-2'>⟶</a>
             </div>
 
             <div className='web-group'>
-              <a className='web-link' href='https://traction-app.netlify.com/'>To Website</a>
-              <a className='web-arrow' href='https://traction-app.netlify.com/'>⟶</a>
+              <a className='web-link' href='https://github.com/LeviApp/CSProject-Backend'>To BackEnd Repo</a>
+              <a className='web-arrow' href='https://github.com/LeviApp/CSProject-Backend'>⟶</a>
+            </div>
             </div>
 
             <Element className='start-section' name="arch" >
