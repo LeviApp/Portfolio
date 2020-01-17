@@ -36,6 +36,7 @@ import Mapped from './img/mapped-event.png'
 
 import Checkbox from './Checkbox.jsx'
 
+import TractionPage from './img/TractionPage.png'
 
 class Dev extends Component {
 
@@ -140,8 +141,32 @@ class Dev extends Component {
             <h3 className='arrows arrows_5'>>>>>></h3>
             </div>
             <section>
-
             <h1 className="TRACTION"> Traction </h1>
+
+              <div className='project'>
+              <div className='overview'>
+              <Element className='start-section' name="traction" >
+                <h2>❮❯ Workouts Application ❮❯</h2>
+              </Element>
+              <p>
+                A group project focused on implementing web development solutions
+                for a real world situation
+              </p>
+              <div className='web-sec'>
+              <div className='web-group'>
+                <a className='web-link' href='https://traction-app.netlify.com/'>To Website</a>
+                <a className='web-arrow' href='https://traction-app.netlify.com/'>⟶</a>
+              </div>
+
+              <div className='web-group'>
+              <a className='web-link' href='https://github.com/LeviApp/labspt2-workout-tracker'>To Project Repo</a>
+              <a className='web-arrow' href='https://github.com/LeviApp/labspt2-workout-tracker'>⟶</a>
+              </div>
+              </div>
+              </div>
+              <div className='visual-intro'>
+              <img src={TractionPage} />
+              <h2>Tech Used</h2>
               <div className='tech-used'>
                   <div className='single-tech'>
                   <img src={ReactLogo} />
@@ -183,28 +208,14 @@ class Dev extends Component {
                   <img className='postgres' src={PostgresLogo} />
                   </div>
               </div>
-
-              <div className='web-sec'>
-              <div className='web-group'>
-                <a className='web-link' href='https://traction-app.netlify.com/'>To Website</a>
-                <a className='web-arrow' href='https://traction-app.netlify.com/'>⟶</a>
-              </div>
-
-              <div className='web-group'>
-              <a className='web-link' href='https://github.com/LeviApp/labspt2-workout-tracker'>To Project Repo</a>
-              <a className='web-arrow' href='https://github.com/LeviApp/labspt2-workout-tracker'>⟶</a>
               </div>
               </div>
 
             <div className='logo-group'>
             <div className='logo-sect'>
-            <div>
-            <Element className='start-section' name="traction" >
-            <h2>❮❯ Designed the Traction logo</h2>
-            </Element>
+            <p>❮❯ Designed the Traction logo</p>
 
-            <h2> ❮❯ Changed color scheme from blue to red/orange/blue after studying workout company color palettes </h2>
-            </div>
+            <p> ❮❯ Changed color scheme from blue to red/orange/blue after studying workout company color palettes </p>
             <div className="t-logos-drafts">
                 <div>
                 <img className='traction-logo-draft0' src={TractionDraft0} alt="traction-logo-draft0" />
@@ -230,22 +241,22 @@ class Dev extends Component {
             <div className='UI'>
             <img className='calendar' src={Calendar} alt="traction-logo-draft1" />
             <div>
-            <h2> ❮❯ Built dark UI design of the website using SASS to stand out from the standard light mode </h2>
-            <h2> ❮❯ Implemented the calendar using the FullCalendar api </h2>
-            <h2> ❮❯ Built calendar functionality using the JQuery version first, then changed to React version</h2>
+            <p> ❮❯ Built dark UI design of the website using SASS to stand out from the standard light mode </p>
+            <p> ❮❯ Implemented the calendar using the FullCalendar api </p>
+            <p> ❮❯ Built calendar functionality using the JQuery version first, then changed to React version</p>
             </div>
             </div>
             <div className='mapped'>
             <div>
             <div className='check'>
-            <h2> ❮❯ Created a hexagonal checkmark box with functionality </h2>
+            <p> ❮❯ Created a hexagonal checkmark box with functionality </p>
             <div className='check-group'>
             <Checkbox />
             <h6>Click Me</h6>
             </div>
             </div>
-            <h2> ❮❯ Used several JavaScript map implementations which involved dates, body groups, and exercises</h2>
-            <h2> ❮❯ Organized tasks using Trello </h2>
+            <p> ❮❯ Used several JavaScript map implementations which involved dates, body groups, and exercises</p>
+            <p> ❮❯ Organized tasks using Trello </p>
             </div>
             <img className='mapped' src={Mapped} alt="mapped event" />  
             </div>   
@@ -288,7 +299,7 @@ class Dev extends Component {
             </div>
 
             <Element className='start-section' name="notes" >
-            <h2>Regular</h2>
+            <h2>❮❯ Project's Focus: Implementation of Web Development Principles ❮❯</h2>
             </Element>
             </section>
 
@@ -325,12 +336,18 @@ class Dev extends Component {
             </div>
 
             <Element className='start-section' name="arch" >
-            <h2> Regular </h2>
+            <h2> ❮❯ Project's Focus: Responsive Behavior of Websites ❮❯ </h2>
             </Element>
+            <p>This project is the instructions for a detective game. Set in Old West Colorado, the player must discover who committed the crime, the weapon that was used, and the place of the crime. 
+              This project gives an overview of the entire game. Furthermore, there are three pages that provide more details about the suspect, weapon, and place.</p>
+
             </section>
 
             <section>
             <h1 className="automata">Automaton</h1>
+            <div className='video'>
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/fGX7U9Sx8S0" frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture; fullscreen"></iframe>
+            </div>
             <div className='tech-used'>
               <div className='single-tech'>
               <img src={PythonLogo} />
@@ -347,12 +364,8 @@ class Dev extends Component {
               <a className='web-arrow' href='https://github.com/LeviApp/Cellular-Automata'>⟶</a>
             </div>
             </div>
-
-            <div className='video'>
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/fGX7U9Sx8S0" frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture; fullscreen"></iframe>
-            </div>
             <Element className='start-section' name="arch" >
-            <h2> Regular </h2>
+            <h2> ❮❯ Project's Focus: Implementation of Conway's Game of Life ❮❯ </h2>
             </Element>
             </section>
 
@@ -402,7 +415,7 @@ class Dev extends Component {
             </div>
 
             <Element className='start-section' name="arch" >
-            <h2> Regular </h2>
+            <h2>❮❯ Project's Focus: Implementation of Computer Science Principles ❮❯</h2>
             </Element>
             </section>
         </div>
