@@ -72,7 +72,8 @@
             flex-direction: row
             justify-content: flex-start
             align-items: flex-start
-            .overview
+            margin-bottom: 40px
+            .left
                 display: flex
                 flex-direction: column
                 width: 100%
@@ -81,6 +82,23 @@
                 margin-top: 50px
                 margin-left: 2%
                 margin-right: 2%
+                .t-logos-drafts
+                    display: flex
+                    flex-direction: column
+                    justify-content: space-between
+                    width: 100%
+                    margin-bottom: 75px
+
+                    div
+                        display: flex
+                        justify-content: center
+                        img
+                            margin: 10px
+                            width: 17%
+                        
+                        .final-traction-logo:hover
+                            transform: rotateY(360deg)	
+                            transition: transform 1s
                 .web-sec
                     display: flex
                     flex-direction: row
@@ -120,22 +138,39 @@
                     font-size: 1.25rem
                 p
                     color: white
-                    width: 100%
+                    width: 90%
                     font-size: 1.25rem
+                
+                img
+                    width: 70%
+                    height: auto
 
                     
-            .visual-intro
+            .right
                 display: flex
                 flex-direction: column
                 justify-content: center
                 align-items: center
                 width: 100%
+                height: 75vh
                 z-index: 1
                 box-shadow: -32px 0px 0 -30px $gray
+                h2
+                    color: $blue
+                    font-size: 1.25rem
+
+                p
+                    color: white
+                    width: 90%
+                    font-size: 1.25rem
 
                 img
                     width: 70%
                     height: auto
+
+                .calendar
+                    width: 90%
+                    
                 .tech-used
                     display: flex
                     align-self: center
@@ -174,26 +209,6 @@
     display: flex
     flex-direction: row
     margin-top: 75px
-
-
-.t-logos-drafts
-    display: flex
-    flex-direction: column
-    justify-content: space-between
-    width: 85%
-    margin-top: 75px
-    margin-bottom: 75px
-
-    div
-        display: flex
-        justify-content: center
-        img
-            margin: 10px
-            width: 15%
-        
-        .final-traction-logo:hover
-            transform: rotateY(360deg)	
-            transition: transform 1s
 
 .all_sections:hover
     cursor: pointer
