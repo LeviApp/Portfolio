@@ -144,7 +144,7 @@ class Dev extends Component {
             <h1 className="TRACTION"> Traction </h1>
 
               <div className='project'>
-              <div className='overview'>
+              <div className='left'>
               <Element className='start-section' name="traction" >
                 <h2>❮❯ Workouts Application ❮❯</h2>
               </Element>
@@ -164,7 +164,7 @@ class Dev extends Component {
               </div>
               </div>
               </div>
-              <div className='visual-intro'>
+              <div className='right'>
               <img src={TractionPage} />
               <h2>Tech Used</h2>
               <div className='tech-used'>
@@ -211,11 +211,8 @@ class Dev extends Component {
               </div>
               </div>
 
-            <div className='logo-group'>
-            <div className='logo-sect'>
-            <p>❮❯ Designed the Traction logo</p>
-
-            <p> ❮❯ Changed color scheme from blue to red/orange/blue after studying workout company color palettes </p>
+            <div className='project'>
+            <div className='left'>
             <div className="t-logos-drafts">
                 <div>
                 <img className='traction-logo-draft0' src={TractionDraft0} alt="traction-logo-draft0" />
@@ -237,17 +234,27 @@ class Dev extends Component {
                 </div>
             </div>
             </div>
+            <div className='right'>
+              <h2>❮❯ Traction Logo ❮❯</h2>
+              <p>Changed color scheme from blue to red/orange/blue after studying workout company color palettes </p>
             </div>
-            <div className='UI'>
-            <img className='calendar' src={Calendar} alt="traction-logo-draft1" />
-            <div>
+            </div>
+            <div className='project'>
+            <div className='left'>
             <p> ❮❯ Built dark UI design of the website using SASS to stand out from the standard light mode </p>
             <p> ❮❯ Implemented the calendar using the FullCalendar api </p>
             <p> ❮❯ Built calendar functionality using the JQuery version first, then changed to React version</p>
             </div>
+            <div className='right'>
+            <img className='calendar' src={Calendar} alt="traction-logo-draft1" />
             </div>
-            <div className='mapped'>
-            <div>
+            </div>
+            <div className='project'>
+            <div className='left'>
+            <img className='mapped' src={Mapped} alt="mapped event" />  
+            </div>
+
+            <div className='right'>
             <div className='check'>
             <p> ❮❯ Created a hexagonal checkmark box with functionality </p>
             <div className='check-group'>
@@ -258,7 +265,6 @@ class Dev extends Component {
             <p> ❮❯ Used several JavaScript map implementations which involved dates, body groups, and exercises</p>
             <p> ❮❯ Organized tasks using Trello </p>
             </div>
-            <img className='mapped' src={Mapped} alt="mapped event" />  
             </div>   
             </section>
             <section>
