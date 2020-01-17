@@ -37,6 +37,7 @@ import Mapped from './img/mapped-event.png'
 import Checkbox from './Checkbox.jsx'
 
 import TractionPage from './img/TractionPage.png'
+import QuotesPage from './img/QuotesPage.png'
 
 class Dev extends Component {
 
@@ -143,7 +144,7 @@ class Dev extends Component {
             <section>
             <h1 className="TRACTION"> Traction </h1>
 
-              <div className='project'>
+              <div className='project' id='traction-project'>
               <div className='left'>
               <Element className='start-section' name="traction" >
                 <h2>❮❯ Workouts Application ❮❯</h2>
@@ -267,8 +268,35 @@ class Dev extends Component {
             </div>
             </div>   
             </section>
+            
             <section>
             <h1 className="NOTES"> Quotes 4 Life </h1>
+            <div className="project">
+            <div className='left'>
+            <Element className='start-section' name="notes" >
+            <h2>❮❯ Web Development Principles ❮❯</h2>
+            </Element>
+            <div className='web-sec'>
+            <div className='web-group'>
+              <a className='web-link' href='https://quotes-4-life.netlify.com/home'>To Website</a>
+              <a className='web-arrow' href='https://quotes-4-life.netlify.com/home'>⟶</a>
+            </div>
+
+            <div className='web-group'>
+              <a className='web-link' href='https://github.com/LeviApp/front-end-project-week'>To FrontEnd Repo</a>
+              <a className='web-arrow' href='https://github.com/LeviApp/front-end-project-week'>⟶</a>
+            </div>
+
+            <div className='web-group'>
+              <a className='web-link' href='https://github.com/LeviApp/back-end-project-week'>To BackEnd Repo</a>
+              <a className='web-arrow' href='https://github.com/LeviApp/back-end-project-week'>⟶</a>
+            </div>
+            </div>
+            </div>
+
+            <div className="right">
+            <img className="quotes-page" src={QuotesPage} />
+            <h2>Tech Used</h2>
             <div className='tech-used'>
               <div className='single-tech'>
               <img src={ReactLogo} />
@@ -286,27 +314,8 @@ class Dev extends Component {
               <img className='javascript' src={JavaScriptLogo} />
               </div>
             </div>
-
-            <div className='web-sec'>
-            <div className='web-group'>
-              <a className='web-link' href='https://quotes-4-life.netlify.com/home'>To Website</a>
-              <a className='web-arrow' href='https://quotes-4-life.netlify.com/home'>⟶</a>
-            </div>
-
-            <div className='web-group'>
-              <a className='web-link' href='https://github.com/LeviApp/front-end-project-week'>To FrontEnd Repo</a>
-              <a className='web-arrow' href='https://github.com/LeviApp/front-end-project-week'>⟶</a>
-            </div>
-
-            <div className='web-group'>
-              <a className='web-link' href='https://github.com/LeviApp/back-end-project-week'>To BackEnd Repo</a>
-              <a className='web-arrow' href='https://github.com/LeviApp/back-end-project-week'>⟶</a>
             </div>
             </div>
-
-            <Element className='start-section' name="notes" >
-            <h2>❮❯ Project's Focus: Implementation of Web Development Principles ❮❯</h2>
-            </Element>
             </section>
 
             <section>
