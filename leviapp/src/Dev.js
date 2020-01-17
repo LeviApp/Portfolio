@@ -38,6 +38,8 @@ import Checkbox from './Checkbox.jsx'
 
 import TractionPage from './img/TractionPage.png'
 import QuotesPage from './img/QuotesPage.png'
+import ReformPage from './img/ReformPage.png'
+
 
 class Dev extends Component {
 
@@ -320,6 +322,28 @@ class Dev extends Component {
 
             <section>
             <h1 className="ARCH">Reform in Dust Storms</h1>
+            <div className='project'>
+            <div className='left'>
+            <Element className='start-section' name="arch" >
+            <h2> ❮❯ Responsive Behavior of Websites ❮❯ </h2>
+            </Element>
+            <p>This project is the instructions for a detective game. Set in Old West Colorado, the player must discover who committed the crime, the weapon that was used, and the place of the crime. 
+              This project gives an overview of the entire game. Furthermore, there are three pages that provide more details about the suspect, weapon, and place.</p>
+              <div className='web-sec'>
+            <div className='web-group'>
+              <a className='web-link' href='https://rids-instructions.netlify.com/'>To Website</a>
+              <a className='web-arrow' href='https://rids-instructions.netlify.com/'>⟶</a>
+            </div>
+
+            <div className='web-group'>
+              <a className='web-link' href='https://github.com/LeviApp/User-Interface-Project-Week'>To Project Repo</a>
+              <a className='web-arrow' href='https://github.com/LeviApp/User-Interface-Project-Week'>⟶</a>
+            </div>
+            </div>
+            </div>
+            <div className='right'>
+            <img className='reform' src={ReformPage} />
+            <h2>Tech Used</h2>
             <div className='tech-used'>
               <div className='single-tech'>
               <img src={HTMLLogo} />
@@ -337,25 +361,8 @@ class Dev extends Component {
               <img src={LESSLogo} />
               </div>
             </div>
-
-            <div className='web-sec'>
-            <div className='web-group'>
-              <a className='web-link' href='https://rids-instructions.netlify.com/'>To Website</a>
-              <a className='web-arrow' href='https://rids-instructions.netlify.com/'>⟶</a>
-            </div>
-
-            <div className='web-group'>
-              <a className='web-link' href='https://github.com/LeviApp/User-Interface-Project-Week'>To Project Repo</a>
-              <a className='web-arrow' href='https://github.com/LeviApp/User-Interface-Project-Week'>⟶</a>
             </div>
             </div>
-
-            <Element className='start-section' name="arch" >
-            <h2> ❮❯ Project's Focus: Responsive Behavior of Websites ❮❯ </h2>
-            </Element>
-            <p>This project is the instructions for a detective game. Set in Old West Colorado, the player must discover who committed the crime, the weapon that was used, and the place of the crime. 
-              This project gives an overview of the entire game. Furthermore, there are three pages that provide more details about the suspect, weapon, and place.</p>
-
             </section>
 
             <section>
