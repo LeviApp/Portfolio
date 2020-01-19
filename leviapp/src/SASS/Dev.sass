@@ -99,14 +99,24 @@
                     div
                         display: flex
                         justify-content: center
+
                         img
                             margin: 10px
-                            width: 17%
+                            width: 8%
                         
+                    .final
+                        display: flex
+                        flex-direction: column
+                        justify-content: flex-end
+                        align-items: center
+                        .final-traction-logo
+                            width: 80%
                         .final-traction-logo:hover
                             transform: rotateY(360deg)	
                             transition: transform 1s
-
+                        h6
+                            margin: 0
+                            color: $green
                 h2
                     color: $blue
                     font-size: 1.5rem
@@ -194,6 +204,9 @@
                 width: 100%
                 height: 75vh
                 z-index: 1
+                .calendar
+                    width: 50%
+                    height: auto
                 h2
                     color: $blue
                     font-size: 1.25rem
@@ -207,6 +220,33 @@
                     width: 90%
                     height: auto
 
+                .check
+                    display: flex
+                    flex-direction: row
+                    width: 100%
+                    justify-content: flex-start
+                    align-items: flex-start
+
+                    p
+                        width: 75%
+                        text-align: left
+                        margin: 10px 0
+                    
+                .check-group
+                    display: flex
+                    flex-direction: column
+                    justify-content: center
+                    align-items: center
+                    width: 10%
+                    margin: 10px 0
+                    h6
+                        margin-top: 5px
+                        color: $green
+                        margin-bottom: 0
+
+                    .checkedGroup
+                        width: 50%
+                    
 
                 .web-sec
                     display: flex
@@ -241,6 +281,9 @@
                         color: $green
                     .web-group:hover
                         cursor: pointer
+
+                    
+
                 
             
 
@@ -273,13 +316,6 @@
     display: flex
     flex-direction: row
     
-    .check
-        display: flex
-        flex-direction: row
-        width: 100%
-        justify-content: space-between
-        .checkedGroup
-            width: 50%
 
     img
         width: 35%
@@ -293,15 +329,6 @@
 .logo-group
     display: flex
 
-.check-group
-    display: flex
-    flex-direction: column
-    justify-content: center
-    align-items: center
-    width: 10%
-    h6
-        margin-top: 5px
-        color: $green
 
 div.tech-used
     display: flex
@@ -320,3 +347,31 @@ div.tech-used
 
 #schatz
     justify-content: flex-end
+
+#scheduled
+    justify-content: center
+    align-items: center
+    align-self: center
+    width: 100%
+    img
+        width: 30%
+        margin-bottom: 20px
+    
+    .focus
+        justify-content: center
+
+        .check-group
+            display: flex
+            flex-direction: column
+            justify-content: center
+            align-content: center
+
+            .checkedGroup
+                width: 40%
+            
+            h6
+                margin: 5px 20px
+                color: $green
+                text-align: center
+
+            
