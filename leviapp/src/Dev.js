@@ -120,29 +120,29 @@ class Dev extends Component {
         return(
         <div className="Dev" onScroll={this.scrolled()}>
             <div className='contents'>
-            <h2 onClick={() => {this.scrollTo('traction', -235)}}className='all_sections on_topic'>
+            <h2 onClick={() => {this.scrollTo('traction', -225)}}className='all_sections on_topic'>
             Traction
             </h2>
-            <h3 className='arrows arrows_1'>>>>>></h3>
+            <h3 className='arrows arrows_1'>❯❯❯❯❯</h3>
 
-            <h2 onClick={() => {this.scrollTo('notes', -235)}} className='all_sections second'>
+            <h2 onClick={() => {this.scrollTo('quotes', -225)}} className='all_sections second'>
             Quotes 4 Life
             </h2>
-            <h3 className='arrows arrows_2'>>>>>></h3>
-            <h2 onClick={() => {this.scrollTo('arch', -235)}} className='all_sections third'>
+            <h3 className='arrows arrows_2'>❯❯❯❯❯</h3>
+            <h2 onClick={() => {this.scrollTo('reform', -225)}} className='all_sections third'>
             Reform In Dust Storms
             </h2>
-            <h3 className='arrows arrows_3'>>>>>></h3>
+            <h3 className='arrows arrows_3'>❯❯❯❯❯</h3>
 
-            <h2 onClick={() => {this.scrollTo('schatz', -235)}} className='all_sections fourth'>
+            <h2 onClick={() => {this.scrollTo('automaton', -200)}} className='all_sections fourth'>
             Automaton
             </h2>
-            <h3 className='arrows arrows_4'>>>>>></h3>
+            <h3 className='arrows arrows_4'>❯❯❯❯❯</h3>
 
-            <h2 onClick={() => {this.scrollTo('automata', -235)}} className='all_sections fifth'>
+            <h2 onClick={() => {this.scrollTo('schatz', -200)}} className='all_sections fifth'>
             Schatzinsel
             </h2>
-            <h3 className='arrows arrows_5'>>>>>></h3>
+            <h3 className='arrows arrows_5'>❯❯❯❯❯</h3>
             </div>
             <section>
             <h1 className="TRACTION"> Traction </h1>
@@ -153,10 +153,20 @@ class Dev extends Component {
                 <h2>❮❯ Workouts Application ❮❯</h2>
               </Element>
               <p>
-                A group project focused on implementing web development solutions
-                for a real world situation
+                Traction is an app that gives users
+                the ability to keep track of their workouts. It allows users to add
+                body sections, along with exercises that build those areas. Additionally,
+                users can add their workouts to a calendar, all while recording personal workout goals.
+                This was a group project focused on implementing web development solutions
+                for a real world situation.
               </p>
 
+              <div className="focus">
+              <h4>❯❯ Logo Design </h4>
+              <h4>❯❯ UX</h4>
+              <h4>❯❯ Calendar</h4>
+
+              </div>
               <div className='tech-used'>
                   <div className='single-tech'>
                   <img src={ReactLogo} />
@@ -273,12 +283,26 @@ class Dev extends Component {
             </section>
             
             <section>
-            <h1 className="NOTES"> Quotes 4 Life </h1>
+            <h1 className="QUOTES"> Quotes 4 Life </h1>
             <div className="project">
             <div className='left'>
-            <Element className='start-section' name="notes" >
+            <Element className='start-section' name="quotes" >
             <h2>❮❯ Web Development Principles ❮❯</h2>
             </Element>
+
+              <p>
+                Quotes 4 Life is a website that allows users to post
+                their favorite quotes from their heros. Users can add, edit,
+                and delete quotes. Users can add their own image url, or keep
+                the default one. This project focused on both frontend and backend
+                web principles.
+              </p>
+
+              <div className="focus">
+              <h4>❯❯ Frontend</h4>
+              <h4>❯❯ Backend</h4>
+              <h4>❯❯ REST Functionality</h4>
+              </div>
             <div className='tech-used'>
               <div className='single-tech'>
               <img src={ReactLogo} />
@@ -324,11 +348,17 @@ class Dev extends Component {
             <h1 className="ARCH">Reform in Dust Storms</h1>
             <div className='project'>
             <div className='left'>
-            <Element className='start-section' name="arch" >
+            <Element className='start-section' name="reform" >
             <h2> ❮❯ Responsive Behavior of Websites ❮❯ </h2>
             </Element>
-            <p>This project is the instructions for a detective game. Set in Old West Colorado, the player must discover who committed the crime, the weapon that was used, and the place of the crime. 
-              This project gives an overview of the entire game. Furthermore, there are three pages that provide more details about the suspect, weapon, and place.</p>
+            <p>Reform in Dust Storms is a website that gives the instructions for a detective game. Set in Old West Colorado, the player must discover who committed the crime, the weapon that was used, and the place of the crime.  The website
+              consists of four main pages. The home page gives an overview of the entire game. There are three other pages that provide more details about the suspect, weapon, and place.
+              This project focuses on responsive design principles of websites. The game itself has not been created.</p>
+
+              <div className="focus">
+              <h4>❯❯ Responsive Design</h4>
+              <h4>❯❯ Vanilla Javascript</h4>
+              </div>
               <div className='tech-used'>
               <div className='single-tech'>
               <img src={HTMLLogo} />
@@ -368,9 +398,62 @@ class Dev extends Component {
             <h1 className="automata">Automaton</h1>
             <div className='project'>
             <div className='left'>
-            <Element className='start-section' name="arch" >
+            <Element className='start-section' name="automaton" >
             <h2> ❮❯ Conway's Game of Life ❮❯ </h2>
             </Element>
+            <p>
+              Automaton is a project that implements Computer Science's topic of Cellular Automata. Automaton
+              takes the rules of Conway's Game of Life and presents it in a visual manner.
+            </p>
+            <div className='automaton-focus'>
+              <h4>❯❯ Restart </h4>  
+              <p>
+              Restarts
+              the animation
+              </p>
+            </div>
+
+            <div className='automaton-focus'>
+              <h4>❯❯ Rewind </h4>  
+              <p>
+              Reverses the animation
+              </p>
+            </div>
+
+            <div className='automaton-focus'>
+              <h4>❯❯ Loop </h4>  
+              <p>
+              Keeps animation going
+              </p>
+            </div>
+
+            <div className='automaton-focus'>
+              <h4>❯❯ Playing / Paused </h4>  
+              <p>
+              Plays or pauses the animation
+              </p>
+            </div>
+
+            <div className='automaton-focus'>
+              <h4>❯❯ Random </h4>  
+              <p>
+              Changes the starting pattern of the animation
+              </p>
+            </div>
+
+            <div className='automaton-focus'>
+              <h4>❯❯ Color Scheme </h4>  
+              <p>
+              Changes the color scheme of the animation
+              </p>
+            </div>
+
+            <div className='automaton-focus'>
+              <h4>❯❯ Speed </h4>  
+              <p>
+              Changes the speed of the animation
+              </p>
+            </div>
             <div className='tech-used'>
               <div className='single-tech'>
               <img src={PythonLogo} />
@@ -381,7 +464,7 @@ class Dev extends Component {
               </div>
             </div>
             </div>
-            <div className='right'>
+            <div className='right' id='auto'>
             <div className='video'>
               <iframe width="560" height="315" src="https://www.youtube.com/embed/fGX7U9Sx8S0" frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture; fullscreen"></iframe>
             </div>
@@ -399,9 +482,21 @@ class Dev extends Component {
             <h1 className="schatz">Schatzinsel</h1>
             <div className="project">
             <div className="left">
-            <Element className='start-section' name="arch" >
+            <Element className='start-section' name="schatz" >
             <h2>❮❯ Computer Science Principles ❮❯</h2>
             </Element>
+            <p>
+              Schatzinsel is an adventure game. Placed on a treasure island, a player must gather treasure to win the ultimate prize, gold.
+              A player can move around the island collecting valuables that can be sold for money. Once enough money is earned, a player can
+              change their name to discover the secret location of the mining location. Players can earn new abilities and upgrades
+              for their character along the way.
+            </p>
+
+              <div className="focus">
+              <h4>❯❯ Blockchain </h4>
+              <h4>❯❯ Frontend </h4>
+              <h4>❯❯ Graphs </h4>
+              </div>
             <div className='tech-used' id='schatz-tech'>
               <div className='single-tech'>
               <img src={ReactLogo} />
@@ -429,7 +524,7 @@ class Dev extends Component {
             </div>
             </div>
 
-            <div className="right">
+            <div className="right" id='schatz'>
             <img className='reform' src={SchatzPage} />
             <div className='web-sec'>
             <div className='web-group'>
