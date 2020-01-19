@@ -165,6 +165,8 @@ class Dev extends Component {
               <h4>❯❯ Logo Design </h4>
               <h4>❯❯ UX</h4>
               <h4>❯❯ Calendar</h4>
+              <h4>❯❯ Trello</h4>
+
 
               </div>
               <div className='tech-used'>
@@ -227,57 +229,49 @@ class Dev extends Component {
 
             <div className='project'>
             <div className='left'>
+            <h2>❮❯ Traction Logo ❮❯</h2>
             <div className="t-logos-drafts">
                 <div>
                 <img className='traction-logo-draft0' src={TractionDraft0} alt="traction-logo-draft0" />
                 <img className='traction-logo-draft00' src={TractionDraft00} alt="traction-logo-draft00" />
                 <img className='traction-logo-draft1' src={TractionDraft1} alt="traction-logo-draft1" />
                 <img className='traction-logo-draft2' src={TractionDraft2} alt="traction-logo-draft2" />
-                </div>
-
-                <div>
                 <img className='traction-logo-draft3' src={TractionDraft3} alt="traction-logo-draft3" />
                 <img className='traction-logo-draft4' src={TractionDraft4} alt="traction-logo-draft4" />      
                 <img className='traction-logo-draft5' src={TractionDraft5} alt="traction-logo-draft5" />
-                <img className='traction-logo-draft6' src={TractionDraft6} alt="traction-logo-draft6" />    
-                </div>        
-
-                <div>
+                <img className='traction-logo-draft6' src={TractionDraft6} alt="traction-logo-draft6" />
+                <div className='final'>
                 <img className='final-traction-logo' src={Traction} alt="traction-logo" />
-                <img className='final-traction-logo' src={TractionPremium} alt="traction-logo-premium" />
+                <h6>Hover me</h6>
                 </div>
+                <div className='final'>
+                <img className='final-traction-logo' src={TractionPremium} alt="traction-logo-premium" /> 
+                <h6>Hover me</h6>
+                </div>
+                </div>    
+
+
             </div>
-            </div>
-            <div className='right'>
-              <h2>❮❯ Traction Logo ❮❯</h2>
-              <p>Changed color scheme from blue to red/orange/blue after studying workout company color palettes </p>
             </div>
             </div>
             <div className='project'>
-            <div className='left'>
-            <p> ❮❯ Built dark UI design of the website using SASS to stand out from the standard light mode </p>
-            <p> ❮❯ Implemented the calendar using the FullCalendar api </p>
-            <p> ❮❯ Built calendar functionality using the JQuery version first, then changed to React version</p>
-            </div>
             <div className='right'>
+            <h2>❮❯ Calendar ❮❯</h2>
+
             <img className='calendar' src={Calendar} alt="traction-logo-draft1" />
             </div>
             </div>
             <div className='project'>
-            <div className='left'>
-            <img className='mapped' src={Mapped} alt="mapped event" />  
-            </div>
-
-            <div className='right'>
-            <div className='check'>
-            <p> ❮❯ Created a hexagonal checkmark box with functionality </p>
+            <div className='left' id='scheduled'>
+            <img className='mapped' src={Mapped} alt="mapped event" />
+            <div className='focus'>
+            <h4> ❯❯ Checkmark Box</h4>
             <div className='check-group'>
             <Checkbox />
             <h6>Click Me</h6>
             </div>
+            <h4> ❯❯ JavaScript Map Implementations</h4>
             </div>
-            <p> ❮❯ Used several JavaScript map implementations which involved dates, body groups, and exercises</p>
-            <p> ❮❯ Organized tasks using Trello </p>
             </div>
             </div>   
             </section>
