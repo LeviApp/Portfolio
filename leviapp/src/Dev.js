@@ -66,28 +66,39 @@ class Dev extends Component {
     }
 
     scrollStatus = () => {
-      const far = window.scrollY
-      const percent = `${(far/1510)*100}%`
-      const number = far/1510
-      const number2 = ((-1640 + far)/1430)
-      const percent2 = `${((-1640 + far)/1430)*100}%`
-      const percent3 = `${((-3225 + far)/700)*100}%`
-      const number3 = ((-3225 + far)/700)
+
+      const winHeight = window.innerHeight || (document.documentElement || document.body).clientHeight
+      const docHeight = document.body.clientHeight
+      const scrollTop = window.pageYOffset || (document.documentElement || document.body.parentNode || document.body).scrollTop
+      const trackLength = docHeight - winHeight
+      const percentScrolled = Math.floor(scrollTop/trackLength * 100) // gets percentage scrolled (ie: 80 or NaN if tracklength == 0)
+    console.log(percentScrolled + '% scrolled')
+      const percent = `${(percentScrolled/49)*100}%`
+      const number = percentScrolled/49
+      const number2 = ((-49 + percentScrolled)/15)
+      const percent2 = `${((-49 + percentScrolled)/15)*100}%`
+      const percent3 = `${((-65 + percentScrolled)/15)*100}%`
+      const number3 = ((-65 + percentScrolled)/15)
+      const percent4 = `${((-82 + percentScrolled)/15)*100}%`
+      const number4 = ((-82 + percentScrolled)/15)
 
 
-      console.log('still in')
+      console.log('this is how percentScrolled', percentScrolled, percent)
       const a = document.getElementsByClassName('arrows_1')[0]
       const b = document.getElementsByClassName('second')[0]
       const c = document.getElementsByClassName('arrows_2')[0]
       const d = document.getElementsByClassName('third')[0]
       const e = document.getElementsByClassName('arrows_3')[0]
+      const f = document.getElementsByClassName('fourth')[0]
+      const g = document.getElementsByClassName('arrows_4')[0]
+      const h = document.getElementsByClassName('fifth')[0]
 
 
     if (a !== undefined && b !== undefined && c !== undefined && d !== undefined && e !== undefined ) {
       console.log(a, 'Aaaaaa')
       a.style.backgroundImage = `linear-gradient(to right, #4EC9B0, #4EC9B0 ${percent} , #D4D4D4 ${percent}, #D4D4D4 100%)`
 
-      if (far >= 1640) {
+      if (percentScrolled >= 49) {
           b.style.color = `#4EC9B0`
 
           c.style.backgroundImage = `linear-gradient(to right, #4EC9B0, #4EC9B0 ${percent2} , #D4D4D4 ${percent2}, #D4D4D4 100%)`
@@ -97,7 +108,7 @@ class Dev extends Component {
           c.style.backgroundImage = `linear-gradient(to right, #4EC9B0, #4EC9B0 0% , #D4D4D4 0%, #D4D4D4 100%)`
 
       }
-      if (far >= 3225) {
+      if (percentScrolled >= 65) {
           d.style.color = `#4EC9B0`
 
           e.style.backgroundImage = `linear-gradient(to right, #4EC9B0, #4EC9B0 ${percent3} , #D4D4D4 ${percent3}, #D4D4D4 100%)`
@@ -107,6 +118,26 @@ class Dev extends Component {
           e.style.backgroundImage = `linear-gradient(to right, #4EC9B0, #4EC9B0 0% , #D4D4D4 0%, #D4D4D4 100%)`
 
       }
+
+      if (percentScrolled >= 82) {
+        f.style.color = `#4EC9B0`
+
+        g.style.backgroundImage = `linear-gradient(to right, #4EC9B0, #4EC9B0 ${percent4} , #D4D4D4 ${percent4}, #D4D4D4 100%)`
+    }
+    else {
+        f.style.color = `#D4D4D4`
+        g.style.backgroundImage = `linear-gradient(to right, #4EC9B0, #4EC9B0 0% , #D4D4D4 0%, #D4D4D4 100%)`
+
+    }
+
+    if (percentScrolled >= 99) {
+      h.style.color = `#4EC9B0`
+
+  }
+  else {
+      h.style.color = `#D4D4D4`
+
+  }
     }
   }
 
@@ -142,7 +173,6 @@ class Dev extends Component {
             <h2 onClick={() => {this.scrollTo('schatz', -200)}} className='all_sections fifth'>
             Schatzinsel
             </h2>
-            <h3 className='arrows arrows_5'>❯❯❯❯❯</h3>
             </div>
             <section>
             <h1 className="TRACTION"> Traction </h1>
@@ -263,6 +293,7 @@ class Dev extends Component {
             </div>
             <div className='project'>
             <div className='left' id='scheduled'>
+            <h2> ❮❯ Scheduled Routine ❮❯ </h2>
             <img className='mapped' src={Mapped} alt="mapped event" />
             <div className='focus'>
             <h4> ❯❯ Checkmark Box</h4>

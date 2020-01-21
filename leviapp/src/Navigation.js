@@ -6,6 +6,8 @@ import { scroller } from 'react-scroll'
 
 import LApp from './LAppLogo.js'
 import Nav from './Nav.js'
+import LinkedIn from './img/LinkedInLogo.png'
+import GitHub from './img/GitHubLogo.png'
 
 
 class Navigation extends Component {
@@ -28,16 +30,24 @@ class Navigation extends Component {
         <nav>   
                 <LApp />
                 <div className='links'>
-                <NavLink className="about-nav" activeClassName="active" to="/about">
+                <NavLink className="about-nav tab" activeClassName="active" to="/about">
                  About
                 </NavLink>
-                <NavLink className="dev-nav" activeClassName="active" to="/dev">
+                <NavLink className="dev-nav tab" activeClassName="active" to="/dev">
                  Dev Portfolio
                 </NavLink>
-                <NavLink className="art-nav"activeClassName="active" to="/art">
+                <NavLink className="art-nav tab" activeClassName="active" to="/art">
                 Art Portfolio
                 </NavLink>
-                <NavLink className="contact-nav" activeClassName="active" to="/contact">
+                <a className='linked-in' href="https://www.linkedin.com/in/levi-app/">
+                <img src={LinkedIn} />
+                </a>
+
+                <a className='git-hub' href="https://github.com/LeviApp">
+                <img src={GitHub} />
+                </a>
+
+                <NavLink className="contact-nav tab" activeClassName="active" to="/contact">
                 Contact
                 </NavLink>
                 </div>

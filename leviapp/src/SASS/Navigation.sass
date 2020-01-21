@@ -13,8 +13,6 @@ nav
     background-color: $background
 
 
-
-
     .links
         display: grid
         grid-template-columns: repeat(50, 1fr)
@@ -25,27 +23,32 @@ nav
         text-align: center
         z-index: 0
         .about-nav
-            grid-column: 2/11
+            grid-column: 1/10
         .dev-nav
-            grid-column: 12/24
+            grid-column: 11/21
 
         .art-nav
-            grid-column: 25/38
+            grid-column: 22/32
 
         .contact-nav
-            grid-column: 40/45
-        a
+            grid-column: 33/43
+            grid-row: 1
+
+        
+        .tab
             
             color: white
             font-size: 1.5rem
             text-decoration: none
             width: 100%
             margin: 0
+        
 
-        a::before
+
+        .tab::before
             content: "<"
             color: $background
-        a::after
+        .tab::after
             margin-left: 30px
             content: "/>"
             color: $background
@@ -112,4 +115,16 @@ nav
     stroke-dasharray: 925 3000
     stroke-dashoffset: -4967
     stroke: $gray
-    
+
+.linked-in
+    width: 100%
+    grid-column: 45/ span 2
+    img
+        width: 75%
+
+.git-hub
+    width: 100%
+    grid-column: 47/ span 2
+    grid-row: 1
+    img
+        width: 75%

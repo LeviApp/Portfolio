@@ -391,7 +391,7 @@ class Art extends Component {
                         <p>
                         At Adaptec Prosthetics, I worked as a contractor redesigning several educational booklets.
                         </p>
-    
+                        <br/>
                         <p>
                         This is the catalog that gives clients an overview of all of Adaptec Prosthetics's products. VaporPuck is a product that Adaptec Prosthetics used to sell.
                         </p>
@@ -431,7 +431,7 @@ class Art extends Component {
                         <p>
                         At Adaptec Prosthetics, I worked as a contractor redesigning several educational booklets.
                         </p>
-
+                        <br/>
                         <p>
                         "The MagPuck is a modular socket computer system that utilizes an
                         electronic vacuum pump to create negative pressure inside the prosthetic
@@ -476,7 +476,7 @@ class Art extends Component {
                         <p>
                         At Adaptec Prosthetics, I worked as a contractor redesigning several educational booklets.
                         </p>
-    
+                        <br/>
                         <p>
                         "The SmartPuck is a modular socket computer system that utilizes an
                         electronic vacuum pump to create negative pressure inside the prosthetic
@@ -521,7 +521,7 @@ class Art extends Component {
                         <p>
                         At Adaptec Prosthetics, I worked as a contractor redesigning several educational booklets.
                         </p>
-
+                        <br/>
                         <p>
                         The AirPuck is the base product Adaptec Prosthetics offers. It uses a simple air system.
                         </p>
@@ -561,7 +561,7 @@ class Art extends Component {
                         <p>
                         At Adaptec Prosthetics, I worked as a contractor redesigning several educational booklets.
                         </p>
-
+                        <br/>
                         <p>
                         "The ZeroPuck is a modular socket computer system that utilizes an
                         electronic vacuum pump to create negative pressure inside the prosthetic
@@ -606,7 +606,7 @@ class Art extends Component {
                         <p>
                         At Adaptec Prosthetics, I worked as a contractor redesigning several educational booklets.
                         </p>
-
+                        <br/>
                         <p>
                         The Puck Fabrication Guide focuses on the preparation of prosthetic sockets.                       
                         </p>
