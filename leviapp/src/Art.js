@@ -309,7 +309,6 @@ class Art extends Component {
             <h2 className='all_sections third'>
             Illustration
             </h2>
-            <h3 className='arrows'>>>>>></h3>
             </div>
             <div className='artbox'>
                 <div className="artcat">
@@ -342,7 +341,7 @@ class Art extends Component {
                 </div>
 
                 <div className='bContainer'>
-                <img className="b typeb" onClick={() => this.bookClick('type')} src={TB} />
+                <img className="b quorumb" onClick={() => this.bookClick('quorum')} src={q1} />
                 </div>
 
                 <div className='bContainer'>
@@ -370,7 +369,7 @@ class Art extends Component {
                 </div>
 
                 <div className='bContainer'>
-                <img className="b quorumb" onClick={() => this.bookClick('quorum')} src={q1} />
+                <img className="b typeb" onClick={() => this.bookClick('type')} src={TB} />
                 </div>
 
                 <div className='bContainer'>
