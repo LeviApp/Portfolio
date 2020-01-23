@@ -53,14 +53,14 @@ class About extends Component {
         const trackLength = docHeight - winHeight
         const percentScrolled = Math.floor(scrollTop/trackLength * 100) // gets percentage scrolled (ie: 80 or NaN if tracklength == 0)
       console.log(percentScrolled + '% scrolled')
-        const percent = `${(percentScrolled/49)*100}%`
-        const number = percentScrolled/49
-        const number2 = ((-49 + percentScrolled)/15)
-        const percent2 = `${((-49 + percentScrolled)/15)*100}%`
-        const percent3 = `${((-65 + percentScrolled)/15)*100}%`
-        const number3 = ((-65 + percentScrolled)/15)
-        const percent4 = `${((-82 + percentScrolled)/15)*100}%`
-        const number4 = ((-82 + percentScrolled)/15)
+        const percent = `${(percentScrolled/24)*100}%`
+        const number = percentScrolled/24
+        const number2 = ((-26 + percentScrolled)/15)
+        const percent2 = `${((-26 + percentScrolled)/15)*100}%`
+        const percent3 = `${((-49 + percentScrolled)/24)*100}%`
+        const number3 = ((-49 + percentScrolled)/24)
+        const percent4 = `${((-73 + percentScrolled)/25)*100}%`
+        const number4 = ((-73 + percentScrolled)/25)
   
   
         console.log('this is how percentScrolled', percentScrolled, percent)
@@ -78,7 +78,7 @@ class About extends Component {
         console.log(a, 'Aaaaaa')
         a.style.backgroundImage = `linear-gradient(to right, #4EC9B0, #4EC9B0 ${percent} , #D4D4D4 ${percent}, #D4D4D4 100%)`
   
-        if (percentScrolled >= 49) {
+        if (percentScrolled >= 24) {
             b.style.color = `#4EC9B0`
   
             c.style.backgroundImage = `linear-gradient(to right, #4EC9B0, #4EC9B0 ${percent2} , #D4D4D4 ${percent2}, #D4D4D4 100%)`
@@ -88,7 +88,7 @@ class About extends Component {
             c.style.backgroundImage = `linear-gradient(to right, #4EC9B0, #4EC9B0 0% , #D4D4D4 0%, #D4D4D4 100%)`
   
         }
-        if (percentScrolled >= 65) {
+        if (percentScrolled >= 47) {
             d.style.color = `#4EC9B0`
   
             e.style.backgroundImage = `linear-gradient(to right, #4EC9B0, #4EC9B0 ${percent3} , #D4D4D4 ${percent3}, #D4D4D4 100%)`
@@ -99,7 +99,7 @@ class About extends Component {
   
         }
   
-        if (percentScrolled >= 82) {
+        if (percentScrolled >= 73) {
           f.style.color = `#4EC9B0`
   
           g.style.backgroundImage = `linear-gradient(to right, #4EC9B0, #4EC9B0 ${percent4} , #D4D4D4 ${percent4}, #D4D4D4 100%)`
@@ -110,7 +110,7 @@ class About extends Component {
   
       }
   
-      if (percentScrolled >= 99) {
+      if (percentScrolled >= 98) {
         h.style.color = `#4EC9B0`
   
     }

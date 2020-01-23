@@ -17,10 +17,8 @@ class Contact extends Component {
         return(
 
         <div className='contact'>
-            <div className='cheading'>
-                <h1>Send Me a Message</h1>
-                <h2>levij.app@gmail.com</h2>
-            </div>
+            <h1>Send Me A Message!</h1>
+
             <form className="cform" name="contact-form" method="post" data-netlify="true">
                 <input type="hidden" name="bot-field" />
                 <input type="hidden" name="form-name" value="contact-form" />
