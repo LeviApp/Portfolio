@@ -11,6 +11,17 @@ nav
     justify-content: space-between
     align-items: center
     background-color: $background
+    @media screen and (max-width:600px)
+        z-index: 2
+        position: relative
+        top: -5px
+        display: flex
+        margin: 0
+        grid-template-columns: repeat(5, 1fr)
+        width: 100%
+        justify-content: space-between
+        align-items: center
+        flex-direction: column
 
 
     .links
@@ -22,6 +33,17 @@ nav
         align-items: center
         text-align: center
         z-index: 0
+
+        @media screen and (max-width:600px)
+            position: relative
+            top: -5px
+            display: flex
+            margin: 0
+            width: 100%
+            justify-content: space-between
+            align-items: center
+            flex-direction: column
+            
         .about-nav
             grid-column: 1/10
         .dev-nav
@@ -42,7 +64,12 @@ nav
             text-decoration: none
             width: 100%
             margin: 0
-        
+
+            @media screen and (max-width:600px)
+                font-size: 3.75rem
+                margin: 20px 0px
+
+
 
 
         .tab::before
@@ -70,6 +97,10 @@ nav
     align-items: center
     grid-column: 1
     grid-row: 1
+
+    @media screen and (max-width:600px)
+        margin: 30px 0
+        width: 75%
 
     justify-content: center
     svg
@@ -116,15 +147,29 @@ nav
     stroke-dashoffset: -4967
     stroke: $gray
 
-.linked-in
-    width: 100%
-    grid-column: 45/ span 2
-    img
-        width: 75%
+    @media screen and (max-width:600px)
+        display: none
 
-.git-hub
-    width: 100%
-    grid-column: 47/ span 2
-    grid-row: 1
-    img
-        width: 75%
+.connect
+    display: flex
+    flex-direction: row
+    grid-column: 45/ span 4
+
+    @media screen and (max-width:600px)
+        width: 50%
+        justify-content: center
+        margin: 30px 0
+
+    .linked-in
+        width: 100%
+        img
+            width: 75%
+            @media screen and (max-width:600px)
+                width: 50%
+
+    .git-hub
+        width: 100%
+        img
+            width: 75%
+            @media screen and (max-width:600px)
+                width: 50%

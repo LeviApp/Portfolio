@@ -39,6 +39,10 @@ class Navigation extends Component {
                 <NavLink className="art-nav tab" activeClassName="active" to="/art">
                 Art Portfolio
                 </NavLink>
+                <NavLink className="contact-nav tab" activeClassName="active" to="/contact">
+                Contact
+                </NavLink>
+                <div className="connect">
                 <a className='linked-in' href="https://www.linkedin.com/in/levi-app/" target="_blank">
                 <img src={LinkedIn} />
                 </a>
@@ -46,10 +50,7 @@ class Navigation extends Component {
                 <a className='git-hub' href="https://github.com/LeviApp" target="_blank">
                 <img src={GitHub} />
                 </a>
-
-                <NavLink className="contact-nav tab" activeClassName="active" to="/contact">
-                Contact
-                </NavLink>
+                </div>
                 </div>
                 
                 <Nav />
