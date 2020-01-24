@@ -39,11 +39,11 @@ class Navigation extends Component {
                 <NavLink className="art-nav tab" activeClassName="active" to="/art">
                 Art Portfolio
                 </NavLink>
-                <a className='linked-in' href="https://www.linkedin.com/in/levi-app/">
+                <a className='linked-in' href="https://www.linkedin.com/in/levi-app/" target="_blank">
                 <img src={LinkedIn} />
                 </a>
 
-                <a className='git-hub' href="https://github.com/LeviApp">
+                <a className='git-hub' href="https://github.com/LeviApp" target="_blank">
                 <img src={GitHub} />
                 </a>
 
