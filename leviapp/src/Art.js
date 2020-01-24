@@ -192,6 +192,10 @@ class Art extends Component {
 
     }
 
+    componentDidMount() {
+        window.addEventListener("scroll", this.scrollStatus)
+      }
+
     contactClick = (c) => {
         const name = document.getElementsByClassName(c)[0]
         name.classList.toggle('allcol')
@@ -239,51 +243,71 @@ class Art extends Component {
         })
       }
 
-    scrolled = event => {
-        window.addEventListener("scroll", () => {
-            const far = window.scrollY
-            const percent = `${(far/1510)*100}%`
-            const number = far/1510
-            const number2 = ((-1640 + far)/1430)
-            const percent2 = `${((-1640 + far)/1430)*100}%`
-            const percent3 = `${((-3225 + far)/700)*100}%`
-            const number3 = ((-3225 + far)/700)
+      scrollStatus = () => {
+  
+        const winHeight = window.innerHeight || (document.documentElement || document.body).clientHeight
+        const docHeight = document.body.clientHeight
+        const scrollTop = window.pageYOffset || (document.documentElement || document.body.parentNode || document.body).scrollTop
+        const trackLength = docHeight - winHeight
+        const percentScrolled = Math.floor(scrollTop/trackLength * 100) // gets percentage scrolled (ie: 80 or NaN if tracklength == 0)
+      console.log(percentScrolled + '% scrolled')
+        const percent = `${(percentScrolled/61)*100}%`
+        const number = percentScrolled/61
+        const number2 = ((-61 + percentScrolled)/31)
+        const percent2 = `${((-61 + percentScrolled)/31)*100}%`
+        const percent3 = `${((-93 + percentScrolled)/7)*100}%`
+        const number3 = ((-93 + percentScrolled)/7)
+  
+  
+        console.log('this is how percentScrolled', percentScrolled, percent)
+        const a = document.getElementsByClassName('arrows_1')[0]
+        const b = document.getElementsByClassName('second')[0]
+        const c = document.getElementsByClassName('arrows_2')[0]
+        const d = document.getElementsByClassName('third')[0]
+        const e = document.getElementsByClassName('arrows_3')[0]
+        const f = document.getElementsByClassName('fourth')[0]
+  
+  
+      if (a !== undefined && b !== undefined && c !== undefined && d !== undefined && e !== undefined ) {
+        console.log(a, 'Aaaaaa')
+        a.style.backgroundImage = `linear-gradient(to right, #4EC9B0, #4EC9B0 ${percent} , #D4D4D4 ${percent}, #D4D4D4 100%)`
+  
+        if (percentScrolled >= 61) {
+            b.style.color = `#4EC9B0`
+  
+            c.style.backgroundImage = `linear-gradient(to right, #4EC9B0, #4EC9B0 ${percent2} , #D4D4D4 ${percent2}, #D4D4D4 100%)`
+        }
+        else {
+            b.style.color = `#D4D4D4`
+            c.style.backgroundImage = `linear-gradient(to right, #4EC9B0, #4EC9B0 0% , #D4D4D4 0%, #D4D4D4 100%)`
+  
+        }
+        if (percentScrolled >= 92) {
+            d.style.color = `#4EC9B0`
+  
+            e.style.backgroundImage = `linear-gradient(to right, #4EC9B0, #4EC9B0 ${percent3} , #D4D4D4 ${percent3}, #D4D4D4 100%)`
+        }
+        else {
+            d.style.color = `#D4D4D4`
+            e.style.backgroundImage = `linear-gradient(to right, #4EC9B0, #4EC9B0 0% , #D4D4D4 0%, #D4D4D4 100%)`
+  
+        }
 
-            const a = document.getElementsByClassName('arrows_1')[0]
-            const b = document.getElementsByClassName('second')[0]
-            const c = document.getElementsByClassName('arrows_2')[0]
-            const d = document.getElementsByClassName('third')[0]
-            const e = document.getElementsByClassName('arrows_3')[0]
-
-
-
-            a.style.backgroundImage = `linear-gradient(to right, #4EC9B0, #4EC9B0 ${percent} , #D4D4D4 ${percent}, #D4D4D4 100%)`
-
-
-
-            if (far >= 1640) {
-                b.style.color = `#4EC9B0`
-
-                c.style.backgroundImage = `linear-gradient(to right, #4EC9B0, #4EC9B0 ${percent2} , #D4D4D4 ${percent2}, #D4D4D4 100%)`
-            }
-            else {
-                b.style.color = `#D4D4D4`
-                c.style.backgroundImage = `linear-gradient(to right, #4EC9B0, #4EC9B0 0% , #D4D4D4 0%, #D4D4D4 100%)`
-
-            }
-            if (far >= 3225) {
-                d.style.color = `#4EC9B0`
-
-                e.style.backgroundImage = `linear-gradient(to right, #4EC9B0, #4EC9B0 ${percent3} , #D4D4D4 ${percent3}, #D4D4D4 100%)`
-            }
-            else {
-                d.style.color = `#D4D4D4`
-                e.style.backgroundImage = `linear-gradient(to right, #4EC9B0, #4EC9B0 0% , #D4D4D4 0%, #D4D4D4 100%)`
-
-            }
-
-        })
+        if (percentScrolled >= 100) {
+            f.style.color = `#4EC9B0`
+          }
+        else {
+            f.style.color = `#D4D4D4`  
+        }
+      }
     }
+
+    componentWillUnmount() {
+        console.log('dev is unmounted')
+        window.removeEventListener("scroll", this.scrollStatus)
+        window.removeEventListener("click", this.scrollTo)
+  
+      }
 
     render() {
         return(
@@ -291,31 +315,33 @@ class Art extends Component {
         <div className='art'>
       <div className='contents'>
 
-            <h2 className='all_sections second'>
+            <h2 onClick={() => {this.scrollTo('infographics', -180)}} className='all_sections on_topic'>
             Infographics
             </h2>
-            <h3 className='arrows'>>>>>></h3>
+            <h3 className='arrows arrows_1'>❯❯❯❯❯</h3>
 
-            <h2 className='all_sections third'>
+            <h2 onClick={() => {this.scrollTo('tactile', -150)}} className='all_sections second'>
             Tactile Graphics
             </h2>
-            <h3 className='arrows'>>>>>></h3>
+            <h3 className='arrows arrows_2'>❯❯❯❯❯</h3>
 
-            <h2 className='all_sections third'>
+            <h2 onClick={() => {this.scrollTo('type', -130)}} className='all_sections third'>
             Type Design
             </h2>
-            <h3 className='arrows'>>>>>></h3>
+            <h3 className='arrows arrows_3'>❯❯❯❯❯</h3>
 
-            <h2 className='all_sections third'>
+            <h2 onClick={() => {this.scrollTo('illustration', -130)}} className='all_sections fourth'>
             Illustration
             </h2>
             </div>
             <div className='artbox'>
                 <div className="artcat">
                 <div className='bContainer'>
+                <Element className='start-section' name="infographics" >
+                <br />
+                </Element>
                 <img className="b catb" onClick={() => this.bookClick('cat')} src={CatalogCover} />
                 </div>
-
                 <div className='bContainer'>
                 <img className="b magb" onClick={() => this.bookClick('mag')} src={MagPuckCover} /> 
                 </div>
@@ -345,6 +371,9 @@ class Art extends Component {
                 </div>
 
                 <div className='bContainer'>
+                <Element className='start-section' name="tactile" >
+                <br />
+                </Element>
                 <img className="b cardiob" onClick={() => this.bookClick('cardio')} src={C1} /> 
                 </div>
 
@@ -361,6 +390,9 @@ class Art extends Component {
                 </div>
 
                 <div className='bContainer'>
+                <Element className='start-section' name="type" >
+                <br />
+                </Element>
                 <img className="b brockb" onClick={() => this.bookClick('brock')} src={Brock} />
                 </div>
 
@@ -373,6 +405,9 @@ class Art extends Component {
                 </div>
 
                 <div className='bContainer'>
+                <Element className='start-section' name="illustration" >
+                <br />
+                </Element>
                 <img className="b STEMb" onClick={() => this.bookClick('STEM')} src={s1} />
                 </div>
 
