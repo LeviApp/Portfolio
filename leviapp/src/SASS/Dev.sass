@@ -8,6 +8,8 @@
     flex-direction: column
     justify-content: center
     align-items: center
+    @media screen and (max-width:480px)
+        width: 90%
     @keyframes snake-around
         0%
             box-shadow: -33px 33px 1px -30px $blue, 33px -33px 1px -30px $blue
@@ -66,6 +68,14 @@
             font-size: 2.5rem
             color: $green
             font-style: italic
+            @media screen and (max-width:480px)
+                text-align: center
+                background-color: red
+                padding-top: 10px
+
+                top: 0px
+                z-index: 2
+
 
         #traction-project
             display: flex
@@ -74,6 +84,8 @@
             align-items: flex-start
             padding: 0px 0 40px 0
             box-shadow: 0px 62px 0 -60px $gray
+            @media screen and (max-width:480px)
+                flex-direction: column
         .project
             display: flex
             flex-direction: row
@@ -81,6 +93,9 @@
             align-items: flex-start
             padding: 40px 0 40px 0
             box-shadow: 0px 62px 0 -60px $gray
+            @media screen and (max-width:480px)
+                flex-direction: column
+
 
             .left
                 display: flex
@@ -101,18 +116,23 @@
                     div
                         display: flex
                         justify-content: center
-
+                        flex-wrap: wrap
                         img
                             margin: 10px
-                            width: 8%
+                            width: 85px
+                            @media screen and (max-width:480px)
+                                width: 60px
                         
                     .final
                         display: flex
                         flex-direction: column
                         justify-content: flex-end
+                        flex-wrap: wrap
                         align-items: center
                         .final-traction-logo
-                            width: 80%
+                            width: 100px
+                            @media screen and (max-width:480px)
+                                width: 60px
                         .final-traction-logo:hover
                             transform: rotateY(360deg)	
                             transition: transform 1s
@@ -152,6 +172,9 @@
                     flex-direction: row
                     justify-content: space-between
                     width: 100%
+                    @media screen and (max-width:480px)
+                        flex-direction: column
+                    
 
                     h4
                         color: $green
@@ -184,6 +207,8 @@
 
                         img
                             width: 45px
+                            @media screen and (max-width:480px)
+                                width: 60px
                         .postgres
                             max-width: 100px
                         .javascript
@@ -206,6 +231,10 @@
                 width: 100%
                 height: 75vh
                 z-index: 1
+                @media screen and (max-width:480px)
+                    width: 100%
+                    margin-top: 0px
+                    height: auto
                 .calendar
                     width: 50%
                     height: auto
@@ -339,6 +368,7 @@ div.tech-used
 .video
     display: flex
     justify-content: center
+    
 
 
 #schatz-tech

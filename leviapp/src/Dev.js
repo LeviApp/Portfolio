@@ -317,7 +317,7 @@ class Dev extends Component {
 
               <p>
                 Quotes 4 Life is a website that allows users to post
-                their favorite quotes from their heroes. Users can add, edit,
+                their favorite quotes from their heros. Users can add, edit,
                 and delete quotes. Users can add their own image url, or keep
                 the default one. This project focused on both frontend and backend
                 web principles.
