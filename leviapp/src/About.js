@@ -173,7 +173,7 @@ class About extends Component {
             </div>
 
             <div className="right">
-            <img className="quotes-page" src={Photo} />
+            <img className="self" src={Photo} />
             </div>
             </div>
             </section>
@@ -229,7 +229,7 @@ class About extends Component {
             <div className='automaton-focus'>
               <h4>❯❯ RRCC </h4>  
               <p>
-              ❯ Explained complex math problems to struggling students
+              ❯ Taught struggling students math concepts
               </p>
             </div>
             </div>
