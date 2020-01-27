@@ -8,8 +8,6 @@
     flex-direction: column
     justify-content: center
     align-items: center
-    @media screen and (max-width:480px)
-        width: 90%
     @keyframes snake-around
         0%
             box-shadow: -33px 33px 1px -30px $blue, 33px -33px 1px -30px $blue
@@ -52,7 +50,8 @@
     section
         display: flex
         flex-direction: column
-        justify-content: space-between
+        justify-content: center
+        align-items: center
         padding: 0 2% 20px 2%
         width: 100%
         h1
@@ -60,6 +59,8 @@
             position: sticky
             padding-top: 75px
             padding-bottom: 10px
+            text-align: left
+
             padding-left: 2%
             margin: 0
             top: 80px
@@ -69,12 +70,16 @@
             color: $green
             font-style: italic
             @media screen and (max-width:480px)
-                text-align: center
-                background-color: red
-                padding-top: 10px
-
                 top: 0px
+                margin: 0
+                text-align: center
+                padding-top: 10px
+                padding-left: 0
+                font-size: 2.25rem
+
+                width: 100%
                 z-index: 2
+
 
 
         #traction-project
@@ -85,7 +90,9 @@
             padding: 0px 0 40px 0
             box-shadow: 0px 62px 0 -60px $gray
             @media screen and (max-width:480px)
-                flex-direction: column
+                flex-direction: column-reverse
+                justify-content: center
+                align-items: center
         .project
             display: flex
             flex-direction: row
@@ -94,7 +101,8 @@
             padding: 40px 0 40px 0
             box-shadow: 0px 62px 0 -60px $gray
             @media screen and (max-width:480px)
-                flex-direction: column
+                flex-direction: column-reverse
+                width: 90%
 
 
             .left
@@ -141,23 +149,25 @@
                             color: $green
                 h2
                     color: $blue
-                    font-size: 1.5rem
+                    font-size: 1.25rem
                 p
                     color: white
                     width: 100%
                     font-size: 1.1rem
-                    text-align: justify
+                    line-height: 30px
 
                 .automaton-focus
                     display: flex
                     flex-direction: row
                     width: 100%
                     justify-content: flex-start
+                    @media screen and (max-width:480px)
+                        flex-direction: column
                     h4
                         color: $green
                         font-size: 1.25rem
                         margin: 0 0 10px 0
-                        width: 50%
+                        width: 100%
 
                     p
                         color: white
@@ -165,7 +175,7 @@
                         padding: 0
                         margin: 0 0 10px 2%
                         font-size: 1.1rem
-                        text-align: justify
+                        line-height: 30px
 
                 .focus
                     display: flex
@@ -248,8 +258,9 @@
                     font-size: 1.25rem
 
                 img
-                    width: 90%
+                    width: 100%
                     height: auto
+                    
 
                 .check
                     display: flex
@@ -295,6 +306,8 @@
                             color: $gray
                             align-self: center
                             text-decoration: none
+                            line-height: 20px
+
                         .web-arrow
                             color: white
                             align-self: center
@@ -366,19 +379,33 @@ div.tech-used
 
 
 .video
+    position: relative
+    overflow: hidden
+    padding-top: 56.25%
     display: flex
     justify-content: center
-    
-
+    align-items: center
+    width: 100%
+    iframe
+        position: absolute
+        width: 90%
+        height: 90%
+        top: 0
+        left: 0
+        @media screen and (max-width:480px)
+            width: 100%
+            height: 100%
 
 #schatz-tech
-    width: 60%
+    width: 100%
 
 #auto
     justify-content: flex-end
 
 #schatz
     justify-content: flex-end
+
+
 
 #scheduled
     justify-content: center
@@ -394,19 +421,21 @@ div.tech-used
     
     .focus
         justify-content: center
-
-        .check-group
+        .checkedG
             display: flex
-            flex-direction: column
-            justify-content: center
-            align-content: center
+            flex-direction: row
+            .check-group
+                display: flex
+                flex-direction: column
+                justify-content: center
+                align-content: center
 
-            .checkedGroup
-                width: 40%
-            
-            h6
-                margin: 5px 20px
-                color: $green
-                text-align: center
+                .checkedGroup
+                    width: 40%
 
-            
+                    @media screen and (max-width:480px)
+                        width: 10%
+                h6
+                    margin: 5px 20px
+                    color: $green
+                    text-align: center
