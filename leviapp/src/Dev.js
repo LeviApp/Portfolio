@@ -296,10 +296,12 @@ class Dev extends Component {
             <h2> ❮❯ Scheduled Routine ❮❯ </h2>
             <img className='mapped' src={Mapped} alt="mapped event" />
             <div className='focus'>
+            <div className='checkG'>
             <h4> ❯❯ Checkmark Box</h4>
             <div className='check-group'>
             <Checkbox />
             <h6>Click Me</h6>
+            </div>    
             </div>
             <h4> ❯❯ JavaScript Map Implementations</h4>
             </div>
@@ -348,7 +350,7 @@ class Dev extends Component {
             </div>
 
             <div className="right">
-            <img className="quotes-page" src={QuotesPage} />
+            <img id="quotes-page" src={QuotesPage} />
             <div className='web-sec'>
             <div className='web-group'>
               <a className='web-link' href='https://quotes-4-life.netlify.com/home'>To Website</a>
@@ -371,10 +373,10 @@ class Dev extends Component {
 
             <section>
             <h1 className="ARCH">Reform in Dust Storms</h1>
-            <div className='project'>
+            <div className='project' id='rids'>
             <div className='left'>
             <Element className='start-section' name="reform" >
-            <h2> ❮❯ Responsive Behavior of Websites ❮❯ </h2>
+            <h2> ❮❯ Responsive Behavior ❮❯ </h2>
             </Element>
             <p>Reform in Dust Storms is a website that gives the instructions for a detective game. Set in Old West Colorado, the player must discover who committed the crime, the weapon that was used, and the place of the crime.  The website
               consists of four main pages. The home page gives an overview of the entire game. There are three other pages that provide more details about the suspect, weapon, and place.
@@ -403,7 +405,7 @@ class Dev extends Component {
             </div>
             </div>
             <div className='right'>
-            <img className='reform' src={ReformPage} />
+            <img id='reform' src={ReformPage} />
             <div className='web-sec'>
             <div className='web-group'>
               <a className='web-link' href='https://rids-instructions.netlify.com/'>To Website</a>
@@ -491,7 +493,7 @@ class Dev extends Component {
             </div>
             <div className='right' id='auto'>
             <div className='video'>
-              <iframe width="560" height="315" src="https://www.youtube.com/embed/fGX7U9Sx8S0" frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture; fullscreen"></iframe>
+              <iframe src="https://www.youtube.com/embed/fGX7U9Sx8S0" frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture; fullscreen"></iframe>
             </div>
             <div className='web-sec'>
             <div className='web-group'>
