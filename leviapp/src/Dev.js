@@ -314,7 +314,7 @@ class Dev extends Component {
             <div className="project">
             <div className='left'>
             <Element className='start-section' name="quotes" >
-            <h2>❮❯ Web Development Principles ❮❯</h2>
+            <h2>❮❯ Web Development ❮❯</h2>
             </Element>
 
               <p>
@@ -510,7 +510,7 @@ class Dev extends Component {
             <div className="project">
             <div className="left">
             <Element className='start-section' name="schatz" >
-            <h2>❮❯ Computer Science Principles ❮❯</h2>
+            <h2>❮❯ Computer Science ❮❯</h2>
             </Element>
             <p>
               Schatzinsel is an adventure game. Placed on a treasure island, a player must gather treasure to win the ultimate prize, gold.
