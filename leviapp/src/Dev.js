@@ -270,6 +270,7 @@ class Dev extends Component {
                 <img className='traction-logo-draft4' src={TractionDraft4} alt="traction-logo-draft4" />      
                 <img className='traction-logo-draft5' src={TractionDraft5} alt="traction-logo-draft5" />
                 <img className='traction-logo-draft6' src={TractionDraft6} alt="traction-logo-draft6" />
+
                 <div className='final'>
                 <img className='final-traction-logo' src={Traction} alt="traction-logo" />
                 <h6>Hover me</h6>
@@ -426,7 +427,7 @@ class Dev extends Component {
             <div className='project'>
             <div className='left'>
             <Element className='start-section' name="automaton" >
-            <h2> ❮❯ Conway's Game of Life ❮❯ </h2>
+            <h2> ❮❯ Conway's Game ❮❯ </h2>
             </Element>
             <p>
               Automaton is a project that implements Computer Science's topic of Cellular Automata. Automaton
