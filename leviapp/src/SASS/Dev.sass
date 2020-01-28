@@ -103,6 +103,7 @@
             @media screen and (max-width:480px)
                 flex-direction: column-reverse
                 width: 90%
+                padding: 20px 0 20px 0
 
 
             .left
@@ -114,6 +115,10 @@
                 margin-top: 50px
                 margin-left: 2%
                 margin-right: 2%
+                @media screen and (max-width:480px)
+                    width: 90%
+                    margin-top: 20px
+               
                 .t-logos-drafts
                     display: flex
                     flex-direction: column
@@ -156,6 +161,9 @@
                     font-size: 1.1rem
                     line-height: 30px
 
+                    @media screen and (max-width:480px)
+                        font-size: 1.25rem
+                        margin-top: 10px
                 .automaton-focus
                     display: flex
                     flex-direction: row
@@ -185,13 +193,34 @@
                     @media screen and (max-width:480px)
                         flex-direction: column
                     
-
                     h4
                         color: $green
                         font-size: 1.25rem
-                        margin: 0 0 20px 0
+                        margin: 10px 0   
+                    .checkG
+                        display: flex
+                        flex-direction: row  
+                        h4
+                            color: $green
+                            font-size: 1.25rem
+                        .check-group
+                            display: flex
+                            flex-direction: column
+                            justify-content: center
+                            align-items: center
+                            width: 15%
+                            margin: 10px 0
+                            h6
+                                margin-top: 5px
+                                color: $green
+                                margin-bottom: 0
+                                width: 100%             
+                                text-align: center
 
-
+                            .checkedGroup
+                                width: 50%
+                                display: flex
+                                justify-content: center            
                 
                 img
                     width: 70%
@@ -274,32 +303,20 @@
                         text-align: left
                         margin: 10px 0
                     
-                .check-group
-                    display: flex
-                    flex-direction: column
-                    justify-content: center
-                    align-items: center
-                    width: 10%
-                    margin: 10px 0
-                    h6
-                        margin-top: 5px
-                        color: $green
-                        margin-bottom: 0
 
-                    .checkedGroup
-                        width: 50%
                     
 
                 .web-sec
                     display: flex
                     flex-direction: row
                     justify-content: center
-                    align-items: flex-start
+                    align-items: center
+                    flex-wrap: wrap
                     width: 100%
                     .web-group
                         display: flex
                         flex-direction: column-reverse
-                        margin: 0px 20px;        
+                        margin: 0px 20px   
                         .web-link
                             margin: 20px 0px
                             font-size: 1rem
@@ -307,7 +324,6 @@
                             align-self: center
                             text-decoration: none
                             line-height: 20px
-
                         .web-arrow
                             color: white
                             align-self: center
@@ -318,6 +334,8 @@
                             border: 10px solid black
                             box-shadow: -33px 33px 0 -30px $blue, 33px -33px 0 -30px $blue
                             text-decoration: none
+
+                            
                     .web-group:hover > .web-link
                         color: $green
                     .web-group:hover > .web-arrow
@@ -359,7 +377,7 @@
 .mapped
     display: flex
     flex-direction: row
-    
+
 
     img
         width: 35%
@@ -413,29 +431,12 @@ div.tech-used
     align-self: center
     width: 100%
     margin-top: 0px
+    @media screen and (max-width:480px)
+        margin-top: 20px
     h2
         margin-top: 0px
     img
         width: 30%
         margin-bottom: 20px
-    
-    .focus
-        justify-content: center
-        .checkedG
-            display: flex
-            flex-direction: row
-            .check-group
-                display: flex
-                flex-direction: column
-                justify-content: center
-                align-content: center
-
-                .checkedGroup
-                    width: 40%
-
-                    @media screen and (max-width:480px)
-                        width: 10%
-                h6
-                    margin: 5px 20px
-                    color: $green
-                    text-align: center
+        @media screen and (max-width:480px)
+            width: 70%

@@ -435,7 +435,7 @@ class Dev extends Component {
             <div className='automaton-focus'>
               <h4>❯❯ Restart </h4>  
               <p>
-              Restarts
+              ❯ Restarts
               the animation
               </p>
             </div>
@@ -443,42 +443,42 @@ class Dev extends Component {
             <div className='automaton-focus'>
               <h4>❯❯ Rewind </h4>  
               <p>
-              Reverses the animation
+              ❯ Reverses the animation
               </p>
             </div>
 
             <div className='automaton-focus'>
               <h4>❯❯ Loop </h4>  
               <p>
-              Keeps animation going
+              ❯ Keeps animation going
               </p>
             </div>
 
             <div className='automaton-focus'>
               <h4>❯❯ Playing / Paused </h4>  
               <p>
-              Plays or pauses the animation
+              ❯ Plays or pauses the animation
               </p>
             </div>
 
             <div className='automaton-focus'>
               <h4>❯❯ Random </h4>  
               <p>
-              Changes the starting pattern of the animation
+              ❯ Changes the starting pattern of the animation
               </p>
             </div>
 
             <div className='automaton-focus'>
               <h4>❯❯ Color Scheme </h4>  
               <p>
-              Changes the color scheme of the animation
+              ❯ Changes the color scheme of the animation
               </p>
             </div>
 
             <div className='automaton-focus'>
               <h4>❯❯ Speed </h4>  
               <p>
-              Changes the speed of the animation
+              ❯ Changes the speed of the animation
               </p>
             </div>
             <div className='tech-used'>

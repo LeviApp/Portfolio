@@ -16,7 +16,7 @@
     z-index: 10
     right: 50px
     width: 75%
-    @media screen and (max-width:600px)
+    @media screen and (max-width:480px)
         display: none
     .all_sections
         margin: 0
@@ -64,50 +64,63 @@
         background-color: black
         .slide
             width: 100%
-.artbox
-    display: flex
-    margin-top: 15px
-    width: 95%
-    flex-direction: row
-    align-items: center
-    justify-content: space-between
 
-    .artcat
+    .artbox
         display: flex
+        margin-top: 15px
+        width: 95%
         flex-direction: row
-        width: 45%
-        flex-wrap: wrap
+        align-items: center
+        justify-content: space-between
+        align-self: center
+        @media screen and (max-width:480px)
+            flex-direction: column
 
-        .bContainer
+        .artcat
             display: flex
-            justify-content: center
-            height: 30vh
-            width: 40%
-            margin: 10px
+            flex-direction: row
+            width: 45%
+            flex-wrap: wrap
+            @media screen and (max-width:480px)
+                display: none
+            .bContainer
+                display: flex
+                justify-content: center
+                height: 30vh
+                width: 40%
+                margin: 10px
 
-            img
-                width: 100%
-                object-fit: scale-down
+                img
+                    width: 100%
+                    object-fit: scale-down
 
-            img:hover
-                border: 8px solid black
-                outline: 4px solid $green
-                cursor: pointer
+                img:hover
+                    border: 8px solid black
+                    outline: 4px solid $green
+                    cursor: pointer
+                
             
-        
 
-    .inactive
-        display: none
+        .inactive
+            display: none
+            @media screen and (max-width:480px)
+                display: flex
 
     .sel
         position: fixed
         right: 50px
         top: 150px
         margin-top: 20px
+        @media screen and (max-width:480px)
+            position: static
+            right: auto
+
         div
             img
                 border-left: 5px solid $background
                 border-right: 5px solid $background
+                
+
         .top
             width: 45%
             z-index: 1
@@ -163,10 +176,12 @@
     .pamphlet
         width: 27%
         right: 250px
-
+        @media screen and (max-width:480px)
+            width: 50%
+            height: 50%
+            right: auto
     .rest
         width: 54%
-
     .biggest
         width: 34%
 
@@ -175,17 +190,12 @@
 
     .double
         width: 47%
-    
     .type
         right: 100px
-
     .quorum
         right: 200px
-
     .illu
         right: 135px
-
-
   
 
 .activeb
@@ -213,12 +223,14 @@
     padding-top: 10px
     z-index: 2
     background-color: $background
+ 
     p
         color: white
         font-size: 1.2rem
         text-align: left
         margin: 0px 4%
-
+        @media screen and (max-width:480px)
+            font-size: 1rem
 
 h1
     font-size: 1.5rem
@@ -234,4 +246,5 @@ h1
 h2
     font-size: 1.5rem
     color: $green
-
+    @media screen and (max-width:480px)
+        font-size: 1.25rem
