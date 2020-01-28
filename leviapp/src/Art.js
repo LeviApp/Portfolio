@@ -340,7 +340,7 @@ class Art extends Component {
                 <Element className='start-section' name="infographics" >
                 <br />
                 </Element>
-                <img className="b catb" onClick={() => this.bookClick('cat')} src={CatalogCover} />
+                <img className="b catb activeb" onClick={() => this.bookClick('cat')} src={CatalogCover} />
                 </div>
                 <div className='bContainer'>
                 <img className="b magb" onClick={() => this.bookClick('mag')} src={MagPuckCover} /> 
@@ -416,7 +416,7 @@ class Art extends Component {
                 </div>
                 </div>
                 
-                <Carousel className="sel inactive cat pamphlet" showStatus={false} showThumbs={false} infiniteLoop={true} useKeyboardArrows={true}>
+                <Carousel className="sel active cat pamphlet" showStatus={false} showThumbs={false} infiniteLoop={true} useKeyboardArrows={true}>
                     <div className='description'>
                         <h2>
                         Socket Technology Catalog
@@ -764,7 +764,7 @@ class Art extends Component {
                     </Carousel>
 
 
-                    <div className='sel inactive card brock rest'>
+                    {/* <div className='sel inactive card brock rest'>
                         <img className='top' src={Brock} />
                         <img className='leftimg' src={BrockLetter} />
                         <img className='rightimg' src={BrockWeb} />
@@ -774,7 +774,7 @@ class Art extends Component {
                         <img className='top' src={Joyce} />
                         <img className='leftimg' src={JoyceLetter} />
                         <img className='rightimg' src={JoyceWeb} />
-                    </div>
+                    </div> */}
                     <Carousel className="sel inactive cardio rest" showStatus={false} showThumbs={false} infiniteLoop={true} useKeyboardArrows={true}>
                     <div className='description'>
                     <h2>Circulatory System</h2>        
