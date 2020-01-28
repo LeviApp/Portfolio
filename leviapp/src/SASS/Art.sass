@@ -9,7 +9,6 @@
     align-items: center
     margin: 0
     padding: 0
-    font-size: 1rem
     align-self: flex-end
     position: fixed
     top: 110px
@@ -44,6 +43,11 @@
     align-items: center
     flex-direction: column
     margin-top: 150px
+    width: 100%
+    @media screen and (max-width:480px)
+        width: 100%
+        right: auto
+        margin-top: 0px
 
     .quorum
         align-self: center
@@ -75,7 +79,9 @@
         align-self: center
         @media screen and (max-width:480px)
             flex-direction: column
-
+            flex-wrap: wrap
+            width: 90%
+            margin: 0
         .artcat
             display: flex
             flex-direction: row
@@ -114,6 +120,7 @@
         @media screen and (max-width:480px)
             position: static
             right: auto
+            margin-top: 50px
 
         div
             img
@@ -176,27 +183,48 @@
     .pamphlet
         width: 27%
         right: 250px
+
         @media screen and (max-width:480px)
-            width: 50%
-            height: 50%
+            width: 100%
             right: auto
     .rest
         width: 54%
+        @media screen and (max-width:480px)
+            width: 100%
+            right: auto
+
     .biggest
         width: 34%
 
     .other
         width: 42%
+        @media screen and (max-width:480px)
+            width: 100%
+            right: auto
 
     .double
         width: 47%
+        @media screen and (max-width:480px)
+            width: 100%
+            right: auto
+
     .type
         right: 100px
+        @media screen and (max-width:480px)
+            width: 100%
+            right: auto
+
     .quorum
         right: 200px
+        @media screen and (max-width:480px)
+            width: 100%
+            right: auto
+
     .illu
         right: 135px
-  
+        @media screen and (max-width:480px)
+            width: 100%
+            right: auto
 
 .activeb
     border: 8px solid black
@@ -223,7 +251,6 @@
     padding-top: 10px
     z-index: 2
     background-color: $background
- 
     p
         color: white
         font-size: 1.2rem

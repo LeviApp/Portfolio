@@ -417,6 +417,11 @@ class Art extends Component {
                 </div>
                 
                 <Carousel className="sel active cat pamphlet" showStatus={false} showThumbs={false} infiniteLoop={true} useKeyboardArrows={true}>
+
+                    <div>
+                    <img src={CatalogCover} />
+                    </div>
+
                     <div className='description'>
                         <h2>
                         Socket Technology Catalog
@@ -429,9 +434,6 @@ class Art extends Component {
                         <p>
                         This is the catalog that gives clients an overview of all of Adaptec Prosthetics's products. VaporPuck is a product that Adaptec Prosthetics used to sell.
                         </p>
-                    </div>
-                    <div>
-                    <img src={CatalogCover} />
                     </div>
 
                     <div>
@@ -457,8 +459,11 @@ class Art extends Component {
 
                 <Carousel className="sel inactive mag pamphlet" showStatus={false} showThumbs={false} infiniteLoop={true} useKeyboardArrows={true}>
 
-                    <div className='description'>
+                    <div>
+                    <img src={MagPuckCover} />
+                    </div>
 
+                    <div className='description'>
                         <h2>
                         MagPuck Technical Guide
                         </h2>
@@ -474,9 +479,6 @@ class Art extends Component {
                         switch, allowing the user to quickly and easily set and adjust vacuum levels
                         of their prosthesis."
                         </p>
-                    </div>
-                    <div>
-                    <img src={MagPuckCover} />
                     </div>
 
                     <div>
@@ -502,6 +504,10 @@ class Art extends Component {
 
                 <Carousel className="sel inactive smart pamphlet" showStatus={false} showThumbs={false} infiniteLoop={true} useKeyboardArrows={true}>
 
+                    <div>
+                    <img src={SmartPuckCover} />
+                    </div>
+
                     <div className='description'>
                         <h2>
                         SmartPuck Technical Guide
@@ -519,9 +525,6 @@ class Art extends Component {
                         application interface, allowing the user to quickly and easily set and adjust
                         vacuum pressure settings of their prosthesis."                        
                         </p>
-                    </div>
-                    <div>
-                    <img src={SmartPuckCover} />
                     </div>
 
                     <div>
@@ -547,6 +550,10 @@ class Art extends Component {
 
                 <Carousel className="sel inactive air pamphlet" showStatus={false} showThumbs={false} infiniteLoop={true} useKeyboardArrows={true}>
 
+                    <div>
+                    <img src={AirPuckCover} />
+                    </div>
+
                     <div className='description'>
                         <h2>
                         AirPuck Technical Guide
@@ -559,9 +566,6 @@ class Art extends Component {
                         <p>
                         The AirPuck is the base product Adaptec Prosthetics offers. It uses a simple air system.
                         </p>
-                    </div>
-                    <div>
-                    <img src={AirPuckCover} />
                     </div>
 
                     <div>
@@ -587,6 +591,10 @@ class Art extends Component {
 
                 <Carousel className="sel inactive zero pamphlet" showStatus={false} showThumbs={false} infiniteLoop={true} useKeyboardArrows={true}>
 
+                    <div>
+                        <img src={ZeroPuckCover} />
+                    </div>
+
                     <div className='description'>
                         <h2>
                         ZeroPuck Technical Guide
@@ -604,9 +612,6 @@ class Art extends Component {
                         application interface, allowing the user to quickly and easily set and adjust
                         vacuum pressure settings of their prosthesis."                     
                         </p>
-                    </div>
-                    <div>
-                        <img src={ZeroPuckCover} />
                     </div>
 
                     <div>
@@ -632,6 +637,10 @@ class Art extends Component {
 
                 <Carousel className="sel inactive fab pamphlet" showStatus={false} showThumbs={false} infiniteLoop={true} useKeyboardArrows={true}>
 
+                    <div>
+                    <img src={FabricationCover} />
+                    </div>
+                    
                     <div className='description'>
                         <h2>
                         Puck Fabrication Guide
@@ -644,10 +653,6 @@ class Art extends Component {
                         <p>
                         The Puck Fabrication Guide focuses on the preparation of prosthetic sockets.                       
                         </p>
-                    </div>
-
-                    <div>
-                    <img src={FabricationCover} />
                     </div>
 
                     <div>
@@ -776,6 +781,10 @@ class Art extends Component {
                         <img className='rightimg' src={JoyceWeb} />
                     </div> */}
                     <Carousel className="sel inactive cardio rest" showStatus={false} showThumbs={false} infiniteLoop={true} useKeyboardArrows={true}>
+                    <div>
+                    <img src={C1} />
+                    </div>
+
                     <div className='description'>
                     <h2>Circulatory System</h2>        
                     <p>
@@ -833,6 +842,10 @@ class Art extends Component {
 
 
                 <Carousel className="sel inactive resp rest" showStatus={false} showThumbs={false} infiniteLoop={true} useKeyboardArrows={true}>
+                    <div>
+                    <img src={R1} />
+                    </div>
+
                     <div className='description'>
                     <h2>Respiratory System</h2>        
                     <p>
@@ -889,6 +902,11 @@ class Art extends Component {
                 </Carousel>
 
                 <Carousel className="sel inactive digest rest" showStatus={false} showThumbs={false} infiniteLoop={true} useKeyboardArrows={true}>
+
+                    <div>
+                    <img src={D1} />
+                    </div>
+
                     <div className='description'>
                     <h2>Digestive System</h2>        
                     <p>
@@ -945,6 +963,11 @@ class Art extends Component {
                     </Carousel>
 
                     <Carousel className="sel inactive uri rest" showStatus={false} showThumbs={false} infiniteLoop={true} useKeyboardArrows={true}>
+
+                    <div>
+                    <img src={U1} />
+                    </div>
+
                     <div className='description'>
                     <h2>Urinary System</h2>        
                     <p>
@@ -1002,15 +1025,18 @@ class Art extends Component {
                     </Carousel>
 
                     <Carousel className="sel inactive quorum biggest" showStatus={false} showThumbs={false} infiniteLoop={true} useKeyboardArrows={true}>
+
+                    <div>
+                    <img src={q1} />
+                    </div>
+
                     <div className='description'>
                     <h2>Operation: Quorum Sense</h2>        
                     <p>
                     In my 2D Design class, the teacher asked the students to incorporate post-contemporary design principles. I was in a microbiology class at the same time. I was interested in making a complicated biology topic, quorum sensing, simpler.
                     </p>
                     </div>
-                    <div>
-                    <img src={q1} />
-                    </div>
+
 
                     <div>
                     <img src={q2} />          
@@ -1063,15 +1089,16 @@ class Art extends Component {
 
                     <Carousel className="sel inactive STEM rest" showStatus={false} showThumbs={false} infiniteLoop={true} useKeyboardArrows={true}>
 
+                    <div>
+                    <img src={s1} />
+                    <h2>Design Building</h2>
+                    </div>
+
                     <div className='description'>
                     <h2>STEM Coloring Book</h2>        
                     <p>
                         A biology teacher at Metropolitan State University of Denver asked me to create a coloring book for the upcoming summer Science STEM program hosted at the university. Coloring sheet topics range from chemistry to meteorology.
                     </p>
-                    </div>
-                    <div>
-                    <img src={s1} />
-                    <h2>Design Building</h2>
                     </div>
 
                     <div>
