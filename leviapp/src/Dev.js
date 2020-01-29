@@ -273,11 +273,11 @@ class Dev extends Component {
 
                 <div className='final'>
                 <img className='final-traction-logo' src={Traction} alt="traction-logo" />
-                <h6>Hover me</h6>
+                <h6>Hover Me</h6>
                 </div>
                 <div className='final'>
                 <img className='final-traction-logo' src={TractionPremium} alt="traction-logo-premium" /> 
-                <h6>Hover me</h6>
+                <h6>Hover Me</h6>
                 </div>
                 </div>    
 

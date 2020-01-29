@@ -193,14 +193,14 @@ class About extends Component {
               of themselves with every project I am a part of.
               </p>
 
-              <div className='automaton-focus'>
+              <div className='about-focus'>
               <h4>❯❯ DPS </h4>  
               <p>
               ❯ Taught struggling students math concepts
               </p>
             </div>
 
-              <div className='automaton-focus'>
+              <div className='about-focus'>
               <h4>❯❯ NCTI </h4>  
               <p>
               ❯ Built infographics
@@ -210,14 +210,14 @@ class About extends Component {
               
             </div>
 
-            <div className='automaton-focus'>
+            <div className='about-focus'>
               <h4>❯❯ Adaptec Prosthetics </h4>  
               <p>
               ❯ Built instructional pamphlets
               </p>
             </div>
 
-            <div className='automaton-focus'>
+            <div className='about-focus'>
               <h4>❯❯ MSU Denver </h4>  
               <p>
               ❯ Built educational material for the blind students
@@ -226,7 +226,7 @@ class About extends Component {
               </p>
             </div>
 
-            <div className='automaton-focus'>
+            <div className='about-focus'>
               <h4>❯❯ RRCC </h4>  
               <p>
               ❯ Taught struggling students math concepts
@@ -290,14 +290,14 @@ class About extends Component {
               Classes included Adobe Photoshop, Adobe Illustrator, and Final Cut Pro. 
               </p>
 
-              <div className='automaton-focus'>
+              <div className='about-focus'>
               <h4>❯❯ Lambda School </h4>  
               <p>
               ❯ Computer Science, Full-Stack Web Development
               </p>
             </div>
 
-              <div className='automaton-focus'>
+              <div className='about-focus'>
               <h4>❯❯ MSU Denver </h4>  
               <p>
               ❯ Bachelor of Science, Scientific Graphics
@@ -305,7 +305,7 @@ class About extends Component {
               
             </div>
 
-            <div className='automaton-focus'>
+            <div className='about-focus'>
               <h4>❯❯ RRCC </h4>  
               <p>
               ❯ Associates of General Studies, Multimedia Tech 
@@ -361,7 +361,7 @@ class About extends Component {
               National Scholar Award, and I was honored to be rewarded with it.                          
               </p>
 
-              <div className='automaton-focus'>
+              <div className='about-focus'>
               <h4>❯❯ MSU Denver 2016 </h4>  
               <p>
               ❯ Provost's Award / Outstanding Graduate Award
@@ -369,14 +369,14 @@ class About extends Component {
               
               </div>
 
-            <div className='automaton-focus'>
+            <div className='about-focus'>
               <h4>❯❯ RRCC 2011 </h4>  
               <p>
               ❯ Outstanding Graduate of the Year Award
               </p>
             </div>
 
-            <div className='automaton-focus'>
+            <div className='about-focus'>
               <h4>❯❯ CAA 2008 </h4>  
               <p>
               ❯ High School Valedictorian
@@ -415,7 +415,7 @@ class About extends Component {
               Here are a few unique facts about me.
               </p>
 
-              <div className='automaton-focus'>
+              <div className='about-focus'>
               <h4>❯❯ Brain </h4>  
               <p>
               ❯ I am missing a third of my brain.
@@ -424,21 +424,21 @@ class About extends Component {
               </p>
               </div>
 
-            <div className='automaton-focus'>
+            <div className='about-focus'>
               <h4>❯❯ Number System </h4>  
               <p>
               ❯ Each number 0-99 has an image associated with it.
               </p>
             </div>
 
-            <div className='automaton-focus'>
+            <div className='about-focus'>
               <h4>❯❯ German </h4>  
               <p>
               ❯ I am faithful investing time in learning German.
               </p>
             </div>
 
-            <div className='automaton-focus'>
+            <div className='about-focus'>
               <h4>❯❯ Chess </h4>  
               <p>
               ❯ Chess is a hobby of mine.
