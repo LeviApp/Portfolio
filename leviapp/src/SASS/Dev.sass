@@ -160,7 +160,7 @@
                             @media screen and (max-width:480px)
                                 position: relative
                                 left: 25%
-                                content: 'Click me'
+                                content: 'Click Me'
                                 width: 70px
                 h2
                     color: $blue
@@ -299,9 +299,11 @@
                     font-size: 1.25rem
 
                 img
-                    width: 100%
+                    width: 90%
                     height: auto
-                    
+                    @media screen and (max-width:480px)
+                        width: 100%
+                        height: auto     
 
                 .check
                     display: flex
@@ -346,6 +348,7 @@
                             border: 10px solid black
                             box-shadow: -33px 33px 0 -30px $blue, 33px -33px 0 -30px $blue
                             text-decoration: none
+
 
                             
                     .web-group:hover > .web-link
@@ -418,8 +421,8 @@ div.tech-used
     width: 100%
     iframe
         position: absolute
-        width: 90%
-        height: 90%
+        width: 95%
+        height: 95%
         top: 0
         left: 0
         @media screen and (max-width:480px)
