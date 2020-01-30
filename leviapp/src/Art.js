@@ -320,17 +320,17 @@ class Art extends Component {
             </h2>
             <h3 className='arrows arrows_1'>❯❯❯❯❯</h3>
 
-            <h2 onClick={() => {this.scrollTo('tactile', -220)}} className='all_sections second'>
+            <h2 onClick={() => {this.scrollTo('tactile', -200)}} className='all_sections second'>
             Tactile Graphics
             </h2>
             <h3 className='arrows arrows_2'>❯❯❯❯❯</h3>
 
-            <h2 onClick={() => {this.scrollTo('type', -200)}} className='all_sections third'>
+            <h2 onClick={() => {this.scrollTo('type', -180)}} className='all_sections third'>
             Type Design
             </h2>
             <h3 className='arrows arrows_3'>❯❯❯❯❯</h3>
 
-            <h2 onClick={() => {this.scrollTo('illustration', -400)}} className='all_sections fourth'>
+            <h2 onClick={() => {this.scrollTo('illustration', -280)}} className='all_sections fourth'>
             Illustration
             </h2>
             </div>
