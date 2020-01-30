@@ -315,22 +315,22 @@ class Art extends Component {
         <div className='art'>
       <div className='contents'>
 
-            <h2 onClick={() => {this.scrollTo('infographics', -180)}} className='all_sections on_topic'>
+            <h2 onClick={() => {this.scrollTo('infographics', -400)}} className='all_sections on_topic'>
             Infographics
             </h2>
             <h3 className='arrows arrows_1'>❯❯❯❯❯</h3>
 
-            <h2 onClick={() => {this.scrollTo('tactile', -150)}} className='all_sections second'>
+            <h2 onClick={() => {this.scrollTo('tactile', -220)}} className='all_sections second'>
             Tactile Graphics
             </h2>
             <h3 className='arrows arrows_2'>❯❯❯❯❯</h3>
 
-            <h2 onClick={() => {this.scrollTo('type', -130)}} className='all_sections third'>
+            <h2 onClick={() => {this.scrollTo('type', -200)}} className='all_sections third'>
             Type Design
             </h2>
             <h3 className='arrows arrows_3'>❯❯❯❯❯</h3>
 
-            <h2 onClick={() => {this.scrollTo('illustration', -130)}} className='all_sections fourth'>
+            <h2 onClick={() => {this.scrollTo('illustration', -400)}} className='all_sections fourth'>
             Illustration
             </h2>
             </div>
