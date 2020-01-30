@@ -77,8 +77,8 @@ class Dev extends Component {
       const number = percentScrolled/49
       const number2 = ((-49 + percentScrolled)/15)
       const percent2 = `${((-49 + percentScrolled)/15)*100}%`
-      const percent3 = `${((-65 + percentScrolled)/15)*100}%`
-      const number3 = ((-65 + percentScrolled)/15)
+      const percent3 = `${((-66 + percentScrolled)/14)*100}%`
+      const number3 = ((-66 + percentScrolled)/14)
       const percent4 = `${((-82 + percentScrolled)/15)*100}%`
       const number4 = ((-82 + percentScrolled)/15)
 
@@ -151,16 +151,16 @@ class Dev extends Component {
         return(
         <div className="Dev" onScroll={this.scrolled()}>
             <div className='contents'>
-            <h2 onClick={() => {this.scrollTo('traction', -225)}}className='all_sections on_topic'>
+            <h2 onClick={() => {this.scrollTo('traction', -220)}}className='all_sections on_topic'>
             Traction
             </h2>
             <h3 className='arrows arrows_1'>❯❯❯❯❯</h3>
 
-            <h2 onClick={() => {this.scrollTo('quotes', -225)}} className='all_sections second'>
+            <h2 onClick={() => {this.scrollTo('quotes', -220)}} className='all_sections second'>
             Quotes 4 Life
             </h2>
             <h3 className='arrows arrows_2'>❯❯❯❯❯</h3>
-            <h2 onClick={() => {this.scrollTo('reform', -225)}} className='all_sections third'>
+            <h2 onClick={() => {this.scrollTo('reform', -220)}} className='all_sections third'>
             Reform In Dust Storms
             </h2>
             <h3 className='arrows arrows_3'>❯❯❯❯❯</h3>
@@ -296,7 +296,7 @@ class Dev extends Component {
             <div className='left' id='scheduled'>
             <h2> ❮❯ Scheduled Routine ❮❯ </h2>
             <img className='mapped' src={Mapped} alt="mapped event" />
-            <div className='focus'>
+            <div className='focus' id='check-box'>
             <div className='checkG'>
             <h4> ❯❯ Checkmark Box</h4>
             <div className='check-group'>
