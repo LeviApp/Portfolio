@@ -18,26 +18,29 @@
         padding: 0
         align-self: flex-end
         position: fixed
-        top: 110px
         z-index: 10
-        right: 50px
         @media screen and (max-width:1920px)
             top: 170px
             right: 70px
         @media screen and (max-width:1366px)
             top: 120px
             right: 50px
+        @media screen and (max-width:1280px)
+            top: 110px
+
         @media screen and (max-width:480px)
             display: none
 
         .all_sections
             margin: 0
             color: $gray
-            font-size: 1rem
             @media screen and (max-width:1920px)
                 font-size: 1.5rem
             @media screen and (max-width:1366px)
                 font-size: 1.25rem
+            @media screen and (max-width:1280px)
+                font-size: 1rem
+
         .on_topic
             color: $green
         h3
@@ -45,7 +48,6 @@
             margin: 0
             padding: 0
         .arrows
-            font-size: 1rem
             background-image: linear-gradient(to right, $green 0%, $green 0%, $gray 0%, $gray 100%)
             -webkit-background-clip: text
             -webkit-text-fill-color: transparent
@@ -53,6 +55,8 @@
                 font-size: 1.5rem
             @media screen and (max-width:1366px)
                 font-size: 1.25rem
+            @media screen and (max-width:1280px)
+                font-size: 1rem
     h1
         z-index: 1
         position: sticky
@@ -63,7 +67,6 @@
         top: 80px
         background-color: $background
         width: 100%
-        font-size: 2.5rem
         color: $green
         font-style: italic
         @media screen and (max-width:1920px)
@@ -72,6 +75,9 @@
         @media screen and (max-width:1366px)
             font-size: 3rem
             top: 100px
+        @media screen and (max-width:1280px)
+            font-size: 2.5rem
+            top: 80px
 
         @media screen and (max-width:480px)
             top: 0px
@@ -161,6 +167,10 @@
                     @media screen and (max-width:1366px)
                         font-size: 1.75rem
                         padding-top: 20px
+                    @media screen and (max-width:1280px)
+                        font-size: 1.5rem
+                        padding-top: 0rem
+                        line-height: 40px
 
                     @media screen and (max-width:480px)
                         font-size: 1.25rem
@@ -169,7 +179,6 @@
                 p
                     color: white
                     width: 100%
-                    font-size: 1.1rem
                     text-align: justify
                     @media screen and (max-width:1920px)
                         font-size: 1.7rem
@@ -177,6 +186,9 @@
                     @media screen and (max-width:1366px)
                         font-size: 1.2rem
                         line-height: 25px
+                    @media screen and (max-width:1280px)
+                        font-size: 1.1rem
+                        line-height: 23px
 
                     @media screen and (max-width:480px)
                         width: 90%
@@ -193,6 +205,9 @@
                         font-size: 2.75rem
                     @media screen and (max-width:1366px)
                         font-size: 2rem
+                    @media screen and (max-width:1280px)
+                        font-size: 1.75rem
+
                     @media screen and (max-width:480px)
                         width: 90%
                         font-size: 1.25rem
@@ -210,7 +225,6 @@
                         font-size: 1.75rem
                     h4
                         color: $green
-                        font-size: 1.25rem
                         margin: 0 0 10px 0
                         width: 50%
                         @media screen and (max-width:1920px)
@@ -233,6 +247,8 @@
                             font-size: 1.7rem
                         @media screen and (max-width:1366px)
                             font-size: 1.25rem
+                        @media screen and (max-width:1280px)
+                            font-size: 1.1rem
                         @media screen and (max-width:480px)
                             width: 100%
                             margin-bottom: 20px
@@ -295,6 +311,8 @@
                                 width: 150px
                             @media screen and (max-width:1366px)
                                 width: 100px
+                            @media screen and (max-width:1280px)
+                                width: 90px
                             @media screen and (max-width:480px)
                                 width: 60px
 
@@ -334,7 +352,7 @@
                     @media screen and (max-width:1920px)
                         width: 80%  
                     @media screen and (max-width:1366px)
-                        width: 90%   
+                        width: 90%
                     @media screen and (max-width:480px)
                         margin-bottom: 20px      
                 .check
@@ -380,7 +398,6 @@
                               
                         .web-link
                             margin: 20px 0px
-                            font-size: 1rem
                             color: $gray
                             align-self: center
                             text-decoration: none
@@ -388,6 +405,8 @@
                                 font-size: 1.5rem
                             @media screen and (max-width:1366px)
                                 font-size: 1.25rem
+                            @media screen and (max-width:1366px)
+                                font-size: 1rem
                             @media screen and (max-width:480px)
                                 font-size: 1.25rem
 
@@ -395,9 +414,7 @@
                         .web-arrow
                             color: white
                             align-self: center
-                            font-size: 2rem
                             border: 3px solid $blue
-                            padding: 10px
                             margin-top: 20px
                             border: 10px solid black
                             box-shadow: -33px 33px 0 -30px $blue, 33px -33px 0 -30px $blue
@@ -414,6 +431,12 @@
                                 font-size: 3rem
                                 text-align: center
                                 padding-top: 20px
+                            @media screen and (max-width:1280px)
+                                width: auto
+                                height: auto
+                                font-size: 2rem
+                                text-align: center
+                                padding: 10px
                             @media screen and (max-width:480px)
                                 width: 60px
                                 height: 60px
