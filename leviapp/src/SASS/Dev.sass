@@ -25,10 +25,10 @@
         margin: 0
         padding: 0
         align-self: flex-end
-        position: fixed
-        top: 110px
+        position: sticky
+        top: 170px
+        right: 70px        
         z-index: 10
-        right: 50px
         @media screen and (max-width:1920px)
             top: 170px
             right: 70px
@@ -42,6 +42,7 @@
         .all_sections
             margin: 0
             color: $gray
+            font-size: 1.5rem
             @media screen and (max-width:1920px)
                 font-size: 1.5rem
             @media screen and (max-width:1366px)
@@ -51,6 +52,14 @@
 
         .on_topic
             color: $green
+            font-size: 1.5rem
+            margin: 0
+            @media screen and (max-width:1920px)
+                font-size: 1.5rem
+            @media screen and (max-width:1366px)
+                font-size: 1.25rem
+            @media screen and (max-width:1280px)
+                font-size: 1rem
         h3
             color: $gray
             margin: 0
@@ -61,6 +70,7 @@
             background-image: linear-gradient(to right, $green 0%, $green 0%, $gray 0%, $gray 100%)
             -webkit-background-clip: text
             -webkit-text-fill-color: transparent
+            font-size: 1.5rem
             @media screen and (max-width:1920px)
                 font-size: 1.5rem
             @media screen and (max-width:1366px)
@@ -88,6 +98,8 @@
             width: 100%
             color: $green
             font-style: italic
+            font-size: 4rem
+            top: 160px
             @media screen and (max-width:1920px)
                 font-size: 4rem
                 top: 160px
@@ -162,7 +174,7 @@
                         flex-wrap: wrap
                         img
                             margin: 10px
-                            width: 85px
+                            width: 170px
                             @media screen and (max-width:1920px)
                                 width: 170px
                             @media screen and (max-width:1366px)
@@ -179,7 +191,7 @@
                         flex-wrap: wrap
                         align-items: center
                         .final-traction-logo
-                            width: 100px
+                            width: 170px
                             @media screen and (max-width:1920px)
                                 width: 170px
                             @media screen and (max-width:1366px)
@@ -194,6 +206,7 @@
                         h6
                             margin: 0
                             color: $green
+                            font-size: 1rem
                             @media screen and (max-width:1920px)
                                 font-size: 1rem
                             @media screen and (max-width:480px)
@@ -209,6 +222,8 @@
                 h2
                     color: $blue
                     font-size: 1.25rem
+                    padding-top: 100px
+                    font-size: 2.5rem
                     @media screen and (max-width:1920px)
                         padding-top: 100px
                         font-size: 2.5rem
@@ -221,8 +236,9 @@
                 p
                     color: white
                     width: 100%
-                    font-size: 1.1rem
-                    line-height: 30px
+                    font-size: 1.75rem
+                    line-height: 35px
+                    margin-top: 0px
                     @media screen and (max-width:1920px)
                         font-size: 1.75rem
                         line-height: 35px
@@ -246,6 +262,9 @@
                         flex-direction: column
                     h4
                         color: $green
+                        font-size: 1.7rem 
+                        margin: 0 0 10px 15px
+                        width: 50%
                         @media screen and (max-width:1920px)
                             font-size: 1.7rem 
                             margin: 0 0 10px 15px
@@ -264,8 +283,8 @@
                         width: 100%
                         padding: 0
                         margin: 0 0 10px 2%
-                        font-size: 1.1rem
-                        line-height: 30px
+                        font-size: 1.75rem 
+                        line-height: 35px
                         @media screen and (max-width:1920px)
                             font-size: 1.75rem 
                             line-height: 35px
@@ -278,7 +297,7 @@
                 .focus
                     display: flex
                     flex-direction: row
-                    justify-content: space-between
+                    justify-content: space-around
                     width: 100%
                     @media screen and (max-width:1920px)
                         justify-content: space-around
@@ -287,8 +306,9 @@
                     
                     h4
                         color: $green
-                        font-size: 1.25rem
-                        margin: 10px 0 
+                        margin: 10px 0
+                        font-size: 1.75rem 
+                        margin-left: 15px
                         @media screen and (max-width:1920px)
                             font-size: 1.75rem 
                             margin-left: 15px
@@ -307,7 +327,8 @@
                             width: 22%
                         h4
                             color: $green
-                            font-size: 1.25rem
+                            font-size: 1.5rem
+                            width: 100%
                             @media screen and (max-width:1920px)
                                 font-size: 1.5rem
                                 width: 100%
@@ -318,8 +339,8 @@
                             flex-direction: column
                             justify-content: center
                             align-items: center
-                            width: 20%
-                            margin: 10px 10px
+                            width: 40%
+                            margin: 0
                             @media screen and (max-width:1920px)
                                 width: 40%
                                 margin: 0
@@ -335,6 +356,7 @@
                                 margin-bottom: 0
                                 width: 100%             
                                 text-align: center
+                                font-size: 1rem
                                 @media screen and (max-width:1920px)
                                     font-size: 1rem
                                 @media screen and (max-width:1366px)
@@ -357,6 +379,7 @@
                     width: 100%
                     align-items: center
                     justify-content: center
+                    margin-top: 15px
                     @media screen and (max-width:1920px)
                         margin-top: 15px
                     @media screen and (max-width:1366px)
@@ -372,7 +395,7 @@
                         border: 10px solid black
 
                         img
-                            width: 45px
+                            width: 90px
                             @media screen and (max-width:1920px)
                                 width: 90px
                             @media screen and (max-width:1366px)
@@ -403,6 +426,7 @@
                 width: 100%
                 height: 75vh
                 z-index: 1
+                margin-top: 50px
                 @media screen and (max-width:1920px)
                     margin-top: 50px
                 @media screen and (max-width:1366px)
@@ -420,7 +444,7 @@
                         width: 100%
                 h2
                     color: $blue
-                    font-size: 1.25rem
+                    font-size: 2.5rem
                     @media screen and (max-width:1920px)
                         font-size: 2.5rem
                     @media screen and (max-width:1366px)
@@ -461,6 +485,7 @@
                     align-items: center
                     flex-wrap: wrap
                     width: 100%
+                    margin-top: 15px
                     @media screen and (max-width:1920px)
                         margin-top: 15px
                     .web-group
@@ -469,7 +494,8 @@
                         margin: 0px 20px   
                         .web-link
                             margin: 20px 0px
-                            font-size: 1rem
+                            font-size: 1.5rem
+                            margin-top: 30px                            
                             color: $gray
                             align-self: center
                             text-decoration: none
@@ -493,12 +519,17 @@
                             border: 10px solid black
                             box-shadow: -33px 33px 0 -30px $blue, 33px -33px 0 -30px $blue
                             text-decoration: none
+                            width: 100px
+                            height: 100px
+                            font-size: 4rem
+                            text-align: center
+                            padding-top: 5px
                             @media screen and (max-width:1920px)
                                 width: 100px
                                 height: 100px
                                 font-size: 4rem
                                 text-align: center
-                                padding-top: 10px
+                                padding-top: 5px
                             @media screen and (max-width:1366px)
                                 width: 70px
                                 height: 70px
@@ -625,5 +656,6 @@ div.tech-used
             width: 70%
 
 #check-box
+    justify-content: center
     @media screen and (max-width:1920px)
         justify-content: center
