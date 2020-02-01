@@ -15,6 +15,8 @@ function App() {
     <div className="App">
      <Navigation />    
     <Route path="/about" component={About} />
+    <Route exact path="/" render={(props) =>  <Redirect to='/about' /> } />
+
      <Route path="/dev" component={Dev} />
      <Route path="/art" component={Art} />
      <Route path="/contact" component={Contact} />
