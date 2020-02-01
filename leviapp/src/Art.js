@@ -367,7 +367,7 @@ class Art extends Component {
                 </div>
 
                 <div className='bContainer'>
-                <img className="b quorumb" onClick={() => this.bookClick('quorum')} src={q1} />
+                <img className="b tardigradeb" onClick={() => this.bookClick('tardigrade')} src={N8N} />
                 </div>
 
                 <div className='bContainer'>
@@ -413,6 +413,10 @@ class Art extends Component {
 
                 <div className='bContainer'>
                 <img className="b illub" onClick={() => this.bookClick('illu')} src={I1} /> 
+                </div>
+
+                <div className='bContainer'>
+                <img className="b quorumb" onClick={() => this.bookClick('quorum')} src={q1} />
                 </div>
                 </div>
                 <div className='car-container'>
@@ -741,12 +745,12 @@ class Art extends Component {
                     <div>
                     <img src={N7N} />
                     </div> 
-
-                    {/* <div>
-                    <img src={N8N} />
-                    </div>   */}
                     </Carousel>
                     </div>
+
+                    <div className="sel inactive tardigrade">
+                    <img src={N8N} />
+                    </div> 
 
                     <div className='car-container'>
                     <Carousel className="sel inactive type double" showStatus={false} showThumbs={false} infiniteLoop={true} useKeyboardArrows={true}>
@@ -780,17 +784,21 @@ class Art extends Component {
                     </Carousel>
                     </div>
 
-                    {/* <div className='sel inactive card brock rest'>
+                    <div className='car-container'>
+                    <div className='sel inactive card brock rest'>
                         <img className='top' src={Brock} />
                         <img className='leftimg' src={BrockLetter} />
                         <img className='rightimg' src={BrockWeb} />
                     </div>
+                    </div>
 
+                    <div className='car-container'>
                     <div className='sel inactive card joyce rest'>
                         <img className='top' src={Joyce} />
                         <img className='leftimg' src={JoyceLetter} />
                         <img className='rightimg' src={JoyceWeb} />
-                    </div> */}
+                    </div>
+                    </div>
 
                     <div className='car-container'>
                     <Carousel className="sel inactive cardio rest" showStatus={false} showThumbs={false} infiniteLoop={true} useKeyboardArrows={true}>
@@ -1044,71 +1052,6 @@ class Art extends Component {
                     </div>
 
                     <div className='car-container'>
-                    <Carousel className="sel inactive quorum biggest" showStatus={false} showThumbs={false} infiniteLoop={true} useKeyboardArrows={true}>
-
-                    <div>
-                    <img src={q1} />
-                    </div>
-
-                    <div className='description'>
-                    <h2>Operation: Quorum Sense</h2>        
-                    <p>
-                    In my 2D Design class, the teacher asked the students to incorporate post-contemporary design principles. I was in a microbiology class at the same time. I was interested in making a complicated biology topic, quorum sensing, simpler.
-                    </p>
-                    </div>
-
-
-                    <div>
-                    <img src={q2} />          
-                    </div>
-
-                    <div>
-                    <img src={q3} />        
-                    </div>
-
-                    <div>
-                    <img src={q4} />                               
-                    </div>
-
-                    <div>
-                    <img src={q5} />                               
-                    </div>
-
-                    <div>
-                    <img src={q6} />                               
-                    </div>
-
-                    <div>
-                    <img src={q7} />                               
-                    </div>
-
-                    <div>
-                    <img src={q8} />                               
-                    </div> 
-
-                    <div>
-                    <img src={q9} />                               
-                    </div>
-
-                    <div>
-                    <img src={q10} />                               
-                    </div>
-
-                    <div>
-                    <img src={q11} />                               
-                    </div>
-
-                    <div>
-                    <img src={q12} />                               
-                    </div>
-
-                    <div>
-                    <img src={q13} />                               
-                    </div>
-            </Carousel>
-            </div>
-
-                    <div className='car-container'>
                     <Carousel className="sel inactive STEM rest" showStatus={false} showThumbs={false} infiniteLoop={true} useKeyboardArrows={true}>
 
                     <div>
@@ -1209,6 +1152,71 @@ class Art extends Component {
                     </div>
                     </Carousel>
                     </div>
+
+                    <div className='car-container'>
+                    <Carousel className="sel inactive quorum biggest" showStatus={false} showThumbs={false} infiniteLoop={true} useKeyboardArrows={true}>
+
+                    <div>
+                    <img src={q1} />
+                    </div>
+
+                    <div className='description'>
+                    <h2>Operation: Quorum Sense</h2>        
+                    <p>
+                    In my 2D Design class, the teacher asked the students to incorporate post-contemporary design principles. I was in a microbiology class at the same time. I was interested in making a complicated biology topic, quorum sensing, simpler.
+                    </p>
+                    </div>
+
+
+                    <div>
+                    <img src={q2} />          
+                    </div>
+
+                    <div>
+                    <img src={q3} />        
+                    </div>
+
+                    <div>
+                    <img src={q4} />                               
+                    </div>
+
+                    <div>
+                    <img src={q5} />                               
+                    </div>
+
+                    <div>
+                    <img src={q6} />                               
+                    </div>
+
+                    <div>
+                    <img src={q7} />                               
+                    </div>
+
+                    <div>
+                    <img src={q8} />                               
+                    </div> 
+
+                    <div>
+                    <img src={q9} />                               
+                    </div>
+
+                    <div>
+                    <img src={q10} />                               
+                    </div>
+
+                    <div>
+                    <img src={q11} />                               
+                    </div>
+
+                    <div>
+                    <img src={q12} />                               
+                    </div>
+
+                    <div>
+                    <img src={q13} />                               
+                    </div>
+            </Carousel>
+            </div>
             </div>
         </div>
 

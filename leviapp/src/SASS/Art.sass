@@ -47,8 +47,8 @@
     .on_topic
         color: $green
     .fourth
-        margin-right: 50px
-        @media screen and (max-width:1366px)
+        margin-right: 75px
+        @media screen and (max-width:1920px)
             margin-right: 0px
 
     h3
@@ -195,8 +195,11 @@ h2
     width: 60%
     justify-content: center
     align-items: center
+    margin-top: 50px
+
     @media screen and (max-width:1920px)
         top: 220px
+        margin-top: 50px
     @media screen and (max-width:1366px)
         top: 150px
     @media screen and (max-width:480px)
@@ -237,9 +240,12 @@ h2
         @media screen and (max-width:1366px)
             top: 130px
         @media screen and (max-width:480px)
+            display: flex
+            justify-content: center
+            align-items: center
             position: static
             right: auto
-            margin-top: 50px
+            margin-bottom: 50px
 
         div
             @media screen and (max-width:1920px)
@@ -247,69 +253,16 @@ h2
             img
                 border-left: 5px solid $background
                 border-right: 5px solid $background
-                
-
-        .top
-            width: 45%
-            z-index: 1
-            grid-column: 6/16
-            grid-row: 1
-            border: 1px solid black
-            outline: 1px solid white
-        
-        .top:hover
-            outline: 4px solid $green
-            width: 80%
-            cursor: pointer
-
-        .leftimg
-            position: fixed
-            grid-column: 1/9
-            grid-row: 2/7
-            transform: rotate(20deg)
-            border: 1px solid black
-            outline: 1px solid white
-            width: 21%
-            z-index: 0
-            left: 47%
-            top: 330px
-
-        .leftimg:hover
-            z-index: 2
-            outline: 4px solid $green
-            transform: rotate(0deg)
-            width: 32%
-            top: 175px
-            cursor: pointer
-
-
-        .rightimg
-            position: fixed
-            right: 7%
-            top: 350px
-            width: 25%
-            transform: rotate(-20deg)
-            z-index: 0
-            border: 1px solid black
-            outline: 1px solid white
-
-        .rightimg:hover
-            z-index: 2
-            outline: 4px solid $green
-            transform: rotate(0deg)
-            width: 40%
-            top: 175px
-            cursor: pointer
 
     .pamphlet
         position: sticky
-        width: 45%
+        width: 42%
         max-width: 500px
         @media screen and (max-width:1920px)
             top: 200px
         @media screen and (max-width:1366px)
             top: 130px
-            width: 45%
+            width: 42%
             max-width: 575px
             position: sticky
 
@@ -336,11 +289,120 @@ h2
             
     .type
         position: sticky
-        width: 80%
+        width: 75%
         max-width: 922px
         @media screen and (max-width:480px)
             width: 80%
             right: auto
+
+    .STEM
+        position: sticky
+        width: 75%
+        max-width: 922px
+.card
+    @media screen and (max-width:480px)
+        display: flex
+        position: static
+        width: 80%
+        right: auto
+        flex-direction: column
+        justify-content: center
+        align-items: center
+    .top
+        width: 45%
+        z-index: 1
+        grid-column: 6/16
+        grid-row: 1
+        border: 1px solid black
+        outline: 1px solid white
+        @media screen and (max-width:480px)
+            position: static
+            width: 90%
+            right: auto
+            transform: rotate(0deg)
+            margin-bottom: 50px
+            pointer-events: none
+    .top:hover
+        outline: 4px solid $green
+        width: 80%
+        cursor: pointer
+
+    .leftimg
+        position: fixed
+        grid-column: 1/9
+        grid-row: 2/7
+        transform: rotate(20deg)
+        border: 1px solid black
+        outline: 1px solid white
+        width: 21%
+        z-index: 0
+        left: 47%
+        top: 330px
+        @media screen and (max-width:480px)
+            position: static
+            width: 90%
+            right: auto
+            transform: rotate(0deg)
+            margin-bottom: 50px
+            pointer-events: none
+
+    .leftimg:hover
+        z-index: 2
+        outline: 4px solid $green
+        transform: rotate(0deg)
+        width: 32%
+        top: 240px
+        cursor: pointer
+        @media screen and (max-width:1366px)
+            top: 170px
+
+    .rightimg
+        position: fixed
+        right: 7%
+        top: 350px
+        width: 25%
+        transform: rotate(-20deg)
+        z-index: 0
+        border: 1px solid black
+        outline: 1px solid white
+        @media screen and (max-width:480px)
+            position: static
+            width: 90%
+            right: auto
+            transform: rotate(0deg)
+            margin-bottom: 50px
+            pointer-events: none
+
+    .rightimg:hover
+        z-index: 2
+        outline: 4px solid $green
+        transform: rotate(0deg)
+        width: 40%
+        top: 240px
+        cursor: pointer
+        @media screen and (max-width:1366px)
+            top: 170px
+
+.tardigrade
+    display: flex
+    position: static
+    width: 60%
+    align-items: center
+    justify-content: center
+    top: 0px
+    right: 20px
+    @media screen and (max-width:480px)
+        right: auto
+        width: 100%
+
+    img
+        width: 100%
+        @media screen and (max-width:480px)
+            position: static
+            width: 90%
+            right: auto
+            max-width: 300px
+            margin-top: 50px
 
 .control-dots
     padding: 0
