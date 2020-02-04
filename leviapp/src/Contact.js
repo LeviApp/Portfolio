@@ -30,7 +30,7 @@ class Contact extends Component {
                 <input type="text" name="subject" />
                 <h4>Message</h4>
                 <textarea name="message"></textarea>
-                <button className='submit' type="submit">Submit</button>
+                <button onClick="window.location='/submitted';"  className='submit' type="submit">Submit</button>
             </form>
         </div>
 
