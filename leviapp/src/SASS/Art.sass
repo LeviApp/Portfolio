@@ -2,103 +2,71 @@
 
 
 
-.contents
-    display: flex
-    flex-direction: row
-    justify-content: space-between
-    align-items: center
-    margin: 0
-    padding: 15px 5px
-    align-self: flex-end
-    position: sticky
-    z-index: 10
-    width: 75%
-    top: 160px
-    right: 50px
-    overflow: hidden
-    @media screen and (max-width:1920px)
-        top: 160px
-        right: 50px
-        overflow: hidden
-        background-color: $background
-        padding: 15px 5px
-    @media screen and (max-width:1366px)
-        position: fixed
-        top: 120px
-        right: 50px
-        padding: 0px
-    @media screen and (max-width:1280px)
-        position: fixed
-        top: 100px
-        right: 50px
-        padding: 10px 5px
-
-    @media screen and (max-width:480px)
-        display: none
-    .all_sections
-        margin: 0
-        color: $gray
-        font-size: 1.5rem
-        margin: 0 1%
-        @media screen and (max-width:1920px)
-            font-size: 1.5rem
-        @media screen and (max-width:1366px)
-            font-size: 1rem
-    .on_topic
-        color: $green
-    .fourth
-        margin-right: 75px
-        @media screen and (max-width:1920px)
-            margin-right: 0px
-
-    h3
-        color: $gray
-        margin: 0
-        padding: 0
-        font-size: 1.5rem
-    .arrows
-        font-size: 1rem
-        background-image: linear-gradient(to right, $green 0%, $green 0%, $gray 0%, $gray 100%)
-        -webkit-background-clip: text
-        -webkit-text-fill-color: transparent
-        font-size: 1.5rem
-        @media screen and (max-width:1920px)
-            font-size: 1.5rem
-        @media screen and (max-width:1366px)
-            font-size: 1rem
-
 .art
     display: flex
+    flex-direction: column
+    width: 100%
     justify-content: center
     align-items: center
-    flex-direction: column
-    margin-top: 150px
-    width: 100%
     @media screen and (max-width:480px)
         width: 100%
-        right: auto
-        margin-top: 0px
-        margin-bottom: 50px
-    .quorum
-        align-self: center
-        display: flex
-        justify-content: center
-        align-items: center
-        width: 35%
-        background-color: black
-        .slide
-            width: 100%
 
-    .stem
-        align-self: center
+    .contents
         display: flex
-        justify-content: center
+        flex-direction: row
+        justify-content: space-between
         align-items: center
-        width: 50%
-        background-color: black
-        .slide
-            width: 100%
+        margin: 0
+        padding: 0
+        align-self: flex-end
+        position: sticky
+        top: 155px
+        right: 70px        
+        z-index: 10
+        width: 75%
+        padding: 15px 0
+        background-color: $background
+        @media screen and (max-width:1920px)
+            top: 155px
+            right: 70px
+        @media screen and (max-width:1366px)
+            top: 105px
+            right: 50px
+        @media screen and (max-width:1280px)
+            top: 95px
+        @media screen and (max-width:480px)
+            display: none
+        .all_sections
+            margin: 0
+            color: $gray
+            font-size: 1.5rem
+            margin: 0 1%
+            @media screen and (max-width:1920px)
+                font-size: 1.5rem
+            @media screen and (max-width:1366px)
+                font-size: 1rem
+        .on_topic
+            color: $green
+        .fourth
+            margin-right: 75px
+            @media screen and (max-width:1920px)
+                margin-right: 0px
 
+        h3
+            color: $gray
+            margin: 0
+            padding: 0
+            font-size: 1.5rem
+        .arrows
+            font-size: 1rem
+            background-image: linear-gradient(to right, $green 0%, $green 0%, $gray 0%, $gray 100%)
+            -webkit-background-clip: text
+            -webkit-text-fill-color: transparent
+            font-size: 1.5rem
+            @media screen and (max-width:1920px)
+                font-size: 1.5rem
+            @media screen and (max-width:1366px)
+                font-size: 1rem
     .artbox
         display: flex
         margin-top: 50px
@@ -107,6 +75,7 @@
         align-items: center
         justify-content: space-between
         align-self: center
+
         @media screen and (max-width:1920px)
             margin-top: 50px
         @media screen and (max-width:1366px)
@@ -122,8 +91,10 @@
             flex-direction: row
             width: 45%
             flex-wrap: wrap
+            margin-top: 120px
+
             @media screen and (max-width:1920px)
-                margin-top: 30px
+                margin-top: 120px
             @media screen and (max-width:480px)
                 display: none
             .bContainer
@@ -132,7 +103,6 @@
                 height: 30vh
                 width: 40%
                 margin: 10px
-
                 img
                     width: 100%
                     object-fit: scale-down
@@ -141,165 +111,147 @@
                     border: 8px solid black
                     outline: 4px solid $green
                     cursor: pointer
+            .activeb
+                border: 8px solid black
+                outline: 4px solid $blue
                 
-            
+        .car-container
+            display: flex
+            position: fixed
+            top: 220px
+            right: 20px
+            width: 60%
+            justify-content: center
+            align-items: center
+            margin-top: 50px
 
-        .inactive
-            display: none
+            @media screen and (max-width:1920px)
+                top: 220px
+            @media screen and (max-width:1366px)
+                top: 150px
+                margin-top: 50px
+
             @media screen and (max-width:480px)
-                display: flex
-.activeb
-    border: 8px solid black
-    outline: 4px solid $blue
+                max-width: 480px
+                width: 90%
+                position: static
+                right: auto
+                margin-top: 50px
+            .rest
+                width: 54%
+                @media screen and (max-width:480px)
+                    width: 100%
+                    right: auto
 
-.carousel .slide
-    background: $background
-    width: 99%
+            .biggest
+                width: 34%
 
-.description
-    width: 100%
-    height: 100%
-    padding-top: 10px
-    z-index: 2
-    background-color: $background
-    p
-        color: white
-        font-size: 1.2rem
-        text-align: left
-        margin: 0px 4%
-        @media screen and (max-width:480px)
-            font-size: 1rem
+            .other
+                width: 42%
+                @media screen and (max-width:480px)
+                    width: 100%
+                    right: auto
 
-h1
-    font-size: 1.5rem
-    color: $green
+            .double
+                width: 47%
+                @media screen and (max-width:480px)
+                    width: 100%
+                    right: auto
+
+
+
+            .sel
+                position: sticky
+                width: 80%
+                max-width: 980px
+                @media screen and (max-width:1920px)
+                    top: 200px
+                @media screen and (max-width:1366px)
+                    top: 130px
+                @media screen and (max-width:480px)
+                    display: flex
+                    justify-content: center
+                    align-items: center
+                    position: static
+                    right: auto
+                    margin-bottom: 50px
+                    width: 100%
+                .description
+                    width: 100%
+                    height: 100%
+                    padding-top: 10px
+                    z-index: 2
+                    background-color: $background
+                    p
+                        color: white
+                        font-size: 1.2rem
+                        text-align: left
+                        margin: 0px 4%
+                        @media screen and (max-width:480px)
+                            font-size: 1rem
+
+            .pamphlet
+                position: sticky
+                width: 42%
+                max-width: 500px
+                @media screen and (max-width:1920px)
+                    top: 200px
+                @media screen and (max-width:1366px)
+                    top: 130px
+                    width: 42%
+                    max-width: 575px
+                    position: sticky
+
+                @media screen and (max-width:480px)
+                    position: static
+                    right: auto
+                    margin-top: 50px
+                    width: 100%
+            .quorum
+                position: sticky
+                width: 55%
+                max-width: 634px
+                @media screen and (max-width:480px)
+                    width: 100%
+                    right: auto
+
+            .illu
+                position: sticky
+                width: 65%
+                max-width: 750px
+                @media screen and (max-width:480px)
+                    width: 100%
+                    right: auto
+                    
+            .type
+                position: sticky
+                width: 75%
+                max-width: 922px
+                @media screen and (max-width:480px)
+                    width: 100%
+                    right: auto
+
+            .STEM
+                position: sticky
+                width: 75%
+                max-width: 922px
+                @media screen and (max-width:480px)
+                    width: 100%
+                    right: auto
 
 .card
     display: flex
-    justify-content: center
-    .top
-        align-self: center
-
-
-h2
-    font-size: 1.5rem
-    color: $green
-    @media screen and (max-width:480px)
-        font-size: 1.25rem
-
-.car-container
-    display: flex
     position: fixed
-    top: 220px
+    top: 250px
     right: 20px
     width: 60%
     justify-content: center
     align-items: center
-    margin-top: 50px
-
-    @media screen and (max-width:1920px)
-        top: 220px
-        margin-top: 50px
     @media screen and (max-width:1366px)
-        top: 150px
-    @media screen and (max-width:480px)
-        max-width: 480px
-        width: 90%
-        position: static
-        right: auto
-        margin-top: 50px
-    .rest
-        width: 54%
-        @media screen and (max-width:480px)
-            width: 100%
-            right: auto
+        top: 220px
+    @media screen and (max-width:1280px)
+        top: 200px
 
-    .biggest
-        width: 34%
-
-    .other
-        width: 42%
-        @media screen and (max-width:480px)
-            width: 100%
-            right: auto
-
-    .double
-        width: 47%
-        @media screen and (max-width:480px)
-            width: 100%
-            right: auto
-
-
-
-    .sel
-        position: sticky
-        width: 85%
-        max-width: 980px
-        @media screen and (max-width:1920px)
-            top: 200px
-        @media screen and (max-width:1366px)
-            top: 130px
-        @media screen and (max-width:480px)
-            display: flex
-            justify-content: center
-            align-items: center
-            position: static
-            right: auto
-            margin-bottom: 50px
-
-        div
-            @media screen and (max-width:1920px)
-                top: 30px
-            img
-                border-left: 5px solid $background
-                border-right: 5px solid $background
-
-    .pamphlet
-        position: sticky
-        width: 42%
-        max-width: 500px
-        @media screen and (max-width:1920px)
-            top: 200px
-        @media screen and (max-width:1366px)
-            top: 130px
-            width: 42%
-            max-width: 575px
-            position: sticky
-
-        @media screen and (max-width:480px)
-            position: static
-            right: auto
-            margin-top: 50px
-            width: 80%
-    .quorum
-        position: sticky
-        width: 55%
-        max-width: 634px
-        @media screen and (max-width:480px)
-            width: 80%
-            right: auto
-
-    .illu
-        position: sticky
-        width: 65%
-        max-width: 750px
-        @media screen and (max-width:480px)
-            width: 75%
-            right: auto
-            
-    .type
-        position: sticky
-        width: 75%
-        max-width: 922px
-        @media screen and (max-width:480px)
-            width: 80%
-            right: auto
-
-    .STEM
-        position: sticky
-        width: 75%
-        max-width: 922px
-.card
     @media screen and (max-width:480px)
         display: flex
         position: static
@@ -308,6 +260,7 @@ h2
         flex-direction: column
         justify-content: center
         align-items: center
+        width: 100%
     .top
         width: 45%
         z-index: 1
@@ -337,7 +290,11 @@ h2
         width: 21%
         z-index: 0
         left: 47%
-        top: 330px
+        top: 360px
+        @media screen and (max-width:1366px)
+            top: 330px
+        @media screen and (max-width:1280px)
+            top: 310px
         @media screen and (max-width:480px)
             position: static
             width: 90%
@@ -359,12 +316,17 @@ h2
     .rightimg
         position: fixed
         right: 7%
-        top: 350px
+        top: 380px
         width: 25%
         transform: rotate(-20deg)
         z-index: 0
         border: 1px solid black
         outline: 1px solid white
+
+        @media screen and (max-width:1366px)
+            top: 350px
+        @media screen and (max-width:1280px)
+            top: 310px
         @media screen and (max-width:480px)
             position: static
             width: 90%
@@ -383,14 +345,34 @@ h2
         @media screen and (max-width:1366px)
             top: 170px
 
+.carousel .slide
+    background: $background
+    width: 99%
+
+
+h1
+    font-size: 1.5rem
+    color: $green
+
+
+
+
+h2
+    font-size: 1.5rem
+    color: $green
+    @media screen and (max-width:480px)
+        font-size: 1.25rem
+
+
+
+
 .tardigrade
     display: flex
-    position: static
-    width: 60%
     align-items: center
     justify-content: center
     top: 0px
-    right: 20px
+    width: 60%
+
     @media screen and (max-width:480px)
         right: auto
         width: 100%
@@ -409,3 +391,8 @@ h2
 
 .carousel.carousel-slider .control-arrow
     background-color: $background
+
+.inactive
+    display: none
+    @media screen and (max-width:480px)
+            display: flex
