@@ -19,7 +19,7 @@ class Contact extends Component {
         <div className='contact'>
             <h1>Send Me A Message!</h1>
 
-            <form action='/submitted' className="cform" name="contact-form" method="post" data-netlify="true">
+            <form className="cform" name="contact-form" method="post" data-netlify="true">
                 <input type="hidden" name="bot-field" />
                 <input type="hidden" name="form-name" value="contact-form" />
                 <h4>Name</h4>
@@ -30,7 +30,7 @@ class Contact extends Component {
                 <input type="text" name="subject" />
                 <h4>Message</h4>
                 <textarea name="message"></textarea>
-                <button onClick="window.location='/submitted';"  className='submit' type="submit">Submit</button>
+                <button  className='submit' type="submit">Submit</button>
             </form>
         </div>
 
