@@ -7,6 +7,7 @@ import About from './About'
 import Dev from './Dev'
 import Art from './Art'
 import Contact from './Contact'
+import Submitted from './Submitted'
 
 import { Redirect } from 'react-router'
 
@@ -20,6 +21,8 @@ function App() {
      <Route path="/dev" component={Dev} />
      <Route path="/art" component={Art} />
      <Route path="/contact" component={Contact} />
+     <Route path="/submitted" component={Submitted} />
+
     </div>
   );
 }
