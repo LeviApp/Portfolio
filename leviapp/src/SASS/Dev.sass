@@ -26,18 +26,21 @@
         padding: 0
         align-self: flex-end
         position: sticky
-        top: 170px
+        top: 155px
         right: 70px        
         z-index: 10
+        width: 75%
+        padding: 15px 0
+        background-color: $background
         @media screen and (max-width:1920px)
-            top: 170px
+            top: 155px
             right: 70px
         @media screen and (max-width:1366px)
-            top: 120px
+            top: 105px
             right: 50px
         @media screen and (max-width:1280px)
-            top: 110px
-        @media screen and (max-width:600px)
+            top: 95px
+        @media screen and (max-width:480px)
             display: none
         .all_sections
             margin: 0
@@ -329,6 +332,8 @@
                             width: 22%
                         @media screen and (max-width:1280px)
                             width: 22%
+                        @media screen and (max-width:480px)
+                            width: 100%
                         h4
                             color: $green
                             font-size: 1.5rem
@@ -338,6 +343,8 @@
                                 width: 100%
                             @media screen and (max-width:1366px)
                                 font-size: 1.25rem
+                            @media screen and (max-width:480px)
+                                width: 60%
                         .check-group
                             display: flex
                             flex-direction: column
@@ -354,6 +361,8 @@
                             @media screen and (max-width:1280px)
                                 width: 30%
                                 margin: 10px 10px
+                            @media screen and (max-width:480px)
+                                width: 25%
                             h6
                                 margin-top: 5px
                                 color: $green
@@ -548,9 +557,10 @@
                                 padding: 10px
                             @media screen and (max-width:480px)
                                 width: 60px
-                                height: 60px
+                                height: 50px
                                 text-align: center
-                            
+                                padding: 5px 0px
+
                     .web-group:hover > .web-link
                         color: $green
                     .web-group:hover > .web-arrow

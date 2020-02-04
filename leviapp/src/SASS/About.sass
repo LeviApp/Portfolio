@@ -18,18 +18,20 @@
         padding: 0
         align-self: flex-end
         position: sticky
+        top: 155px
+        right: 70px        
         z-index: 10
-        top: 170px
-        right: 70px
+        width: 75%
+        padding: 15px 0
+        background-color: $background
         @media screen and (max-width:1920px)
-            top: 170px
+            top: 155px
             right: 70px
         @media screen and (max-width:1366px)
-            top: 120px
+            top: 105px
             right: 50px
         @media screen and (max-width:1280px)
-            top: 110px
-
+            top: 95px
         @media screen and (max-width:480px)
             display: none
 
@@ -467,9 +469,10 @@
                                 text-align: center
                                 padding: 10px
                             @media screen and (max-width:480px)
-                                width: 60px
-                                height: 60px
+                              width: 60px
+                                height: 50px
                                 text-align: center
+                                padding: 5px 0px
                     .web-group:hover > .web-link
                         color: $green
                     .web-group:hover > .web-arrow

@@ -750,7 +750,7 @@ class Art extends Component {
 
                     <div className="sel inactive tardigrade">
                     <img src={N8N} />
-                    </div> 
+                    </div>
 
                     <div className='car-container'>
                     <Carousel className="sel inactive type double" showStatus={false} showThumbs={false} infiniteLoop={true} useKeyboardArrows={true}>
@@ -784,20 +784,16 @@ class Art extends Component {
                     </Carousel>
                     </div>
 
-                    <div className='car-container'>
                     <div className='sel inactive card brock rest'>
                         <img className='top' src={Brock} />
                         <img className='leftimg' src={BrockLetter} />
                         <img className='rightimg' src={BrockWeb} />
                     </div>
-                    </div>
 
-                    <div className='car-container'>
                     <div className='sel inactive card joyce rest'>
                         <img className='top' src={Joyce} />
                         <img className='leftimg' src={JoyceLetter} />
                         <img className='rightimg' src={JoyceWeb} />
-                    </div>
                     </div>
 
                     <div className='car-container'>
