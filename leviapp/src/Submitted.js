@@ -16,7 +16,7 @@ class Submitted extends Component {
         return(
 
         <div className='contact'>
-            <h1>Thank You! I will get back with you shortly.</h1>
+            <h1 className="success">Thank You! I will get back with you shortly.</h1>
         </div>
 
 
