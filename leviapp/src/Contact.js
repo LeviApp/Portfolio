@@ -1,8 +1,17 @@
-import React, { Component } from 'react';
+import React, { Component, Router } from 'react';
+
 
 import CatalogCover from './img/artportfolio/Prosthetics/CatalogCover.jpg'
 
 import './SASS/Contact.sass';
+import { navigate } from "gatsby-link";
+
+function encode(data) {
+    return Object.keys(data)
+      .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
+      .join("&");
+  }
+  
 
 class Contact extends Component {
 
@@ -11,25 +20,43 @@ class Contact extends Component {
         this.state = { name: "", email: "", subject: "", message: "" };
       }
   
-      handleChange = e => this.setState({ [e.target.name]: e.target.value });
-
+      handleChange = e => {
+        this.setState({ [e.target.name]: e.target.value });
+      };
+    
+      handleSubmit = e => {
+        e.preventDefault();
+        const form = e.target;
+        fetch("/", {
+          method: "POST",
+          headers: { "Content-Type": "application/x-www-form-urlencoded" },
+          body: encode({
+            "form-name": form.getAttribute("name"),
+            ...this.state
+          })
+        })
+          .then(() => navigate(form.getAttribute("action")))
+          .catch(error => alert(error));
+      };
+      
     render() {
+        console.log(this.state)
         return(
 
         <div className='contact'>
             <h1>Send Me A Message!</h1>
 
-            <form className="cform" name="contact-form" method="post" data-netlify="true">
+            <form className="cform" name="contact-form" method="post" data-netlify="true" data-netlify-honeypot="bot-field" action='/submitted/' onSubmit={this.handleSubmit}>
                 <input type="hidden" name="bot-field" />
                 <input type="hidden" name="form-name" value="contact-form" />
                 <h4>Name</h4>
-                <input type="text" name="name" />
+                <input type="text" onChange={this.handleChange} name="name" />
                 <h4>Email</h4>
-                <input type="email" name="email" />
+                <input type="email" onChange={this.handleChange} name="email" />
                 <h4>Subject</h4>
-                <input type="text" name="subject" />
+                <input type="text" onChange={this.handleChange} name="subject" />
                 <h4>Message</h4>
-                <textarea name="message"></textarea>
+                <textarea onChange={this.handleChange} name="message"></textarea>
                 <button  className='submit' type="submit">Submit</button>
             </form>
         </div>
