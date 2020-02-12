@@ -35,7 +35,7 @@ class Contact extends Component {
             ...this.state
           })
         })
-          .then(() => <Redirect to='/submitted' />)
+          .then(() => window.location.href = "https://levijonas.app/submitted")
           .catch(error => alert(error));
       };
       
