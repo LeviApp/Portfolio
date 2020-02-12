@@ -4,7 +4,7 @@ import React, { Component, Router } from 'react';
 import CatalogCover from './img/artportfolio/Prosthetics/CatalogCover.jpg'
 
 import './SASS/Contact.sass';
-import { navigate } from "gatsby-link";
+import { Redirect } from 'react-router'
 
 function encode(data) {
     return Object.keys(data)
@@ -35,7 +35,7 @@ class Contact extends Component {
             ...this.state
           })
         })
-          .then(() => navigate(form.getAttribute("action")))
+          .then(() => <Redirect to='/submitted' />)
           .catch(error => alert(error));
       };
       
