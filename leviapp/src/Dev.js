@@ -201,48 +201,48 @@ class Dev extends Component {
               </div>
               <div className='tech-used'>
                   <div className='single-tech'>
-                  <img src={ReactLogo} />
+                  <img src={ReactLogo} alt="React Logo" />
                   </div>
 
                   <div className='single-tech'>
-                  <img src={SassLogo} />
+                  <img src={SassLogo} alt="Sass Logo" />
                   </div>
 
                   <div className='single-tech'>
-                  <img className='fullcalendar' src={FullCalendarLogo} />
+                  <img className='fullcalendar' src={FullCalendarLogo} alt="FullCalendar Logo" />
                   </div>
 
                   <div className='single-tech'>
-                  <img className='moment' src={MomentLogo} />
+                  <img className='moment' src={MomentLogo} alt="Moment Logo" />
                   </div>
 
                   <div className='single-tech'>
-                  <img src={ReduxLogo} />
+                  <img src={ReduxLogo} alt="Redux Logo" />
                   </div>
 
                   <div className='single-tech'>
-                  <img className='javascript' src={JavaScriptLogo} />
+                  <img className='javascript' src={JavaScriptLogo} alt="JavaScript Logo" />
                   </div>
 
                   <div className='single-tech'>
-                  <img src={HTMLLogo} />
+                  <img src={HTMLLogo} alt="HTML Logo" />
                   </div>
 
                   <div className='single-tech'>
-                  <img src={MarkDownLogo} />
+                  <img src={MarkDownLogo} alt="MarkDown Logo" />
                   </div>
 
                   <div className='single-tech'>
-                  <img src={Auth0Logo} />
+                  <img src={Auth0Logo} alt="Auth0 Logo" />
                   </div>
 
                   <div className='single-tech'>
-                  <img className='postgres' src={PostgresLogo} />
+                  <img className='postgres' src={PostgresLogo} alt="Postgres Logo" />
                   </div>
               </div>
               </div>
               <div className='right'>
-              <img src={TractionPage} />
+              <img src={TractionPage} alt="Traction Front Page" />
               <div className='web-sec'>
               <div className='web-group'>
                 <a className='web-link' href='https://traction-app.netlify.com/'>To Website</a>
@@ -289,7 +289,7 @@ class Dev extends Component {
             <div className='right'>
             <h2>❮❯ Calendar ❮❯</h2>
 
-            <img className='calendar' src={Calendar} alt="traction-logo-draft1" />
+            <img className='calendar' src={Calendar} alt="Calendar" />
             </div>
             </div>
             <div className='project'>
@@ -333,25 +333,25 @@ class Dev extends Component {
               </div>
             <div className='tech-used'>
               <div className='single-tech'>
-              <img src={ReactLogo} />
+              <img src={ReactLogo} alt="React Logo" />
               </div>
 
               <div className='single-tech'>
-              <img src={CSSLogo} />
+              <img src={CSSLogo} alt="CSS Logo" />
               </div>
 
               <div className='single-tech'>
-              <img src={HTMLLogo} />
+              <img src={HTMLLogo} alt="HTML Logo" />
               </div>
 
               <div className='single-tech'>
-              <img className='javascript' src={JavaScriptLogo} />
+              <img className='javascript' src={JavaScriptLogo} alt="JavaScript Logo" />
               </div>
             </div>
             </div>
 
             <div className="right">
-            <img id="quotes-page" src={QuotesPage} />
+            <img id="quotes-page" src={QuotesPage} alt="Quotes Front Page" />
             <div className='web-sec'>
             <div className='web-group'>
               <a className='web-link' href='https://quotes-4-life.netlify.com/home'>To Website</a>
@@ -389,24 +389,24 @@ class Dev extends Component {
               </div>
               <div className='tech-used'>
               <div className='single-tech'>
-              <img src={HTMLLogo} />
+              <img src={HTMLLogo} alt="HTML Logo" />
               </div>
 
               <div className='single-tech'>
-              <img src={JavaScriptLogo} />
+              <img src={JavaScriptLogo} alt="JavaScript Logo" />
               </div>
 
               <div className='single-tech'>
-              <img src={CSSLogo} />
+              <img src={CSSLogo} alt="CSS Logo" />
               </div>
 
               <div className='single-tech'>
-              <img src={LESSLogo} />
+              <img src={LESSLogo} alt="LESS Logo" />
               </div>
             </div>
             </div>
             <div className='right'>
-            <img id='reform' src={ReformPage} />
+            <img id='reform' src={ReformPage} alt="Reform in Dust Storms Front Page" />
             <div className='web-sec'>
             <div className='web-group'>
               <a className='web-link' href='https://rids-instructions.netlify.com/'>To Website</a>
@@ -484,11 +484,11 @@ class Dev extends Component {
             </div>
             <div className='tech-used'>
               <div className='single-tech'>
-              <img src={PythonLogo} />
+              <img src={PythonLogo} alt="Python Logo" />
               </div>
 
               <div className='single-tech'>
-              <img src={PygameLogo} />
+              <img src={PygameLogo} alt="Pygame Logo" />
               </div>
             </div>
             </div>
@@ -527,33 +527,33 @@ class Dev extends Component {
               </div>
             <div className='tech-used' id='schatz-tech'>
               <div className='single-tech'>
-              <img src={ReactLogo} />
+              <img src={ReactLogo} alt="React Logo" />
               </div>
 
               <div className='single-tech'>
-              <img src={p5Logo} />
+              <img src={p5Logo} alt="p5 Logo" />
               </div>
 
               <div className='single-tech'>
-              <img src={JavaScriptLogo} />
+              <img src={JavaScriptLogo} alt="JavaScript Logo" />
               </div>
               
               <div className='single-tech'>
-              <img src={HTMLLogo} />
+              <img src={HTMLLogo} alt="HTML Logo" />
               </div>
 
               <div className='single-tech'>
-              <img src={SassLogo} />
+              <img src={SassLogo} alt="Sass Logo" />
               </div>
 
               <div className='single-tech'>
-              <img src={PostgresLogo} />
+              <img src={PostgresLogo} alt="Postgres Logo" />
               </div>
             </div>
             </div>
 
             <div className="right" id='schatz'>
-            <img className='reform' src={SchatzPage} />
+            <img className='schatz-page' src={SchatzPage} alt="Schatzinsel Front Page" />
             <div className='web-sec'>
             <div className='web-group'>
               <a className='web-link' href='https://schatzinsel.netlify.com/'>To Website</a>
