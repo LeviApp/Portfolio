@@ -44,11 +44,11 @@ class Navigation extends Component {
                 </NavLink>
                 <div className="connect">
                 <a className='linked-in' href="https://www.linkedin.com/in/levi-app/" target="_blank">
-                <img src={LinkedIn} />
+                <img src={LinkedIn} alt="LinkedIn Logo" />
                 </a>
 
                 <a className='git-hub' href="https://github.com/LeviApp" target="_blank">
-                <img src={GitHub} />
+                <img src={GitHub} alt="GitHub Logo" />
                 </a>
                 </div>
                 </div>
