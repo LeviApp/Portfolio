@@ -28,6 +28,9 @@ import p5Logo from './img/p5Logo.png'
 import PythonLogo from './img/PythonLogo.png'
 import PygameLogo from './img/PygameLogo.png'
 import LESSLogo from './img/LESSLogo.png'
+import AngularLogo from './img/AngularLogo.png'
+import TypeScriptLogo from './img/TypeScriptLogo.png'
+import SCSSLogo from './img/SCSSLogo.png'
 
 
 import Traction from './svg/traction.svg'
@@ -245,13 +248,13 @@ class Dev extends Component {
               <img src={TractionPage} alt="Traction Front Page" />
               <div className='web-sec'>
               <div className='web-group'>
-                <a className='web-link' href='https://traction-app.netlify.com/'>To Website</a>
-                <a className='web-arrow' href='https://traction-app.netlify.com/'>⟶</a>
+                <a className='web-link' href='https://traction-app.netlify.com/' target='_blank'>To Website</a>
+                <a className='web-arrow' href='https://traction-app.netlify.com/' target='_blank'>⟶</a>
               </div>
 
               <div className='web-group'>
-              <a className='web-link' href='https://github.com/LeviApp/labspt2-workout-tracker'>To Project Repo</a>
-              <a className='web-arrow' href='https://github.com/LeviApp/labspt2-workout-tracker'>⟶</a>
+              <a className='web-link' href='https://github.com/LeviApp/labspt2-workout-tracker' target='_blank'>To Project Repo</a>
+              <a className='web-arrow' href='https://github.com/LeviApp/labspt2-workout-tracker' target='_blank'>⟶</a>
               </div>
               </div>
               </div>
@@ -354,18 +357,18 @@ class Dev extends Component {
             <img id="quotes-page" src={QuotesPage} alt="Quotes Front Page" />
             <div className='web-sec'>
             <div className='web-group'>
-              <a className='web-link' href='https://quotes-4-life.netlify.com/home'>To Website</a>
-              <a className='web-arrow' href='https://quotes-4-life.netlify.com/home'>⟶</a>
+              <a className='web-link' href='https://quotes-4-life.netlify.com/home' target='_blank'>To Website</a>
+              <a className='web-arrow' href='https://quotes-4-life.netlify.com/home' target='_blank'>⟶</a>
             </div>
 
             <div className='web-group'>
-              <a className='web-link' href='https://github.com/LeviApp/front-end-project-week'>To FrontEnd Repo</a>
-              <a className='web-arrow' href='https://github.com/LeviApp/front-end-project-week'>⟶</a>
+              <a className='web-link' href='https://github.com/LeviApp/front-end-project-week' target='_blank'>To FrontEnd Repo</a>
+              <a className='web-arrow' href='https://github.com/LeviApp/front-end-project-week' target='_blank'>⟶</a>
             </div>
 
             <div className='web-group'>
-              <a className='web-link' href='https://github.com/LeviApp/back-end-project-week'>To BackEnd Repo</a>
-              <a className='web-arrow' href='https://github.com/LeviApp/back-end-project-week'>⟶</a>
+              <a className='web-link' href='https://github.com/LeviApp/back-end-project-week' target='_blank'>To BackEnd Repo</a>
+              <a className='web-arrow' href='https://github.com/LeviApp/back-end-project-week' target='_blank'>⟶</a>
             </div>
             </div>
             </div>
@@ -381,11 +384,11 @@ class Dev extends Component {
             </Element>
             <p>Reform in Dust Storms is a website that gives the instructions for a detective game. Set in Old West Colorado, the player must discover who committed the crime, the weapon that was used, and the place of the crime.  The website
               consists of four main pages. The home page gives an overview of the entire game. There are three other pages that provide more details about the suspect, weapon, and place.
-              This project focuses on responsive design principles of websites. The game itself has not been created.</p>
+              This project focuses on responsive design principles of websites. The game itself has not been created yet.</p>
 
               <div className="focus">
               <h4>❯❯ Responsive Design</h4>
-              <h4>❯❯ Vanilla Javascript</h4>
+              <h4>❯❯ Angular App</h4>
               </div>
               <div className='tech-used'>
               <div className='single-tech'>
@@ -393,15 +396,19 @@ class Dev extends Component {
               </div>
 
               <div className='single-tech'>
+              <img src={AngularLogo} alt="Angular Logo" />
+              </div>
+
+              <div className='single-tech'>
               <img src={JavaScriptLogo} alt="JavaScript Logo" />
               </div>
 
               <div className='single-tech'>
-              <img src={CSSLogo} alt="CSS Logo" />
+              <img src={TypeScriptLogo} alt="TypeScript Logo" />
               </div>
 
               <div className='single-tech'>
-              <img src={LESSLogo} alt="LESS Logo" />
+              <img src={SCSSLogo} alt="SCSSLogo Logo" />
               </div>
             </div>
             </div>
@@ -409,13 +416,13 @@ class Dev extends Component {
             <img id='reform' src={ReformPage} alt="Reform in Dust Storms Front Page" />
             <div className='web-sec'>
             <div className='web-group'>
-              <a className='web-link' href='https://reforminduststorms.netlify.com/'>To Website</a>
-              <a className='web-arrow' href='https://reforminduststorms.netlify.com/'>⟶</a>
+              <a className='web-link' href='https://reforminduststorms.netlify.com/' target='_blank'>To Website</a>
+              <a className='web-arrow' href='https://reforminduststorms.netlify.com/' target='_blank'>⟶</a>
             </div>
 
             <div className='web-group'>
-              <a className='web-link' href='https://github.com/LeviApp/User-Interface-Project-Week'>To Project Repo</a>
-              <a className='web-arrow' href='https://github.com/LeviApp/User-Interface-Project-Week'>⟶</a>
+              <a className='web-link' href='https://github.com/LeviApp/User-Interface-Project-Week' target='_blank'>To Project Repo</a>
+              <a className='web-arrow' href='https://github.com/LeviApp/User-Interface-Project-Week' target='_blank'>⟶</a>
             </div>
             </div>
             </div>
@@ -498,8 +505,8 @@ class Dev extends Component {
             </div>
             <div className='web-sec'>
             <div className='web-group'>
-              <a className='web-link' href='https://github.com/LeviApp/Cellular-Automata'>To Project Repo</a>
-              <a className='web-arrow' href='https://github.com/LeviApp/Cellular-Automata'>⟶</a>
+              <a className='web-link' href='https://github.com/LeviApp/Cellular-Automata' target='_blank'>To Project Repo</a>
+              <a className='web-arrow' href='https://github.com/LeviApp/Cellular-Automata' target='_blank'>⟶</a>
             </div>
             </div>
             </div>
@@ -556,18 +563,18 @@ class Dev extends Component {
             <img className='schatz-page' src={SchatzPage} alt="Schatzinsel Front Page" />
             <div className='web-sec'>
             <div className='web-group'>
-              <a className='web-link' href='https://schatzinsel.netlify.com/'>To Website</a>
-              <a className='web-arrow' href='https://schatzinsel.netlify.com/'>⟶</a>
+              <a className='web-link' href='https://schatzinsel.netlify.com/' target='_blank'>To Website</a>
+              <a className='web-arrow' href='https://schatzinsel.netlify.com/' target='_blank'>⟶</a>
             </div>
 
             <div className='web-group'>
-              <a className='web-link' href='https://github.com/LeviApp/CS-Build-Week-2'>To FrontEnd Repo</a>
-              <a className='web-arrow' href='https://github.com/LeviApp/CS-Build-Week-2'>⟶</a>
+              <a className='web-link' href='https://github.com/LeviApp/CS-Build-Week-2' target='_blank'>To FrontEnd Repo</a>
+              <a className='web-arrow' href='https://github.com/LeviApp/CS-Build-Week-2' target='_blank'>⟶</a>
             </div>
 
             <div className='web-group'>
-              <a className='web-link' href='https://github.com/LeviApp/CSProject-Backend'>To BackEnd Repo</a>
-              <a className='web-arrow' href='https://github.com/LeviApp/CSProject-Backend'>⟶</a>
+              <a className='web-link' href='https://github.com/LeviApp/CSProject-Backend' target='_blank'>To BackEnd Repo</a>
+              <a className='web-arrow' href='https://github.com/LeviApp/CSProject-Backend' target='_blank'>⟶</a>
             </div>
             </div>              
             </div>
