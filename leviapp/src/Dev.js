@@ -409,8 +409,8 @@ class Dev extends Component {
             <img id='reform' src={ReformPage} alt="Reform in Dust Storms Front Page" />
             <div className='web-sec'>
             <div className='web-group'>
-              <a className='web-link' href='https://rids-instructions.netlify.com/'>To Website</a>
-              <a className='web-arrow' href='https://rids-instructions.netlify.com/'>⟶</a>
+              <a className='web-link' href='https://reforminduststorms.netlify.com/'>To Website</a>
+              <a className='web-arrow' href='https://reforminduststorms.netlify.com/'>⟶</a>
             </div>
 
             <div className='web-group'>
