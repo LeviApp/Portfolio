@@ -45,6 +45,7 @@ class Contact extends Component {
 
         <div className='contact'>
             <h1>Send Me A Message!</h1>
+            <h2>levij.app@gmail.com</h2>
 
             <form className="cform" name="contact-form" method="post" data-netlify="true" data-netlify-honeypot="bot-field" action='/submitted/' onSubmit={this.handleSubmit}>
                 <input type="hidden" name="bot-field" />

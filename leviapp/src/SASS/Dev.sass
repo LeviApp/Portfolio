@@ -31,6 +31,7 @@
         width: 75%
         padding: 15px 0
         background-color: $background
+        visibility: hidden
         @media screen and (max-width:1920px)
             top: 155px
             right: 70px
@@ -92,26 +93,26 @@
         width: 100%
 
         h1
-            z-index: 1
+            z-index: 2
             position: sticky
-            padding-top: 75px
-            padding-bottom: 10px
-            text-align: left
-
-            padding-left: 2%
-            margin: 0
+            margin: 0 0 0 320px
+            top: 140px
             background-color: $background
-            width: 100%
             color: $green
             font-style: italic
-            font-size: 4rem
-            top: 160px
+            font-size: 3rem
+            width: 80%
+            padding: 20px 0 5px 45px
             @media screen and (max-width:1920px)
-                font-size: 4rem
-                top: 160px
+                font-size: 3rem
+                top: 140px
+            @media screen and (max-width:1480px)
+                font-size: 3rem
+                top: 90px 
+                margin: 0 0 0 225px
             @media screen and (max-width:1366px)
                 font-size: 3rem
-                top: 100px
+                top: 105px
             @media screen and (max-width:1280px)
                 font-size: 2.5rem
                 top: 80px
@@ -134,7 +135,6 @@
             flex-direction: row
             justify-content: flex-start
             align-items: flex-start
-            padding: 0px 0 40px 0
             box-shadow: 0px 62px 0 -60px $gray
             @media screen and (max-width:480px)
                 flex-direction: column-reverse
@@ -180,9 +180,9 @@
                         flex-wrap: wrap
                         img
                             margin: 10px
-                            width: 170px
+                            width: 120px
                             @media screen and (max-width:1920px)
-                                width: 170px
+                                width: 120px
                             @media screen and (max-width:1366px)
                                 width: 120px
                             @media screen and (max-width:1280px)
@@ -197,9 +197,9 @@
                         flex-wrap: wrap
                         align-items: center
                         .final-traction-logo
-                            width: 170px
+                            width: 120px
                             @media screen and (max-width:1920px)
-                                width: 170px
+                                width: 120px
                             @media screen and (max-width:1366px)
                                 width: 120px
                             @media screen and (max-width:1280px)
@@ -227,12 +227,9 @@
                                 width: 70px
                 h2
                     color: $blue
-                    font-size: 1.25rem
-                    padding-top: 100px
-                    font-size: 2.5rem
+                    font-size: 2rem
                     @media screen and (max-width:1920px)
-                        padding-top: 100px
-                        font-size: 2.5rem
+                        font-size: 2rem
                     @media screen and (max-width:1366px)
                         font-size: 1.75rem
                         padding-top: 20px
@@ -242,12 +239,12 @@
                 p
                     color: white
                     width: 100%
-                    font-size: 1.75rem
-                    line-height: 35px
+                    font-size: 1.25rem
+                    line-height: 25px
                     margin-top: 0px
                     @media screen and (max-width:1920px)
-                        font-size: 1.75rem
-                        line-height: 35px
+                        font-size: 1.25rem
+                        line-height: 25px
                         margin-top: 0px
 
                     @media screen and (max-width:1366px)
@@ -268,11 +265,11 @@
                         flex-direction: column
                     h4
                         color: $green
-                        font-size: 1.7rem 
+                        font-size: 1.25rem 
                         margin: 0 0 10px 15px
                         width: 50%
                         @media screen and (max-width:1920px)
-                            font-size: 1.7rem 
+                            font-size: 1.25rem 
                             margin: 0 0 10px 15px
                             width: 50%
                         @media screen and (max-width:1366px)
@@ -289,11 +286,11 @@
                         width: 100%
                         padding: 0
                         margin: 0 0 10px 2%
-                        font-size: 1.75rem 
-                        line-height: 35px
+                        font-size: 1.25rem 
+                        line-height: 25px
                         @media screen and (max-width:1920px)
-                            font-size: 1.75rem 
-                            line-height: 35px
+                            font-size: 1.25rem 
+                            line-height: 25px
                         @media screen and (max-width:1366px)
                             font-size: 1.25rem 
                             line-height: 25px
@@ -313,10 +310,10 @@
                     h4
                         color: $green
                         margin: 10px 0
-                        font-size: 1.75rem 
+                        font-size: 1.25rem 
                         margin-left: 15px
                         @media screen and (max-width:1920px)
-                            font-size: 1.75rem 
+                            font-size: 1.25rem 
                             margin-left: 15px
                         @media screen and (max-width:1366px)
                             font-size: 1.25rem 
@@ -326,7 +323,7 @@
                     .checkG
                         display: flex
                         flex-direction: row
-                        width: 18%
+                        width: 20%
                         @media screen and (max-width:1366px)
                             width: 22%
                         @media screen and (max-width:1280px)
@@ -335,10 +332,10 @@
                             width: 100%
                         h4
                             color: $green
-                            font-size: 1.5rem
-                            width: 100%
+                            font-size: 1.25rem
+                            width: 50%
                             @media screen and (max-width:1920px)
-                                font-size: 1.5rem
+                                font-size: 1.25rem
                                 width: 100%
                             @media screen and (max-width:1366px)
                                 font-size: 1.25rem
@@ -407,9 +404,9 @@
                         border: 10px solid black
 
                         img
-                            width: 90px
+                            width: 65px
                             @media screen and (max-width:1920px)
-                                width: 90px
+                                width: 65px
                             @media screen and (max-width:1366px)
                                 width: 50px
                             @media screen and (max-width:1280px)
@@ -506,14 +503,14 @@
                         margin: 0px 20px   
                         .web-link
                             margin: 20px 0px
-                            font-size: 1.5rem
+                            font-size: 1.25rem
                             margin-top: 30px                            
                             color: $gray
                             align-self: center
                             text-decoration: none
                             line-height: 20px
                             @media screen and (max-width:1920px)
-                                font-size: 1.5rem
+                                font-size: 1.25rem
                                 margin-top: 30px
                             @media screen and (max-width:1366px)
                                 font-size: 1.25rem
@@ -524,22 +521,21 @@
                         .web-arrow
                             color: white
                             align-self: center
-                            font-size: 2rem
                             border: 3px solid $blue
                             padding: 10px
                             margin-top: 20px
                             border: 10px solid black
                             box-shadow: -33px 33px 0 -30px $blue, 33px -33px 0 -30px $blue
                             text-decoration: none
-                            width: 100px
-                            height: 100px
-                            font-size: 4rem
+                            width: 65px
+                            height: 65px
+                            font-size: 2.75rem
                             text-align: center
                             padding: 10px
                             @media screen and (max-width:1920px)
-                                width: 100px
-                                height: 100px
-                                font-size: 4rem
+                                width: 65px
+                                height: 65px
+                                font-size: 2.75rem
                                 text-align: center
                                 padding: 10px
                             @media screen and (max-width:1366px)
@@ -645,7 +641,7 @@ div.tech-used
     justify-content: flex-end
 
 #schatz
-    justify-content: flex-end
+    justify-content: center
 
 
 
