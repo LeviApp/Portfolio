@@ -155,7 +155,7 @@ class About extends Component {
                     Unique
                     </h2>
                 </div>
-                <h1 className="QUOTES"> Levi Appenfelder </h1>
+                <h1> Levi Appenfelder </h1>
 
                 <section>
             <div className="about-sect">
@@ -434,7 +434,7 @@ class About extends Component {
             <div className='about-focus'>
               <h4>❯❯ German </h4>  
               <p>
-              ❯ I am faithful investing time in learning German.
+              ❯ I am faithfully investing time in learning German.
               </p>
             </div>
 

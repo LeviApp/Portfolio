@@ -78,31 +78,40 @@
     h1
         z-index: 2
         position: sticky
-        margin: 0
-        top: 110px
+        margin: 0 0 0 320px
+        top: 140px
         background-color: $background
         color: $green
         font-style: italic
         font-size: 3rem
-        width: 60%
+        width: 80%
+        padding: 20px 0 5px 45px
         @media screen and (max-width:1920px)
             font-size: 3rem
-            top: 110px
+            top: 140px
+        @media screen and (max-width:1480px)
+            font-size: 3rem
+            top: 90px 
+            margin: 0 0 0 225px
+   
         @media screen and (max-width:1366px)
             font-size: 3rem
-            top: 100px
+            top: 90px
+            margin: 0 0 0 200px
         @media screen and (max-width:1280px)
             font-size: 2.5rem
             top: 80px
 
         @media screen and (max-width:480px)
             top: 0px
+            margin: 0
             text-align: center
             padding-top: 10px
-            z-index: 2
-            font-size: 2.25rem
-            width: 90%
             padding-left: 0
+            font-size: 2.25rem
+
+            width: 100%
+            z-index: 2
     section
         display: flex
         flex-direction: column
