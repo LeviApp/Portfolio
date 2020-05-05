@@ -29,102 +29,102 @@ class About extends Component {
     }
 
     componentDidMount() {
-        window.addEventListener("scroll", this.scrollStatus)
+        // window.addEventListener("scroll", this.scrollStatus)
       }
       
-      scrollTo(element, offset) {
-          scroller.scrollTo(element, {
-            duration: 800,
-            delay: 0,
-            smooth: 'easeInOutQuart',
-            offset: offset
-          })
-        }
+  //     scrollTo(element, offset) {
+  //         scroller.scrollTo(element, {
+  //           duration: 800,
+  //           delay: 0,
+  //           smooth: 'easeInOutQuart',
+  //           offset: offset
+  //         })
+  //       }
   
-      scrolled = event => {
-          window.addEventListener("scroll", this.scrollStatus)
-      }
+  //     scrolled = event => {
+  //         window.addEventListener("scroll", this.scrollStatus)
+  //     }
   
-      scrollStatus = () => {
+  //     scrollStatus = () => {
   
-        const winHeight = window.innerHeight || (document.documentElement || document.body).clientHeight
-        const docHeight = document.body.clientHeight
-        const scrollTop = window.pageYOffset || (document.documentElement || document.body.parentNode || document.body).scrollTop
-        const trackLength = docHeight - winHeight
-        const percentScrolled = Math.floor(scrollTop/trackLength * 100) // gets percentage scrolled (ie: 80 or NaN if tracklength == 0)
-      console.log(percentScrolled + '% scrolled')
-        const percent = `${(percentScrolled/24)*100}%`
-        const number = percentScrolled/24
-        const number2 = ((-26 + percentScrolled)/15)
-        const percent2 = `${((-26 + percentScrolled)/15)*100}%`
-        const percent3 = `${((-49 + percentScrolled)/24)*100}%`
-        const number3 = ((-49 + percentScrolled)/24)
-        const percent4 = `${((-73 + percentScrolled)/25)*100}%`
-        const number4 = ((-73 + percentScrolled)/25)
-  
-  
-        console.log('this is how percentScrolled', percentScrolled, percent)
-        const a = document.getElementsByClassName('arrows_1')[0]
-        const b = document.getElementsByClassName('second')[0]
-        const c = document.getElementsByClassName('arrows_2')[0]
-        const d = document.getElementsByClassName('third')[0]
-        const e = document.getElementsByClassName('arrows_3')[0]
-        const f = document.getElementsByClassName('fourth')[0]
-        const g = document.getElementsByClassName('arrows_4')[0]
-        const h = document.getElementsByClassName('fifth')[0]
+  //       const winHeight = window.innerHeight || (document.documentElement || document.body).clientHeight
+  //       const docHeight = document.body.clientHeight
+  //       const scrollTop = window.pageYOffset || (document.documentElement || document.body.parentNode || document.body).scrollTop
+  //       const trackLength = docHeight - winHeight
+  //       const percentScrolled = Math.floor(scrollTop/trackLength * 100) // gets percentage scrolled (ie: 80 or NaN if tracklength == 0)
+  //     console.log(percentScrolled + '% scrolled')
+  //       const percent = `${(percentScrolled/24)*100}%`
+  //       const number = percentScrolled/24
+  //       const number2 = ((-26 + percentScrolled)/15)
+  //       const percent2 = `${((-26 + percentScrolled)/15)*100}%`
+  //       const percent3 = `${((-49 + percentScrolled)/24)*100}%`
+  //       const number3 = ((-49 + percentScrolled)/24)
+  //       const percent4 = `${((-73 + percentScrolled)/25)*100}%`
+  //       const number4 = ((-73 + percentScrolled)/25)
   
   
-      if (a !== undefined && b !== undefined && c !== undefined && d !== undefined && e !== undefined ) {
-        console.log(a, 'Aaaaaa')
-        a.style.backgroundImage = `linear-gradient(to right, #4EC9B0, #4EC9B0 ${percent} , #D4D4D4 ${percent}, #D4D4D4 100%)`
+  //       console.log('this is how percentScrolled', percentScrolled, percent)
+  //       const a = document.getElementsByClassName('arrows_1')[0]
+  //       const b = document.getElementsByClassName('second')[0]
+  //       const c = document.getElementsByClassName('arrows_2')[0]
+  //       const d = document.getElementsByClassName('third')[0]
+  //       const e = document.getElementsByClassName('arrows_3')[0]
+  //       const f = document.getElementsByClassName('fourth')[0]
+  //       const g = document.getElementsByClassName('arrows_4')[0]
+  //       const h = document.getElementsByClassName('fifth')[0]
   
-        if (percentScrolled >= 24) {
-            b.style.color = `#4EC9B0`
   
-            c.style.backgroundImage = `linear-gradient(to right, #4EC9B0, #4EC9B0 ${percent2} , #D4D4D4 ${percent2}, #D4D4D4 100%)`
-        }
-        else {
-            b.style.color = `#D4D4D4`
-            c.style.backgroundImage = `linear-gradient(to right, #4EC9B0, #4EC9B0 0% , #D4D4D4 0%, #D4D4D4 100%)`
+  //     if (a !== undefined && b !== undefined && c !== undefined && d !== undefined && e !== undefined ) {
+  //       console.log(a, 'Aaaaaa')
+  //       a.style.backgroundImage = `linear-gradient(to right, #4EC9B0, #4EC9B0 ${percent} , #D4D4D4 ${percent}, #D4D4D4 100%)`
   
-        }
-        if (percentScrolled >= 47) {
-            d.style.color = `#4EC9B0`
+  //       if (percentScrolled >= 24) {
+  //           b.style.color = `#4EC9B0`
   
-            e.style.backgroundImage = `linear-gradient(to right, #4EC9B0, #4EC9B0 ${percent3} , #D4D4D4 ${percent3}, #D4D4D4 100%)`
-        }
-        else {
-            d.style.color = `#D4D4D4`
-            e.style.backgroundImage = `linear-gradient(to right, #4EC9B0, #4EC9B0 0% , #D4D4D4 0%, #D4D4D4 100%)`
+  //           c.style.backgroundImage = `linear-gradient(to right, #4EC9B0, #4EC9B0 ${percent2} , #D4D4D4 ${percent2}, #D4D4D4 100%)`
+  //       }
+  //       else {
+  //           b.style.color = `#D4D4D4`
+  //           c.style.backgroundImage = `linear-gradient(to right, #4EC9B0, #4EC9B0 0% , #D4D4D4 0%, #D4D4D4 100%)`
   
-        }
+  //       }
+  //       if (percentScrolled >= 47) {
+  //           d.style.color = `#4EC9B0`
   
-        if (percentScrolled >= 73) {
-          f.style.color = `#4EC9B0`
+  //           e.style.backgroundImage = `linear-gradient(to right, #4EC9B0, #4EC9B0 ${percent3} , #D4D4D4 ${percent3}, #D4D4D4 100%)`
+  //       }
+  //       else {
+  //           d.style.color = `#D4D4D4`
+  //           e.style.backgroundImage = `linear-gradient(to right, #4EC9B0, #4EC9B0 0% , #D4D4D4 0%, #D4D4D4 100%)`
   
-          g.style.backgroundImage = `linear-gradient(to right, #4EC9B0, #4EC9B0 ${percent4} , #D4D4D4 ${percent4}, #D4D4D4 100%)`
-      }
-      else {
-          f.style.color = `#D4D4D4`
-          g.style.backgroundImage = `linear-gradient(to right, #4EC9B0, #4EC9B0 0% , #D4D4D4 0%, #D4D4D4 100%)`
+  //       }
   
-      }
+  //       if (percentScrolled >= 73) {
+  //         f.style.color = `#4EC9B0`
   
-      if (percentScrolled >= 98) {
-        h.style.color = `#4EC9B0`
+  //         g.style.backgroundImage = `linear-gradient(to right, #4EC9B0, #4EC9B0 ${percent4} , #D4D4D4 ${percent4}, #D4D4D4 100%)`
+  //     }
+  //     else {
+  //         f.style.color = `#D4D4D4`
+  //         g.style.backgroundImage = `linear-gradient(to right, #4EC9B0, #4EC9B0 0% , #D4D4D4 0%, #D4D4D4 100%)`
   
-    }
-    else {
-        h.style.color = `#D4D4D4`
+  //     }
   
-    }
-      }
-    }
+  //     if (percentScrolled >= 98) {
+  //       h.style.color = `#4EC9B0`
+  
+  //   }
+  //   else {
+  //       h.style.color = `#D4D4D4`
+  
+  //   }
+  //     }
+  //   }
   
       componentWillUnmount() {
-        console.log('dev is unmounted')
-        window.removeEventListener("scroll", this.scrollStatus)
-        window.removeEventListener("click", this.scrollTo)
+        // console.log('dev is unmounted')
+        // window.removeEventListener("scroll", this.scrollStatus)
+        // window.removeEventListener("click", this.scrollTo)
   
       }
 
@@ -164,12 +164,12 @@ class About extends Component {
             <h2>❮❯ Overview ❮❯</h2>
             </Element>
 
-              <h3>
+              <p>
               I am a software engineer and graphic designer
                     passionate about developing people, just as much as I am about building websites.
                     Years of graphic design experience allows me to create sleek user
                     interfaces to complement user-friendly functionality.
-              </h3>
+              </p>
             </div>
 
             <div className="right">
