@@ -6,6 +6,7 @@ import CatalogCover from './img/artportfolio/Prosthetics/CatalogCover.jpg'
 import './SASS/Contact.sass';
 import { Redirect } from 'react-router'
 
+import {Submitted} from './Submitted'
 function encode(data) {
     return Object.keys(data)
       .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
