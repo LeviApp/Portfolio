@@ -131,7 +131,7 @@ class About extends Component {
     render() {
         return(
             <div className='about'>
-                <div className='contents'>
+                {/* <div className='contents'>
                     <h2 onClick={() => {this.scrollTo('overview', -200)}}className='all_sections on_topic'>
                     Overview
                     </h2>
@@ -154,7 +154,7 @@ class About extends Component {
                     <h2 onClick={() => {this.scrollTo('unique', -200)}} className='all_sections fifth'>
                     Unique
                     </h2>
-                </div>
+                </div> */}
                 <h1> Levi Appenfelder </h1>
 
                 <section>
