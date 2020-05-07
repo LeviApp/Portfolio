@@ -234,78 +234,78 @@ class Art extends Component {
         }
     }
 
-    scrollTo(element, offset) {
-        scroller.scrollTo(element, {
-          duration: 800,
-          delay: 0,
-          smooth: 'easeInOutQuart',
-          offset: offset
-        })
-      }
+    // scrollTo(element, offset) {
+    //     scroller.scrollTo(element, {
+    //       duration: 800,
+    //       delay: 0,
+    //       smooth: 'easeInOutQuart',
+    //       offset: offset
+    //     })
+    //   }
 
-      scrollStatus = () => {
+//       scrollStatus = () => {
   
-        const winHeight = window.innerHeight || (document.documentElement || document.body).clientHeight
-        const docHeight = document.body.clientHeight
-        const scrollTop = window.pageYOffset || (document.documentElement || document.body.parentNode || document.body).scrollTop
-        const trackLength = docHeight - winHeight
-        const percentScrolled = Math.floor(scrollTop/trackLength * 100) // gets percentage scrolled (ie: 80 or NaN if tracklength == 0)
-      console.log(percentScrolled + '% scrolled')
-        const percent = `${(percentScrolled/61)*100}%`
-        const number = percentScrolled/61
-        const number2 = ((-61 + percentScrolled)/31)
-        const percent2 = `${((-61 + percentScrolled)/31)*100}%`
-        const percent3 = `${((-93 + percentScrolled)/7)*100}%`
-        const number3 = ((-93 + percentScrolled)/7)
-  
-  
-        console.log('this is how percentScrolled', percentScrolled, percent)
-        const a = document.getElementsByClassName('arrows_1')[0]
-        const b = document.getElementsByClassName('second')[0]
-        const c = document.getElementsByClassName('arrows_2')[0]
-        const d = document.getElementsByClassName('third')[0]
-        const e = document.getElementsByClassName('arrows_3')[0]
-        const f = document.getElementsByClassName('fourth')[0]
+//         const winHeight = window.innerHeight || (document.documentElement || document.body).clientHeight
+//         const docHeight = document.body.clientHeight
+//         const scrollTop = window.pageYOffset || (document.documentElement || document.body.parentNode || document.body).scrollTop
+//         const trackLength = docHeight - winHeight
+//         const percentScrolled = Math.floor(scrollTop/trackLength * 100) // gets percentage scrolled (ie: 80 or NaN if tracklength == 0)
+//       console.log(percentScrolled + '% scrolled')
+//         const percent = `${(percentScrolled/61)*100}%`
+//         const number = percentScrolled/61
+//         const number2 = ((-61 + percentScrolled)/31)
+//         const percent2 = `${((-61 + percentScrolled)/31)*100}%`
+//         const percent3 = `${((-93 + percentScrolled)/7)*100}%`
+//         const number3 = ((-93 + percentScrolled)/7)
   
   
-      if (a !== undefined && b !== undefined && c !== undefined && d !== undefined && e !== undefined ) {
-        console.log(a, 'Aaaaaa')
-        a.style.backgroundImage = `linear-gradient(to right, #4EC9B0, #4EC9B0 ${percent} , #D4D4D4 ${percent}, #D4D4D4 100%)`
+//         console.log('this is how percentScrolled', percentScrolled, percent)
+//         const a = document.getElementsByClassName('arrows_1')[0]
+//         const b = document.getElementsByClassName('second')[0]
+//         const c = document.getElementsByClassName('arrows_2')[0]
+//         const d = document.getElementsByClassName('third')[0]
+//         const e = document.getElementsByClassName('arrows_3')[0]
+//         const f = document.getElementsByClassName('fourth')[0]
   
-        if (percentScrolled >= 61) {
-            b.style.color = `#4EC9B0`
   
-            c.style.backgroundImage = `linear-gradient(to right, #4EC9B0, #4EC9B0 ${percent2} , #D4D4D4 ${percent2}, #D4D4D4 100%)`
-        }
-        else {
-            b.style.color = `#D4D4D4`
-            c.style.backgroundImage = `linear-gradient(to right, #4EC9B0, #4EC9B0 0% , #D4D4D4 0%, #D4D4D4 100%)`
+//       if (a !== undefined && b !== undefined && c !== undefined && d !== undefined && e !== undefined ) {
+//         console.log(a, 'Aaaaaa')
+//         a.style.backgroundImage = `linear-gradient(to right, #4EC9B0, #4EC9B0 ${percent} , #D4D4D4 ${percent}, #D4D4D4 100%)`
   
-        }
-        if (percentScrolled >= 92) {
-            d.style.color = `#4EC9B0`
+//         if (percentScrolled >= 61) {
+//             b.style.color = `#4EC9B0`
   
-            e.style.backgroundImage = `linear-gradient(to right, #4EC9B0, #4EC9B0 ${percent3} , #D4D4D4 ${percent3}, #D4D4D4 100%)`
-        }
-        else {
-            d.style.color = `#D4D4D4`
-            e.style.backgroundImage = `linear-gradient(to right, #4EC9B0, #4EC9B0 0% , #D4D4D4 0%, #D4D4D4 100%)`
+//             c.style.backgroundImage = `linear-gradient(to right, #4EC9B0, #4EC9B0 ${percent2} , #D4D4D4 ${percent2}, #D4D4D4 100%)`
+//         }
+//         else {
+//             b.style.color = `#D4D4D4`
+//             c.style.backgroundImage = `linear-gradient(to right, #4EC9B0, #4EC9B0 0% , #D4D4D4 0%, #D4D4D4 100%)`
   
-        }
+//         }
+//         if (percentScrolled >= 92) {
+//             d.style.color = `#4EC9B0`
+  
+//             e.style.backgroundImage = `linear-gradient(to right, #4EC9B0, #4EC9B0 ${percent3} , #D4D4D4 ${percent3}, #D4D4D4 100%)`
+//         }
+//         else {
+//             d.style.color = `#D4D4D4`
+//             e.style.backgroundImage = `linear-gradient(to right, #4EC9B0, #4EC9B0 0% , #D4D4D4 0%, #D4D4D4 100%)`
+  
+//         }
 
-        if (percentScrolled >= 100) {
-            f.style.color = `#4EC9B0`
-          }
-        else {
-            f.style.color = `#D4D4D4`  
-        }
-      }
-    }
+//         if (percentScrolled >= 100) {
+//             f.style.color = `#4EC9B0`
+//           }
+//         else {
+//             f.style.color = `#D4D4D4`  
+//         }
+//       }
+//     }
 
     componentWillUnmount() {
-        console.log('dev is unmounted')
-        window.removeEventListener("scroll", this.scrollStatus)
-        window.removeEventListener("click", this.scrollTo)
+        // console.log('dev is unmounted')
+        // window.removeEventListener("scroll", this.scrollStatus)
+        // window.removeEventListener("click", this.scrollTo)
   
       }
 
@@ -313,7 +313,7 @@ class Art extends Component {
         return(
 
         <div className='art'>
-      <div className='contents'>
+      {/* <div className='contents'>
 
             <h2 onClick={() => {this.scrollTo('infographics', -400)}} className='all_sections on_topic'>
             Infographics
@@ -333,7 +333,7 @@ class Art extends Component {
             <h2 onClick={() => {this.scrollTo('illustration', -260)}} className='all_sections fourth'>
             Illustration
             </h2>
-            </div>
+            </div> */}
             <div className='artbox'>
                 <div className="artcat">
                 <div className='bContainer'>
