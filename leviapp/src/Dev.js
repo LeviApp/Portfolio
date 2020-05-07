@@ -152,7 +152,7 @@ class Dev extends Component {
     }
     render() {
         return(
-        <div className="Dev" onScroll={this.scrolled()}>
+        <div className="Dev">
             <div className='contents'>
             <h2 onClick={() => {this.scrollTo('traction', -220)}}className='all_sections on_topic'>
             Traction
