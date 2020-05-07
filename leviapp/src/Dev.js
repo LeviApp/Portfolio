@@ -145,15 +145,15 @@ class Dev extends Component {
 //   }
 
     componentWillUnmount() {
-      console.log('dev is unmounted')
-      window.removeEventListener("scroll", this.scrollStatus)
-      window.removeEventListener("click", this.scrollTo)
+      // console.log('dev is unmounted')
+      // window.removeEventListener("scroll", this.scrollStatus)
+      // window.removeEventListener("click", this.scrollTo)
 
     }
     render() {
         return(
         <div className="Dev">
-            <div className='contents'>
+            {/* <div className='contents'>
             <h2 onClick={() => {this.scrollTo('traction', -220)}}className='all_sections on_topic'>
             Traction
             </h2>
@@ -176,7 +176,7 @@ class Dev extends Component {
             <h2 onClick={() => {this.scrollTo('schatz', -200)}} className='all_sections fifth'>
             Schatzinsel
             </h2>
-            </div>
+            </div> */}
             <section>
             <h1 className="TRACTION"> Traction </h1>
 
