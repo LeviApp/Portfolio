@@ -31,6 +31,11 @@ import LESSLogo from './img/LESSLogo.png'
 import AngularLogo from './img/AngularLogo.png'
 import TypeScriptLogo from './img/TypeScriptLogo.png'
 import SCSSLogo from './img/SCSSLogo.png'
+import MySQLLogo from './img/MySQLLogo.png'
+import PHPLogo from './img/PHPLogo.png'
+
+import LaravelLogo from './img/LaravelLogo.png'
+import BootstrapLogo from './img/BootstrapLogo.png'
 
 
 import Traction from './svg/traction.svg'
@@ -43,6 +48,7 @@ import TractionPage from './img/TractionPage.png'
 import QuotesPage from './img/QuotesPage.png'
 import ReformPage from './img/ReformPage.png'
 import SchatzPage from './img/SchatzPage.png'
+import RomanRoofingPage from './img/RomanRoofingPage.png'
 
 
 class Dev extends Component {
@@ -577,6 +583,74 @@ class Dev extends Component {
               <a className='web-arrow' href='https://github.com/LeviApp/CSProject-Backend' target='_blank'>⟶</a>
             </div>
             </div>              
+            </div>
+            </div>
+            </section>
+
+            <section>
+            <h1 className="schatz">Roman Roofing</h1>
+            <div className="project">
+            <div className="left">
+            <Element className='start-section' name="schatz" >
+            <h2>❮❯ Cost Estimator ❮❯</h2>
+            </Element>
+            <p>
+              Roman Roofing is a project that I built to test my ability to learn new tech stacks. Using a real roofing company in Florida, I studied aspects of the company. I recognized a need that could be solved with a web application.
+              Allowing users to log in, this simple web application allows them to create and delete roofing options to compare prices.
+              The frontend is completed with Angular, a framework that I am exploring. The backend is completed with Laravel and MySQL, a
+              framework I learned from scratch. I implemented bootstrap in this web application. Currently, this project is private. 
+            </p>
+
+              <div className="focus">
+              <h4>❯❯ Restful API </h4>
+              <h4>❯❯ Authentication </h4>
+              <h4>❯❯ Bootstrap </h4>
+              </div>
+            <div className='tech-used' id='schatz-tech'>
+            <div className='single-tech'>
+              <img src={HTMLLogo} alt="HTML Logo" />
+              </div>
+
+              <div className='single-tech'>
+              <img src={AngularLogo} alt="Angular Logo" />
+              </div>
+
+              <div className='single-tech'>
+              <img src={JavaScriptLogo} alt="JavaScript Logo" />
+              </div>
+
+              <div className='single-tech'>
+              <img src={TypeScriptLogo} alt="TypeScript Logo" />
+              </div>
+
+              <div className='single-tech'>
+              <img src={SCSSLogo} alt="SCSSLogo Logo" />
+              </div>
+
+              <div className='single-tech'>
+              <img src={PHPLogo} alt="PHP Logo" />
+              </div>
+
+              <div className='single-tech'>
+              <img src={LaravelLogo} alt="Laravel Logo" />
+              </div>
+
+              <div className='single-tech'>
+              <img src={MySQLLogo} alt="p5 Logo" />
+              </div>
+
+              <div className='single-tech'>
+              <img src={Auth0Logo} alt="Auth0 Logo" />
+              </div>
+
+              <div className='single-tech'>
+              <img src={BootstrapLogo} alt="Bootstrap Logo" />
+              </div>
+            </div>
+            </div>
+
+            <div className="right" id='schatz'>
+            <img className='schatz-page' src={RomanRoofingPage} alt="Schatzinsel Front Page" />             
             </div>
             </div>
             </section>
