@@ -530,7 +530,8 @@ class Dev extends Component {
               Schatzinsel is an adventure game. Placed on a treasure island, a player must gather treasure to win the ultimate prize, gold.
               A player can move around the island collecting valuables that can be sold for money. Once enough money is earned, a player can
               change their name to discover the secret location of the mining location. Players can earn new abilities and upgrades
-              for their character along the way.
+              for their character along the way. Unfortunately, the borrowed Lambda School backend on which this game is currently running has been shut down. You can
+              view the structure of the game, the rules, and map, until I complete the backend functionality on my own server.
             </p>
 
               <div className="focus">
