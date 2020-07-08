@@ -3,6 +3,7 @@ base = "leviapp/"
 publish = "leviapp/build/"
 command = "CI= yarn build"
 
+
 [[redirects]]
   from = "/*"
   to = "/index.html"
