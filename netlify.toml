@@ -1,7 +1,8 @@
 [build]
 base = "leviapp/"
 publish = "leviapp/build/"
-command = "npm build"
+command = "CI= yarn build"
+
 
 [[redirects]]
   from = "/*"
