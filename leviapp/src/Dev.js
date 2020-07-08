@@ -183,7 +183,7 @@ class Dev extends Component {
             Schatzinsel
             </h2>
             </div> */}
-            <section>
+            {/* <section>
             <h1 className="TRACTION"> Traction </h1>
 
               <div className='project' id='traction-project'>
@@ -317,7 +317,7 @@ class Dev extends Component {
             </div>
             </div>
             </div>   
-            </section>
+            </section> */}
             
             <section>
             <h1 className="QUOTES"> Quotes 4 Life </h1>
