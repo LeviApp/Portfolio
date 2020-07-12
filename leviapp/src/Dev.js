@@ -183,7 +183,7 @@ class Dev extends Component {
             Schatzinsel
             </h2>
             </div> */}
-            {/* <section>
+            <section>
             <h1 className="TRACTION"> Traction </h1>
 
               <div className='project' id='traction-project'>
@@ -253,7 +253,7 @@ class Dev extends Component {
               <div className='right'>
               <img src={TractionPage} alt="Traction Front Page" />
               <div className='web-sec'>
-              <div className='web-group'>
+              {/* <div className='web-group'>
                 <a className='web-link' href='https://traction-app.netlify.com/' target='_blank'>To Website</a>
                 <a className='web-arrow' href='https://traction-app.netlify.com/' target='_blank'>⟶</a>
               </div>
@@ -261,6 +261,11 @@ class Dev extends Component {
               <div className='web-group'>
               <a className='web-link' href='https://github.com/LeviApp/labspt2-workout-tracker' target='_blank'>To Project Repo</a>
               <a className='web-arrow' href='https://github.com/LeviApp/labspt2-workout-tracker' target='_blank'>⟶</a>
+              </div> */}
+
+              <div className='web-group'>
+              <a className='web-link' href='https://www.youtube.com/watch?v=7CI2e6HL_aw&list=PLWX9jswdDQ0VdzivbZJ2fCTfJESj8Jfos&index=10&t=0s' target='_blank'>To Demo Video</a>
+              <a className='web-arrow' href='https://www.youtube.com/watch?v=7CI2e6HL_aw&list=PLWX9jswdDQ0VdzivbZJ2fCTfJESj8Jfos&index=10&t=0s' target='_blank'>⟶</a>
               </div>
               </div>
               </div>
@@ -317,7 +322,7 @@ class Dev extends Component {
             </div>
             </div>
             </div>   
-            </section> */}
+            </section>
             
             <section>
             <h1 className="QUOTES"> Quotes 4 Life </h1>
