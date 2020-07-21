@@ -523,8 +523,8 @@ class Dev extends Component {
             </div>
             </div>
             </section>
-
-            {/* <section>
+            
+            <section>
             <h1 className="schatz">Schatzinsel</h1>
             <div className="project">
             <div className="left">
@@ -590,7 +590,7 @@ class Dev extends Component {
             </div>              
             </div>
             </div>
-            </section> */}
+            </section>
 
             <section>
             <h1 className="schatz">Roman Roofing</h1>
