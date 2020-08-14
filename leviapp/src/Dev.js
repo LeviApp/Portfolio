@@ -214,11 +214,11 @@ class Dev extends Component {
                   </div>
 
                   <div className='single-tech'>
-                  <img src={SassLogo} alt="Sass Logo" />
+                  <img  src={SassLogo} alt="Sass Logo" />
                   </div>
 
                   <div className='single-tech'>
-                  <img className='fullcalendar' src={FullCalendarLogo} alt="FullCalendar Logo" />
+                  <img  className='fullcalendar' src={FullCalendarLogo} alt="FullCalendar Logo" />
                   </div>
 
                   <div className='single-tech'>
@@ -226,15 +226,15 @@ class Dev extends Component {
                   </div>
 
                   <div className='single-tech'>
-                  <img src={ReduxLogo} alt="Redux Logo" />
+                  <img  src={ReduxLogo} alt="Redux Logo" />
                   </div>
 
                   <div className='single-tech'>
-                  <img className='javascript' src={JavaScriptLogo} alt="JavaScript Logo" />
+                  <img  className='javascript' src={JavaScriptLogo} alt="JavaScript Logo" />
                   </div>
 
                   <div className='single-tech'>
-                  <img src={HTMLLogo} alt="HTML Logo" />
+                  <img  src={HTMLLogo} alt="HTML Logo" />
                   </div>
 
                   <div className='single-tech'>
@@ -242,11 +242,11 @@ class Dev extends Component {
                   </div>
 
                   <div className='single-tech'>
-                  <img src={Auth0Logo} alt="Auth0 Logo" />
+                  <img  src={Auth0Logo} alt="Auth0 Logo" />
                   </div>
 
                   <div className='single-tech'>
-                  <img className='postgres' src={PostgresLogo} alt="Postgres Logo" />
+                  <img  className='postgres' src={PostgresLogo} alt="Postgres Logo" />
                   </div>
               </div>
               </div>
@@ -276,21 +276,21 @@ class Dev extends Component {
             <h2>❮❯ Traction Logo ❮❯</h2>
             <div className="t-logos-drafts">
                 <div>
-                <img className='traction-logo-draft0' src={TractionDraft0} alt="traction-logo-draft0" />
-                <img className='traction-logo-draft00' src={TractionDraft00} alt="traction-logo-draft00" />
-                <img className='traction-logo-draft1' src={TractionDraft1} alt="traction-logo-draft1" />
-                <img className='traction-logo-draft2' src={TractionDraft2} alt="traction-logo-draft2" />
-                <img className='traction-logo-draft3' src={TractionDraft3} alt="traction-logo-draft3" />
-                <img className='traction-logo-draft4' src={TractionDraft4} alt="traction-logo-draft4" />      
-                <img className='traction-logo-draft5' src={TractionDraft5} alt="traction-logo-draft5" />
-                <img className='traction-logo-draft6' src={TractionDraft6} alt="traction-logo-draft6" />
+                <img loading="lazy"  className='traction-logo-draft0' src={TractionDraft0} alt="traction-logo-draft0" />
+                <img loading="lazy"  className='traction-logo-draft00' src={TractionDraft00} alt="traction-logo-draft00" />
+                <img loading="lazy"  className='traction-logo-draft1' src={TractionDraft1} alt="traction-logo-draft1" />
+                <img loading="lazy"  className='traction-logo-draft2' src={TractionDraft2} alt="traction-logo-draft2" />
+                <img loading="lazy"  className='traction-logo-draft3' src={TractionDraft3} alt="traction-logo-draft3" />
+                <img loading="lazy"  className='traction-logo-draft4' src={TractionDraft4} alt="traction-logo-draft4" />      
+                <img loading="lazy"  className='traction-logo-draft5' src={TractionDraft5} alt="traction-logo-draft5" />
+                <img loading="lazy"  className='traction-logo-draft6' src={TractionDraft6} alt="traction-logo-draft6" />
 
                 <div className='final'>
-                <img className='final-traction-logo' src={Traction} alt="traction-logo" />
+                <img loading="lazy"  className='final-traction-logo' src={Traction} alt="traction-logo" />
                 <h6>Hover Me</h6>
                 </div>
                 <div className='final'>
-                <img className='final-traction-logo' src={TractionPremium} alt="traction-logo-premium" /> 
+                <img loading="lazy"  className='final-traction-logo' src={TractionPremium} alt="traction-logo-premium" /> 
                 <h6>Hover Me</h6>
                 </div>
                 </div>    
@@ -303,13 +303,13 @@ class Dev extends Component {
             <div className='right'>
             <h2>❮❯ Calendar ❮❯</h2>
 
-            <img className='calendar' src={Calendar} alt="Calendar" />
+            <img loading="lazy"  className='calendar' src={Calendar} alt="Calendar" />
             </div>
             </div>
             <div className='project'>
             <div className='left' id='scheduled'>
             <h2> ❮❯ Scheduled Routine ❮❯ </h2>
-            <img className='mapped' src={Mapped} alt="mapped event" />
+            <img loading="lazy"  className='mapped' src={Mapped} alt="mapped event" />
             <div className='focus' id='check-box'>
             <div className='checkG'>
             <h4> ❯❯ Checkmark Box</h4>
@@ -347,25 +347,25 @@ class Dev extends Component {
               </div>
             <div className='tech-used'>
               <div className='single-tech'>
-              <img src={ReactLogo} alt="React Logo" />
+              <img loading="lazy"  src={ReactLogo} alt="React Logo" />
               </div>
 
               <div className='single-tech'>
-              <img src={CSSLogo} alt="CSS Logo" />
+              <img loading="lazy"  src={CSSLogo} alt="CSS Logo" />
               </div>
 
               <div className='single-tech'>
-              <img src={HTMLLogo} alt="HTML Logo" />
+              <img loading="lazy"  src={HTMLLogo} alt="HTML Logo" />
               </div>
 
               <div className='single-tech'>
-              <img className='javascript' src={JavaScriptLogo} alt="JavaScript Logo" />
+              <img loading="lazy"  className='javascript' src={JavaScriptLogo} alt="JavaScript Logo" />
               </div>
             </div>
             </div>
 
             <div className="right">
-            <img id="quotes-page" src={QuotesPage} alt="Quotes Front Page" />
+            <img loading="lazy"  id="quotes-page" src={QuotesPage} alt="Quotes Front Page" />
             <div className='web-sec'>
             <div className='web-group'>
               <a className='web-link' href='https://quotes-4-life.netlify.com/home' target='_blank'>To Website</a>
@@ -403,28 +403,28 @@ class Dev extends Component {
               </div>
               <div className='tech-used'>
               <div className='single-tech'>
-              <img src={HTMLLogo} alt="HTML Logo" />
+              <img loading="lazy"  src={HTMLLogo} alt="HTML Logo" />
               </div>
 
               <div className='single-tech'>
-              <img src={AngularLogo} alt="Angular Logo" />
+              <img loading="lazy"  src={AngularLogo} alt="Angular Logo" />
               </div>
 
               <div className='single-tech'>
-              <img src={JavaScriptLogo} alt="JavaScript Logo" />
+              <img loading="lazy"  src={JavaScriptLogo} alt="JavaScript Logo" />
               </div>
 
               <div className='single-tech'>
-              <img src={TypeScriptLogo} alt="TypeScript Logo" />
+              <img loading="lazy"  src={TypeScriptLogo} alt="TypeScript Logo" />
               </div>
 
               <div className='single-tech'>
-              <img src={SCSSLogo} alt="SCSSLogo Logo" />
+              <img loading="lazy"  src={SCSSLogo} alt="SCSSLogo Logo" />
               </div>
             </div>
             </div>
             <div className='right'>
-            <img id='reform' src={ReformPage} alt="Reform in Dust Storms Front Page" />
+            <img loading="lazy"  id='reform' src={ReformPage} alt="Reform in Dust Storms Front Page" />
             <div className='web-sec'>
             <div className='web-group'>
               <a className='web-link' href='https://reforminduststorms.netlify.com/' target='_blank'>To Website</a>
@@ -502,11 +502,11 @@ class Dev extends Component {
             </div>
             <div className='tech-used'>
               <div className='single-tech'>
-              <img src={PythonLogo} alt="Python Logo" />
+              <img loading="lazy"  src={PythonLogo} alt="Python Logo" />
               </div>
 
               <div className='single-tech'>
-              <img src={PygameLogo} alt="Pygame Logo" />
+              <img loading="lazy"  src={PygameLogo} alt="Pygame Logo" />
               </div>
             </div>
             </div>
@@ -545,33 +545,33 @@ class Dev extends Component {
               </div>
             <div className='tech-used' id='schatz-tech'>
               <div className='single-tech'>
-              <img src={ReactLogo} alt="React Logo" />
+              <img loading="lazy"  src={ReactLogo} alt="React Logo" />
               </div>
 
               <div className='single-tech'>
-              <img src={p5Logo} alt="p5 Logo" />
+              <img loading="lazy"  src={p5Logo} alt="p5 Logo" />
               </div>
 
               <div className='single-tech'>
-              <img src={JavaScriptLogo} alt="JavaScript Logo" />
+              <img loading="lazy"  src={JavaScriptLogo} alt="JavaScript Logo" />
               </div>
               
               <div className='single-tech'>
-              <img src={HTMLLogo} alt="HTML Logo" />
+              <img loading="lazy"  src={HTMLLogo} alt="HTML Logo" />
               </div>
 
               <div className='single-tech'>
-              <img src={SassLogo} alt="Sass Logo" />
+              <img loading="lazy"  src={SassLogo} alt="Sass Logo" />
               </div>
 
               <div className='single-tech'>
-              <img src={PostgresLogo} alt="Postgres Logo" />
+              <img loading="lazy"  src={PostgresLogo} alt="Postgres Logo" />
               </div>
             </div>
             </div>
 
             <div className="right" id='schatz'>
-            <img className='schatz-page' src={SchatzPage} alt="Schatzinsel Front Page" />
+            <img loading="lazy"  className='schatz-page' src={SchatzPage} alt="Schatzinsel Front Page" />
             <div className='web-sec'>
             <div className='web-group'>
               <a className='web-link' href='https://schatzinsel.netlify.com/' target='_blank'>To Website</a>
@@ -613,49 +613,49 @@ class Dev extends Component {
               </div>
             <div className='tech-used' id='schatz-tech'>
             <div className='single-tech'>
-              <img src={HTMLLogo} alt="HTML Logo" />
+              <img loading="lazy"  src={HTMLLogo} alt="HTML Logo" />
               </div>
 
               <div className='single-tech'>
-              <img src={AngularLogo} alt="Angular Logo" />
+              <img loading="lazy"  src={AngularLogo} alt="Angular Logo" />
               </div>
 
               <div className='single-tech'>
-              <img src={JavaScriptLogo} alt="JavaScript Logo" />
+              <img loading="lazy"  src={JavaScriptLogo} alt="JavaScript Logo" />
               </div>
 
               <div className='single-tech'>
-              <img src={TypeScriptLogo} alt="TypeScript Logo" />
+              <img loading="lazy"  src={TypeScriptLogo} alt="TypeScript Logo" />
               </div>
 
               <div className='single-tech'>
-              <img src={SCSSLogo} alt="SCSSLogo Logo" />
+              <img loading="lazy"  src={SCSSLogo} alt="SCSSLogo Logo" />
               </div>
 
               <div className='single-tech'>
-              <img src={PHPLogo} alt="PHP Logo" />
+              <img loading="lazy"  src={PHPLogo} alt="PHP Logo" />
               </div>
 
               <div className='single-tech'>
-              <img src={LaravelLogo} alt="Laravel Logo" />
+              <img loading="lazy"  src={LaravelLogo} alt="Laravel Logo" />
               </div>
 
               <div className='single-tech'>
-              <img src={MySQLLogo} alt="p5 Logo" />
+              <img loading="lazy"  src={MySQLLogo} alt="p5 Logo" />
               </div>
 
               <div className='single-tech'>
-              <img src={Auth0Logo} alt="Auth0 Logo" />
+              <img loading="lazy"  src={Auth0Logo} alt="Auth0 Logo" />
               </div>
 
               <div className='single-tech'>
-              <img src={BootstrapLogo} alt="Bootstrap Logo" />
+              <img loading="lazy"  src={BootstrapLogo} alt="Bootstrap Logo" />
               </div>
             </div>
             </div>
 
             <div className="right" id='schatz'>
-            <img className='schatz-page' src={RomanRoofingPage} alt="Schatzinsel Front Page" />             
+            <img loading="lazy"  className='schatz-page' src={RomanRoofingPage} alt="Schatzinsel Front Page" />             
             </div>
             </div>
             </section>

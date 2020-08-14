@@ -340,22 +340,22 @@ class Art extends Component {
                 <Element className='start-section' name="infographics" >
                 <br />
                 </Element>
-                <img className="b catb activeb" onClick={() => this.bookClick('cat')} src={CatalogCover} />
+                <img  className="b catb activeb" onClick={() => this.bookClick('cat')} src={CatalogCover} />
                 </div>
                 <div className='bContainer'>
-                <img className="b magb" onClick={() => this.bookClick('mag')} src={MagPuckCover} /> 
-                </div>
-
-                <div className='bContainer'>
-                <img className="b smartb" onClick={() => this.bookClick('smart')} src={SmartPuckCover} />
+                <img  className="b magb" onClick={() => this.bookClick('mag')} src={MagPuckCover} /> 
                 </div>
 
                 <div className='bContainer'>
-                <img className="b airb" onClick={() => this.bookClick('air')} src={AirPuckCover} />
+                <img  className="b smartb" onClick={() => this.bookClick('smart')} src={SmartPuckCover} />
                 </div>
 
                 <div className='bContainer'>
-                <img className="b zerob" onClick={() => this.bookClick('zero')} src={ZeroPuckCover} />
+                <img  className="b airb" onClick={() => this.bookClick('air')} src={AirPuckCover} />
+                </div>
+
+                <div className='bContainer'>
+                <img  className="b zerob" onClick={() => this.bookClick('zero')} src={ZeroPuckCover} />
                 </div>
 
                 <div className='bContainer'>
@@ -363,67 +363,67 @@ class Art extends Component {
                 </div>
 
                 <div className='bContainer'>
-                <img className="b infographicsb" onClick={() => this.bookClick('infographics')} src={N1N} /> 
+                <img loading="lazy"  className="b infographicsb" onClick={() => this.bookClick('infographics')} src={N1N} /> 
                 </div>
 
                 <div className='bContainer'>
-                <img className="b tardigradeb" onClick={() => this.bookClick('tardigrade')} src={N8N} />
+                <img loading="lazy"  className="b tardigradeb" onClick={() => this.bookClick('tardigrade')} src={N8N} />
                 </div>
 
                 <div className='bContainer'>
                 <Element className='start-section' name="tactile" >
                 <br />
                 </Element>
-                <img className="b cardiob" onClick={() => this.bookClick('cardio')} src={C1} /> 
+                <img loading="lazy"  className="b cardiob" onClick={() => this.bookClick('cardio')} src={C1} /> 
                 </div>
 
                 <div className='bContainer'>
-                <img className="b respb" onClick={() => this.bookClick('resp')} src={R1} />
+                <img loading="lazy"  className="b respb" onClick={() => this.bookClick('resp')} src={R1} />
                 </div>
 
                 <div className='bContainer'>
-                <img className="b digestb" onClick={() => this.bookClick('digest')} src={D1} /> 
+                <img loading="lazy"  className="b digestb" onClick={() => this.bookClick('digest')} src={D1} /> 
                 </div>
 
                 <div className='bContainer'>
-                <img className="b urib" onClick={() => this.bookClick('uri')} src={U1} />
+                <img loading="lazy"  className="b urib" onClick={() => this.bookClick('uri')} src={U1} />
                 </div>
 
                 <div className='bContainer'>
                 <Element className='start-section' name="type" >
                 <br />
                 </Element>
-                <img className="b brockb" onClick={() => this.bookClick('brock')} src={Brock} />
+                <img loading="lazy"  className="b brockb" onClick={() => this.bookClick('brock')} src={Brock} />
                 </div>
 
                 <div className='bContainer'>
-                <img className="b joyceb" onClick={() => this.bookClick('joyce')} src={Joyce} />
+                <img loading="lazy"  className="b joyceb" onClick={() => this.bookClick('joyce')} src={Joyce} />
                 </div>
 
                 <div className='bContainer'>
-                <img className="b typeb" onClick={() => this.bookClick('type')} src={TB} />
+                <img loading="lazy"  className="b typeb" onClick={() => this.bookClick('type')} src={TB} />
                 </div>
 
                 <div className='bContainer'>
                 <Element className='start-section' name="illustration" >
                 <br />
                 </Element>
-                <img className="b STEMb" onClick={() => this.bookClick('STEM')} src={s1} />
+                <img loading="lazy"  className="b STEMb" onClick={() => this.bookClick('STEM')} src={s1} />
                 </div>
 
                 <div className='bContainer'>
-                <img className="b illub" onClick={() => this.bookClick('illu')} src={I1} /> 
+                <img loading="lazy"  className="b illub" onClick={() => this.bookClick('illu')} src={I1} /> 
                 </div>
 
                 <div className='bContainer'>
-                <img className="b quorumb" onClick={() => this.bookClick('quorum')} src={q1} />
+                <img loading="lazy"  className="b quorumb" onClick={() => this.bookClick('quorum')} src={q1} />
                 </div>
                 </div>
                 <div className='car-container'>
                 <Carousel className="sel active cat pamphlet" showStatus={false} showThumbs={false} infiniteLoop={true} useKeyboardArrows={true}>
 
                     <div>
-                    <img src={CatalogCover} />
+                    <img loading="lazy"  src={CatalogCover} />
                     </div>
 
                     <div className='description'>
@@ -441,23 +441,23 @@ class Art extends Component {
                     </div>
 
                     <div>
-                    <img src={Catalog1} />
+                    <img loading="lazy"  src={Catalog1} />
                     </div>
 
                     <div>
-                    <img src={Catalog2} />
+                    <img loading="lazy"  src={Catalog2} />
                     </div>
 
                     <div>
-                    <img src={Catalog3} />
+                    <img loading="lazy"  src={Catalog3} />
                     </div>
 
                     <div>
-                    <img src={Catalog4} />
+                    <img loading="lazy"  src={Catalog4} />
                     </div>
 
                     <div>
-                    <img src={CatalogBack} />
+                    <img loading="lazy"  src={CatalogBack} />
                     </div>  
                 </Carousel>
                 </div>
@@ -465,7 +465,7 @@ class Art extends Component {
                 <Carousel className="sel inactive mag pamphlet" showStatus={false} showThumbs={false} infiniteLoop={true} useKeyboardArrows={true}>
 
                     <div>
-                    <img src={MagPuckCover} />
+                    <img loading="lazy"  src={MagPuckCover} />
                     </div>
 
                     <div className='description'>
@@ -487,23 +487,23 @@ class Art extends Component {
                     </div>
 
                     <div>
-                    <img src={MagPuck1} />
+                    <img loading="lazy"  src={MagPuck1} />
                     </div>
 
                     <div>
-                    <img src={MagPuck2} />
+                    <img loading="lazy"  src={MagPuck2} />
                     </div>
 
                     <div>
-                    <img src={MagPuck3} />
+                    <img loading="lazy"  src={MagPuck3} />
                     </div>
 
                     <div>
-                    <img src={MagPuck4} />
+                    <img loading="lazy"  src={MagPuck4} />
                     </div>
 
                     <div>
-                    <img src={MagPuckBack} />
+                    <img loading="lazy"  src={MagPuckBack} />
                     </div>           
                 </Carousel>
                 </div>
@@ -512,7 +512,7 @@ class Art extends Component {
                 <Carousel className="sel inactive smart pamphlet" showStatus={false} showThumbs={false} infiniteLoop={true} useKeyboardArrows={true}>
 
                     <div>
-                    <img src={SmartPuckCover} />
+                    <img loading="lazy"  src={SmartPuckCover} />
                     </div>
 
                     <div className='description'>
@@ -535,23 +535,23 @@ class Art extends Component {
                     </div>
 
                     <div>
-                    <img src={SmartPuck1} />
+                    <img loading="lazy"  src={SmartPuck1} />
                     </div>
 
                     <div>
-                    <img src={SmartPuck2} />
+                    <img loading="lazy"  src={SmartPuck2} />
                     </div>
 
                     <div>
-                    <img src={SmartPuck3} />
+                    <img loading="lazy"  src={SmartPuck3} />
                     </div>
 
                     <div>
-                    <img src={SmartPuck4} />
+                    <img loading="lazy"  src={SmartPuck4} />
                     </div>
 
                     <div>
-                    <img src={SmartPuckBack} />
+                    <img loading="lazy"  src={SmartPuckBack} />
                     </div>         
                 </Carousel>
                 </div>
@@ -560,7 +560,7 @@ class Art extends Component {
                 <Carousel className="sel inactive air pamphlet" showStatus={false} showThumbs={false} infiniteLoop={true} useKeyboardArrows={true}>
 
                     <div>
-                    <img src={AirPuckCover} />
+                    <img loading="lazy"  src={AirPuckCover} />
                     </div>
 
                     <div className='description'>
@@ -578,23 +578,23 @@ class Art extends Component {
                     </div>
 
                     <div>
-                    <img src={AirPuck1} />
+                    <img loading="lazy"  src={AirPuck1} />
                     </div>
 
                     <div>
-                    <img src={AirPuck2} />
+                    <img loading="lazy"  src={AirPuck2} />
                     </div>
 
                     <div>
-                    <img src={AirPuck3} />
+                    <img loading="lazy"  src={AirPuck3} />
                     </div>
 
                     <div>
-                    <img src={AirPuck4} />
+                    <img loading="lazy"  src={AirPuck4} />
                     </div>
 
                     <div>
-                    <img src={AirPuckBack} />
+                    <img loading="lazy"  src={AirPuckBack} />
                     </div>    
                 </Carousel>
                 </div>
@@ -603,7 +603,7 @@ class Art extends Component {
                 <Carousel className="sel inactive zero pamphlet" showStatus={false} showThumbs={false} infiniteLoop={true} useKeyboardArrows={true}>
 
                     <div>
-                        <img src={ZeroPuckCover} />
+                        <img loading="lazy"  src={ZeroPuckCover} />
                     </div>
 
                     <div className='description'>
@@ -626,23 +626,23 @@ class Art extends Component {
                     </div>
 
                     <div>
-                        <img src={ZeroPuck1} />
+                        <img loading="lazy"  src={ZeroPuck1} />
                     </div>
 
                     <div>
-                        <img src={ZeroPuck2} />
+                        <img loading="lazy"  src={ZeroPuck2} />
                     </div>
 
                     <div>
-                        <img src={ZeroPuck3} />
+                        <img loading="lazy"  src={ZeroPuck3} />
                     </div>
 
                     <div>
-                        <img src={ZeroPuck4} />
+                        <img loading="lazy"  src={ZeroPuck4} />
                     </div>
 
                     <div>
-                        <img src={ZeroPuckBack} />
+                        <img loading="lazy"  src={ZeroPuckBack} />
                     </div>         
                 </Carousel>
                 </div>
@@ -650,7 +650,7 @@ class Art extends Component {
                 <Carousel className="sel inactive fab pamphlet" showStatus={false} showThumbs={false} infiniteLoop={true} useKeyboardArrows={true}>
 
                     <div>
-                    <img src={FabricationCover} />
+                    <img loading="lazy"  src={FabricationCover} />
                     </div>
                     
                     <div className='description'>
@@ -668,138 +668,138 @@ class Art extends Component {
                     </div>
 
                     <div>
-                    <img src={Fabrication1} />
+                    <img loading="lazy"  src={Fabrication1} />
                     </div>
 
                     <div>
-                    <img src={Fabrication2} />
+                    <img loading="lazy"  src={Fabrication2} />
                     </div>
 
                     <div>
-                    <img src={Fabrication3} />
+                    <img loading="lazy"  src={Fabrication3} />
                     </div>
 
                     <div>
-                    <img src={Fabrication4} />
+                    <img loading="lazy"  src={Fabrication4} />
                     </div>
 
                     <div>
-                    <img src={FabricationBack} />
+                    <img loading="lazy"  src={FabricationBack} />
                     </div>         
                 </Carousel>
                 </div>
                 <div className='car-container'>
                 <Carousel className="sel inactive infographics double" showStatus={false} showThumbs={false} infiniteLoop={true} useKeyboardArrows={true}>
                     <div>
-                    <img src={N1O} />
+                    <img loading="lazy"  src={N1O} />
                     </div>
 
                     <div>
-                    <img src={N1N} />
+                    <img loading="lazy"  src={N1N} />
                     </div>
 
                     <div>
-                    <img src={N2O} />
+                    <img loading="lazy"  src={N2O} />
                     </div>
 
                     <div>
-                    <img src={N2N} />
+                    <img loading="lazy"  src={N2N} />
                     </div>
 
                     <div>
-                    <img src={N3O} />
+                    <img loading="lazy"  src={N3O} />
                     </div>
 
                     <div>
-                    <img src={N3N} />
+                    <img loading="lazy"  src={N3N} />
                     </div>
 
                     <div>
-                    <img src={N4O} />
+                    <img loading="lazy"  src={N4O} />
                     </div>
 
                     <div>
-                    <img src={N4N} />
+                    <img loading="lazy"  src={N4N} />
                     </div>
 
                     <div>
-                    <img src={N5O} />
+                    <img loading="lazy"  src={N5O} />
                     </div>  
 
                     <div>
-                    <img src={N5N} />
+                    <img loading="lazy"  src={N5N} />
                     </div>
 
                     <div>
-                    <img src={N6O} />
+                    <img loading="lazy"  src={N6O} />
                     </div>
 
                     <div>
-                    <img src={N6N} />
+                    <img loading="lazy"  src={N6N} />
                     </div>
 
                     <div>
-                    <img src={N7O} />
+                    <img loading="lazy"  src={N7O} />
                     </div>
 
                     <div>
-                    <img src={N7N} />
+                    <img loading="lazy"  src={N7N} />
                     </div> 
                     </Carousel>
                     </div>
 
                     <div className="sel inactive tardigrade">
-                    <img src={N8N} />
+                    <img loading="lazy"  src={N8N} />
                     </div>
 
                     <div className='car-container'>
                     <Carousel className="sel inactive type double" showStatus={false} showThumbs={false} infiniteLoop={true} useKeyboardArrows={true}>
                     <div>
-                    <img src={T1} />
+                    <img loading="lazy"  src={T1} />
                     </div>
 
                     <div>
-                    <img src={T2} />
+                    <img loading="lazy"  src={T2} />
                     </div>
 
                     <div>
-                    <img src={T3} />
+                    <img loading="lazy"  src={T3} />
                     </div>
 
                     <div>
-                    <img src={T4} />
+                    <img loading="lazy"  src={T4} />
                     </div>
 
                     <div>
-                    <img src={T5} />
+                    <img loading="lazy"  src={T5} />
                     </div>
 
                     <div>
-                    <img src={T6} />
+                    <img loading="lazy"  src={T6} />
                     </div>
 
                     <div>
-                    <img src={T7} />
+                    <img loading="lazy"  src={T7} />
                     </div>
                     </Carousel>
                     </div>
 
                     <div className='sel inactive card brock rest'>
-                        <img className='top' src={Brock} />
-                        <img className='leftimg' src={BrockLetter} />
-                        <img className='rightimg' src={BrockWeb} />
+                        <img loading="lazy"  className='top' src={Brock} />
+                        <img loading="lazy"  className='leftimg' src={BrockLetter} />
+                        <img loading="lazy"  className='rightimg' src={BrockWeb} />
                     </div>
 
                     <div className='sel inactive card joyce rest'>
-                        <img className='top' src={Joyce} />
-                        <img className='leftimg' src={JoyceLetter} />
-                        <img className='rightimg' src={JoyceWeb} />
+                        <img loading="lazy"  className='top' src={Joyce} />
+                        <img loading="lazy"  className='leftimg' src={JoyceLetter} />
+                        <img loading="lazy"  className='rightimg' src={JoyceWeb} />
                     </div>
 
                     <div className='car-container'>
                     <Carousel className="sel inactive cardio rest" showStatus={false} showThumbs={false} infiniteLoop={true} useKeyboardArrows={true}>
                     <div>
-                    <img src={C1} />
+                    <img loading="lazy"  src={C1} />
                     </div>
 
                     <div className='description'>
@@ -809,51 +809,51 @@ class Art extends Component {
                     </p>
                     </div>
                     <div>
-                    <img src={C1} />
+                    <img loading="lazy"  src={C1} />
                     </div>
 
                     <div>
-                    <img src={C1T} />
+                    <img loading="lazy"  src={C1T} />
                     </div>
 
                     <div>
-                    <img src={C1K} />
+                    <img loading="lazy"  src={C1K} />
                     </div>
 
                     <div>
-                    <img src={C2} />
+                    <img loading="lazy"  src={C2} />
                     </div>
 
                     <div>
-                    <img src={C2T} />
+                    <img loading="lazy"  src={C2T} />
                     </div>
 
                     <div>
-                    <img src={C2K} />
+                    <img loading="lazy"  src={C2K} />
                     </div>
 
                     <div>
-                    <img src={C3} />
+                    <img loading="lazy"  src={C3} />
                     </div>
 
                     <div>
-                    <img src={C3T} />
+                    <img loading="lazy"  src={C3T} />
                     </div>
 
                     <div>
-                    <img src={C3K} />
+                    <img loading="lazy"  src={C3K} />
                     </div>  
 
                     <div>
-                    <img src={C4} />
+                    <img loading="lazy"  src={C4} />
                     </div>
 
                     <div>
-                    <img src={C4T} />
+                    <img loading="lazy"  src={C4T} />
                     </div>
 
                     <div>
-                    <img src={C4K} />
+                    <img loading="lazy"  src={C4K} />
                     </div>   
                 </Carousel>
                 </div>
@@ -861,7 +861,7 @@ class Art extends Component {
                 <div className='car-container'>
                 <Carousel className="sel inactive resp rest" showStatus={false} showThumbs={false} infiniteLoop={true} useKeyboardArrows={true}>
                     <div>
-                    <img src={R1} />
+                    <img loading="lazy"  src={R1} />
                     </div>
 
                     <div className='description'>
@@ -871,51 +871,51 @@ class Art extends Component {
                     </p>
                     </div>
                     <div>
-                    <img src={R1} />
+                    <img loading="lazy"  src={R1} />
                     </div>
 
                     <div>
-                    <img src={R1T} />
+                    <img loading="lazy"  src={R1T} />
                     </div>
 
                     <div>
-                    <img src={R1K} />
+                    <img loading="lazy"  src={R1K} />
                     </div>
                     
                     <div>
-                    <img src={R2} />
+                    <img loading="lazy"  src={R2} />
                     </div>
 
                     <div>
-                    <img src={R2T} />
+                    <img loading="lazy"  src={R2T} />
                     </div>
 
                     <div>
-                    <img src={R2K} />
+                    <img loading="lazy"  src={R2K} />
                     </div>
 
                     <div>
-                    <img src={R3} />
+                    <img loading="lazy"  src={R3} />
                     </div>
 
                     <div>
-                    <img src={R3T} />
+                    <img loading="lazy"  src={R3T} />
                     </div>
 
                     <div>
-                    <img src={R3K} />
+                    <img loading="lazy"  src={R3K} />
                     </div>  
 
                     <div>
-                    <img src={R4} />
+                    <img loading="lazy"  src={R4} />
                     </div>
 
                     <div>
-                    <img src={R4T} />
+                    <img loading="lazy"  src={R4T} />
                     </div>
 
                     <div>
-                    <img src={R4K} />
+                    <img loading="lazy"  src={R4K} />
                     </div>   
                 </Carousel>
                 </div>
@@ -924,7 +924,7 @@ class Art extends Component {
                 <Carousel className="sel inactive digest rest" showStatus={false} showThumbs={false} infiniteLoop={true} useKeyboardArrows={true}>
 
                     <div>
-                    <img src={D1} />
+                    <img loading="lazy"  src={D1} />
                     </div>
 
                     <div className='description'>
@@ -934,51 +934,51 @@ class Art extends Component {
                     </p>
                     </div>
                     <div>
-                    <img src={D1} />
+                    <img loading="lazy"  src={D1} />
                     </div>
 
                     <div>
-                    <img src={D1T} />
+                    <img loading="lazy"  src={D1T} />
                     </div>
 
                     <div>
-                    <img src={D1K} />
+                    <img loading="lazy"  src={D1K} />
                     </div>
 
                     <div>
-                    <img src={D2} />
+                    <img loading="lazy"  src={D2} />
                     </div>
 
                     <div>
-                    <img src={D2T} />
+                    <img loading="lazy"  src={D2T} />
                     </div>
 
                     <div>
-                    <img src={D2K} />
+                    <img loading="lazy"  src={D2K} />
                     </div>
 
                     <div>
-                    <img src={D3} />
+                    <img loading="lazy"  src={D3} />
                     </div>
 
                     <div>
-                    <img src={D3T} />
+                    <img loading="lazy"  src={D3T} />
                     </div>
 
                     <div>
-                    <img src={D3K} />
+                    <img loading="lazy"  src={D3K} />
                     </div>  
 
                     <div>
-                    <img src={D4} />
+                    <img loading="lazy"  src={D4} />
                     </div>
 
                     <div>
-                    <img src={D4T} />
+                    <img loading="lazy"  src={D4T} />
                     </div>
 
                     <div>
-                    <img src={D4K} />
+                    <img loading="lazy"  src={D4K} />
                     </div>   
                     </Carousel>
                     </div>
@@ -987,7 +987,7 @@ class Art extends Component {
                     <Carousel className="sel inactive uri rest" showStatus={false} showThumbs={false} infiniteLoop={true} useKeyboardArrows={true}>
 
                     <div>
-                    <img src={U1} />
+                    <img loading="lazy"  src={U1} />
                     </div>
 
                     <div className='description'>
@@ -998,51 +998,51 @@ class Art extends Component {
                     </div>
 
                     <div>
-                    <img src={U1} />
+                    <img loading="lazy"  src={U1} />
                     </div>
 
                     <div>
-                    <img src={U1T} />
+                    <img loading="lazy"  src={U1T} />
                     </div>
 
                     <div>
-                    <img src={U1K} />
+                    <img loading="lazy"  src={U1K} />
                     </div>
 
                     <div>
-                    <img src={U2} />
+                    <img loading="lazy"  src={U2} />
                     </div>
 
                     <div>
-                    <img src={U2T} />
+                    <img loading="lazy"  src={U2T} />
                     </div>
 
                     <div>
-                    <img src={U2K} />
+                    <img loading="lazy"  src={U2K} />
                     </div>
 
                     <div>
-                    <img src={U3} />
+                    <img loading="lazy"  src={U3} />
                     </div>
 
                     <div>
-                    <img src={U3T} />
+                    <img loading="lazy"  src={U3T} />
                     </div>
 
                     <div>
-                    <img src={U3K} />
+                    <img loading="lazy"  src={U3K} />
                     </div>  
 
                     <div>
-                    <img src={U4} />
+                    <img loading="lazy"  src={U4} />
                     </div>
 
                     <div>
-                    <img src={U4T} />
+                    <img loading="lazy"  src={U4T} />
                     </div>
 
                     <div>
-                    <img src={U4K} />
+                    <img loading="lazy"  src={U4K} />
                     </div>   
                     </Carousel>
                     </div>
@@ -1051,7 +1051,7 @@ class Art extends Component {
                     <Carousel className="sel inactive STEM rest" showStatus={false} showThumbs={false} infiniteLoop={true} useKeyboardArrows={true}>
 
                     <div>
-                    <img src={s1} />
+                    <img loading="lazy"  src={s1} />
                     <h2>Design Building</h2>
                     </div>
 
@@ -1063,52 +1063,52 @@ class Art extends Component {
                     </div>
 
                     <div>
-                    <img src={s2} />  
+                    <img loading="lazy"  src={s2} />  
                     <h2>Genetics</h2>        
                     </div>
 
                     <div>
-                    <img src={s3} />
+                    <img loading="lazy"  src={s3} />
                     <h2>Chemistry</h2>      
                     </div>
 
                     <div>
-                    <img src={s4} />
+                    <img loading="lazy"  src={s4} />
                     <h2>Computer Science</h2>                             
                     </div>
 
                     <div>
-                    <img src={s5} />
+                    <img loading="lazy"  src={s5} />
                     <h2>3D Printing</h2>                                                          
                     </div>
 
                     <div>
-                    <img src={s6} />
+                    <img loading="lazy"  src={s6} />
                     <h2>Math</h2>                                                                                    
                     </div>
 
                     <div>
-                    <img src={s7} /> 
+                    <img loading="lazy"  src={s7} /> 
                     <h2>Meteorology</h2>                            
                     </div>
 
                     <div>
-                    <img src={s8} />
+                    <img loading="lazy"  src={s8} />
                     <h2>Microbiology</h2>                                                                                        
                     </div> 
 
                     <div>
-                    <img src={s9} />
+                    <img loading="lazy"  src={s9} />
                     <h2>Water Environments</h2>                                                                                                                 
                     </div>
 
                     <div>
-                    <img src={s10} />
+                    <img loading="lazy"  src={s10} />
                     <h2>Physics</h2>                                                                                                                       
                     </div>
 
                     <div>
-                    <img src={s11} />
+                    <img loading="lazy"  src={s11} />
                     <h2>Rocket Science</h2>                                                          
                     </div>               
             </Carousel>
@@ -1116,35 +1116,35 @@ class Art extends Component {
                     <div className='car-container'>
                     <Carousel className="sel inactive illu other" showStatus={false} showThumbs={false} infiniteLoop={true} useKeyboardArrows={true}>
                     <div>
-                    <img src={I1} />
+                    <img loading="lazy"  src={I1} />
                     </div>
 
                     <div>
-                    <img src={I2} />
+                    <img loading="lazy"  src={I2} />
                     </div>
 
                     <div>
-                    <img src={I3} />
+                    <img loading="lazy"  src={I3} />
                     </div>
 
                     <div>
-                    <img src={I4} />
+                    <img loading="lazy"  src={I4} />
                     </div>
 
                     <div>
-                    <img src={I5} />
+                    <img loading="lazy"  src={I5} />
                     </div>
 
                     <div>
-                    <img src={I6} />
+                    <img loading="lazy"  src={I6} />
                     </div>
 
                     <div>
-                    <img src={I7} />
+                    <img loading="lazy"  src={I7} />
                     </div>
 
                     <div>
-                    <img src={I8} />
+                    <img loading="lazy"  src={I8} />
                     </div>
                     </Carousel>
                     </div>
@@ -1153,7 +1153,7 @@ class Art extends Component {
                     <Carousel className="sel inactive quorum biggest" showStatus={false} showThumbs={false} infiniteLoop={true} useKeyboardArrows={true}>
 
                     <div>
-                    <img src={q1} />
+                    <img loading="lazy"  src={q1} />
                     </div>
 
                     <div className='description'>
@@ -1165,51 +1165,51 @@ class Art extends Component {
 
 
                     <div>
-                    <img src={q2} />          
+                    <img loading="lazy"  src={q2} />          
                     </div>
 
                     <div>
-                    <img src={q3} />        
+                    <img loading="lazy"  src={q3} />        
                     </div>
 
                     <div>
-                    <img src={q4} />                               
+                    <img loading="lazy"  src={q4} />                               
                     </div>
 
                     <div>
-                    <img src={q5} />                               
+                    <img loading="lazy"  src={q5} />                               
                     </div>
 
                     <div>
-                    <img src={q6} />                               
+                    <img loading="lazy"  src={q6} />                               
                     </div>
 
                     <div>
-                    <img src={q7} />                               
+                    <img loading="lazy"  src={q7} />                               
                     </div>
 
                     <div>
-                    <img src={q8} />                               
+                    <img loading="lazy"  src={q8} />                               
                     </div> 
 
                     <div>
-                    <img src={q9} />                               
+                    <img loading="lazy"  src={q9} />                               
                     </div>
 
                     <div>
-                    <img src={q10} />                               
+                    <img loading="lazy"  src={q10} />                               
                     </div>
 
                     <div>
-                    <img src={q11} />                               
+                    <img loading="lazy"  src={q11} />                               
                     </div>
 
                     <div>
-                    <img src={q12} />                               
+                    <img loading="lazy"  src={q12} />                               
                     </div>
 
                     <div>
-                    <img src={q13} />                               
+                    <img loading="lazy"  src={q13} />                               
                     </div>
             </Carousel>
             </div>

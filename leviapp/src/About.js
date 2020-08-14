@@ -173,7 +173,7 @@ class About extends Component {
             </div>
 
             <div className="right">
-            <img className="self" src={Photo} alt="Levi Appenfelder Photo" />
+            <img  className="self" src={Photo} alt="Levi Appenfelder Photo" />
             </div>
             </div>
             </section>
@@ -237,21 +237,21 @@ class About extends Component {
             <div className="right">
             <div className='tech-used'>
                 <div className='single-tech'>
-                <img src={DPSLogo} alt="DPS Logo" />
+                <img loading="lazy"  src={DPSLogo} alt="DPS Logo" />
                 </div>
                 <div className='single-tech'>
-                <img src={NCTILogo} alt="NCTI Logo" />
+                <img loading="lazy"  src={NCTILogo} alt="NCTI Logo" />
                 </div>
                 <div className='single-tech'>
-                <img src={AdaptecLogo} alt="Adaptec Prosthetics Logo" />
-                </div>
-
-                <div className='single-tech'>
-                <img src={RRCCLogo} alt="RRCC Logo" />
+                <img loading="lazy"  src={AdaptecLogo} alt="Adaptec Prosthetics Logo" />
                 </div>
 
                 <div className='single-tech'>
-                <img src={MSULogo} alt="MSU Logo" />
+                <img loading="lazy"  src={RRCCLogo} alt="RRCC Logo" />
+                </div>
+
+                <div className='single-tech'>
+                <img loading="lazy"  src={MSULogo} alt="MSU Logo" />
                 </div>
             </div>
             <div className='web-sec'>
@@ -316,15 +316,15 @@ class About extends Component {
             <div className="right">
             <div className='tech-used'>
                 <div className='single-tech'>
-                <img src={LambdaLogo} alt="Lambda School Logo" />
+                <img loading="lazy"  src={LambdaLogo} alt="Lambda School Logo" />
                 </div>
 
                 <div className='single-tech'>
-                <img src={MSULogo} alt="MSU Logo" />
+                <img loading="lazy"  src={MSULogo} alt="MSU Logo" />
                 </div>
 
                 <div className='single-tech'>
-                <img src={RRCCLogo} alt="RRCC Logo" />
+                <img loading="lazy"  src={RRCCLogo} alt="RRCC Logo" />
                 </div>
             </div>
             <div className='web-sec'>
@@ -389,15 +389,15 @@ class About extends Component {
             <div className="right">
             <div className='tech-used'>
                 <div className='single-tech'>
-                <img src={MSULogo} alt="MSU Logo" />
+                <img loading="lazy"  src={MSULogo} alt="MSU Logo" />
                 </div>
 
                 <div className='single-tech'>
-                <img src={RRCCLogo} alt="RRCC Logo" />
+                <img loading="lazy"  src={RRCCLogo} alt="RRCC Logo" />
                 </div>
 
                 <div className='single-tech'>
-                <img src={CAALogo} alt="CAA Logo" />
+                <img loading="lazy"  src={CAALogo} alt="CAA Logo" />
                 </div>
             </div>
             </div>
@@ -449,19 +449,19 @@ class About extends Component {
             <div className="right">
             <div className='tech-used'>
                 <div className='single-tech'>
-                <img src={UniqueBrain} alt="Brain" />
+                <img loading="lazy"  src={UniqueBrain} alt="Brain" />
                 </div>
 
                 <div className='single-tech'>
-                <img src={NumberSystem} alt="Ten Chicken" />
+                <img loading="lazy"  src={NumberSystem} alt="Ten Chicken" />
                 </div>
 
                 <div className='single-tech'>
-                <img src={German} alt="German Flag" />
+                <img loading="lazy"  src={German} alt="German Flag" />
                 </div>
 
                 <div className='single-tech'>
-                <img src={Chess} alt="Chess" />
+                <img loading="lazy"  src={Chess} alt="Chess" />
                 </div>
             </div>
             </div>
