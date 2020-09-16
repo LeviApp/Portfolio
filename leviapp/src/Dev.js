@@ -33,6 +33,7 @@ import TypeScriptLogo from './img/TypeScriptLogo.png'
 import SCSSLogo from './img/SCSSLogo.png'
 import MySQLLogo from './img/MySQLLogo.png'
 import PHPLogo from './img/PHPLogo.png'
+import OMDBLogo from './img/OMDBLogo.png'
 
 import LaravelLogo from './img/LaravelLogo.png'
 import BootstrapLogo from './img/BootstrapLogo.png'
@@ -49,6 +50,7 @@ import QuotesPage from './img/QuotesPage.png'
 import ReformPage from './img/ReformPage.png'
 import SchatzPage from './img/SchatzPage.png'
 import RomanRoofingPage from './img/RomanRoofingPage.png'
+import ShoppiesPage from './img/ShoppiesPage.png'
 
 
 class Dev extends Component {
@@ -343,7 +345,7 @@ class Dev extends Component {
               <div className="focus">
               <h4>❯❯ Frontend</h4>
               <h4>❯❯ Backend</h4>
-              <h4>❯❯ REST Functionality</h4>
+              <h4>❯❯ Restful API</h4>
               </div>
             <div className='tech-used'>
               <div className='single-tech'>
@@ -656,6 +658,71 @@ class Dev extends Component {
 
             <div className="right" id='schatz'>
             <img loading="lazy"  className='schatz-page' src={RomanRoofingPage} alt="Schatzinsel Front Page" />             
+            </div>
+            </div>
+            </section>
+
+            <section>
+            <h1 className="schatz">Shopify Shoppies</h1>
+            <div className="project">
+            <div className="left">
+            <Element className='start-section' name="schatz" >
+            <h2>❮❯ Shopify Challenge ❮❯</h2>
+            </Element>
+            <p>
+              The Shoppify Shoppies is a project that I built for Shopify. It was a challenge presented by Shopify itself as part of an application for an internship.
+              The Shoppies is an extended avenue of Shopify. They branched out to movie awards. For the Shoppies, I used Shopify's UI/UX design. Because
+              the Shoppies is a part of Shopify's business, it understandably would share the same design. I studied Shopify's color scheme, layout, and click effects
+              to include in this project. Allowing users to log in, this web application gives them an opportunity to nominate five of their favorite movies.
+              The frontend is completed with React. In order to simulate a backend, I am using local storage.
+              I am using the OMDb REST api for the search functionality.
+            </p>
+
+              <div className="focus">
+              <h4>❯❯ Restful API </h4>
+              <h4>❯❯ Authentication </h4>
+              <h4>❯❯ Responsive Design </h4>
+              </div>
+            <div className='tech-used' id='schatz-tech'>
+            <div className='single-tech'>
+              <img loading="lazy"  src={HTMLLogo} alt="HTML Logo" />
+              </div>
+
+              <div className='single-tech'>
+              <img loading="lazy"  src={SassLogo} alt="Angular Logo" />
+              </div>
+
+              <div className='single-tech'>
+              <img loading="lazy"  src={JavaScriptLogo} alt="JavaScript Logo" />
+              </div>
+
+              <div className='single-tech'>
+              <img loading="lazy"  src={ReactLogo} alt="TypeScript Logo" />
+              </div>
+
+              <div className='single-tech'>
+              <img loading="lazy"  src={Auth0Logo} alt="Auth0 Logo" />
+              </div>
+
+              <div className='single-tech'>
+              <img loading="lazy"  src={OMDBLogo} alt="Auth0 Logo" />
+              </div>
+            </div>
+            </div>
+
+            <div className="right" id='schatz'>
+            <img loading="lazy"  className='schatz-page' src={ShoppiesPage} alt="Shoppies Front Page" />
+            <div className='web-sec'>
+            <div className='web-group'>
+              <a className='web-link' href='https://shopify-shoppies.netlify.app/' target='_blank'>To Website</a>
+              <a className='web-arrow' href='https://shopify-shoppies.netlify.app/' target='_blank'>⟶</a>
+            </div>
+
+            <div className='web-group'>
+              <a className='web-link' href='https://github.com/LeviApp/FRAT' target='_blank'>To Repo</a>
+              <a className='web-arrow' href='https://github.com/LeviApp/FRAT' target='_blank'>⟶</a>
+            </div>
+            </div>             
             </div>
             </div>
             </section>
