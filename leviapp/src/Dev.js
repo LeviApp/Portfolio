@@ -710,7 +710,7 @@ class Dev extends Component {
             </div>
             </div>
 
-            <div className="right" id='shoppies'>
+            <div className="right" id='shoppies-right'>
             <img loading="lazy"  className='shoppies-page' src={ShoppiesPage} alt="Shoppies Front Page" />
             <div className='web-sec'>
             <div className='web-group'>
