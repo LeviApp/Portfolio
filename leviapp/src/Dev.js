@@ -338,13 +338,13 @@ class Dev extends Component {
                 Quotes 4 Life is a website that allows users to post
                 their favorite quotes from their heros. Users can add, edit,
                 and delete quotes. Users can add their own image url, or keep
-                the default one. This project focused on both frontend and backend
+                the default one. This project focused on both front-end and back-end
                 web principles.
               </p>
 
               <div className="focus">
-              <h4>❯❯ Frontend</h4>
-              <h4>❯❯ Backend</h4>
+              <h4>❯❯ Front End</h4>
+              <h4>❯❯ Back End</h4>
               <h4>❯❯ Restful API</h4>
               </div>
             <div className='tech-used'>
@@ -375,12 +375,12 @@ class Dev extends Component {
             </div>
 
             <div className='web-group'>
-              <a className='web-link' href='https://github.com/LeviApp/front-end-project-week' target='_blank'>To FrontEnd Repo</a>
+              <a className='web-link' href='https://github.com/LeviApp/front-end-project-week' target='_blank'>To Front-End Repo</a>
               <a className='web-arrow' href='https://github.com/LeviApp/front-end-project-week' target='_blank'>⟶</a>
             </div>
 
             <div className='web-group'>
-              <a className='web-link' href='https://github.com/LeviApp/back-end-project-week' target='_blank'>To BackEnd Repo</a>
+              <a className='web-link' href='https://github.com/LeviApp/back-end-project-week' target='_blank'>To Back-End Repo</a>
               <a className='web-arrow' href='https://github.com/LeviApp/back-end-project-week' target='_blank'>⟶</a>
             </div>
             </div>
@@ -542,7 +542,7 @@ class Dev extends Component {
 
               <div className="focus">
               <h4>❯❯ Blockchain </h4>
-              <h4>❯❯ Frontend </h4>
+              <h4>❯❯ Front End </h4>
               <h4>❯❯ Graphs </h4>
               </div>
             <div className='tech-used' id='schatz-tech'>
@@ -581,12 +581,12 @@ class Dev extends Component {
             </div>
 
             <div className='web-group'>
-              <a className='web-link' href='https://github.com/LeviApp/CS-Build-Week-2' target='_blank'>To FrontEnd Repo</a>
+              <a className='web-link' href='https://github.com/LeviApp/CS-Build-Week-2' target='_blank'>To Front-End Repo</a>
               <a className='web-arrow' href='https://github.com/LeviApp/CS-Build-Week-2' target='_blank'>⟶</a>
             </div>
 
             <div className='web-group'>
-              <a className='web-link' href='https://github.com/LeviApp/CSProject-Backend' target='_blank'>To BackEnd Repo</a>
+              <a className='web-link' href='https://github.com/LeviApp/CSProject-Backend' target='_blank'>To Back-End Repo</a>
               <a className='web-arrow' href='https://github.com/LeviApp/CSProject-Backend' target='_blank'>⟶</a>
             </div>
             </div>              
@@ -604,7 +604,7 @@ class Dev extends Component {
             <p>
               Roman Roofing is a project that I built to test my ability to learn new tech stacks. Using a real roofing company in Florida, I studied aspects of the company. I recognized a need that could be solved with a web application.
               Allowing users to log in, this simple web application allows them to create and delete roofing options to compare prices.
-              The frontend is completed with Angular, a framework that I am exploring. The backend is completed with Laravel and MySQL, a
+              The front end is completed with Angular, a framework that I am exploring. The back end is completed with Laravel and MySQL, a
               framework I learned from scratch. I implemented bootstrap in this web application. Currently, this project is private. 
             </p>
 
@@ -663,19 +663,19 @@ class Dev extends Component {
             </section>
 
             <section>
-            <h1 className="schatz">Shopify Shoppies</h1>
+            <h1 className="shoppies">Shopify Shoppies</h1>
             <div className="project">
             <div className="left">
             <Element className='start-section' name="schatz" >
             <h2>❮❯ Shopify Challenge ❮❯</h2>
             </Element>
             <p>
-              The Shoppify Shoppies is a project that I built for Shopify. It was a challenge presented by Shopify itself as part of an application for an internship.
-              The Shoppies is an extended avenue of Shopify. They branched out to movie awards. For the Shoppies, I used Shopify's UI/UX design. Because
-              the Shoppies is a part of Shopify's business, it understandably would share the same design. I studied Shopify's color scheme, layout, and click effects
-              to include in this project. Allowing users to log in, this web application gives them an opportunity to nominate five of their favorite movies.
-              The frontend is completed with React. In order to simulate a backend, I am using local storage.
-              I am using the OMDb REST api for the search functionality.
+              The Shopify Shoppies was a challenge presented by Shopify as part of an internship application.
+              Shopify branched out to movie awards, the Shoppies. Because
+              the Shoppies is a part of Shopify's business, it understandably would share the same design. I studied Shopify's color scheme, layout, and click effects.
+              Allowing users to log in, this web application gives them an opportunity to nominate five of their favorite movies.
+              The front end is completed with React. In order to simulate a back end, I am using local storage.
+              The OMDb REST api is used for the search functionality.
             </p>
 
               <div className="focus">
@@ -710,8 +710,8 @@ class Dev extends Component {
             </div>
             </div>
 
-            <div className="right" id='schatz'>
-            <img loading="lazy"  className='schatz-page' src={ShoppiesPage} alt="Shoppies Front Page" />
+            <div className="right" id='shoppies'>
+            <img loading="lazy"  className='shoppies-page' src={ShoppiesPage} alt="Shoppies Front Page" />
             <div className='web-sec'>
             <div className='web-group'>
               <a className='web-link' href='https://shopify-shoppies.netlify.app/' target='_blank'>To Website</a>
@@ -719,7 +719,7 @@ class Dev extends Component {
             </div>
 
             <div className='web-group'>
-              <a className='web-link' href='https://github.com/LeviApp/FRAT' target='_blank'>To Repo</a>
+              <a className='web-link' href='https://github.com/LeviApp/FRAT' target='_blank'>To Project Repo</a>
               <a className='web-arrow' href='https://github.com/LeviApp/FRAT' target='_blank'>⟶</a>
             </div>
             </div>             
