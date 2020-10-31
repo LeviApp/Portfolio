@@ -34,6 +34,8 @@ import SCSSLogo from './img/SCSSLogo.png'
 import MySQLLogo from './img/MySQLLogo.png'
 import PHPLogo from './img/PHPLogo.png'
 import OMDBLogo from './img/OMDBLogo.png'
+import NodeLogo from './img/NodeLogo.png'
+import DjangoLogo from './img/DjangoLogo.png'
 
 import LaravelLogo from './img/LaravelLogo.png'
 import BootstrapLogo from './img/BootstrapLogo.png'
@@ -336,7 +338,7 @@ class Dev extends Component {
 
               <p>
                 Quotes 4 Life is a website that allows users to post
-                their favorite quotes from their heros. Users can add, edit,
+                their favorite quotes from their heroes. Users can add, edit,
                 and delete quotes. Users can add their own image url, or keep
                 the default one. This project focused on both front-end and back-end
                 web principles.
@@ -362,6 +364,14 @@ class Dev extends Component {
 
               <div className='single-tech'>
               <img loading="lazy"  className='javascript' src={JavaScriptLogo} alt="JavaScript Logo" />
+              </div>
+
+              <div className='single-tech'>
+                  <img  loading="lazy" className='node' src={NodeLogo} alt="Postgres Logo" />
+              </div>
+
+              <div className='single-tech'>
+                  <img  loading="lazy" className='postgres' src={PostgresLogo} alt="Postgres Logo" />
               </div>
             </div>
             </div>
@@ -674,8 +684,9 @@ class Dev extends Component {
               Shopify branched out to movie awards, the Shoppies. Because
               the Shoppies is a part of Shopify's business, it understandably would share the same design. I studied Shopify's color scheme, layout, and click effects.
               Allowing users to log in, this web application gives them an opportunity to nominate five of their favorite movies.
-              The front end is completed with React. In order to simulate a back end, I am using local storage.
-              The OMDb REST api is used for the search functionality.
+              Additionally, users can discover the top five winners and the total nominations received.
+              The front end is completed with React. For the back end, I used the Django framework with a Postgres database.
+              The search functionality was implemented using the OMDb REST api.
             </p>
 
               <div className="focus">
@@ -689,7 +700,7 @@ class Dev extends Component {
               </div>
 
               <div className='single-tech'>
-              <img loading="lazy"  src={SassLogo} alt="Angular Logo" />
+              <img loading="lazy"  src={SassLogo} alt="Sass Logo" />
               </div>
 
               <div className='single-tech'>
@@ -697,7 +708,7 @@ class Dev extends Component {
               </div>
 
               <div className='single-tech'>
-              <img loading="lazy"  src={ReactLogo} alt="TypeScript Logo" />
+              <img loading="lazy"  src={ReactLogo} alt="React Logo" />
               </div>
 
               <div className='single-tech'>
@@ -705,7 +716,19 @@ class Dev extends Component {
               </div>
 
               <div className='single-tech'>
-              <img loading="lazy"  src={OMDBLogo} alt="Auth0 Logo" />
+              <img loading="lazy"  src={OMDBLogo} alt="OMDB Logo" />
+              </div>
+
+              <div className='single-tech'>
+              <img loading="lazy"  src={PythonLogo} alt="Python Logo" />
+              </div>
+
+              <div className='single-tech'>
+              <img loading="lazy"  src={DjangoLogo} alt="Django Logo" />
+              </div>
+
+              <div className='single-tech'>
+                  <img  className='postgres' src={PostgresLogo} alt="Postgres Logo" />
               </div>
             </div>
             </div>
