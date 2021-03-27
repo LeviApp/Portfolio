@@ -367,7 +367,7 @@ class Dev extends Component {
               </div>
 
               <div className='single-tech'>
-                  <img  loading="lazy" className='node' src={NodeLogo} alt="Postgres Logo" />
+                  <img  loading="lazy" className='node' src={DjangoLogo} alt="Django Logo" />
               </div>
 
               <div className='single-tech'>
@@ -380,18 +380,18 @@ class Dev extends Component {
             <img loading="lazy"  id="quotes-page" src={QuotesPage} alt="Quotes Front Page" />
             <div className='web-sec'>
             <div className='web-group'>
-              <a className='web-link' href='https://quotes-4-life.netlify.com/home' target='_blank'>To Website</a>
-              <a className='web-arrow' href='https://quotes-4-life.netlify.com/home' target='_blank'>⟶</a>
+              <a className='web-link' href='https://quotes4life.netlify.app/home' target='_blank'>To Website</a>
+              <a className='web-arrow' href='https://quotes4life.netlify.app/home' target='_blank'>⟶</a>
             </div>
 
             <div className='web-group'>
-              <a className='web-link' href='https://github.com/LeviApp/front-end-project-week' target='_blank'>To Front-End Repo</a>
-              <a className='web-arrow' href='https://github.com/LeviApp/front-end-project-week' target='_blank'>⟶</a>
+              <a className='web-link' href='https://github.com/LeviApp/Quotes4LifeFrontend' target='_blank'>To Front-End Repo</a>
+              <a className='web-arrow' href='https://github.com/LeviApp/Quotes4LifeFrontend' target='_blank'>⟶</a>
             </div>
 
             <div className='web-group'>
-              <a className='web-link' href='https://github.com/LeviApp/back-end-project-week' target='_blank'>To Back-End Repo</a>
-              <a className='web-arrow' href='https://github.com/LeviApp/back-end-project-week' target='_blank'>⟶</a>
+              <a className='web-link' href='https://github.com/LeviApp/QuotesDjango' target='_blank'>To Back-End Repo</a>
+              <a className='web-arrow' href='https://github.com/LeviApp/QuotesDjango' target='_blank'>⟶</a>
             </div>
             </div>
             </div>
