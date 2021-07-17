@@ -34,6 +34,8 @@ import SCSSLogo from './img/SCSSLogo.png'
 import MySQLLogo from './img/MySQLLogo.png'
 import PHPLogo from './img/PHPLogo.png'
 import OMDBLogo from './img/OMDBLogo.png'
+import CCLogo from './img/CCLogo.png'
+
 import NodeLogo from './img/NodeLogo.png'
 import DjangoLogo from './img/DjangoLogo.png'
 
@@ -53,6 +55,7 @@ import ReformPage from './img/ReformPage.png'
 import SchatzPage from './img/SchatzPage.png'
 import RomanRoofingPage from './img/RomanRoofingPage.png'
 import ShoppiesPage from './img/ShoppiesPage.png'
+import WSTQPage from './img/WSTQPage.png'
 
 
 class Dev extends Component {
@@ -187,6 +190,223 @@ class Dev extends Component {
             Schatzinsel
             </h2>
             </div> */}
+            <section>
+            <h1 className="shoppies">Shopify Shoppies</h1>
+            <div className="project">
+            <div className="left">
+            <Element className='start-section' name="schatz" >
+            <h2>❮❯ Shopify Challenge ❮❯</h2>
+            </Element>
+            <p>
+              The Shopify Shoppies was a challenge presented by Shopify as part of an internship application.
+              Shopify branched out to movie awards, the Shoppies. Because
+              the Shoppies is a part of Shopify's business, it understandably would share the same design. I studied Shopify's color scheme, layout, and click effects.
+              Allowing users to log in, this web application gives them an opportunity to nominate five of their favorite movies.
+              Additionally, users can discover the top five winners and the total nominations received.
+              <br />
+              <br />
+              Username: levij.app@gmail.com | Password: TestUser4444
+            </p>
+
+              <div className="focus">
+              <h4>❯❯ OMDb Search</h4>
+              <h4>❯❯ Authentication </h4>
+              <h4>❯❯ Restful API </h4>
+              </div>
+            <div className='tech-used' id='schatz-tech'>
+            <div className='single-tech'>
+              <img loading="lazy"  src={HTMLLogo} alt="HTML Logo" />
+              </div>
+
+              <div className='single-tech'>
+              <img loading="lazy"  src={SassLogo} alt="Sass Logo" />
+              </div>
+
+              <div className='single-tech'>
+              <img loading="lazy"  src={JavaScriptLogo} alt="JavaScript Logo" />
+              </div>
+
+              <div className='single-tech'>
+              <img loading="lazy"  src={ReactLogo} alt="React Logo" />
+              </div>
+
+              <div className='single-tech'>
+              <img loading="lazy"  src={Auth0Logo} alt="Auth0 Logo" />
+              </div>
+
+              <div className='single-tech'>
+              <img loading="lazy"  src={OMDBLogo} alt="OMDB Logo" />
+              </div>
+
+              <div className='single-tech'>
+              <img loading="lazy"  src={PythonLogo} alt="Python Logo" />
+              </div>
+
+              <div className='single-tech'>
+              <img loading="lazy"  src={DjangoLogo} alt="Django Logo" />
+              </div>
+
+              <div className='single-tech'>
+                  <img  className='postgres' src={PostgresLogo} alt="Postgres Logo" />
+              </div>
+            </div>
+            </div>
+
+            <div className="right" id='shoppies-right'>
+            <img loading="lazy"  className='shoppies-page' src={ShoppiesPage} alt="Shoppies Front Page" />
+            <div className='web-sec'>
+            <div className='web-group'>
+              <a className='web-link' href='https://shopify-shoppies.netlify.app/' target='_blank'>To Website</a>
+              <a className='web-arrow' href='https://shopify-shoppies.netlify.app/' target='_blank'>⟶</a>
+            </div>
+
+            <div className='web-group'>
+              <a className='web-link' href='https://github.com/LeviApp/Shoppies' target='_blank'>To Front-End Repo</a>
+              <a className='web-arrow' href='https://github.com/LeviApp/Shoppies' target='_blank'>⟶</a>
+            </div>
+
+            <div className='web-group'>
+              <a className='web-link' href='https://github.com/LeviApp/shoppiesbackend' target='_blank'>To Back-End Repo</a>
+              <a className='web-arrow' href='https://github.com/LeviApp/shoppiesbackend' target='_blank'>⟶</a>
+            </div>
+            </div>             
+            </div>
+            </div>
+            </section>
+
+            <section>
+            <h1 className="shoppies">Who Spoke The Quote?</h1>
+            <div className="project">
+            <div className="left">
+            <Element className='start-section' name="schatz" >
+            <h2>❮❯ Web Development ❮❯</h2>
+            </Element>
+            <p>
+              Who Spoke The Quote? is a quotes application focused on implementing React Hooks. Emphasis was also placed
+              on using component libraries, specifically, Carbon Components. Users can read, add, delete, and update famous quotes with images.
+              Responsive layout has also been included in the project.
+            </p>
+
+              <div className="focus">
+              <h4>❯❯ React Hooks </h4>
+              <h4>❯❯ Carbon Components </h4>
+              <h4>❯❯ Restful API </h4>
+              </div>
+            <div className='tech-used' id='schatz-tech'>
+            <div className='single-tech'>
+              <img loading="lazy"  src={HTMLLogo} alt="HTML Logo" />
+              </div>
+
+              <div className='single-tech'>
+              <img loading="lazy"  src={SCSSLogo} alt="SCSS Logo" />
+              </div>
+
+              <div className='single-tech'>
+              <img loading="lazy"  src={JavaScriptLogo} alt="JavaScript Logo" />
+              </div>
+
+              <div className='single-tech'>
+              <img loading="lazy"  src={ReactLogo} alt="React Logo" />
+              </div>
+
+              <div className='single-tech'>
+              <img loading="lazy"  src={CCLogo} alt="Carbon Components Logo" />
+              </div>
+
+              <div className='single-tech'>
+              <img loading="lazy"  src={OMDBLogo} alt="OMDB Logo" />
+              </div>
+
+              <div className='single-tech'>
+              <img loading="lazy"  src={PythonLogo} alt="Python Logo" />
+              </div>
+
+              <div className='single-tech'>
+              <img loading="lazy"  src={DjangoLogo} alt="Django Logo" />
+              </div>
+
+              <div className='single-tech'>
+                  <img  className='postgres' src={PostgresLogo} alt="Postgres Logo" />
+              </div>
+            </div>
+            </div>
+
+            <div className="right" id='shoppies-right'>
+            <img loading="lazy"  className='shoppies-page' src={WSTQPage} alt="Who Spoke The Quote Front Page" />
+            <div className='web-sec'>
+            <div className='web-group'>
+              <a className='web-link' href='https://who-spoke-the-quote.netlify.app/' target='_blank'>To Website</a>
+              <a className='web-arrow' href='https://who-spoke-the-quote.netlify.app/' target='_blank'>⟶</a>
+            </div>
+
+            <div className='web-group'>
+              <a className='web-link' href='https://github.com/LeviApp/WhoSpokeTheQuote' target='_blank'>To Front-End Repo</a>
+              <a className='web-arrow' href='https://github.com/LeviApp/WhoSpokeTheQuote' target='_blank'>⟶</a>
+            </div>
+
+            <div className='web-group'>
+              <a className='web-link' href='https://github.com/LeviApp/QuotesDjango' target='_blank'>To Back-End Repo</a>
+              <a className='web-arrow' href='https://github.com/LeviApp/QuotesDjango' target='_blank'>⟶</a>
+            </div>
+            </div>             
+            </div>
+            </div>
+            </section>
+
+            <section>
+            <h1 className="ARCH">Reform in Dust Storms</h1>
+            <div className='project' id='rids'>
+            <div className='left'>
+            <Element className='start-section' name="reform" >
+            <h2> ❮❯ Responsive Behavior ❮❯ </h2>
+            </Element>
+            <p>Reform in Dust Storms is a website that gives the instructions for a detective game. Set in Old West Colorado, the player must discover who committed the crime, the weapon that was used, and the place of the crime.  The website
+              consists of four main pages. The home page gives an overview of the entire game. There are three other pages that provide more details about the suspect, weapon, and place.
+              This project focuses on responsive design principles of websites. The game itself has not been created yet.</p>
+
+              <div className="focus">
+              <h4>❯❯ Responsive Design</h4>
+              <h4>❯❯ Angular App</h4>
+              </div>
+              <div className='tech-used'>
+              <div className='single-tech'>
+              <img loading="lazy"  src={HTMLLogo} alt="HTML Logo" />
+              </div>
+
+              <div className='single-tech'>
+              <img loading="lazy"  src={AngularLogo} alt="Angular Logo" />
+              </div>
+
+              <div className='single-tech'>
+              <img loading="lazy"  src={JavaScriptLogo} alt="JavaScript Logo" />
+              </div>
+
+              <div className='single-tech'>
+              <img loading="lazy"  src={TypeScriptLogo} alt="TypeScript Logo" />
+              </div>
+
+              <div className='single-tech'>
+              <img loading="lazy"  src={SCSSLogo} alt="SCSSLogo Logo" />
+              </div>
+            </div>
+            </div>
+            <div className='right'>
+            <img loading="lazy"  id='reform' src={ReformPage} alt="Reform in Dust Storms Front Page" />
+            <div className='web-sec'>
+            <div className='web-group'>
+              <a className='web-link' href='https://reforminduststorms.netlify.com/' target='_blank'>To Website</a>
+              <a className='web-arrow' href='https://reforminduststorms.netlify.com/' target='_blank'>⟶</a>
+            </div>
+
+            <div className='web-group'>
+              <a className='web-link' href='https://github.com/LeviApp/User-Interface-Project-Week' target='_blank'>To Project Repo</a>
+              <a className='web-arrow' href='https://github.com/LeviApp/User-Interface-Project-Week' target='_blank'>⟶</a>
+            </div>
+            </div>
+            </div>
+            </div>
+            </section>
+
             <section>
             <h1 className="TRACTION"> Traction </h1>
 
@@ -367,7 +587,7 @@ class Dev extends Component {
               </div>
 
               <div className='single-tech'>
-                  <img  loading="lazy" className='node' src={DjangoLogo} alt="Django Logo" />
+                  <img  loading="lazy" className='node' src={NodeLogo} alt="NodeJS Logo" />
               </div>
 
               <div className='single-tech'>
@@ -392,60 +612,6 @@ class Dev extends Component {
             <div className='web-group'>
               <a className='web-link' href='https://github.com/LeviApp/QuotesDjango' target='_blank'>To Back-End Repo</a>
               <a className='web-arrow' href='https://github.com/LeviApp/QuotesDjango' target='_blank'>⟶</a>
-            </div>
-            </div>
-            </div>
-            </div>
-            </section>
-
-            <section>
-            <h1 className="ARCH">Reform in Dust Storms</h1>
-            <div className='project' id='rids'>
-            <div className='left'>
-            <Element className='start-section' name="reform" >
-            <h2> ❮❯ Responsive Behavior ❮❯ </h2>
-            </Element>
-            <p>Reform in Dust Storms is a website that gives the instructions for a detective game. Set in Old West Colorado, the player must discover who committed the crime, the weapon that was used, and the place of the crime.  The website
-              consists of four main pages. The home page gives an overview of the entire game. There are three other pages that provide more details about the suspect, weapon, and place.
-              This project focuses on responsive design principles of websites. The game itself has not been created yet.</p>
-
-              <div className="focus">
-              <h4>❯❯ Responsive Design</h4>
-              <h4>❯❯ Angular App</h4>
-              </div>
-              <div className='tech-used'>
-              <div className='single-tech'>
-              <img loading="lazy"  src={HTMLLogo} alt="HTML Logo" />
-              </div>
-
-              <div className='single-tech'>
-              <img loading="lazy"  src={AngularLogo} alt="Angular Logo" />
-              </div>
-
-              <div className='single-tech'>
-              <img loading="lazy"  src={JavaScriptLogo} alt="JavaScript Logo" />
-              </div>
-
-              <div className='single-tech'>
-              <img loading="lazy"  src={TypeScriptLogo} alt="TypeScript Logo" />
-              </div>
-
-              <div className='single-tech'>
-              <img loading="lazy"  src={SCSSLogo} alt="SCSSLogo Logo" />
-              </div>
-            </div>
-            </div>
-            <div className='right'>
-            <img loading="lazy"  id='reform' src={ReformPage} alt="Reform in Dust Storms Front Page" />
-            <div className='web-sec'>
-            <div className='web-group'>
-              <a className='web-link' href='https://reforminduststorms.netlify.com/' target='_blank'>To Website</a>
-              <a className='web-arrow' href='https://reforminduststorms.netlify.com/' target='_blank'>⟶</a>
-            </div>
-
-            <div className='web-group'>
-              <a className='web-link' href='https://github.com/LeviApp/User-Interface-Project-Week' target='_blank'>To Project Repo</a>
-              <a className='web-arrow' href='https://github.com/LeviApp/User-Interface-Project-Week' target='_blank'>⟶</a>
             </div>
             </div>
             </div>
@@ -668,84 +834,6 @@ class Dev extends Component {
 
             <div className="right" id='schatz'>
             <img loading="lazy"  className='schatz-page' src={RomanRoofingPage} alt="Schatzinsel Front Page" />             
-            </div>
-            </div>
-            </section>
-
-            <section>
-            <h1 className="shoppies">Shopify Shoppies</h1>
-            <div className="project">
-            <div className="left">
-            <Element className='start-section' name="schatz" >
-            <h2>❮❯ Shopify Challenge ❮❯</h2>
-            </Element>
-            <p>
-              The Shopify Shoppies was a challenge presented by Shopify as part of an internship application.
-              Shopify branched out to movie awards, the Shoppies. Because
-              the Shoppies is a part of Shopify's business, it understandably would share the same design. I studied Shopify's color scheme, layout, and click effects.
-              Allowing users to log in, this web application gives them an opportunity to nominate five of their favorite movies.
-              Additionally, users can discover the top five winners and the total nominations received.
-              The front end is completed with React. For the back end, I used the Django framework with a Postgres database.
-              The search functionality was implemented using the OMDb REST api.
-            </p>
-
-              <div className="focus">
-              <h4>❯❯ Restful API </h4>
-              <h4>❯❯ Authentication </h4>
-              <h4>❯❯ Responsive Design </h4>
-              </div>
-            <div className='tech-used' id='schatz-tech'>
-            <div className='single-tech'>
-              <img loading="lazy"  src={HTMLLogo} alt="HTML Logo" />
-              </div>
-
-              <div className='single-tech'>
-              <img loading="lazy"  src={SassLogo} alt="Sass Logo" />
-              </div>
-
-              <div className='single-tech'>
-              <img loading="lazy"  src={JavaScriptLogo} alt="JavaScript Logo" />
-              </div>
-
-              <div className='single-tech'>
-              <img loading="lazy"  src={ReactLogo} alt="React Logo" />
-              </div>
-
-              <div className='single-tech'>
-              <img loading="lazy"  src={Auth0Logo} alt="Auth0 Logo" />
-              </div>
-
-              <div className='single-tech'>
-              <img loading="lazy"  src={OMDBLogo} alt="OMDB Logo" />
-              </div>
-
-              <div className='single-tech'>
-              <img loading="lazy"  src={PythonLogo} alt="Python Logo" />
-              </div>
-
-              <div className='single-tech'>
-              <img loading="lazy"  src={DjangoLogo} alt="Django Logo" />
-              </div>
-
-              <div className='single-tech'>
-                  <img  className='postgres' src={PostgresLogo} alt="Postgres Logo" />
-              </div>
-            </div>
-            </div>
-
-            <div className="right" id='shoppies-right'>
-            <img loading="lazy"  className='shoppies-page' src={ShoppiesPage} alt="Shoppies Front Page" />
-            <div className='web-sec'>
-            <div className='web-group'>
-              <a className='web-link' href='https://shopify-shoppies.netlify.app/' target='_blank'>To Website</a>
-              <a className='web-arrow' href='https://shopify-shoppies.netlify.app/' target='_blank'>⟶</a>
-            </div>
-
-            <div className='web-group'>
-              <a className='web-link' href='https://github.com/LeviApp/FRAT' target='_blank'>To Project Repo</a>
-              <a className='web-arrow' href='https://github.com/LeviApp/FRAT' target='_blank'>⟶</a>
-            </div>
-            </div>             
             </div>
             </div>
             </section>
