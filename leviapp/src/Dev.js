@@ -35,6 +35,8 @@ import MySQLLogo from './img/MySQLLogo.png'
 import PHPLogo from './img/PHPLogo.png'
 import OMDBLogo from './img/OMDBLogo.png'
 import CCLogo from './img/CCLogo.png'
+import FirebaseLogo from './img/FirebaseLogo.png'
+import LeafletLogo from './img/LeafletLogo.png'
 
 import NodeLogo from './img/NodeLogo.png'
 import DjangoLogo from './img/DjangoLogo.png'
@@ -56,7 +58,7 @@ import SchatzPage from './img/SchatzPage.png'
 import RomanRoofingPage from './img/RomanRoofingPage.png'
 import ShoppiesPage from './img/ShoppiesPage.png'
 import WSTQPage from './img/WSTQPage.png'
-
+import ExcessMaterialPage from './img/ExcessMaterialPage.png'
 
 class Dev extends Component {
 
@@ -190,6 +192,85 @@ class Dev extends Component {
             Schatzinsel
             </h2>
             </div> */}
+            <section>
+            <h1 className="shoppies">Excess Material</h1>
+            <div className="project">
+            <div className="left">
+            <Element className='start-section' name="schatz" >
+            <h2>❮❯ Online Marketplace ❮❯</h2>
+            </Element>
+            <p>
+            Excess Material is an Angular website currently in progress. When completed, it will allow buyers and sellers to interact in an online marketplace.
+            The project includes a Django backend which allows users to add, delete, and update posts. The backend also includes search and sorting features.
+            Form functionality is included, allowing emails to be sent to proper individuals. Furthermore, Firebase is also used to support image upload.  
+
+              <br />
+              <br />
+              Username: levij.app@gmail.com | Password: TestUser4444!
+            </p>
+
+              <div className="focus">
+              <h4>❯❯ Form</h4>
+              <h4>❯❯ Image Storage</h4>
+              <h4>❯❯ Email</h4>
+              <h4>❯❯ Map</h4>
+
+              </div>
+            <div className='tech-used' id='schatz-tech'>
+            <div className='single-tech'>
+              <img loading="lazy"  src={HTMLLogo} alt="HTML Logo" />
+              </div>
+
+              <div className='single-tech'>
+              <img loading="lazy"  src={SassLogo} alt="Sass Logo" />
+              </div>
+
+              <div className='single-tech'>
+              <img loading="lazy"  src={TypeScriptLogo} alt="React Logo" />
+              </div>
+
+              <div className='single-tech'>
+              <img loading="lazy"  src={AngularLogo} alt="React Logo" />
+              </div>
+
+              <div className='single-tech'>
+              <img loading="lazy"  src={Auth0Logo} alt="Auth0 Logo" />
+              </div>
+
+              <div className='single-tech'>
+              <img loading="lazy"  src={FirebaseLogo} alt="OMDB Logo" />
+              </div>
+
+              <div className='single-tech'>
+              <img loading="lazy"  src={LeafletLogo} alt="JavaScript Logo" />
+              </div>
+
+              <div className='single-tech'>
+              <img loading="lazy"  src={PythonLogo} alt="Python Logo" />
+              </div>
+
+              <div className='single-tech'>
+              <img loading="lazy"  src={DjangoLogo} alt="Django Logo" />
+              </div>
+
+              <div className='single-tech'>
+                  <img  className='postgres' src={PostgresLogo} alt="Postgres Logo" />
+              </div>
+            </div>
+            </div>
+
+            <div className="right" id='shoppies-right'>
+            <img loading="lazy"  className='shoppies-page' src={ExcessMaterialPage} alt="Shoppies Front Page" />
+            <div className='web-sec'>
+            <div className='web-group'>
+              <a className='web-link' href='https://excess-material.netlify.app/' target='_blank'>To Website</a>
+              <a className='web-arrow' href='https://excess-material.netlify.app/' target='_blank'>⟶</a>
+            </div>
+            </div>             
+            </div>
+            </div>
+            </section>
+
             <section>
             <h1 className="shoppies">Shopify Shoppies</h1>
             <div className="project">
