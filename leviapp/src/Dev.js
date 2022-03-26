@@ -28,6 +28,7 @@ import p5Logo from './img/p5Logo.png'
 import PythonLogo from './img/PythonLogo.png'
 import PygameLogo from './img/PygameLogo.png'
 import LESSLogo from './img/LESSLogo.png'
+import VueLogo from './img/VueLogo.png'
 import AngularLogo from './img/AngularLogo.png'
 import TypeScriptLogo from './img/TypeScriptLogo.png'
 import SCSSLogo from './img/SCSSLogo.png'
@@ -51,6 +52,7 @@ import Mapped from './img/mapped-event.png'
 
 import Checkbox from './Checkbox.jsx'
 
+import AnagramPage from './img/AnagramScramPage.png'
 import TractionPage from './img/TractionPage.png'
 import QuotesPage from './img/QuotesPage.png'
 import ReformPage from './img/ReformPage.png'
@@ -430,6 +432,61 @@ class Dev extends Component {
               <a className='web-arrow' href='https://github.com/LeviApp/QuotesDjango' target='_blank'>⟶</a>
             </div>
             </div>             
+            </div>
+            </div>
+            </section>
+
+            <section>
+            <h1 className="ARCH">Anagram Scram</h1>
+            <div className='project' id='rids'>
+            <div className='left'>
+            <Element className='start-section' name="reform" >
+            <h2> ❮❯ Game Development ❮❯ </h2>
+            </Element>
+            <p>AnagramScram is a word game using the Vue framework. This game takes users through increasingly more difficult animal words they must unscramble. The website includes ten levels and rewards bonus time based on the current score.
+              The game includes javascript functionality that allows a player to see the correct and incorrect letters.
+              It also provides a player the option to only reset incorrect letters. If a user guesses incorrectly or runs down the clock ten times, it is game over!
+              The application uses local storage for persistent data.
+              Responsive design is also implemented.</p>
+              <div className="focus">
+              <h4>❯❯ Responsive Design</h4>
+              <h4>❯❯ Vue App</h4>
+              </div>
+              <div className='tech-used'>
+              <div className='single-tech'>
+              <img loading="lazy"  src={VueLogo} alt="Vue Logo" />
+              </div>
+
+              <div className='single-tech'>
+              <img loading="lazy"  src={HTMLLogo} alt="HTML Logo" />
+              </div>
+
+              <div className='single-tech'>
+              <img loading="lazy"  src={JavaScriptLogo} alt="JavaScript Logo" />
+              </div>
+
+              <div className='single-tech'>
+              <img loading="lazy"  src={CSSLogo} alt="CSS Logo" />
+              </div>
+
+              <div className='single-tech'>
+              <img loading="lazy"  src={SCSSLogo} alt="SCSSLogo Logo" />
+              </div>
+            </div>
+            </div>
+            <div className='right'>
+            <img loading="lazy"  id='reform' src={AnagramPage} alt="Reform in Dust Storms Front Page" />
+            <div className='web-sec'>
+            <div className='web-group'>
+              <a className='web-link' href='https://anagramscram.netlify.app/' target='_blank'>To Website</a>
+              <a className='web-arrow' href='https://anagramscram.netlify.app/' target='_blank'>⟶</a>
+            </div>
+
+            <div className='web-group'>
+              <a className='web-link' href='https://github.com/LeviApp/AnagramScram' target='_blank'>To Project Repo</a>
+              <a className='web-arrow' href='https://github.com/LeviApp/AnagramScram' target='_blank'>⟶</a>
+            </div>
+            </div>
             </div>
             </div>
             </section>
