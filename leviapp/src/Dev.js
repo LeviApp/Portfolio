@@ -38,6 +38,10 @@ import OMDBLogo from './img/OMDBLogo.png'
 import CCLogo from './img/CCLogo.png'
 import FirebaseLogo from './img/FirebaseLogo.png'
 import LeafletLogo from './img/LeafletLogo.png'
+import EmberLogo from './img/EmberLogo.png'
+import HandlebarsLogo from './img/HandlebarsLogo.png'
+import CSharpLogo from './img/CSharpLogo.png'
+import DotNetLogo from './img/DotNetLogo.png'
 
 import NodeLogo from './img/NodeLogo.png'
 import DjangoLogo from './img/DjangoLogo.png'
@@ -53,6 +57,7 @@ import Mapped from './img/mapped-event.png'
 import Checkbox from './Checkbox.jsx'
 
 import AnagramPage from './img/AnagramScramPage.png'
+import RexPage from './img/RegExRexPage.png'
 import TractionPage from './img/TractionPage.png'
 import QuotesPage from './img/QuotesPage.png'
 import ReformPage from './img/ReformPage.png'
@@ -437,6 +442,78 @@ class Dev extends Component {
             </section>
 
             <section>
+            <h1 className="ARCH">RegEx Rex</h1>
+            <div className='project' id='rids'>
+            <div className='left'>
+            <Element className='start-section' name="reform" >
+            <h2> ❮❯ E-Learning App ❮❯ </h2>
+            </Element>
+            <p>RegEx Rex is a project that focuses on teaching regular expressions.
+              There is a sandbox where users can explore regular expressions. Furthermore, there is a section dedicated to teaching lessons.
+              Each lesson comes with a mini challenge. Once a student passes all thirty-five lessons, they can return to any lesson.
+              If a student gets stuck, they can look at the reference sheet.
+              In addition to the Front End, RegEx Rex also includes a localized Back End using .NET Core. PostgreSQL is also implemented.</p>
+              <div className="focus">
+              <h4>❯❯ Local Storage</h4>
+              <h4>❯❯ Ember App</h4>
+              </div>
+              <div className='tech-used'>
+              <div className='single-tech'>
+              <img loading="lazy"  src={EmberLogo} alt="Ember Logo" />
+              </div>
+
+              <div className='single-tech'>
+              <img loading="lazy"  src={HandlebarsLogo} alt="Handlebars Logo" />
+              </div>
+
+              <div className='single-tech'>
+              <img loading="lazy"  src={HTMLLogo} alt="HTML Logo" />
+              </div>
+
+              <div className='single-tech'>
+              <img loading="lazy"  src={JavaScriptLogo} alt="JavaScript Logo" />
+              </div>
+
+              <div className='single-tech'>
+              <img loading="lazy"  src={SassLogo} alt="CSS Logo" />
+              </div>
+
+              <div className='single-tech'>
+              <img loading="lazy"  src={CSharpLogo} alt="CSS Logo" />
+              </div>
+
+              <div className='single-tech'>
+              <img loading="lazy"  src={DotNetLogo} alt="CSS Logo" />
+              </div>
+
+              <div className='single-tech'>
+              <img loading="lazy"  src={PostgresLogo} alt="CSS Logo" />
+              </div>
+            </div>
+            </div>
+            <div className='right'>
+            <img loading="lazy"  id='reform' src={RexPage} alt="Reform in Dust Storms Front Page" />
+            <div className='web-sec'>
+            <div className='web-group'>
+              <a className='web-link' href='https://regexrex.netlify.app/' target='_blank'>To Website</a>
+              <a className='web-arrow' href='https://regexrex.netlify.app/' target='_blank'>⟶</a>
+            </div>
+
+            <div className='web-group'>
+              <a className='web-link' href='https://github.com/LeviApp/RegExRex' target='_blank'>To Front-End Repo</a>
+              <a className='web-arrow' href='https://github.com/LeviApp/RegExRex' target='_blank'>⟶</a>
+            </div>
+
+            <div className='web-group'>
+              <a className='web-link' href='https://github.com/LeviApp/RexBackend' target='_blank'>To Back-End Repo</a>
+              <a className='web-arrow' href='https://github.com/LeviApp/RexBackend' target='_blank'>⟶</a>
+            </div>
+            </div>
+            </div>
+            </div>
+            </section>
+
+            <section>
             <h1 className="ARCH">Anagram Scram</h1>
             <div className='project' id='rids'>
             <div className='left'>
@@ -449,7 +526,7 @@ class Dev extends Component {
               The application uses local storage for persistent data.
               Responsive design is also implemented.</p>
               <div className="focus">
-              <h4>❯❯ Responsive Design</h4>
+              <h4>❯❯ Local Storage</h4>
               <h4>❯❯ Vue App</h4>
               </div>
               <div className='tech-used'>
@@ -467,10 +544,6 @@ class Dev extends Component {
 
               <div className='single-tech'>
               <img loading="lazy"  src={CSSLogo} alt="CSS Logo" />
-              </div>
-
-              <div className='single-tech'>
-              <img loading="lazy"  src={SCSSLogo} alt="SCSSLogo Logo" />
               </div>
             </div>
             </div>
