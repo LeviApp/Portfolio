@@ -66,6 +66,7 @@ import RomanRoofingPage from './img/RomanRoofingPage.png'
 import ShoppiesPage from './img/ShoppiesPage.png'
 import WSTQPage from './img/WSTQPage.png'
 import ExcessMaterialPage from './img/ExcessMaterialPage.png'
+import EngrainPage from './img/EngrainPage.png'
 
 class Dev extends Component {
 
@@ -618,6 +619,8 @@ class Dev extends Component {
             </div>
             </section>
 
+
+
             <section>
             <h1 className="TRACTION"> Traction </h1>
 
@@ -758,6 +761,8 @@ class Dev extends Component {
             </div>
             </div>   
             </section>
+
+
             
             <section>
             <h1 className="QUOTES"> Quotes 4 Life </h1>
@@ -824,6 +829,76 @@ class Dev extends Component {
               <a className='web-link' href='https://github.com/LeviApp/QuotesDjango' target='_blank'>To Back-End Repo</a>
               <a className='web-arrow' href='https://github.com/LeviApp/QuotesDjango' target='_blank'>⟶</a>
             </div>
+            </div>
+            </div>
+            </div>
+            </section>
+
+            <section>
+            <h1 className="ARCH">Engrain</h1>
+            <div className='project' id='engrain'>
+            <div className='left'>
+            <Element className='start-section' name="reform" >
+            <h2> ❮❯ PHP Data Manipulation ❮❯ </h2>
+            </Element>
+            <p>
+              Engrain is a project built with an Angular front end and a Laravel back end. Though this application is
+              simple, it allows a user to view house units sorted by unit number. From a dropdown, the user can choose the amount of data to view at a time.
+              Furthermore, a user can explore different pages of data. The back end consists of api calls to another source, manipulating
+              it, then returning the transformed data.
+            </p>
+
+              <div className="focus">
+              <h4>❯❯ Data Transformation</h4>
+              <h4>❯❯ Mobile-First Design</h4>
+              </div>
+              <div className='tech-used'>
+              <div className='single-tech'>
+              <img loading="lazy"  src={LaravelLogo} alt="PHP Logo" />
+              </div>
+              <div className='single-tech'>
+              <img loading="lazy"  src={PHPLogo} alt="PHP Logo" />
+              </div>
+
+              <div className='single-tech'>
+              <img loading="lazy"  src={HTMLLogo} alt="HTML Logo" />
+              </div>
+
+              <div className='single-tech'>
+              <img loading="lazy"  src={AngularLogo} alt="Angular Logo" />
+              </div>
+
+              <div className='single-tech'>
+              <img loading="lazy"  src={JavaScriptLogo} alt="JavaScript Logo" />
+              </div>
+
+              <div className='single-tech'>
+              <img loading="lazy"  src={TypeScriptLogo} alt="TypeScript Logo" />
+              </div>
+
+              <div className='single-tech'>
+              <img loading="lazy"  src={SassLogo} alt="SCSSLogo Logo" />
+              </div>
+            </div>
+            </div>
+            <div className='right'>
+            <img loading="lazy"  id='reform' src={EngrainPage} alt="Reform in Dust Storms Front Page" />
+            <div className='web-sec'>
+            <div className='web-group'>
+              <a className='web-link' href='https://engrain-unify.vercel.app/' target='_blank'>To Website</a>
+              <a className='web-arrow' href='https://engrain-unify.vercel.app/' target='_blank'>⟶</a>
+            </div>
+
+            <div className='web-group'>
+              <a className='web-link' href='https://github.com/LeviApp/EngrainUnify' target='_blank'>To Front-End Repo</a>
+              <a className='web-arrow' href='https://github.com/LeviApp/EngrainUnify' target='_blank'>⟶</a>
+            </div>
+
+            <div className='web-group'>
+              <a className='web-link' href='https://github.com/LeviApp/EngrainUnifyApi' target='_blank'>To Back-End Repo</a>
+              <a className='web-arrow' href='https://github.com/LeviApp/EngrainUnifyApi' target='_blank'>⟶</a>
+            </div>
+
             </div>
             </div>
             </div>
