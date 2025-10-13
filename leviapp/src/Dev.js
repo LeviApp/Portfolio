@@ -65,6 +65,8 @@ import SchatzPage from './img/SchatzPage.png'
 import RomanRoofingPage from './img/RomanRoofingPage.png'
 import ShoppiesPage from './img/ShoppiesPage.png'
 import WSTQPage from './img/WSTQPage.png'
+import ConwaysPage from './img/ConwaysPage.png'
+
 import ExcessMaterialPage from './img/ExcessMaterialPage.png'
 import EngrainPage from './img/EngrainPage.png'
 
@@ -904,12 +906,117 @@ class Dev extends Component {
             </div>
             </section> */}
 
+<section>
+            <h1 className="automata">Conway's Way</h1>
+            <div className='project'>
+            <div className='left'>
+            <Element className='start-section' name="automaton" >
+            <h2> ❮❯ Interactive Automata ❮❯ </h2>
+            </Element>
+            <p>
+              Conway's Way is a project that implements Computer Science's topic of Cellular Automata. It
+              takes the rules of Conway's Game of Life and presents it in a visual manner.
+            </p>
+            <div className='automaton-focus'>
+              <h4>❯❯ Grid Size</h4>  
+              <p>
+              ❯ Changes the starting number of cells
+              </p>
+            </div>
+
+            <div className='automaton-focus'>
+              <h4>❯❯ Density</h4>  
+              <p>
+              ❯ Changes the starting density of the cells 
+              </p>
+            </div>
+
+            <div className='automaton-focus'>
+              <h4>❯❯ Speed </h4>  
+              <p>
+              ❯ Changes the speed of the animation
+              </p>
+            </div>
+
+            <div className='automaton-focus'>
+              <h4>❯❯ Off Color </h4>  
+              <p>
+              ❯ Changes the color of the cells when they are off
+              </p>
+            </div>
+
+            <div className='automaton-focus'>
+              <h4>❯❯ On Color </h4>  
+              <p>
+              ❯ Changes the color of the cells when they are on
+              </p>
+            </div>
+
+            <div className='automaton-focus'>
+              <h4>❯❯ Randomize</h4>  
+              <p>
+              ❯ Changes the starting pattern of the animation
+              </p>
+            </div>
+
+            <div className='automaton-focus'>
+              <h4>❯❯ Rewind </h4>  
+              <p>
+              ❯ Reverses the animation
+              </p>
+            </div>
+
+            <div className='automaton-focus'>
+              <h4>❯❯ Loop </h4>  
+              <p>
+              ❯ Keeps animation going
+              </p>
+            </div>
+
+            <div className='automaton-focus'>
+              <h4>❯❯ Pause</h4>  
+              <p>
+              ❯ Plays or pauses the animation
+              </p>
+            </div>
+
+            <div className='automaton-focus'>
+              <h4>❯❯ Edit </h4>  
+              <p>
+              ❯ Customizes the starting pattern of the animation
+              </p>
+            </div>
+
+            <div className='tech-used'>
+              <div className='single-tech'>
+              <img loading="lazy"  src={ReactLogo} alt="React Logo" />
+              </div>
+            </div>
+            </div>
+            <div className='right' id='auto'>
+            <img loading="lazy"  id="conways-page" src={ConwaysPage} alt="Quotes Front Page" />
+            <div className='web-sec'>
+            <div className='web-group'>
+              <a className='web-link' href='https://conways-way.netlify.app/' target='_blank'>To Website</a>
+              <a className='web-arrow' href='https://conways-way.netlify.app/' target='_blank'>⟶</a>
+            </div>
+
+            <div className='web-group'>
+              <a className='web-link' href='https://github.com/LeviApp/ConwaysWay' target='_blank'>To Project Repo</a>
+              <a className='web-arrow' href='https://github.com/LeviApp/ConwaysWay' target='_blank'>⟶</a>
+            </div>
+            </div>
+            </div>
+            </div>
+            </section>
+
+
             <section>
             <h1 className="automata">Automaton</h1>
             <div className='project'>
             <div className='left'>
             <Element className='start-section' name="automaton" >
-            <h2> ❮❯ Conway's Game ❮❯ </h2>
+            <h2> ❮❯ Python-built Automata ❮❯ </h2>
             </Element>
             <p>
               Automaton is a project that implements Computer Science's topic of Cellular Automata. Automaton
