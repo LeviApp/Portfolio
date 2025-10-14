@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './SASS/App.sass';
 import './SASS/Dev.sass';
-import { Link, DirectLink, Element , Events, animateScroll, scrollSpy, scroller } from 'react-scroll'
+import { Link, DirectLink, Element, Events, animateScroll, scrollSpy, scroller } from 'react-scroll'
 
 import TractionDraft0 from './svg/traction-stage0.svg'
 import TractionDraft00 from './svg/traction-stage00.svg'
@@ -72,113 +72,113 @@ import EngrainPage from './img/EngrainPage.png'
 
 class Dev extends Component {
 
-    state = {
+  state = {
 
-    }
+  }
 
-    componentDidMount() {
-      // window.addEventListener("scroll", this.scrollStatus)
-    }
-    
-//     scrollTo(element, offset) {
-//         scroller.scrollTo(element, {
-//           duration: 800,
-//           delay: 0,
-//           smooth: 'easeInOutQuart',
-//           offset: offset
-//         })
-//       }
+  componentDidMount() {
+    // window.addEventListener("scroll", this.scrollStatus)
+  }
 
-//     scrolled = event => {
-//         window.addEventListener("scroll", this.scrollStatus)
-//     }
+  //     scrollTo(element, offset) {
+  //         scroller.scrollTo(element, {
+  //           duration: 800,
+  //           delay: 0,
+  //           smooth: 'easeInOutQuart',
+  //           offset: offset
+  //         })
+  //       }
 
-//     scrollStatus = () => {
+  //     scrolled = event => {
+  //         window.addEventListener("scroll", this.scrollStatus)
+  //     }
 
-//       const winHeight = window.innerHeight || (document.documentElement || document.body).clientHeight
-//       const docHeight = document.body.clientHeight
-//       const scrollTop = window.pageYOffset || (document.documentElement || document.body.parentNode || document.body).scrollTop
-//       const trackLength = docHeight - winHeight
-//       const percentScrolled = Math.floor(scrollTop/trackLength * 100) // gets percentage scrolled (ie: 80 or NaN if tracklength == 0)
-//     console.log(percentScrolled + '% scrolled')
-//       const percent = `${(percentScrolled/49)*100}%`
-//       const number = percentScrolled/49
-//       const number2 = ((-49 + percentScrolled)/15)
-//       const percent2 = `${((-49 + percentScrolled)/15)*100}%`
-//       const percent3 = `${((-66 + percentScrolled)/14)*100}%`
-//       const number3 = ((-66 + percentScrolled)/14)
-//       const percent4 = `${((-82 + percentScrolled)/15)*100}%`
-//       const number4 = ((-82 + percentScrolled)/15)
+  //     scrollStatus = () => {
 
-
-//       console.log('this is how percentScrolled', percentScrolled, percent)
-//       const a = document.getElementsByClassName('arrows_1')[0]
-//       const b = document.getElementsByClassName('second')[0]
-//       const c = document.getElementsByClassName('arrows_2')[0]
-//       const d = document.getElementsByClassName('third')[0]
-//       const e = document.getElementsByClassName('arrows_3')[0]
-//       const f = document.getElementsByClassName('fourth')[0]
-//       const g = document.getElementsByClassName('arrows_4')[0]
-//       const h = document.getElementsByClassName('fifth')[0]
+  //       const winHeight = window.innerHeight || (document.documentElement || document.body).clientHeight
+  //       const docHeight = document.body.clientHeight
+  //       const scrollTop = window.pageYOffset || (document.documentElement || document.body.parentNode || document.body).scrollTop
+  //       const trackLength = docHeight - winHeight
+  //       const percentScrolled = Math.floor(scrollTop/trackLength * 100) // gets percentage scrolled (ie: 80 or NaN if tracklength == 0)
+  //     console.log(percentScrolled + '% scrolled')
+  //       const percent = `${(percentScrolled/49)*100}%`
+  //       const number = percentScrolled/49
+  //       const number2 = ((-49 + percentScrolled)/15)
+  //       const percent2 = `${((-49 + percentScrolled)/15)*100}%`
+  //       const percent3 = `${((-66 + percentScrolled)/14)*100}%`
+  //       const number3 = ((-66 + percentScrolled)/14)
+  //       const percent4 = `${((-82 + percentScrolled)/15)*100}%`
+  //       const number4 = ((-82 + percentScrolled)/15)
 
 
-//     if (a !== undefined && b !== undefined && c !== undefined && d !== undefined && e !== undefined ) {
-//       console.log(a, 'Aaaaaa')
-//       a.style.backgroundImage = `linear-gradient(to right, #4EC9B0, #4EC9B0 ${percent} , #D4D4D4 ${percent}, #D4D4D4 100%)`
+  //       console.log('this is how percentScrolled', percentScrolled, percent)
+  //       const a = document.getElementsByClassName('arrows_1')[0]
+  //       const b = document.getElementsByClassName('second')[0]
+  //       const c = document.getElementsByClassName('arrows_2')[0]
+  //       const d = document.getElementsByClassName('third')[0]
+  //       const e = document.getElementsByClassName('arrows_3')[0]
+  //       const f = document.getElementsByClassName('fourth')[0]
+  //       const g = document.getElementsByClassName('arrows_4')[0]
+  //       const h = document.getElementsByClassName('fifth')[0]
 
-//       if (percentScrolled >= 49) {
-//           b.style.color = `#4EC9B0`
 
-//           c.style.backgroundImage = `linear-gradient(to right, #4EC9B0, #4EC9B0 ${percent2} , #D4D4D4 ${percent2}, #D4D4D4 100%)`
-//       }
-//       else {
-//           b.style.color = `#D4D4D4`
-//           c.style.backgroundImage = `linear-gradient(to right, #4EC9B0, #4EC9B0 0% , #D4D4D4 0%, #D4D4D4 100%)`
+  //     if (a !== undefined && b !== undefined && c !== undefined && d !== undefined && e !== undefined ) {
+  //       console.log(a, 'Aaaaaa')
+  //       a.style.backgroundImage = `linear-gradient(to right, #4EC9B0, #4EC9B0 ${percent} , #D4D4D4 ${percent}, #D4D4D4 100%)`
 
-//       }
-//       if (percentScrolled >= 65) {
-//           d.style.color = `#4EC9B0`
+  //       if (percentScrolled >= 49) {
+  //           b.style.color = `#4EC9B0`
 
-//           e.style.backgroundImage = `linear-gradient(to right, #4EC9B0, #4EC9B0 ${percent3} , #D4D4D4 ${percent3}, #D4D4D4 100%)`
-//       }
-//       else {
-//           d.style.color = `#D4D4D4`
-//           e.style.backgroundImage = `linear-gradient(to right, #4EC9B0, #4EC9B0 0% , #D4D4D4 0%, #D4D4D4 100%)`
+  //           c.style.backgroundImage = `linear-gradient(to right, #4EC9B0, #4EC9B0 ${percent2} , #D4D4D4 ${percent2}, #D4D4D4 100%)`
+  //       }
+  //       else {
+  //           b.style.color = `#D4D4D4`
+  //           c.style.backgroundImage = `linear-gradient(to right, #4EC9B0, #4EC9B0 0% , #D4D4D4 0%, #D4D4D4 100%)`
 
-//       }
+  //       }
+  //       if (percentScrolled >= 65) {
+  //           d.style.color = `#4EC9B0`
 
-//       if (percentScrolled >= 82) {
-//         f.style.color = `#4EC9B0`
+  //           e.style.backgroundImage = `linear-gradient(to right, #4EC9B0, #4EC9B0 ${percent3} , #D4D4D4 ${percent3}, #D4D4D4 100%)`
+  //       }
+  //       else {
+  //           d.style.color = `#D4D4D4`
+  //           e.style.backgroundImage = `linear-gradient(to right, #4EC9B0, #4EC9B0 0% , #D4D4D4 0%, #D4D4D4 100%)`
 
-//         g.style.backgroundImage = `linear-gradient(to right, #4EC9B0, #4EC9B0 ${percent4} , #D4D4D4 ${percent4}, #D4D4D4 100%)`
-//     }
-//     else {
-//         f.style.color = `#D4D4D4`
-//         g.style.backgroundImage = `linear-gradient(to right, #4EC9B0, #4EC9B0 0% , #D4D4D4 0%, #D4D4D4 100%)`
+  //       }
 
-//     }
+  //       if (percentScrolled >= 82) {
+  //         f.style.color = `#4EC9B0`
 
-//     if (percentScrolled >= 99) {
-//       h.style.color = `#4EC9B0`
+  //         g.style.backgroundImage = `linear-gradient(to right, #4EC9B0, #4EC9B0 ${percent4} , #D4D4D4 ${percent4}, #D4D4D4 100%)`
+  //     }
+  //     else {
+  //         f.style.color = `#D4D4D4`
+  //         g.style.backgroundImage = `linear-gradient(to right, #4EC9B0, #4EC9B0 0% , #D4D4D4 0%, #D4D4D4 100%)`
 
-//   }
-//   else {
-//       h.style.color = `#D4D4D4`
+  //     }
 
-//   }
-//     }
-//   }
+  //     if (percentScrolled >= 99) {
+  //       h.style.color = `#4EC9B0`
 
-    componentWillUnmount() {
-      // console.log('dev is unmounted')
-      // window.removeEventListener("scroll", this.scrollStatus)
-      // window.removeEventListener("click", this.scrollTo)
+  //   }
+  //   else {
+  //       h.style.color = `#D4D4D4`
 
-    }
-    render() {
-        return(
-        <div className="Dev">
-            {/* <div className='contents'>
+  //   }
+  //     }
+  //   }
+
+  componentWillUnmount() {
+    // console.log('dev is unmounted')
+    // window.removeEventListener("scroll", this.scrollStatus)
+    // window.removeEventListener("click", this.scrollTo)
+
+  }
+  render() {
+    return (
+      <div className="Dev">
+        {/* <div className='contents'>
             <h2 onClick={() => {this.scrollTo('traction', -220)}}className='all_sections on_topic'>
             Traction
             </h2>
@@ -202,428 +202,423 @@ class Dev extends Component {
             Schatzinsel
             </h2>
             </div> */}
-            <section>
-            <h1 className="shoppies">Excess Material</h1>
-            <div className="project">
+        <section>
+          <h1 className="shoppies">Excess Material</h1>
+          <div className="project">
             <div className="left">
-            <Element className='start-section' name="schatz" >
-            <h2>❮❯ Online Marketplace ❮❯</h2>
-            </Element>
-            <p>
-            Excess Material is an Angular website currently in progress. When completed, it will allow buyers and sellers to interact in an online marketplace.
-            The project includes a Django backend which allows users to add, delete, and update posts. The backend also includes search and sorting features.
-            Form functionality is included, allowing emails to be sent to proper individuals. Furthermore, Firebase is also used to support image upload.  
+              <Element className='start-section' name="schatz" >
+                <h2>❮❯ Online Marketplace ❮❯</h2>
+              </Element>
+              <p>
+                Excess Material is an Angular website currently in progress. When completed, it will allow buyers and sellers to interact in an online marketplace.
+                The project includes a Django backend which allows users to add, delete, and update posts. The backend also includes search and sorting features.
+                Form functionality is included, allowing emails to be sent to proper individuals. Furthermore, Firebase is also used to support image upload.
 
-              <br />
-              <br />
-              Username: levij.app@gmail.com | Password: TestUser4444!
-            </p>
+                <br />
+                <br />
+                Username: levij.app@gmail.com | Password: TestUser4444!
+              </p>
 
               <div className="focus">
-              <h4>❯❯ Form</h4>
-              <h4>❯❯ Image Storage</h4>
-              <h4>❯❯ Email</h4>
-              <h4>❯❯ Map</h4>
+                <h4>❯❯ Form</h4>
+                <h4>❯❯ Image Storage</h4>
+                <h4>❯❯ Email</h4>
+                <h4>❯❯ Map</h4>
 
               </div>
-            <div className='tech-used' id='schatz-tech'>
-            <div className='single-tech'>
-              <img loading="lazy"  src={HTMLLogo} alt="HTML Logo" />
-              </div>
+              <div className='tech-used' id='schatz-tech'>
+                <div className='single-tech'>
+                  <img loading="lazy" src={AngularLogo} alt="React Logo" />
+                </div>
 
-              <div className='single-tech'>
-              <img loading="lazy"  src={SassLogo} alt="Sass Logo" />
-              </div>
+                <div className='single-tech'>
+                  <img loading="lazy" src={HTMLLogo} alt="HTML Logo" />
+                </div>
 
-              <div className='single-tech'>
-              <img loading="lazy"  src={TypeScriptLogo} alt="React Logo" />
-              </div>
+                <div className='single-tech'>
+                  <img loading="lazy" src={SassLogo} alt="Sass Logo" />
+                </div>
 
-              <div className='single-tech'>
-              <img loading="lazy"  src={AngularLogo} alt="React Logo" />
-              </div>
+                <div className='single-tech'>
+                  <img loading="lazy" src={TypeScriptLogo} alt="React Logo" />
+                </div>
+                <div className='single-tech'>
+                  <img loading="lazy" src={Auth0Logo} alt="Auth0 Logo" />
+                </div>
 
-              <div className='single-tech'>
-              <img loading="lazy"  src={Auth0Logo} alt="Auth0 Logo" />
-              </div>
+                <div className='single-tech'>
+                  <img loading="lazy" src={FirebaseLogo} alt="OMDB Logo" />
+                </div>
 
-              <div className='single-tech'>
-              <img loading="lazy"  src={FirebaseLogo} alt="OMDB Logo" />
-              </div>
+                <div className='single-tech'>
+                  <img loading="lazy" src={LeafletLogo} alt="JavaScript Logo" />
+                </div>
 
-              <div className='single-tech'>
-              <img loading="lazy"  src={LeafletLogo} alt="JavaScript Logo" />
-              </div>
+                <div className='single-tech'>
+                  <img loading="lazy" src={DjangoLogo} alt="Django Logo" />
+                </div>
 
-              <div className='single-tech'>
-              <img loading="lazy"  src={PythonLogo} alt="Python Logo" />
-              </div>
+                <div className='single-tech'>
+                  <img loading="lazy" src={PythonLogo} alt="Python Logo" />
+                </div>
 
-              <div className='single-tech'>
-              <img loading="lazy"  src={DjangoLogo} alt="Django Logo" />
+                <div className='single-tech'>
+                  <img className='postgres' src={PostgresLogo} alt="Postgres Logo" />
+                </div>
               </div>
-
-              <div className='single-tech'>
-                  <img  className='postgres' src={PostgresLogo} alt="Postgres Logo" />
-              </div>
-            </div>
             </div>
 
             <div className="right" id='shoppies-right'>
-            <img loading="lazy"  className='shoppies-page' src={ExcessMaterialPage} alt="Shoppies Front Page" />
-            <div className='web-sec'>
-            <div className='web-group'>
-              <a className='web-link' href='https://excess-material.netlify.app/' target='_blank'>To Website</a>
-              <a className='web-arrow' href='https://excess-material.netlify.app/' target='_blank'>⟶</a>
+              <img loading="lazy" className='shoppies-page' src={ExcessMaterialPage} alt="Shoppies Front Page" />
+              <div className='web-sec'>
+                <div className='web-group'>
+                  <a className='web-link' href='https://excess-material.netlify.app/' target='_blank'>To Website</a>
+                  <a className='web-arrow' href='https://excess-material.netlify.app/' target='_blank'>⟶</a>
+                </div>
+              </div>
             </div>
-            </div>             
-            </div>
-            </div>
-            </section>
+          </div>
+        </section>
 
-            <section>
-            <h1 className="shoppies">Shopify Shoppies</h1>
-            <div className="project">
+        <section>
+          <h1 className="shoppies">Shopify Shoppies</h1>
+          <div className="project">
             <div className="left">
-            <Element className='start-section' name="schatz" >
-            <h2>❮❯ Shopify Challenge ❮❯</h2>
-            </Element>
-            <p>
-              The Shopify Shoppies was a challenge presented by Shopify as part of an internship application.
-              Shopify branched out to movie awards, the Shoppies. Because
-              the Shoppies is a part of Shopify's business, it understandably would share the same design. I studied Shopify's color scheme, layout, and click effects.
-              Allowing users to log in, this web application gives them an opportunity to nominate five of their favorite movies.
-              Additionally, users can discover the top five winners and the total nominations received.
-              <br />
-              <br />
-              Username: levij.app@gmail.com | Password: TestUser4444
-            </p>
+              <Element className='start-section' name="schatz" >
+                <h2>❮❯ Shopify Challenge ❮❯</h2>
+              </Element>
+              <p>
+                The Shopify Shoppies was a challenge presented by Shopify as part of an internship application.
+                Shopify branched out to movie awards, the Shoppies. Because
+                the Shoppies is a part of Shopify's business, it understandably would share the same design. I studied Shopify's color scheme, layout, and click effects.
+                Allowing users to log in, this web application gives them an opportunity to nominate five of their favorite movies.
+                Additionally, users can discover the top five winners and the total nominations received.
+                <br />
+                <br />
+                Username: levij.app@gmail.com | Password: TestUser4444
+              </p>
 
               <div className="focus">
-              <h4>❯❯ OMDb Search</h4>
-              <h4>❯❯ Authentication </h4>
-              <h4>❯❯ Restful API </h4>
+                <h4>❯❯ OMDb Search</h4>
+                <h4>❯❯ Authentication </h4>
+                <h4>❯❯ Restful API </h4>
               </div>
-            <div className='tech-used' id='schatz-tech'>
-            <div className='single-tech'>
-              <img loading="lazy"  src={HTMLLogo} alt="HTML Logo" />
-              </div>
+              <div className='tech-used' id='schatz-tech'>
+                <div className='single-tech'>
+                  <img loading="lazy" src={ReactLogo} alt="React Logo" />
+                </div>
 
-              <div className='single-tech'>
-              <img loading="lazy"  src={SassLogo} alt="Sass Logo" />
-              </div>
+                <div className='single-tech'>
+                  <img loading="lazy" src={HTMLLogo} alt="HTML Logo" />
+                </div>
 
-              <div className='single-tech'>
-              <img loading="lazy"  src={JavaScriptLogo} alt="JavaScript Logo" />
-              </div>
+                <div className='single-tech'>
+                  <img loading="lazy" src={SassLogo} alt="Sass Logo" />
+                </div>
 
-              <div className='single-tech'>
-              <img loading="lazy"  src={ReactLogo} alt="React Logo" />
-              </div>
+                <div className='single-tech'>
+                  <img loading="lazy" src={JavaScriptLogo} alt="JavaScript Logo" />
+                </div>
 
-              <div className='single-tech'>
-              <img loading="lazy"  src={Auth0Logo} alt="Auth0 Logo" />
-              </div>
+                <div className='single-tech'>
+                  <img loading="lazy" src={Auth0Logo} alt="Auth0 Logo" />
+                </div>
 
-              <div className='single-tech'>
-              <img loading="lazy"  src={OMDBLogo} alt="OMDB Logo" />
-              </div>
+                <div className='single-tech'>
+                  <img loading="lazy" src={OMDBLogo} alt="OMDB Logo" />
+                </div>
 
-              <div className='single-tech'>
-              <img loading="lazy"  src={PythonLogo} alt="Python Logo" />
-              </div>
+                <div className='single-tech'>
+                  <img loading="lazy" src={DjangoLogo} alt="Django Logo" />
+                </div>
 
-              <div className='single-tech'>
-              <img loading="lazy"  src={DjangoLogo} alt="Django Logo" />
-              </div>
+                <div className='single-tech'>
+                  <img loading="lazy" src={PythonLogo} alt="Python Logo" />
+                </div>
 
-              <div className='single-tech'>
-                  <img  className='postgres' src={PostgresLogo} alt="Postgres Logo" />
+                <div className='single-tech'>
+                  <img className='postgres' src={PostgresLogo} alt="Postgres Logo" />
+                </div>
               </div>
-            </div>
             </div>
 
             <div className="right" id='shoppies-right'>
-            <img loading="lazy"  className='shoppies-page' src={ShoppiesPage} alt="Shoppies Front Page" />
-            <div className='web-sec'>
-            <div className='web-group'>
-              <a className='web-link' href='https://shopify-shoppies.netlify.app/' target='_blank'>To Website</a>
-              <a className='web-arrow' href='https://shopify-shoppies.netlify.app/' target='_blank'>⟶</a>
-            </div>
+              <img loading="lazy" className='shoppies-page' src={ShoppiesPage} alt="Shoppies Front Page" />
+              <div className='web-sec'>
+                <div className='web-group'>
+                  <a className='web-link' href='https://shopify-shoppies.netlify.app/' target='_blank'>To Website</a>
+                  <a className='web-arrow' href='https://shopify-shoppies.netlify.app/' target='_blank'>⟶</a>
+                </div>
 
-            <div className='web-group'>
-              <a className='web-link' href='https://github.com/LeviApp/Shoppies' target='_blank'>To Front-End Repo</a>
-              <a className='web-arrow' href='https://github.com/LeviApp/Shoppies' target='_blank'>⟶</a>
-            </div>
+                <div className='web-group'>
+                  <a className='web-link' href='https://github.com/LeviApp/Shoppies' target='_blank'>To Front-End Repo</a>
+                  <a className='web-arrow' href='https://github.com/LeviApp/Shoppies' target='_blank'>⟶</a>
+                </div>
 
-            <div className='web-group'>
-              <a className='web-link' href='https://github.com/LeviApp/shoppiesbackend' target='_blank'>To Back-End Repo</a>
-              <a className='web-arrow' href='https://github.com/LeviApp/shoppiesbackend' target='_blank'>⟶</a>
+                <div className='web-group'>
+                  <a className='web-link' href='https://github.com/LeviApp/shoppiesbackend' target='_blank'>To Back-End Repo</a>
+                  <a className='web-arrow' href='https://github.com/LeviApp/shoppiesbackend' target='_blank'>⟶</a>
+                </div>
+              </div>
             </div>
-            </div>             
-            </div>
-            </div>
-            </section>
+          </div>
+        </section>
 
-            <section>
-            <h1 className="shoppies">Who Spoke The Quote?</h1>
-            <div className="project">
+        <section>
+          <h1 className="shoppies">Who Spoke The Quote?</h1>
+          <div className="project">
             <div className="left">
-            <Element className='start-section' name="schatz" >
-            <h2>❮❯ Web Development ❮❯</h2>
-            </Element>
-            <p>
-              Who Spoke The Quote? is a quotes application focused on implementing React Hooks. Emphasis was also placed
-              on using component libraries, specifically, Carbon Components. Users can read, add, delete, and update famous quotes with images.
-              Responsive layout has also been included in the project.
-            </p>
+              <Element className='start-section' name="schatz" >
+                <h2>❮❯ Web Development ❮❯</h2>
+              </Element>
+              <p>
+                Who Spoke The Quote? is a quotes application focused on implementing React Hooks. Emphasis was also placed
+                on using component libraries, specifically, Carbon Components. Users can read, add, delete, and update famous quotes with images.
+                Responsive layout has also been included in the project.
+              </p>
 
               <div className="focus">
-              <h4>❯❯ React Hooks </h4>
-              <h4>❯❯ Carbon Components </h4>
-              <h4>❯❯ Restful API </h4>
+                <h4>❯❯ React Hooks </h4>
+                <h4>❯❯ Carbon Components </h4>
+                <h4>❯❯ Restful API </h4>
               </div>
-            <div className='tech-used' id='schatz-tech'>
-            <div className='single-tech'>
-              <img loading="lazy"  src={HTMLLogo} alt="HTML Logo" />
-              </div>
+              <div className='tech-used' id='schatz-tech'>
+                <div className='single-tech'>
+                  <img loading="lazy" src={ReactLogo} alt="React Logo" />
+                </div>
 
-              <div className='single-tech'>
-              <img loading="lazy"  src={SCSSLogo} alt="SCSS Logo" />
-              </div>
+                <div className='single-tech'>
+                  <img loading="lazy" src={HTMLLogo} alt="HTML Logo" />
+                </div>
 
-              <div className='single-tech'>
-              <img loading="lazy"  src={JavaScriptLogo} alt="JavaScript Logo" />
-              </div>
+                <div className='single-tech'>
+                  <img loading="lazy" src={SCSSLogo} alt="SCSS Logo" />
+                </div>
 
-              <div className='single-tech'>
-              <img loading="lazy"  src={ReactLogo} alt="React Logo" />
-              </div>
+                <div className='single-tech'>
+                  <img loading="lazy" src={JavaScriptLogo} alt="JavaScript Logo" />
+                </div>
 
-              <div className='single-tech'>
-              <img loading="lazy"  src={CCLogo} alt="Carbon Components Logo" />
-              </div>
+                <div className='single-tech'>
+                  <img loading="lazy" src={CCLogo} alt="Carbon Components Logo" />
+                </div>
 
-              <div className='single-tech'>
-              <img loading="lazy"  src={OMDBLogo} alt="OMDB Logo" />
-              </div>
+                <div className='single-tech'>
+                  <img loading="lazy" src={OMDBLogo} alt="OMDB Logo" />
+                </div>
 
-              <div className='single-tech'>
-              <img loading="lazy"  src={PythonLogo} alt="Python Logo" />
-              </div>
+                <div className='single-tech'>
+                  <img loading="lazy" src={DjangoLogo} alt="Django Logo" />
+                </div>
 
-              <div className='single-tech'>
-              <img loading="lazy"  src={DjangoLogo} alt="Django Logo" />
-              </div>
+                <div className='single-tech'>
+                  <img loading="lazy" src={PythonLogo} alt="Python Logo" />
+                </div>
 
-              <div className='single-tech'>
-                  <img  className='postgres' src={PostgresLogo} alt="Postgres Logo" />
+                <div className='single-tech'>
+                  <img className='postgres' src={PostgresLogo} alt="Postgres Logo" />
+                </div>
               </div>
-            </div>
             </div>
 
             <div className="right" id='shoppies-right'>
-            <img loading="lazy"  className='shoppies-page' src={WSTQPage} alt="Who Spoke The Quote Front Page" />
-            <div className='web-sec'>
-            <div className='web-group'>
-              <a className='web-link' href='https://who-spoke-the-quote.netlify.app/' target='_blank'>To Website</a>
-              <a className='web-arrow' href='https://who-spoke-the-quote.netlify.app/' target='_blank'>⟶</a>
-            </div>
+              <img loading="lazy" className='shoppies-page' src={WSTQPage} alt="Who Spoke The Quote Front Page" />
+              <div className='web-sec'>
+                <div className='web-group'>
+                  <a className='web-link' href='https://who-spoke-the-quote.netlify.app/' target='_blank'>To Website</a>
+                  <a className='web-arrow' href='https://who-spoke-the-quote.netlify.app/' target='_blank'>⟶</a>
+                </div>
 
-            <div className='web-group'>
-              <a className='web-link' href='https://github.com/LeviApp/WhoSpokeTheQuote' target='_blank'>To Front-End Repo</a>
-              <a className='web-arrow' href='https://github.com/LeviApp/WhoSpokeTheQuote' target='_blank'>⟶</a>
-            </div>
+                <div className='web-group'>
+                  <a className='web-link' href='https://github.com/LeviApp/WhoSpokeTheQuote' target='_blank'>To Front-End Repo</a>
+                  <a className='web-arrow' href='https://github.com/LeviApp/WhoSpokeTheQuote' target='_blank'>⟶</a>
+                </div>
 
-            <div className='web-group'>
-              <a className='web-link' href='https://github.com/LeviApp/QuotesDjango' target='_blank'>To Back-End Repo</a>
-              <a className='web-arrow' href='https://github.com/LeviApp/QuotesDjango' target='_blank'>⟶</a>
+                <div className='web-group'>
+                  <a className='web-link' href='https://github.com/LeviApp/QuotesDjango' target='_blank'>To Back-End Repo</a>
+                  <a className='web-arrow' href='https://github.com/LeviApp/QuotesDjango' target='_blank'>⟶</a>
+                </div>
+              </div>
             </div>
-            </div>             
-            </div>
-            </div>
-            </section>
+          </div>
+        </section>
 
-            <section>
-            <h1 className="ARCH">RegEx Rex</h1>
-            <div className='project' id='rids'>
+        <section>
+          <h1 className="ARCH">RegEx Rex</h1>
+          <div className='project' id='rids'>
             <div className='left'>
-            <Element className='start-section' name="reform" >
-            <h2> ❮❯ E-Learning App ❮❯ </h2>
-            </Element>
-            <p>RegEx Rex is a project that focuses on teaching regular expressions.
-              There is a sandbox where users can explore regular expressions. Furthermore, there is a section dedicated to teaching lessons.
-              Each lesson comes with a mini challenge. Once a student passes all thirty-five lessons, they can return to any lesson.
-              If a student gets stuck, they can look at the reference sheet.
-              In addition to the Front End, RegEx Rex also includes a localized Back End using .NET Core. PostgreSQL is also implemented.</p>
+              <Element className='start-section' name="reform" >
+                <h2> ❮❯ E-Learning App ❮❯ </h2>
+              </Element>
+              <p>RegEx Rex is a project that focuses on teaching regular expressions.
+                There is a sandbox where users can explore regular expressions. Furthermore, there is a section dedicated to teaching lessons.
+                Each lesson comes with a mini challenge. Once a student passes all thirty-five lessons, they can return to any lesson.
+                If a student gets stuck, they can look at the reference sheet.
+                In addition to the Front End, RegEx Rex also includes a localized Back End using .NET Core. PostgreSQL is also implemented.</p>
               <div className="focus">
-              <h4>❯❯ Local Storage</h4>
-              <h4>❯❯ Ember App</h4>
+                <h4>❯❯ Local Storage</h4>
+                <h4>❯❯ Ember App</h4>
               </div>
               <div className='tech-used'>
-              <div className='single-tech'>
-              <img loading="lazy"  src={EmberLogo} alt="Ember Logo" />
-              </div>
+                <div className='single-tech'>
+                  <img loading="lazy" src={EmberLogo} alt="Ember Logo" />
+                </div>
 
-              <div className='single-tech'>
-              <img loading="lazy"  src={HandlebarsLogo} alt="Handlebars Logo" />
-              </div>
+                <div className='single-tech'>
+                  <img loading="lazy" src={HandlebarsLogo} alt="Handlebars Logo" />
+                </div>
 
-              <div className='single-tech'>
-              <img loading="lazy"  src={HTMLLogo} alt="HTML Logo" />
-              </div>
+                <div className='single-tech'>
+                  <img loading="lazy" src={HTMLLogo} alt="HTML Logo" />
+                </div>
 
-              <div className='single-tech'>
-              <img loading="lazy"  src={JavaScriptLogo} alt="JavaScript Logo" />
-              </div>
+                <div className='single-tech'>
+                  <img loading="lazy" src={SassLogo} alt="CSS Logo" />
+                </div>
 
-              <div className='single-tech'>
-              <img loading="lazy"  src={SassLogo} alt="CSS Logo" />
-              </div>
+                <div className='single-tech'>
+                  <img loading="lazy" src={JavaScriptLogo} alt="JavaScript Logo" />
+                </div>
 
-              <div className='single-tech'>
-              <img loading="lazy"  src={CSharpLogo} alt="CSS Logo" />
-              </div>
+                <div className='single-tech'>
+                  <img loading="lazy" src={DotNetLogo} alt="CSS Logo" />
+                </div>
 
-              <div className='single-tech'>
-              <img loading="lazy"  src={DotNetLogo} alt="CSS Logo" />
-              </div>
+                <div className='single-tech'>
+                  <img loading="lazy" src={CSharpLogo} alt="CSS Logo" />
+                </div>
 
-              <div className='single-tech'>
-              <img loading="lazy"  src={PostgresLogo} alt="CSS Logo" />
+                <div className='single-tech'>
+                  <img loading="lazy" src={PostgresLogo} alt="CSS Logo" />
+                </div>
               </div>
-            </div>
             </div>
             <div className='right'>
-            <img loading="lazy"  id='reform' src={RexPage} alt="Reform in Dust Storms Front Page" />
-            <div className='web-sec'>
-            <div className='web-group'>
-              <a className='web-link' href='https://regexrex.netlify.app/' target='_blank'>To Website</a>
-              <a className='web-arrow' href='https://regexrex.netlify.app/' target='_blank'>⟶</a>
-            </div>
+              <img loading="lazy" id='reform' src={RexPage} alt="Reform in Dust Storms Front Page" />
+              <div className='web-sec'>
+                <div className='web-group'>
+                  <a className='web-link' href='https://regexrex.netlify.app/' target='_blank'>To Website</a>
+                  <a className='web-arrow' href='https://regexrex.netlify.app/' target='_blank'>⟶</a>
+                </div>
 
-            <div className='web-group'>
-              <a className='web-link' href='https://github.com/LeviApp/RegExRex' target='_blank'>To Front-End Repo</a>
-              <a className='web-arrow' href='https://github.com/LeviApp/RegExRex' target='_blank'>⟶</a>
-            </div>
+                <div className='web-group'>
+                  <a className='web-link' href='https://github.com/LeviApp/RegExRex' target='_blank'>To Front-End Repo</a>
+                  <a className='web-arrow' href='https://github.com/LeviApp/RegExRex' target='_blank'>⟶</a>
+                </div>
 
-            <div className='web-group'>
-              <a className='web-link' href='https://github.com/LeviApp/RexBackend' target='_blank'>To Back-End Repo</a>
-              <a className='web-arrow' href='https://github.com/LeviApp/RexBackend' target='_blank'>⟶</a>
+                <div className='web-group'>
+                  <a className='web-link' href='https://github.com/LeviApp/RexBackend' target='_blank'>To Back-End Repo</a>
+                  <a className='web-arrow' href='https://github.com/LeviApp/RexBackend' target='_blank'>⟶</a>
+                </div>
+              </div>
             </div>
-            </div>
-            </div>
-            </div>
-            </section>
+          </div>
+        </section>
 
-            <section>
-            <h1 className="ARCH">Anagram Scram</h1>
-            <div className='project' id='rids'>
+        <section>
+          <h1 className="ARCH">Anagram Scram</h1>
+          <div className='project' id='rids'>
             <div className='left'>
-            <Element className='start-section' name="reform" >
-            <h2> ❮❯ Game Development ❮❯ </h2>
-            </Element>
-            <p>AnagramScram is a word game using the Vue framework. This game takes users through increasingly more difficult animal words they must unscramble. The website includes ten levels and rewards bonus time based on the current score.
-              The game includes javascript functionality that allows a player to see the correct and incorrect letters.
-              It also provides a player the option to only reset incorrect letters. If a user guesses incorrectly or runs down the clock ten times, it is game over!
-              The application uses local storage for persistent data.
-              Responsive design is also implemented.</p>
+              <Element className='start-section' name="reform" >
+                <h2> ❮❯ Game Development ❮❯ </h2>
+              </Element>
+              <p>AnagramScram is a word game using the Vue framework. This game takes users through increasingly more difficult animal words they must unscramble. The website includes ten levels and rewards bonus time based on the current score.
+                The game includes javascript functionality that allows a player to see the correct and incorrect letters.
+                It also provides a player the option to only reset incorrect letters. If a user guesses incorrectly or runs down the clock ten times, it is game over!
+                The application uses local storage for persistent data.
+                Responsive design is also implemented.</p>
               <div className="focus">
-              <h4>❯❯ Local Storage</h4>
-              <h4>❯❯ Vue App</h4>
+                <h4>❯❯ Local Storage</h4>
+                <h4>❯❯ Vue App</h4>
               </div>
               <div className='tech-used'>
-              <div className='single-tech'>
-              <img loading="lazy"  src={VueLogo} alt="Vue Logo" />
-              </div>
+                <div className='single-tech'>
+                  <img loading="lazy" src={VueLogo} alt="Vue Logo" />
+                </div>
 
-              <div className='single-tech'>
-              <img loading="lazy"  src={HTMLLogo} alt="HTML Logo" />
-              </div>
+                <div className='single-tech'>
+                  <img loading="lazy" src={HTMLLogo} alt="HTML Logo" />
+                </div>
 
-              <div className='single-tech'>
-              <img loading="lazy"  src={JavaScriptLogo} alt="JavaScript Logo" />
-              </div>
+                <div className='single-tech'>
+                  <img loading="lazy" src={CSSLogo} alt="CSS Logo" />
+                </div>
 
-              <div className='single-tech'>
-              <img loading="lazy"  src={CSSLogo} alt="CSS Logo" />
+                <div className='single-tech'>
+                  <img loading="lazy" src={JavaScriptLogo} alt="JavaScript Logo" />
+                </div>
               </div>
-            </div>
             </div>
             <div className='right'>
-            <img loading="lazy"  id='reform' src={AnagramPage} alt="Reform in Dust Storms Front Page" />
-            <div className='web-sec'>
-            <div className='web-group'>
-              <a className='web-link' href='https://anagramscram.netlify.app/' target='_blank'>To Website</a>
-              <a className='web-arrow' href='https://anagramscram.netlify.app/' target='_blank'>⟶</a>
-            </div>
+              <img loading="lazy" id='reform' src={AnagramPage} alt="Reform in Dust Storms Front Page" />
+              <div className='web-sec'>
+                <div className='web-group'>
+                  <a className='web-link' href='https://anagramscram.netlify.app/' target='_blank'>To Website</a>
+                  <a className='web-arrow' href='https://anagramscram.netlify.app/' target='_blank'>⟶</a>
+                </div>
 
-            <div className='web-group'>
-              <a className='web-link' href='https://github.com/LeviApp/AnagramScram' target='_blank'>To Project Repo</a>
-              <a className='web-arrow' href='https://github.com/LeviApp/AnagramScram' target='_blank'>⟶</a>
+                <div className='web-group'>
+                  <a className='web-link' href='https://github.com/LeviApp/AnagramScram' target='_blank'>To Project Repo</a>
+                  <a className='web-arrow' href='https://github.com/LeviApp/AnagramScram' target='_blank'>⟶</a>
+                </div>
+              </div>
             </div>
-            </div>
-            </div>
-            </div>
-            </section>
+          </div>
+        </section>
 
-            <section>
-            <h1 className="ARCH">Reform in Dust Storms</h1>
-            <div className='project' id='rids'>
+        <section>
+          <h1 className="ARCH">Reform in Dust Storms</h1>
+          <div className='project' id='rids'>
             <div className='left'>
-            <Element className='start-section' name="reform" >
-            <h2> ❮❯ Responsive Behavior ❮❯ </h2>
-            </Element>
-            <p>Reform in Dust Storms is a website that gives the instructions for a detective game. Set in Old West Colorado, the player must discover who committed the crime, the weapon that was used, and the place of the crime.  The website
-              consists of four main pages. The home page gives an overview of the entire game. There are three other pages that provide more details about the suspect, weapon, and place.
-              This project focuses on responsive design principles of websites. The game itself has not been created yet.</p>
+              <Element className='start-section' name="reform" >
+                <h2> ❮❯ Responsive Behavior ❮❯ </h2>
+              </Element>
+              <p>Reform in Dust Storms is a website that gives the instructions for a detective game. Set in Old West Colorado, the player must discover who committed the crime, the weapon that was used, and the place of the crime.  The website
+                consists of four main pages. The home page gives an overview of the entire game. There are three other pages that provide more details about the suspect, weapon, and place.
+                This project focuses on responsive design principles of websites. The game itself has not been created yet.</p>
 
               <div className="focus">
-              <h4>❯❯ Responsive Design</h4>
-              <h4>❯❯ Angular App</h4>
+                <h4>❯❯ Responsive Design</h4>
+                <h4>❯❯ Angular App</h4>
               </div>
               <div className='tech-used'>
-              <div className='single-tech'>
-              <img loading="lazy"  src={HTMLLogo} alt="HTML Logo" />
-              </div>
+                <div className='single-tech'>
+                  <img loading="lazy" src={AngularLogo} alt="Angular Logo" />
+                </div>
 
-              <div className='single-tech'>
-              <img loading="lazy"  src={AngularLogo} alt="Angular Logo" />
-              </div>
+                <div className='single-tech'>
+                  <img loading="lazy" src={HTMLLogo} alt="HTML Logo" />
+                </div>
 
-              <div className='single-tech'>
-              <img loading="lazy"  src={JavaScriptLogo} alt="JavaScript Logo" />
-              </div>
+                <div className='single-tech'>
+                  <img loading="lazy" src={SCSSLogo} alt="SCSSLogo Logo" />
+                </div>
 
-              <div className='single-tech'>
-              <img loading="lazy"  src={TypeScriptLogo} alt="TypeScript Logo" />
+                <div className='single-tech'>
+                  <img loading="lazy" src={TypeScriptLogo} alt="TypeScript Logo" />
+                </div>
               </div>
-
-              <div className='single-tech'>
-              <img loading="lazy"  src={SCSSLogo} alt="SCSSLogo Logo" />
-              </div>
-            </div>
             </div>
             <div className='right'>
-            <img loading="lazy"  id='reform' src={ReformPage} alt="Reform in Dust Storms Front Page" />
-            <div className='web-sec'>
-            <div className='web-group'>
-              <a className='web-link' href='https://reforminduststorms.netlify.app/overview' target='_blank'>To Website</a>
-              <a className='web-arrow' href='https://reforminduststorms.netlify.app/overview' target='_blank'>⟶</a>
-            </div>
+              <img loading="lazy" id='reform' src={ReformPage} alt="Reform in Dust Storms Front Page" />
+              <div className='web-sec'>
+                <div className='web-group'>
+                  <a className='web-link' href='https://reforminduststorms.netlify.app/overview' target='_blank'>To Website</a>
+                  <a className='web-arrow' href='https://reforminduststorms.netlify.app/overview' target='_blank'>⟶</a>
+                </div>
 
-            <div className='web-group'>
-              <a className='web-link' href='https://github.com/LeviApp/User-Interface-Project-Week' target='_blank'>To Project Repo</a>
-              <a className='web-arrow' href='https://github.com/LeviApp/User-Interface-Project-Week' target='_blank'>⟶</a>
+                <div className='web-group'>
+                  <a className='web-link' href='https://github.com/LeviApp/User-Interface-Project-Week' target='_blank'>To Project Repo</a>
+                  <a className='web-arrow' href='https://github.com/LeviApp/User-Interface-Project-Week' target='_blank'>⟶</a>
+                </div>
+              </div>
             </div>
-            </div>
-            </div>
-            </div>
-            </section>
+          </div>
+        </section>
 
 
 
-            {/* <section>
+        {/* <section>
             <h1 className="TRACTION"> Traction </h1>
 
               <div className='project' id='traction-project'>
@@ -765,14 +760,14 @@ class Dev extends Component {
             </section> */}
 
 
-            
-            <section>
-            <h1 className="QUOTES"> Quotes 4 Life </h1>
-            <div className="project">
+
+        <section>
+          <h1 className="QUOTES"> Quotes 4 Life </h1>
+          <div className="project">
             <div className='left'>
-            <Element className='start-section' name="quotes" >
-            <h2>❮❯ Web Development ❮❯</h2>
-            </Element>
+              <Element className='start-section' name="quotes" >
+                <h2>❮❯ Web Development ❮❯</h2>
+              </Element>
 
               <p>
                 Quotes 4 Life is a website that allows users to post
@@ -783,60 +778,60 @@ class Dev extends Component {
               </p>
 
               <div className="focus">
-              <h4>❯❯ Front End</h4>
-              <h4>❯❯ Back End</h4>
-              <h4>❯❯ Restful API</h4>
+                <h4>❯❯ Front End</h4>
+                <h4>❯❯ Back End</h4>
+                <h4>❯❯ Restful API</h4>
               </div>
-            <div className='tech-used'>
-              <div className='single-tech'>
-              <img loading="lazy"  src={ReactLogo} alt="React Logo" />
-              </div>
+              <div className='tech-used'>
+                <div className='single-tech'>
+                  <img loading="lazy" src={ReactLogo} alt="React Logo" />
+                </div>
 
-              <div className='single-tech'>
-              <img loading="lazy"  src={CSSLogo} alt="CSS Logo" />
-              </div>
+                <div className='single-tech'>
+                  <img loading="lazy" src={HTMLLogo} alt="HTML Logo" />
+                </div>
 
-              <div className='single-tech'>
-              <img loading="lazy"  src={HTMLLogo} alt="HTML Logo" />
-              </div>
+                <div className='single-tech'>
+                  <img loading="lazy" src={CSSLogo} alt="CSS Logo" />
+                </div>
 
-              <div className='single-tech'>
-              <img loading="lazy"  className='javascript' src={JavaScriptLogo} alt="JavaScript Logo" />
-              </div>
+                <div className='single-tech'>
+                  <img loading="lazy" className='javascript' src={JavaScriptLogo} alt="JavaScript Logo" />
+                </div>
 
-              <div className='single-tech'>
-                  <img  loading="lazy" className='node' src={NodeLogo} alt="NodeJS Logo" />
-              </div>
+                <div className='single-tech'>
+                  <img loading="lazy" className='node' src={NodeLogo} alt="NodeJS Logo" />
+                </div>
 
-              <div className='single-tech'>
-                  <img  loading="lazy" className='postgres' src={PostgresLogo} alt="Postgres Logo" />
+                <div className='single-tech'>
+                  <img loading="lazy" className='postgres' src={PostgresLogo} alt="Postgres Logo" />
+                </div>
               </div>
-            </div>
             </div>
 
             <div className="right">
-            <img loading="lazy"  id="quotes-page" src={QuotesPage} alt="Quotes Front Page" />
-            <div className='web-sec'>
-            <div className='web-group'>
-              <a className='web-link' href='https://quotes4life.netlify.app/home' target='_blank'>To Website</a>
-              <a className='web-arrow' href='https://quotes4life.netlify.app/home' target='_blank'>⟶</a>
-            </div>
+              <img loading="lazy" id="quotes-page" src={QuotesPage} alt="Quotes Front Page" />
+              <div className='web-sec'>
+                <div className='web-group'>
+                  <a className='web-link' href='https://quotes4life.netlify.app/home' target='_blank'>To Website</a>
+                  <a className='web-arrow' href='https://quotes4life.netlify.app/home' target='_blank'>⟶</a>
+                </div>
 
-            <div className='web-group'>
-              <a className='web-link' href='https://github.com/LeviApp/Quotes4LifeFrontend' target='_blank'>To Front-End Repo</a>
-              <a className='web-arrow' href='https://github.com/LeviApp/Quotes4LifeFrontend' target='_blank'>⟶</a>
-            </div>
+                <div className='web-group'>
+                  <a className='web-link' href='https://github.com/LeviApp/Quotes4LifeFrontend' target='_blank'>To Front-End Repo</a>
+                  <a className='web-arrow' href='https://github.com/LeviApp/Quotes4LifeFrontend' target='_blank'>⟶</a>
+                </div>
 
-            <div className='web-group'>
-              <a className='web-link' href='https://github.com/LeviApp/QuotesDjango' target='_blank'>To Back-End Repo</a>
-              <a className='web-arrow' href='https://github.com/LeviApp/QuotesDjango' target='_blank'>⟶</a>
+                <div className='web-group'>
+                  <a className='web-link' href='https://github.com/LeviApp/QuotesDjango' target='_blank'>To Back-End Repo</a>
+                  <a className='web-arrow' href='https://github.com/LeviApp/QuotesDjango' target='_blank'>⟶</a>
+                </div>
+              </div>
             </div>
-            </div>
-            </div>
-            </div>
-            </section>
+          </div>
+        </section>
 
-            {/* <section>
+        {/* <section>
             <h1 className="ARCH">Engrain</h1>
             <div className='project' id='engrain'>
             <div className='left'>
@@ -906,195 +901,204 @@ class Dev extends Component {
             </div>
             </section> */}
 
-<section>
-            <h1 className="automata">Conway's Way</h1>
-            <div className='project'>
+        <section>
+          <h1 className="automata">Conway's Way</h1>
+          <div className='project'>
             <div className='left'>
-            <Element className='start-section' name="automaton" >
-            <h2> ❮❯ Interactive Automata ❮❯ </h2>
-            </Element>
-            <p>
-              Conway's Way is a project that implements Computer Science's topic of Cellular Automata. It
-              takes the rules of Conway's Game of Life and presents it in a visual manner.
-            </p>
-            <div className='automaton-focus'>
-              <h4>❯❯ Grid Size</h4>  
+              <Element className='start-section' name="automaton" >
+                <h2> ❮❯ Interactive Automata ❮❯ </h2>
+              </Element>
               <p>
-              ❯ Changes the starting number of cells
+                Conway's Way is a project that implements Computer Science's topic of Cellular Automata. It
+                takes the rules of Conway's Game of Life and presents it in a visual manner.
               </p>
-            </div>
-
-            <div className='automaton-focus'>
-              <h4>❯❯ Density</h4>  
-              <p>
-              ❯ Changes the starting density of the cells 
-              </p>
-            </div>
-
-            <div className='automaton-focus'>
-              <h4>❯❯ Speed </h4>  
-              <p>
-              ❯ Changes the speed of the animation
-              </p>
-            </div>
-
-            <div className='automaton-focus'>
-              <h4>❯❯ Off Color </h4>  
-              <p>
-              ❯ Changes the color of the cells when they are off
-              </p>
-            </div>
-
-            <div className='automaton-focus'>
-              <h4>❯❯ On Color </h4>  
-              <p>
-              ❯ Changes the color of the cells when they are on
-              </p>
-            </div>
-
-            <div className='automaton-focus'>
-              <h4>❯❯ Randomize</h4>  
-              <p>
-              ❯ Changes the starting pattern of the animation
-              </p>
-            </div>
-
-            <div className='automaton-focus'>
-              <h4>❯❯ Rewind </h4>  
-              <p>
-              ❯ Reverses the animation
-              </p>
-            </div>
-
-            <div className='automaton-focus'>
-              <h4>❯❯ Loop </h4>  
-              <p>
-              ❯ Keeps animation going
-              </p>
-            </div>
-
-            <div className='automaton-focus'>
-              <h4>❯❯ Pause</h4>  
-              <p>
-              ❯ Plays or pauses the animation
-              </p>
-            </div>
-
-            <div className='automaton-focus'>
-              <h4>❯❯ Edit </h4>  
-              <p>
-              ❯ Customizes the starting pattern of the animation
-              </p>
-            </div>
-
-            <div className='tech-used'>
-              <div className='single-tech'>
-              <img loading="lazy"  src={ReactLogo} alt="React Logo" />
+              <div className='automaton-focus'>
+                <h4>❯❯ Grid Size</h4>
+                <p>
+                  ❯ Changes the starting number of cells
+                </p>
               </div>
-            </div>
+
+              <div className='automaton-focus'>
+                <h4>❯❯ Density</h4>
+                <p>
+                  ❯ Changes the starting density of the cells
+                </p>
+              </div>
+
+              <div className='automaton-focus'>
+                <h4>❯❯ Speed </h4>
+                <p>
+                  ❯ Changes the speed of the animation
+                </p>
+              </div>
+
+              <div className='automaton-focus'>
+                <h4>❯❯ Off Color </h4>
+                <p>
+                  ❯ Changes the color of the cells when they are off
+                </p>
+              </div>
+
+              <div className='automaton-focus'>
+                <h4>❯❯ On Color </h4>
+                <p>
+                  ❯ Changes the color of the cells when they are on
+                </p>
+              </div>
+
+              <div className='automaton-focus'>
+                <h4>❯❯ Randomize</h4>
+                <p>
+                  ❯ Changes the starting pattern of the animation
+                </p>
+              </div>
+
+              <div className='automaton-focus'>
+                <h4>❯❯ Rewind </h4>
+                <p>
+                  ❯ Reverses the animation
+                </p>
+              </div>
+
+              <div className='automaton-focus'>
+                <h4>❯❯ Loop </h4>
+                <p>
+                  ❯ Keeps animation going
+                </p>
+              </div>
+
+              <div className='automaton-focus'>
+                <h4>❯❯ Pause</h4>
+                <p>
+                  ❯ Plays or pauses the animation
+                </p>
+              </div>
+
+              <div className='automaton-focus'>
+                <h4>❯❯ Edit </h4>
+                <p>
+                  ❯ Customizes the starting pattern of the animation
+                </p>
+              </div>
+
+              <div className='tech-used'>
+                <div className='single-tech'>
+                  <img loading="lazy" src={ReactLogo} alt="React Logo" />
+                </div>
+                <div className='single-tech'>
+                  <img loading="lazy" src={HTMLLogo} alt="HTML Logo" />
+                </div>
+                <div className='single-tech'>
+                  <img loading="lazy" src={CSSLogo} alt="HTML Logo" />
+                </div>
+                <div className='single-tech'>
+                  <img loading="lazy" src={TypeScriptLogo} alt="HTML Logo" />
+                </div>
+              </div>
             </div>
             <div className='right' id='auto'>
-            <img loading="lazy"  id="conways-page" src={ConwaysPage} alt="Quotes Front Page" />
-            <div className='web-sec'>
-            <div className='web-group'>
-              <a className='web-link' href='https://conways-way.netlify.app/' target='_blank'>To Website</a>
-              <a className='web-arrow' href='https://conways-way.netlify.app/' target='_blank'>⟶</a>
-            </div>
+              <img loading="lazy" id="conways-page" src={ConwaysPage} alt="Quotes Front Page" />
+              <div className='web-sec'>
+                <div className='web-group'>
+                  <a className='web-link' href='https://conways-way.netlify.app/' target='_blank'>To Website</a>
+                  <a className='web-arrow' href='https://conways-way.netlify.app/' target='_blank'>⟶</a>
+                </div>
 
-            <div className='web-group'>
-              <a className='web-link' href='https://github.com/LeviApp/ConwaysWay' target='_blank'>To Project Repo</a>
-              <a className='web-arrow' href='https://github.com/LeviApp/ConwaysWay' target='_blank'>⟶</a>
+                <div className='web-group'>
+                  <a className='web-link' href='https://github.com/LeviApp/ConwaysWay' target='_blank'>To Project Repo</a>
+                  <a className='web-arrow' href='https://github.com/LeviApp/ConwaysWay' target='_blank'>⟶</a>
+                </div>
+              </div>
             </div>
-            </div>
-            </div>
-            </div>
-            </section>
+          </div>
+        </section>
 
 
-            <section>
-            <h1 className="automata">Automaton</h1>
-            <div className='project'>
+        <section>
+          <h1 className="automata">Automaton</h1>
+          <div className='project'>
             <div className='left'>
-            <Element className='start-section' name="automaton" >
-            <h2> ❮❯ Python-built Automata ❮❯ </h2>
-            </Element>
-            <p>
-              Automaton is a project that implements Computer Science's topic of Cellular Automata. Automaton
-              takes the rules of Conway's Game of Life and presents it in a visual manner.
-            </p>
-            <div className='automaton-focus'>
-              <h4>❯❯ Restart </h4>  
+              <Element className='start-section' name="automaton" >
+                <h2> ❮❯ Python-built Automata ❮❯ </h2>
+              </Element>
               <p>
-              ❯ Restarts
-              the animation
+                Automaton is a project that implements Computer Science's topic of Cellular Automata. Automaton
+                takes the rules of Conway's Game of Life and presents it in a visual manner.
               </p>
-            </div>
-
-            <div className='automaton-focus'>
-              <h4>❯❯ Rewind </h4>  
-              <p>
-              ❯ Reverses the animation
-              </p>
-            </div>
-
-            <div className='automaton-focus'>
-              <h4>❯❯ Loop </h4>  
-              <p>
-              ❯ Keeps animation going
-              </p>
-            </div>
-
-            <div className='automaton-focus'>
-              <h4>❯❯ Playing / Paused </h4>  
-              <p>
-              ❯ Plays or pauses the animation
-              </p>
-            </div>
-
-            <div className='automaton-focus'>
-              <h4>❯❯ Random </h4>  
-              <p>
-              ❯ Changes the starting pattern of the animation
-              </p>
-            </div>
-
-            <div className='automaton-focus'>
-              <h4>❯❯ Color Scheme </h4>  
-              <p>
-              ❯ Changes the color scheme of the animation
-              </p>
-            </div>
-
-            <div className='automaton-focus'>
-              <h4>❯❯ Speed </h4>  
-              <p>
-              ❯ Changes the speed of the animation
-              </p>
-            </div>
-            <div className='tech-used'>
-              <div className='single-tech'>
-              <img loading="lazy"  src={PythonLogo} alt="Python Logo" />
+              <div className='automaton-focus'>
+                <h4>❯❯ Restart </h4>
+                <p>
+                  ❯ Restarts
+                  the animation
+                </p>
               </div>
 
-              <div className='single-tech'>
-              <img loading="lazy"  src={PygameLogo} alt="Pygame Logo" />
+              <div className='automaton-focus'>
+                <h4>❯❯ Rewind </h4>
+                <p>
+                  ❯ Reverses the animation
+                </p>
               </div>
-            </div>
+
+              <div className='automaton-focus'>
+                <h4>❯❯ Loop </h4>
+                <p>
+                  ❯ Keeps animation going
+                </p>
+              </div>
+
+              <div className='automaton-focus'>
+                <h4>❯❯ Playing / Paused </h4>
+                <p>
+                  ❯ Plays or pauses the animation
+                </p>
+              </div>
+
+              <div className='automaton-focus'>
+                <h4>❯❯ Random </h4>
+                <p>
+                  ❯ Changes the starting pattern of the animation
+                </p>
+              </div>
+
+              <div className='automaton-focus'>
+                <h4>❯❯ Color Scheme </h4>
+                <p>
+                  ❯ Changes the color scheme of the animation
+                </p>
+              </div>
+
+              <div className='automaton-focus'>
+                <h4>❯❯ Speed </h4>
+                <p>
+                  ❯ Changes the speed of the animation
+                </p>
+              </div>
+              <div className='tech-used'>
+                <div className='single-tech'>
+                  <img loading="lazy" src={PygameLogo} alt="Pygame Logo" />
+                </div>
+
+                <div className='single-tech'>
+                  <img loading="lazy" src={PythonLogo} alt="Python Logo" />
+                </div>
+              </div>
             </div>
             <div className='right' id='auto'>
-            <div className='video'>
-              <iframe src="https://www.youtube.com/embed/fGX7U9Sx8S0" frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture; fullscreen"></iframe>
+              <div className='video'>
+                <iframe src="https://www.youtube.com/embed/fGX7U9Sx8S0" frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture; fullscreen"></iframe>
+              </div>
+              <div className='web-sec'>
+                <div className='web-group'>
+                  <a className='web-link' href='https://github.com/LeviApp/Cellular-Automata' target='_blank'>To Project Repo</a>
+                  <a className='web-arrow' href='https://github.com/LeviApp/Cellular-Automata' target='_blank'>⟶</a>
+                </div>
+              </div>
             </div>
-            <div className='web-sec'>
-            <div className='web-group'>
-              <a className='web-link' href='https://github.com/LeviApp/Cellular-Automata' target='_blank'>To Project Repo</a>
-              <a className='web-arrow' href='https://github.com/LeviApp/Cellular-Automata' target='_blank'>⟶</a>
-            </div>
-            </div>
-            </div>
-            </div>
-            </section>
-{/*             
+          </div>
+        </section>
+        {/*             
             <section>
             <h1 className="schatz">Schatzinsel</h1>
             <div className="project">
@@ -1163,7 +1167,7 @@ class Dev extends Component {
             </div>
             </section> */}
 
-            {/* <section>
+        {/* <section>
             <h1 className="schatz">Roman Roofing</h1>
             <div className="project">
             <div className="left">
@@ -1230,11 +1234,11 @@ class Dev extends Component {
             </div>
             </div>
             </section> */}
-        </div>
+      </div>
 
 
-        )
-    }
+    )
+  }
 }
 
 export default Dev
