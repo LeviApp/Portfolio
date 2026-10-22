@@ -30,6 +30,10 @@ import PygameLogo from './img/PygameLogo.png'
 import LESSLogo from './img/LESSLogo.png'
 import VueLogo from './img/VueLogo.png'
 import AngularLogo from './img/AngularLogo.png'
+import TailwindCSSLogo from './img/TailwindCSSLogo.png'
+import GeminiAPILogo from './img/GeminiAPILogo.png'
+import PuppeteerLogo from './img/PuppeteerLogo.png'
+import MaltAIPage from './img/MaltAIPage.png'
 import TypeScriptLogo from './img/TypeScriptLogo.png'
 import SCSSLogo from './img/SCSSLogo.png'
 import MySQLLogo from './img/MySQLLogo.png'
@@ -202,6 +206,82 @@ class Dev extends Component {
             Schatzinsel
             </h2>
             </div> */}
+
+        <section>
+          <h1 className="shoppies">Malt AI</h1>
+          <div className="project">
+            <div className="left">
+              <Element className='start-section' name="schatz" >
+                <h2>❮❯ Medical Analyzer ❮❯</h2>
+              </Element>
+              <p>
+                Malt AI is a full-stack web application designed to evaluate complex patient medication regimens.
+                Built with a React, TypeScript, and Tailwind CSS frontend, the platform features a persistent 24-hour cooldown
+                mechanism and instant sample case bypass options for seamless state management. The project includes a Node
+                and Express backend powered by Gemini AI integration, utilizing batched processing pipelines to evaluate large
+                polypharmacy datasets. Furthermore, the backend incorporates resilient error-handling logic that preserves partial
+                results during upstream rate-limiting events, alongside custom conflict filtering and emergency guard safeguards.
+              </p>
+
+<div className="focus">
+  <h4>❯❯ AI Analysis</h4>
+  <h4>❯❯ Batching</h4>
+  <h4>❯❯ Rate Guard</h4>
+  <h4>❯❯ PDF Download</h4>
+</div>
+              <div className='tech-used' id='schatz-tech'>
+                <div className='single-tech'>
+                  <img loading="lazy" src={ReactLogo} alt="React Logo" />
+                </div>
+
+                <div className='single-tech'>
+                  <img loading="lazy" src={HTMLLogo} alt="HTML Logo" />
+                </div>
+
+                <div className='single-tech'>
+                  <img loading="lazy" src={TailwindCSSLogo} alt="Tailwind CSS Logo" />
+                </div>
+
+                <div className='single-tech'>
+                  <img loading="lazy" src={TypeScriptLogo} alt="Typescript Logo" />
+                </div>
+
+                <div className='single-tech'>
+                  <img loading="lazy" src={NodeLogo} alt="Node Logo" />
+                </div>
+
+                <div className='single-tech'>
+                  <img loading="lazy" src={PuppeteerLogo} alt="Puppeteer Logo" />
+                </div>
+
+                <div className='single-tech'>
+                  <img loading="lazy" src={GeminiAPILogo} alt="Gemini API Logo" />
+                </div>
+              </div>
+            </div>
+
+            <div className="right" id='shoppies-right'>
+              <img loading="lazy" className='maltai-page' src={MaltAIPage} alt="MaltAI Front Page" />
+              <div className='web-sec'>
+                <div className='web-group'>
+                  <a className='web-link' href='https://malt-ai.vercel.app/' target='_blank'>To Website</a>
+                  <a className='web-arrow' href='https://malt-ai.vercel.app/' target='_blank'>⟶</a>
+                </div>
+
+                <div className='web-group'>
+                  <a className='web-link' href='https://github.com/LeviApp/malt-ai' target='_blank'>To Front-End Repo</a>
+                  <a className='web-arrow' href='https://github.com/LeviApp/malt-ai' target='_blank'>⟶</a>
+                </div>
+
+                <div className='web-group'>
+                  <a className='web-link' href='https://github.com/LeviApp/malt-ai-api' target='_blank'>To Back-End Repo</a>
+                  <a className='web-arrow' href='https://github.com/LeviApp/malt-ai-api' target='_blank'>⟶</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
         <section>
           <h1 className="shoppies">Excess Material</h1>
           <div className="project">
